@@ -1,6 +1,6 @@
-#+TITLE:Introduction to Programming in C/C++
+#+TITLE:Snap! Programming
 #+AUTHOR:Marcus Birkenkrahe
-#+SUBTITLE: CSC 100 @ Lyon College Summer 2022
+#+SUBTITLE: COR 100 @ Lyon College Fall 2022
 #+OPTIONS: toc:nil
 * What's in this repo?
 
