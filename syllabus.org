@@ -12,7 +12,7 @@
 - Phone: (870) 307-7254 (office) / (501) 422-4725 (private)
 - Office hours: Monday through Friday after class (see Canvas)
 - Textbook: Joshi A B (2018). Learn CS Concepts with Snap!
-  
+
 ** About reading the book / further studies
 
 There aren't a lot of books about Snap! because the language is easy
@@ -48,6 +48,7 @@ your finished projects for the whole world to see, and if things go
 well, perhaps we'll go to Snap!Con in California next year!
 
 ** Target audience
+
 This course is for you if you're curious about visual programming, if
 you don't know if working with computers is for you, or if you're
 interested in media, the arts, data, or in developing games. Snap! is
@@ -80,130 +81,213 @@ from accounting to zoology).
 
 ** Grading system
 
-| DESCRIPTION               | IMPACT |
-|---------------------------+--------|
-| Quizzes                   |    25% |
-| Class assignments         |    25% |
-| Programming assignments   |    25% |
-| Independent study project |    25% |
+The table lists course requirements, number of units (classroom
+sessions), points-per-unit (PPU), total points per requirement, and
+the impact of a requirement on your total grade.
+
+#+name: tbl:grading
+| REQUIREMENT | UNITS | PPU | TOTAL | % of TOTAL |
+|-------------+-------+-----+-------+------------|
+| Quizzes     |    10 |   5 |    50 |        20. |
+| Programs    |     5 |  10 |    50 |        20. |
+| Classwork   |    10 |   5 |    50 |        20. |
+| Exams       |     2 |  25 |    50 |        20. |
+| Project     |     2 |  25 |    50 |        20. |
+| HATS        |     2 |  25 |    50 |        20. |
+|-------------+-------+-----+-------+------------|
+| TOTAL       |       |     |   250 |       100. |
+|-------------+-------+-----+-------+------------|
+#+TBLFM: @2$4=$2*$3::@2$5=(@2$4/@8$4)*100::@3$4=$2*$3::@3$5=(@3$4/@8$4)*100::@4$4=$2*$3::@4$5=(@4$4/@8$4)*100::@5$4=$2*$3::@5$5=(@5$4/@8$4)*100::@6$4=$2*$3::@6$5=(@6$4/@8$4)*100::@7$4=$2*$3::@7$5=(@7$4/@8$4)*100::@8$4=vsum(@2..@6)::@8$5=vsum(@2..@6)
 
 You should be able to see your current grade at any time using the
 Canvas gradebook for the course.
 
 *** Grading table
 
-This table is used to convert completion rates into letter
-grades. For the midterm results, letter grades still carry signs,
-while for the term results, only straight letters are given (by
-rounding up).
+This table is used to convert completion rates into letter grades. For
+the midterm results, letter grades still carry signs, while for the
+term results, only straight letters are given (by rounding up).
 
-|--------+-----------------+---------------|
-|    *%* | *Midterm Grade* | *Final Grade* |
-|--------+-----------------+---------------|
-| 100-98 | A+              |               |
-|  97-96 | A               | A (passed -   |
-|  95-90 | A-              | very good)    |
-|--------+-----------------+---------------|
-|  89-86 | B+              |               |
-|  85-80 | B               | B (passed -   |
-|  79-76 | B-              | good)         |
-|--------+-----------------+---------------|
-|  75-70 | C+              |               |
-|  69-66 | C               | C (passed -   |
-|  65-60 | C-              | satisfactory) |
-|--------+-----------------+---------------|
-|  59-56 | D+              |               |
-|  55-50 | D               | D (passed)    |
-|--------+-----------------+---------------|
-|   49-0 | F               | F (failed)    |
-|--------+-----------------+---------------|
+|--------+---------------+---------------+--------|
+|      % | MIDTERM GRADE | FINAL GRADE   | POINTS |
+|--------+---------------+---------------+--------|
+| 100-98 | A+            |               |        |
+|  97-96 | A             | A (passed -   |        |
+|  95-90 | A-            | very good)    |   225. |
+|--------+---------------+---------------+--------|
+|  89-86 | B+            |               |        |
+|  85-80 | B             | B (passed -   |        |
+|  79-76 | B-            | good)         |   190. |
+|--------+---------------+---------------+--------|
+|  75-70 | C+            |               |        |
+|  69-66 | C             | C (passed -   |        |
+|  65-60 | C-            | satisfactory) |   150. |
+|--------+---------------+---------------+--------|
+|  59-56 | D+            |               |        |
+|  55-50 | D             | D (passed)    |   125. |
+|--------+---------------+---------------+--------|
+|   49-0 | F             | F (failed)    |        |
+|--------+---------------+---------------+--------|
+#+TBLFM: @4$4=0.9*250::@7$4=0.76*250::@10$4=0.6*250::@12$4=.50*250
 
-*** Quizzes (25%)
+*** Quizzes
 
 - Complete in class
 - Recall last chapter or section of class
 - Read relevant textbook chapters
 
-*** Class assignments (25%)
-
-- Complete assignments in class (participation)
-- Upload completed assignments (homework)
-- Be ready to present your results in class 
-
-*** Programming assignments (25%)
+*** Programming assignments
 
 - Solve programming problems in or outside of class
 - Complete assignments outside of class if necessary
 - Be ready to present your solutions
 
-*** Independent study project (25%)
+*** Class work / attendance
+
+- Complete assignments in class (participation)
+- Upload completed assignments (homework)
+- Be ready to present your results in class
+
+*** Exams
+- Midterm exam sourced from quiz 1-5
+- Final exam sourced from quiz 1-10
+
+*** Independent study project
 
 - Study a problem of your choice (options given)
 - Present prototype results for midterm grades
 - Present final result at end of course
+- Present during poster session at HATS
+
+*** Humanities, Arts, and Science Symposium (HATS)
+
+- Participate in planning session
+- Co-create poster session
+- Present poster session (rotating groups)
 
 * Standard Policies
+
 ** Honor Code
 
-All graded work in this class is to be pledged in accordance with
-the Lyon College Honor Code. The use of a phone for any reason
-during the course of an exam is considered an honor code
-violation.
+All graded work in this class is to be pledged in accordance with the
+Lyon College Honor Code. The use of a phone for any reason during the
+course of an exam is considered an honor code violation.
 
 ** Class Attendance Policy
 
-Students are expected to attend all class periods for the courses
-in which they are enrolled. They are responsible for conferring
-with individual professors regarding any missed
-assignments. Faculty members are to notify the Registrar when a
-student misses the equivalent of one, two, three, and four weeks
-of class periods in a single course. Under this policy, there is
-no distinction between “excused” and “unexcused” absences, except
-that a student may make up work missed during an excused
-absence. A reminder of the college’s attendance policy will be
-issued to the student at one week, a second reminder at two weeks,
-a warning at three weeks, and notification of administrative
-withdrawal and the assigning of an “F” grade at four
-weeks. Students who are administratively withdrawn from more than
-one course will be placed on probation or suspended.
+Students are expected to attend all class periods for the courses in
+which they are enrolled. They are responsible for conferring with
+individual professors regarding any missed assignments. Faculty
+members are to notify the Registrar when a student misses the
+equivalent of one, two, three, and four weeks of class periods in a
+single course. Under this policy, there is no distinction between
+“excused” and “unexcused” absences, except that a student may make up
+work missed during an excused absence. A reminder of the college’s
+attendance policy will be issued to the student at one week, a second
+reminder at two weeks, a warning at three weeks, and notification of
+administrative withdrawal and the assigning of an “F” grade at four
+weeks. Students who are administratively withdrawn from more than one
+course will be placed on probation or suspended.
+
+** Disabilities
+
+The Morrow Academic Center (MAC) helps students who want to improve
+grades by providing peer-led services including Supplemental
+Instruction (SI), tutoring, the Writing Center, and academic coaching
+as well providing 24-hour, online tutoring for all subjects through
+Tutor.com. A schedule of peer-led services is available at
+lyon.edu/mac and Tutor.com is accessed through courses in
+Schoology. Contact Donald Taylor, Director of Academic Support, at
+870-307-7319 or donald.taylor@lyon.edu for more information about MAC
+services.
+
+** Technology Support
+
+For general technology support, you can contact the IT department by
+emailing support@lyon.edu or by calling 870-307-7555. For assistance
+with classroom-related technologies, such as the learning management
+system (LMS), you can request support using the methods above, or you
+can contact sarah.williams@lyon.edu directly for assistance. Your
+course content will be accessible digitally using either the Schoology
+or Canvas LMS. Both LMS platforms will use your myLyon credentials for
+your student login.
+
+- For Canvas, login at lyon.instructure.com
+- For Schoology, login at lyon.schoology.com
+
 
 ** Disabilities
 
 Students seeking reasonable accommodations based on documented
 learning disabilities must contact Interim Director of Academic
-Support in the Morrow Academic Center at (870) 307-7016.
+Support Donald Taylor in the Morrow Academic Center at (870) 307-7019
+or at donald.taylor@lyon.edu.
 
 ** Harassment, Discrimination, and Sexual Misconduct
 
-Title IX and Lyon’s policy prohibit harassment, discrimination and
-sexual misconduct. Lyon encourages anyone experiencing harassment,
-discrimination or sexual misconduct to talk to Danell Hetrick,
-Title IX Coordinator and Interim Vice-President for Student Life,
-or Sh’Nita Mitchell, Title IX Investigator and Associate Dean for
-Students, about what happened so they can get the support they need
-and Lyon can respond appropriately.  Lyon is legally obligated to
-respond to reports of sexual misconduct, and therefore we cannot
-guarantee the confidentiality of a report, unless made to a
-confidential resource (Chaplain, Counselor, or Nurse). As a faculty
-member, I am required to report possible Title IX violations and
-must provide our Title IX coordinator with all relevant details.  I
-cannot, therefore, guarantee confidentiality.
+Lyon College seeks to provide all members of the community with a safe
+and secure learning and work environment that is free of crime and/or
+policy violations motivated by discrimination, sexual and bias-related
+harassment, and other violations of rights. The College has a
+zero-tolerance policy against gender-based misconduct, sexual assault,
+and interpersonal violence toward any member or guest of the Lyon
+College community. Any individual who has been the victim of an act of
+violence or intimidation is urged to make an official report by
+contacting a campus Title IX coordinator or by visiting
+www.lyon.edu/file-a-title-ix-report. A report of an act of violence or
+intimidation will be dealt with promptly. Confidentiality will be
+maintained to the greatest extent possible within the constraints of
+the law. For more information regarding the College’s Title IX
+policies and procedures, visit www.lyon.edu/title-ix.
+
+** Mental & Behavioral Health
+
+Lyon College is dedicated to ensuring each student has access to
+mental and behavioral health resources. The College’s Mental and
+Behavioral Health Office is located in Edwards Commons and is
+partnered with White River Health System’s Behavioral Health
+Clinic. The office is committed to helping the Lyon community achieve
+maximum mental and behavioral wellness through both preventative and
+reactive care. A full-time, licensed, professional counselor provides
+counseling, consultations, outreach, workshops, and many more mental
+and behavioral services to Lyon students, faculty, and staff at no
+cost. The Mental and Behavioral Health Office also provides access to
+White River Health System’s services and facilities, including
+medication management and in-patient and out-patient care. To make an
+appointment, contact counseling@lyon.edu.
+
+** College-Wide COVID-19 Policies for Fall, 2022
+
+The College does not require masks in instructional and meeting spaces
+inside academic buildings. However, if instructors require masks in
+their classroom, lab, or studio, then students and guests must comply
+with that requirement.  Vaccines are strongly encouraged for all
+faculty, staff, and students. Vaccines are not mandated for Lyon
+College community members, although there may be specific courses
+involving interactions with vulnerable, external populations where a
+vaccine may be required.  The College will continue to offer
+symptomatic testing for students, faculty and staff.
 
 ** Details
 
-Details specific to this course may be found in the subsequent
-pages of this syllabus. Those details will include at least the
-following:
-- A description of the course consistent with the Lyon College catalog.
+Details specific to this course may be found in the subsequent pages
+of this syllabus. Those details will include at least the following:
+- A description of the course consistent with the Lyon College
+  catalog.
 - A list of student learning outcomes for the course.
 - A summary of all course requirements.
 - An explanation of the grading system to be used in the course.
-- Any course-specific attendance policies that go beyond the
-  College policy.
-- Details about what constitutes acceptable and unacceptable
-  student collaboration on graded work.
+- Any course-specific attendance policies that go beyond the College
+  policy.
+- Details about what constitutes acceptable and unacceptable student
+  collaboration on graded work.
+- A clear statement about which LMS is being used for the course.
 
 * Course specific information
+** Learning Management System (LMS)
+
+We will use Canvas in this course.
+
 ** Assignments and Honor Code
 
 There will be several assignments during the summer school,
@@ -261,32 +345,36 @@ an extension. Extensions will *not* be granted for reasons such as:
 
 ** Attendance policy
 
-You must attend a minimum of 80% of non-cancelled meetings, and no
-consecutive meetings without risking a fail. This means that you can
-miss 3 meetings (not in consecutive weeks) without any issues. If you
-miss 4 meetings, you fail the class. Any missed meetings result in an
-[[https://catalog.lyon.edu/class-attendance]["Early Alert" report]].
+In accordance with college policy, you must attend a minimum of 80% of
+non-cancelled meetings without risking a fail. This means that you can
+miss 3 meetings without any issues. If you miss 4 meetings, you fail
+the class. Any missed meetings result in an [[https://catalog.lyon.edu/class-attendance]["Early Alert" report]].
+
+You should take care not to miss consecutive sessions if at all
+possible - otherwise you risk losing touch with the material.
 
 ** Schedule and session content
 
-| NO | DATE[fn:2]  | TESTS[fn:3] | TEXTBOOK[fn:4]                         | ASSIGNMENT[fn:5] |
-|----+-------------+-------------+----------------------------------------+------------------|
-|  1 | Tue-16-Aug  |             | 1.1 First look at snap                 |                  |
-|  2 | Tue-23-Aug  | Quiz 1      | 1.2 Sequence and sounds                | Program 1        |
-|  3 | Tue-30-Aug  | Quiz 2      | 1.3 Looping and costumes               | Program 2        |
-|  4 | Tue-06-Sept | Quiz 3      | 1.4 XY geometry and motion             | Program 3        |
-|  5 | Tue-13-Sept | Quiz 4      | 1.5 Animation mini project             | Program 4        |
-|  6 | Tue-20-Sept | Quiz 5      | 1.6 More motion and broadcasting       | Program 5        |
-|  7 | Tue-27-Sept | Quiz 6      | 1.7 Project animation                  | Program 6        |
-|  8 | Tue-11-Oct  | Quiz 7      | 2.1 Events, reset scripts, concurrency | Program 7        |
-|  9 | Tue-18-Oct  | Quiz 8      | 2.2 Keyboard interaction, conditionals | Program 8        |
-| 10 | Tue-25-Oct  | Quiz 9      | 2.3 Project helicopter                 | Program 9        |
-| 11 | Tue-01-Nov  | Quiz 10     | 3.1 Mouse interaction                  | Program 10       |
-| 12 | Tue-08-Nov  | Quiz 11     | 3.2 Variables                          |                  |
-| 13 | Tue-15-Nov  | Quiz 12     | 3.3 Project game of maze               |                  |
-| 14 | Tue-22-Nov  | Quiz 13     |                                        | Presentations    |
-| 15 | Tue-29-Nov  |             |                                        | Presentations    |
-|----+-------------+-------------+----------------------------------------+------------------|
+| NO | DATE[fn:2]  | TESTS   | BOOK | ASSIGNMENT     | EXTRA       |
+|----+-------------+---------+------+----------------+-------------|
+|  1 | Sat-13-Aug  |         |      |                | BUILD BOAT  |
+|  2 | Sun-14-Aug  |         |      |                | BOAT RACE   |
+|  3 | Tue-16-Aug  |         |  1.1 |                |             |
+|  4 | Tue-23-Aug  | Quiz 1  |  1.2 | Program 1      |             |
+|  5 | Tue-30-Aug  | Quiz 2  |  1.3 | Program 2      |             |
+|  6 | Tue-06-Sept | Quiz 3  |  1.4 | Program 3:     |             |
+|  7 | Tue-13-Sept | Quiz 4  |  1.5 | "Animation"    |             |
+|  8 | Tue-20-Sept | Quiz 5  |  1.6 | Review         |             |
+|  9 | Tue-27-Sept | EXAM    |  1.7 | Review         |             |
+| 10 | Tue-11-Oct  | Quiz 6  |  2.1 |                |             |
+| 11 | Tue-18-Oct  | Quiz 7  |  2.2 | Program 4:     |             |
+| 12 | Thu-20-Oct  |         |      | "Helicopter"   | SERVICE DAY |
+| 13 | Tue-25-Oct  | Quiz 8  |  3.1 |                |             |
+| 14 | Tue-01-Nov  | Quiz 9  |  3.2 | Program 5:     |             |
+| 15 | Tue-08-Nov  | Quiz 10 |      | "Game of Maze" | HATS[fn:3]  |
+| 16 | Tue-15-Nov  | EXAM    |      |                |             |
+| 17 | Tue-22-Nov  |         |      | Projects       |             |
+| 18 | Tue-29-Nov  |         |      | Projects       |             |
 
 * References
 
@@ -296,8 +384,9 @@ miss 4 meetings, you fail the class. Any missed meetings result in an
 - Joshi A B (2018). Learn CS Concepts with Snap!. [[http://www.abhayjoshi.net/spark/snap/bsnap.pdf][URL: abhayjoshi.net]].
 - Joshi A B (2020). Adventures in Snap! Programming. [[http://www.abhayjoshi.net/spark/snap/asnap.pdf][URL: abhayjoshi.net]].
 
-
 * Footnotes
+[fn:3]Humanities, Arts, Technology and Science Symposium - lead by
+Student Mentor - prepare poster session for presentation.
 
 [fn:1]I wonder why! SAP's main business is in Enterprise Resource
 Planning software - these are massive systems that support whole
@@ -306,12 +395,3 @@ science and predictive AI, which is why they "acquired" Snap! (not
 really, because Snap! is FOSS - Free and Open Source Software).
 
 [fn:2]Fall break: 1-4 October. Last day of fall classes: 2 Dec.
-
-[fn:3]Each quiz tests your understanding of the previous lesson.
-
-[fn:4]Joshi, Learn CS Concepts with Snap! (2018).
-
-[fn:5]Weekly in-class assignments supplemented by program assignments
-for home completion and upload at your snap.berkeley.edu project
-location. The last two classroom sessions are reserved for
-presentation of your projects.

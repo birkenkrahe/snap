@@ -2,23 +2,24 @@
 #+AUTHOR:Marcus Birkenkrahe
 #+SUBTITLE: COR 100 @ Lyon College Fall 2022
 #+OPTIONS: toc:nil
+#+startup: hideblocks overview indent
 * What's in this repo?
 
-  * Repository for COR 100 - Snap! Programming
+Repository for COR 100 - Snap! Programming
 
 ** Syllabus for a course overview
 
 * How to use GitHub (optional)
 
-  * Register and get added as a collaborator to this repo
-  * Complete the GitHub starter course
-  * Fork this repo to your own GitHub account
-  * File access: on desktop/laptop, open ~.org~ files
-  * Mobile file access on the mobile GitHub app (you need ~.md~ files,
-    which you might have to create yourself)
-  * Check regularly (or setup notification) for changes
-  * Commit changes to your fork
+- Register and get added as a collaborator to this repo
+- Complete the GitHub starter course
+- Fork this repo to your own GitHub account
+- File access: on desktop/laptop, open ~.org~ files
+- Mobile file access on the mobile GitHub app (you need ~.md~ files,
+  which you might have to create yourself)
+- Check regularly (or setup notification) for changes
+- Commit changes to your fork
 
 * History
 
-   First offered @Lyon: Fall 2022 (Year One Undergrad). 
+First offered @Lyon: Fall 2022 (Year One Undergrad).
