@@ -364,9 +364,6 @@ possible - otherwise you risk losing touch with the material.
   | October    | Midterm check in lunch |
   | Thu-20-Oct | SERVICE DAY            |
 
-  [fn:3] Missing: Spragins lunch with class (September), Midterm lunch
-"check in" (October)
-
 - Classroom sessions:
 
   | WEEK | DATE[fn:2]  | TESTS   | ASSIGNMENT     | READ TEXTBOOK CHAPTER     |
