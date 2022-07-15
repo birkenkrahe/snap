@@ -1,0 +1,821 @@
+#+title: snap
+#+options: toc:nil num:nil ^:nil
+#+startup: overview hideblocks indent
+#+subtitle: COR100 Snap! Programming
+* README
+
+- A COR100 course on snap! programming
+- Includes transfer of Scratch3 ML applications to Snap!
+- To open Snap!, go to snap.berkeley.edu and register
+
+* Sources
+
+- [[http://www.abhayjoshi.net/spark/snap/bsnap.pdf][Snap! intro and projects by Joshi]] / [[http://abhayjoshi.net/spark/snap/book0/videos.htm][Video sample solutions]]
+- [[https://open.sap.com/dashboard][openSAP course media computation and data science]]
+- [[https://snap.berkeley.edu/index][Berkeley home page]]
+- [[id:069ae9a5-78db-4eb4-ba71-66d5f6e14ec7][ml-for-kids]] (notes)
+- Al Sweigart on Udemy (Scratch 2)
+
+* Snap! vs. Scratch
+
+- Web-based online application (HTML5), no desktop app
+
+- Comparison between Snap! and Scratch ([[https://snap.berkeley.edu/about][About Snap!]]):
+  + Snap! allows the user to define *data structures* like trees, heaps,
+    hash tables etc. because you can define a "list of lists".
+  + In Snap!, you can also create *control structures* like functions
+    that allow you to automate things.
+  + Data and control structures are the backbone of any form of
+    *imperative* computer programming.
+
+** Scratch interface
+
+#+attr_html: :width 500px
+#+caption: Scratch 3 interface
+[[./img/scratch.png]]
+
+** Snap! interface
+
+#+attr_html: :width 400px
+#+caption: Snap! 7 interface
+[[./img/snap1.png]]
+
+* Introduction
+** Programming
+
+- This could be your first ever programming course. Is it?
+
+  #+begin_quote Survey
+  + What were your other courses about?
+  + What did you take away from them?
+  + What's your view towards programming?
+  #+end_quote
+
+- Why should you bother to learn how to program?
+
+  #+begin_quote Answer:
+  + Understand the relationships of humans and machines[fn:1]
+  + Develop critical thinking skills[fn:2]
+  + Create games and animations[fn:3]
+  #+end_quote
+
+- The diagram shows different relevant levels of programming and
+  computing including hardware (bottom half) and software (top
+  half). In this course, we're working on /"Applications"/ that use the
+  computer to solve problems. Languages other than /Snap!/ on this level
+  include /C++/, /Java/, and /Python/ (all of these are OOP languages[fn:4]).
+  #+attr_html: :width 500px
+  #+caption: levels of computing (Source: Steinhart, 2019).
+  [[./img/steinhart.png]]
+
+- The top level "Users" refers to most people who only use computers
+  (mostly when operating their smart phones, or driving their
+  cars). As with phones or cars, most of the power is under the hood.
+
+- I recommend maintaining a (digital) notebook for this course. That's
+  exactly what I did when working through the textbook, using the [[https://orgmode.org/][GNU
+  Emacs editor with Org-mode]].
+
+** Why Snap!
+
+- It's full-fledged programming language
+- It's easy to build animation and games in it
+- It's instantly, freely available online
+- It trains pseudocode and modular design
+- It's good to go for data science applications (= my thing)
+- I've always wanted to get into it
+
+* Unit 1: Looping, Broadcasting, Animation
+** Concepts
+
+- [ ] Snap user interface (UI)
+- [ ] Paint editor
+- [ ] Sequence of commands
+- [ ] Motion commands
+- [ ] Simple looping (repeat, forever)
+- [ ] Absolute motion
+- [ ] Relative motion
+- [ ] Smooth motion using repeat
+- [ ] Nested looping
+- [ ] XY geometry
+- [ ] Costume-based animation
+
+** First look at Snap!
+*** What is a User Interface?
+
+- A /user interface/ (UI) is the dashboard or platform that allows a
+  user to interact with an application. It's the first thing that you,
+  as a user, see.
+
+- UI/UX is an important, relatively new, interdisciplinary field that
+  includes art and design, usability analysis, etc. UX focuses on the
+  user's path to solving a problem (like shopping online), while UI
+  focuses on the look of the surface of an interactive product (like a
+  web site for online shopping). More: [[https://www.freecodecamp.org/news/use-user-reseach-to-create-the-perfect-ui-design/][freecodecamp.org video course]].
+
+*** Snap! user interface
+
+- Connect to /snap.berkeley.edu/ and register using your name and Lyon
+  student email address.
+
+- For offline use - on any computer that you can administer,
+  i.e. where you can download and install programs as you please -
+  download the [[https://github.com/jmoenig/Snap/releases/tag/v7.3.1][source files from GitHub]], unpack the files, and open
+  ~snap.html~ in a browser.
+
+- This is how the interface looks like:
+  #+attr_html: :width 500px
+  #+caption: Snap! user interface (Source: Joshi, 2018)
+  [[./img/snapui.png]]
+
+- The interface is reminiscent of a movie maker's studio: /commands/ are
+  assembled in the /script/ area, and the resulting action plays out on
+  a /stage/ with a cast of characters called /sprites/. Every sprite has a
+  script associated with it.
+
+- Compare with Windows Movie Maker - commands on the left, script in
+  the lower half of the screen, sprites/characters in the middle, and
+  stage on the right hand side.
+  #+attr_html: :width 500px
+  #+caption: Windows Movie Maker
+  [[./img/moviemaker.jpg]]
+
+- As a programmer, you are writing the script for each sprite,
+  including movements, sounds, and costumes, but you are also the
+  producer, casting director, and editor.
+
+*** Building a script
+
+- To build a script, you drag and drop the blocks from the commands
+  area into the script area and connect them like a jigsaw puzzle.
+
+- Scripts are programs, sets of instructions for the computer. They
+  need to be absolutely flawless: you need to be 100% diligent and
+  careful when programming. Otherwise, the computer will refuse to
+  cooperate.
+
+*** Saving a Snap! project
+
+- A Snap! /project/ is a collection of scripts for sprites.
+  #+attr_html: :width 500px
+  #+caption: Snap! project example
+  [[./img/snapProject.png]]
+
+- You can save your projects in your cloud account (if you are using
+  the cloud version of Snap!), or you can save it locally as an XML
+  file[fn:5].
+  #+attr_html: :width 500px
+  #+caption: Snap! project example
+  [[./img/xml.png]]
+
+*** Sprites and costumes
+
+- When you add a new sprite, it always comes up as a "Turtle", a
+  triangular shape.
+
+- Every new Turtle sprite appears at a random place on the screen,
+  facing a random direction, and has a random color.
+  #+attr_html: :width 300px
+  #+caption: Snap! sprites.
+  [[./img/turtles.png]]
+
+- You can also use your camera to create a sprite.
+  #+attr_html: :width 300px
+  #+caption: Snap! sprite, created with camera
+  [[./img/camera.png]]
+
+- To change the appearance of the standard Turtle sprite, load a new
+  costume. There are readymade costumes provided.
+  #+attr_html: :width 300px
+  #+caption: Snap! costume from the media library
+  [[./img/costumes.png]]
+
+- This is where the costumes library resides on my computer at home:
+  ~/home/pi/Snap-7.3.1/Costumes~[fn:6].
+  #+attr_html: :width 300px
+  #+caption: Snap! top menu
+  [[./img/library.png]]
+
+- You can also create or modify an existing costume using the paint
+  editor.
+  #+attr_html: :width 300px
+  #+caption: Self-drawn Snap! costume
+  [[./img/paint.png]]
+
+- To import an image or go to the Costumes library, open the top (or
+  "file") menu next to the Snap! logo, marked by a document symbol.
+  #+attr_html: :width 300px
+  #+caption: Snap! top menu
+  [[./img/menu.png]]
+
+*** Stage or background
+
+- Similar to the costume library, Snap! comes with backgrounds that
+  you can load for your stage.
+  #+attr_html: :width 300px
+  #+caption: Snap! standard background ~woods.gif~
+  [[./img/background.png]]
+
+- You can also modify or import backgrounds from your computer.
+  #+attr_html: :width 300px
+  #+caption: Snap! standard background ~woods.gif~
+  [[./img/tuscany.png]]
+
+*** Command blocks and scripts
+
+- Scripts control the action of sprites (characters)
+
+- Scripts are created by dragging command blocks into the
+  script area and snapping them together
+
+- You can run any command block (aka /programming statement/) by
+  clicking on it. [[https://drive.google.com/file/d/1MKy5Biyshsd9kgh_bsxtWUISclaPtIaX/view?usp=sharing][This Gif shows that]] for ~"turn 90 degrees"~.
+  #+attr_html: :width 200px
+  #+caption: Snap! motion command to turn sprite clockwise by 90 degrees
+  [[./img/turn90.png]]
+
+  #+attr_html: :width 200px
+  #+caption: GIF screenshot
+  [[./img/turn.gif]]
+
+- When a script is running, the command blocks used are
+  glowing. Clicking on a running script again will stop it.
+  #+attr_html: :width 200px
+  #+caption: Snap! motion command that runs forever
+  [[./img/forever1.png]]
+
+*** Practice 1 - first script
+
+1) Register an account with ~snap.berkeley.edu~. Use your Lyon College
+   email address and FirstnameLastname as Username,
+   e.g. MarcusBirkenkrahe.
+   #+attr_html: :width 500px
+   #+caption: snap.berkeley.edu profile page
+   [[./img/snapRegistration.png]]
+
+2) Create a new named project:
+   - Open the main menu at the top
+   - Click on ~New~ (a new project page opens)
+   - Click on ~Save As ...~ and enter the name ~FirstProject~
+   - Save the project on your computer.
+   - Open the file location to see where ~FirstProject.xml~ was saved
+   #+attr_html: :width 500px
+   #+caption: FirstProject in the Snap! desktop app
+   [[./img/FirstProject.png]]
+
+3) Create a new sprite and stage:
+   - Add a new /Turtle/ sprite
+   - Open the /Costumes/ menu from the main menu (at the top)
+   - Click on the sprite icon and pick an animal or human /costume/ for
+     the /sprite/ using the Costumes library
+   - Click on the /stage/ icon and pick a background for the /stage/ using
+     the Backgrounds library
+   - Save your project to the cloud using ~Save As ...~ and then
+     choosing the location ~Cloud~ instead of ~Computer~
+   - Go to ~My Projects~ on the Snap! website and find your project
+   #+attr_html: :width 500px
+   #+caption: New sprite with new background.
+   [[./img/puppy.png]]
+
+4) Create a simple script with a standard Turtle:
+   - Go back to the /Scripts/ tab. If the ~Motion~ command palette is
+     greyed out, then your chosen sprite costume cannot be moved and
+     you need to pick another.
+   - Make your sprite ~point towards center~ of the stage
+   - Make your sprite ~move 200 steps~
+   - Make your sprite ~go to a random position~
+   - Make sure that all your statements/commands are attached to one
+     another in the prescribed order
+
+5) Run script:
+   - Run the script a few times by clicking on any of the statements
+     in the script
+   - Go to the ~Control~ command palette
+   - Make your sprite ~wait 1 secs~ between moving and going to a random
+     position
+   - Run the altered script a few times to make sure it does what it
+     should
+   - Execute the script ~forever~ by including it in a ~forever~ loop
+   - Stop the program by clicking on the script, or by clicking on the
+     red STOP symbol at the top above the stage
+   - When running, the final result should look like shown [[https://youtu.be/Q2jmy1OEFsY][in this
+     video]] (with your choice of sprite and background, of course)
+   - Save your project to the cloud location (with ~Save As ...~)
+
+6) Share your project and upload the location
+   - Go to your projects and share the project using the ~Share~ button.
+   - You can now publish the project, which means that it will be
+     visible (and searchable) in the Snap! website
+   - On the project page, you can ~Unshare~ and ~Unpublish~ your project.
+     #+attr_html: :width 400px
+     #+caption: You can share/unshare, and publish/unpublish projects
+     [[./img/share.png]]
+
+     - On the ~My Projects~ page, you also see if a project is shared
+       and/or published.
+       #+attr_html: :width 400px
+       #+caption: My "My Projects" page
+       [[./img/projects.png]]
+
+   - You can add projects to collections.
+     #+attr_html: :width 400px
+     #+caption: My collection of projects for this course
+     [[./img/collection.png]]
+
+   - Published projects and collections are displayed on your public
+     page.
+     #+attr_html: :width 300px
+     #+caption: My collection of projects for this course
+     [[./img/public.png]]
+
+*** Practice 1 - sample solution
+
+- Screenshot:
+  #+attr_html: :width 600px
+  [[./img/FirstProjectSolution.png]]
+
+- [[https://youtu.be/Q2jmy1OEFsY][YouTube video]]
+- [[https://drive.google.com/file/d/1ChUnHeeH029J_KDOLFcS8b3ie_RtRiIL/view?usp=sharing][GDrive video]]
+- [[https://snap.berkeley.edu/project?user=birkenkrahe&project=FirstProject][Project URL]]
+
+*** Quiz 1 - first look at Snap!
+DEADLINE: <2022-08-23 Tue 11:00>
+
+1) Match Snap! term and meaning
+
+   | Snap! Command blocks | Computing instructions or statements |
+   | Snap! Script         | Blocks snapped together for action   |
+   | Snap! Stage          | Space where the action is displayed |
+   | Snap! Sprite         | Characters or actors on stage        |
+
+2) Snap! allows you to use your own image/picture for new sprites
+
+   TRUE
+
+3) What is "Snap!"
+
+   /More than one answer is correct./
+
+   - [X] A computer programming language
+   - [X] A software in which you can create graphics and animation
+   - [ ] A type of operating system like Windows or Linux
+   - [ ] A collection of readymade animations and video games
+
+4) See the script below:
+
+   [[./img/q13.png]]
+
+   The script will run when
+   - [X] You click on the script
+   - [ ] You press the ENTER key on your keyboard
+   - [ ] You click on the green flag symbol
+   - [ ] You click on the sprite
+
+5) How can you stop a running script?
+
+   - [X] You click on the red STOP symbol
+   - [X] You click on the script
+   - [ ] You click on the yellow PAUSE symbol
+   - [ ] You click anywhere in the stage
+
+*** Program 1 - Alonzo in an aquarium
+DEADLINE: <2022-08-23 Tue 11:00>
+
+1) Write a Snap! script for a sprite dressed in an "Alonzo" (vector)
+   costume, with an aquarium background.
+2) You can download a suitable background image [[https://github.com/birkenkrahe/snap/blob/piHome/img/aquarium.jpg][from GitHub]].
+3) The sprite should ~wait 1 second~, then ~say Hello! for 1 second~, then
+   ~point towards a random position~, and finally ~go to a random position~
+   on the stage.
+4) The script should run ~forever~.
+5) Make it possible to run the script by clicking the green flag symbol.
+6) Add a description in the project notes (main menu, 1st option) that
+   includes your name as the author, and the date.
+7) Save the script to the cloud.
+8) Save the script to your computer.
+9) Submit the ~.xml~ file.
+
+**** Program 1 Solution
+
+- Screenshot:
+  #+attr_html: :width 400px
+  #+caption: program_1
+  [[./img/program_1.png]]
+
+- [[https://snap.berkeley.edu/project?user=birkenkrahe&project=Program_1][Cloud]] with project notes description
+
+- [[https://drive.google.com/file/d/1h5YLsbYgsIInIdlkgwUNtECEUWMy8HK0/view?usp=sharing][Video]]
+
+** Sequences
+
+- The word /sequence/ comes from the Latin word /sequi/, "to follow".
+
+- Computers require exact sequences of steps or statements to
+  work - like a to do list:
+  1. Rise and wake puppy.
+  2. Feed puppy.
+  3. Walk puppy.
+
+- Deviations from the prescribed sequence lead to errors.
+
+- The worst errors are those that remain undiscovered: the script will
+  run but it won't do what we expect it to do.
+
+- A script like [[sequence]] below represents a series of steps.
+
+** Practice - Sequences
+
+1) Define a new project "Sequence" and build this script
+   in your Snap! dashboard. You can pick a non-standard sprite if you
+   like.
+
+   #+name: sequence
+   #+attr_html: :width 400px
+   #+caption: sample Snap! script (Source: Joshi)
+   [[./img/sequence.png]]
+
+2) When you try to run the script a second time, nothing happens. What
+   could you do to re-run it properly?
+
+   #+begin_quote Answer
+   Add the ~Looks::show~ command at the top.
+   #+end_quote
+
+3) [[https://drive.google.com/file/d/1vcCJr7T_ISMoMmVbsaSSWYojlN0-JGwi/view?usp=sharing][This is how the result should look like (video).]]
+
+   #+attr_html: :width 300px
+   #+caption: screenshot - sample Snap! script (Source: Joshi)
+   [[./img/sequence1.png]]
+
+4) Make the change and re-run the script.
+
+5) Save the [[https://snap.berkeley.edu/project?user=birkenkrahe&project=Sequence][Sequence]] project to the cloud and find it in *My Projects*.
+
+** Sounds
+
+- Every sprite has a ~Sounds~ tab
+
+- You can /import/ an existing sound from the Snap! library (~Sounds~
+  option in the main menu), or you can /upload/ your own sound (mp3).
+
+  #+attr_html: :width 500px
+  #+caption: dog sprite with library barking sound
+  [[./img/dog.png]]
+
+- The ~play sound ... until done~ command moves do the next statement
+  only if the sound file has been played.
+
+  #+attr_html: :width 200px
+  #+caption: Play sound ... until done
+  [[./img/play.png]]
+
+- The ~play sound...~ command starts playing the sound file and moves
+  immediately on to the next statement.
+
+  #+attr_html: :width 150px
+  #+caption: Play sound ...
+  [[./img/play1.png]]
+
+- You can stop all sounds with the ~stop all sounds~ command.
+
+  #+attr_html: :width 120px
+  #+caption: Play sound ...
+  [[./img/play2.png]]
+
+- [ ] What does this script sound like?
+
+  #+attr_html: :width 200px
+  #+caption: Script with sounds
+  [[./img/dog1.png]]
+
+- [ ] What does this script sound like?
+
+  #+attr_html: :width 150px
+  #+caption: Script with sounds
+  [[./img/dog2.png]]
+
+** Practice 2 - Sounds
+
+1) Define a new project "SoundCheck".
+2) Pick a costume and a suitable sound.
+3) Write a script that produces 5 consecutive sounds *without loop*.
+4) ~Duplicate~ the script and add a ~repeat~ loop with only one sound
+   command
+5) Save the project to your ~My Projects~ list
+
+** Quiz 2 - sequence and sounds
+DEADLINE: <2022-08-30 Tue 11:00>
+
+1) Playing sounds 1
+
+   How many times will you hear "Cat" sound when you run the script
+   below?
+
+   #+attr_html: :width 200px
+   [[./img/cat1.png]]
+
+   - [X] 3
+   - [ ] 2
+   - [ ] 1
+   - [ ] 0
+
+   Feedback: the next command is executed as soon as the whole sound
+   file has been played.
+
+2) Playing sounds 2
+
+   How many times will you hear "Cat" sound when you run the script
+   below?
+
+   #+attr_html: :width 130px
+   [[./img/cat2.png]]
+
+   - [ ] 3
+   - [ ] 2
+   - [X] 1
+   - [ ] 0
+
+   Feedback: the next command is immediately executed and the sounds
+   bleed into one another.
+
+3) Motion and sound
+
+   What will this program do when you click the script?
+
+   #+attr_html: :width 130px
+   [[./img/cat3.png]]
+
+   - [X] It will move, wait for 1 second, and then meow
+   - [ ] It will move and meow at the same time
+   - [ ] It will not do anything
+   - [ ] It will meow, wait for 1 second and then move
+
+4) Hiding in plain sight
+
+   You cannot ~hide~ a sprite on the stage.
+
+   FALSE
+
+5) Composing
+
+   You can record a composition (a sequence of musical notes) and play
+   it in Snap!
+
+   TRUE
+
+   - [[https://snap.berkeley.edu/project?user=birkenkrahe&project=Harmonica][Example: harmonica melody]]
+
+     #+attr_html: :width 200px
+     #+caption: harmonica melody script
+     [[./img/harmonica.png]]
+
+*** Program 2 - Soundbites
+DEADLINE: <2022-08-30 Tue 11:00>
+
+1) Create a new project named "~Soundbites~", with a script that does
+   the following when clicked:
+2) The sprite will greet you and tell its name.
+3) It will walk ~100~ steps and then grow in size.
+4) It will jump to ~x = -100~ and ~y = -100~. It will then shrink in size.
+5) It will say "~Hey, I am down here!~"
+6) It will bid farewell with a sound and ~hide~.
+7) Add some ~notes~ to explain what the script does.
+8) Save the ~Soundbites~ project to your projects in the cloud.
+9) Save the script to your computer.
+10) Submit the ~.xml~ file.
+
+**** Program 2 - Solution
+
+Workflow (always test script after adding to it):
+1. Open the main menu, select ~Costumes and pick a character
+2. Change to the ~Scripts~ tab
+3. Add ~Looks::say "I'm Dino!~
+4. Add ~Motion::move...steps~ and enter ~100~
+5. Drag the sprite back to a position on the left side of the stage
+   (for this to work, the sprite must be ~draggable~).
+6. Add ~Looks::set size to 200%~
+7. Add ~Motion::go to x:-100 y:-100~
+8. Enter ~Control::wait 2 secs~ after growing the size (otherwise you
+   won't see the growth)
+9. Add ~Looks::say "Hey, I'm down here!"~
+10. Open main menu, select sounds and import a sound ("Chord")
+11. Add ~play sound "Chord" until done~
+12. Add ~hide~
+
+To run the program again from the original position,
+- add ~show~ at the top, then
+- add ~say "" for 2 secs~
+- add ~clear graphic effects~ at the very end
+
+#+attr_html: :width 200px
+#+caption: Program 2 - soundbites - script
+[[./img/soundbites.png]]
+
+- [[https://drive.google.com/file/d/1UAosCBIEnMEdmAo47uTnjB9Bq4OgeCd7/view?usp=sharing][Video (GDrive)]]
+
+#+attr_html: :width 200px
+#+caption: Program 2 - soundbites - screenshot
+[[./img/soundbites1.png]]
+
+*** Bonus program: composition
+
+Write a program that when clicked plays a composition (a sequence of
+musical notes) - uploaded or self-created. Save the project to the
+cloud and submit the ~.xml~ file.
+
+- [[https://snap.berkeley.edu/project?user=birkenkrahe&project=Harmonica][Example: harmonica melody]]
+
+** Green flag
+
+- The project GreenFlag contains two sprites. Each sprite has its own
+  script. There is no way to run both these scripts simultaneously.
+
+  #+attr_html: :width 400px
+  #+caption: two scripts for two sprites on one stage
+  [[./img/greenflag.png]]
+
+- When attaching the /green flag/ block to each of the scripts, they
+  will start at the same time.
+
+  #+attr_html: :width 400px
+  #+caption: two scripts for two sprites on one stage with green flag
+  [[./img/greenflag1.png]]
+
+- But this is a conversation: to build in pauses, use the ~wait N secs~
+  command:
+
+  #+attr_html: :width 400px
+  #+caption: a conversation between two characters
+  [[./img/greenflag2.png]]
+
+- See project [[https://snap.berkeley.edu/project?user=birkenkrahe&project=GreenFlag][GreenFlag]] in the cloud ([[https://drive.google.com/file/d/13VaRsjnak8CeahCxoPaNPhpdrpCkz4Y6/view?usp=sharing][video/GDrive]])
+
+** Looping
+- See project [[https://snap.berkeley.edu/project?user=birkenkrahe&project=Looping][Looping]] online
+*** Looping commands: ~repeat~ and ~forever~
+
+- Looping (or /iteration/) is the repetition of a sequence of commands
+
+- The commands ~repeat~ and ~forever~ in Snap! allow simple looping
+
+- [ ] What does this command do?
+  #+attr_html: :width 150px
+  #+caption: simple loop with repeat
+  [[./img/repeat.png]]
+
+  #+begin_quote Answer
+  The sprite will move around in a square. Each move takes it 100
+  steps before it turns 90 degrees.
+  #+end_quote
+
+- [ ] What does this command do?
+  #+attr_html: :width 150px
+  #+caption: simple loop with forever
+  [[./img/forever3.png]]
+
+  #+begin_quote Answer
+  The sprite will spin around itself forever - one full spin will take
+  360/5 = 72 iterations.
+  #+end_quote
+
+*** Jumping up and down
+
+- To make a sprite jump up and down repeatedly:
+  1) get the basic command sequence
+  2) repeat the sequence
+
+- This command moves the sprite along the y-axis (vertically):
+
+  [[./img/jump1.png]]
+
+- This command brings it back to the origin:
+
+  [[./img/jump2.png]]
+
+- Finally, we use ~repeat~ to iterate four times:
+
+  [[./img/jump3.png]]
+
+- [[https://snap.berkeley.edu/snap/snap.html#present:Username=birkenkrahe&ProjectName=Looping&editMode&noRun][See the code here.]] The XY-geometry of the background will be covered
+  in an upcoming lesson.
+
+*** Practice jumping up and down
+
+1) Define a new project called "Looping"
+
+*** Smooth motion
+
+- Place your sprite somewhere near the left edge and click the
+  following script:
+
+  #+attr_html: :width 150px
+  #caption: seemingly instantaneous jump to the right
+  [[./img/move.png]]
+
+- Looping reveals that these commands are not instantaneous: the
+  sprite moves the same number of 300 = 10 * 30 steps.
+
+  #+attr_html: :width 150px
+  #caption: loop over a move to the right
+  [[./img/move1.png]]
+
+- Reducing the number of steps per iteration and increasing the number
+  of iterations still moves 300 = 30 * 10 steps, but the movement is
+  now much smoother.
+
+  #+attr_html: :width 150px
+  #caption: loop over a move to the right
+  [[./img/move2.png]]
+
+*** Practice looping
+
+** Animation using costumes
+
+*** TODO Practice animation using costumes
+** TODO Quiz 3: green flag, looping, and costumes
+** TODO Program 3:
+* References
+
+- Joshi (2018). Learn CS Concepts with Snap! [[http://abhayjoshi.net/spark/snap/bsnap.pdf][URL: abhayjoshi.net]].
+
+* <<Glossary>>
+
+| TERM                   | MEANING                                      |
+|------------------------+----------------------------------------------|
+| Data structure         | Order data to make the computer's job easier |
+| Control structure      | Order program flow to make jobs possible     |
+| Imperative programming | Telling the computer what to do              |
+| Application            | Program telling the computer to do a job     |
+| Interface              | Program between a user and the machine       |
+| Snap! Command blocks   | Computing instructions or statements         |
+| Snap! Script           | Assembled commands leading to action         |
+| Snap! Stage            | Where the action is shown                    |
+| Snap! Sprite           | Characters or actors on stage                |
+| Snap! Costume          | Character image (default: "Turtle")          |
+| Snap! Sound            | Library or recorded sound for a sprite       |
+| Green Flag             | Function call (starts scripts together)      |
+| Loop                   | Iteration - repetition of command sequence   |
+
+* Footnotes
+
+[fn:1] This issue leads into deep questions of philosophy, science,
+and even theology. People in all of these fields are split with regard
+to fundamental questions like "will machines ever be truly
+intelligent?", or "are humans not just very complex machines?" As a
+starter, check out the [[https://plato.stanford.edu/entries/artificial-intelligence/][Stanford encyclopedia on AI (2018)]].
+
+[fn:2] This sounds kind of abstract but it is not. Just consider the
+that you can not not think (except perhaps when you sleep), and that
+thinking can have very different qualities, compare e.g. the
+statements /"I'm thinking of you"/, or /"I think therefore I am"/, or /"I
+think that programming is an important skill for any job."/
+
+[fn:3] We will do some of this in this course, but we're only
+scratching the surface. Fortunately, Snap! makes it fairly easy to
+develop fun games and animations.
+
+[fn:4]OOP = Object Oriented Programming is a programming paradigm that
+looks at the world as a collection of objects exchanging
+messages. This eases code reuse and allows you to define object class
+hierarchies.
+
+[fn:5]XML, or eXtensible Markup Language is a layout language that
+looks a lot like HTML, but instead of web page display its focus is on
+wrapping layout information in text-based, tagged files.
+
+[fn:6]This is a file address: the computer needs to keep track of all
+its files. To do this, it uses a hierarchy, like a tree turned upside
+down, with the /root/ at the top. This particular address,
+~/home/pi/Snap-7.3.1/Costumes~ means that the costumes files are located
+in a directory ~/Snap-7.3.1~ (which contains all files for the Snap!
+version 7.3.1), which is contained in a directory ~/pi~ (that's my
+username on this computer), which is contained in the directory ~/home~
+right below the root directory ~/~.
+
+[fn:7]I wonder why! SAP's main business is in Enterprise Resource
+Planning software - these are massive systems that support whole
+companies and all their processes. But SAP is actively pursuing data
+science and predictive AI, which is why they "acquired" Snap! (not
+really, because Snap! is FOSS - Free and Open Source Software).
+
+[fn:8]Fall break: 1-4 October. Last day of fall classes: 2 Dec.
+
+[fn:9]Humanities, Arts, Technology and Science Symposium - lead by
+Student Mentor - prepare poster session for presentation.
+
+[fn:10]I wonder why! SAP's main business is in Enterprise Resource
+Planning software - these are massive systems that support whole
+companies and all their processes. But SAP is actively pursuing data
+science and predictive AI, which is why they "acquired" Snap! (not
+really, because Snap! is FOSS - Free and Open Source Software).
+
+[fn:11]Fall break: 1-4 October. Last day of fall classes: 2 Dec.
+
+[fn:12]Each quiz tests your understanding of the previous lesson.
+
+[fn:13]Joshi, Learn CS Concepts with Snap! (2018).
+
+[fn:14]Weekly in-class assignments supplemented by program assignments
+for home completion and upload at your snap.berkeley.edu project
+location. The last two classroom sessions are reserved for
+presentation of your projects.
