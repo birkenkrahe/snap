@@ -14,11 +14,53 @@ originally date.
 
 See the [[file:syllabus.org][course syllabus]] for a detailed schedule.
 
-* Scots  (Aug-14)   - BOATING RACE
+* TODO Welcome (Aug-12)  - Orientation
+
+- [ ] Welcome to the course
+- [ ] Syllabus for this course
+- [ ] Who Am I? And Who Are You?
+- [ ] Get your free course textbook
+- [ ] First homework assignment: ch. 1.1
+
+* TODO Scots  (Aug-14)   - BOATING RACE
 #+attr_html::width 300px
+#+caption: Claude Monet, Barques Regates a Argenteuil (1874)
 [[./img/sailboats.png]]
-* Week 1  (Aug-16)  - First Look at Snap!
+* TODO Week 1  (Aug-16)  - First Look at Snap!
+
+- [ ] Programming - why and what?
+- [ ] Why Snap!?
+- [ ] Register at snap.berkeley.edu
+- [ ] First Look at Snap!
+- [ ] Any questions? (See also [[https://github.com/birkenkrahe/org/blob/master/FAQ.org][FAQ@GitHub]])
+
+** TODO About me
+
+- German citizen, moved to AR in 08/2021
+- PhD in computational particle physics
+- Prof@HWR Berlin, Germany (on leave)
+- Assoc Prof of data science @Lyon College
+- One personal thing about me: I got a puppy!
+- More [[https://about.me/birkenkrahe][about me]].
+
+  #+attr_html: :width 300px
+  [[./img/poppy.jpg]]
+
+** TODO Introduce yourself
+
+- What are your expectations for this course?
+- Share a personal fact/feeling/opinion!
+
+** TODO Next week
+
+- Read chapter 1.2 Sequence and Sounds
+- Feel free to try stuff on your own!
+- Introduction to the term projects
+
 * Week 2  (Aug-23)  - Sequence and Sounds
+
+** TODO Term projects
+
 * Week 3  (Aug-30)  - Looping and Costumes
 * Week 4  (Sept-06) - Geometry and Motion
 * Week 5  (Sept-13) - Animation project
