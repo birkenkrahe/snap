@@ -1,7 +1,7 @@
 #+title: snap-syllabus
 #+author: Marcus Birkenkrahe
 #+startup: overview hideblocks indent
-#+options: toc:1 num:1 ^:nil
+#+options: toc:nil num:1 ^:nil
 #+subtitle: COR100 Snap! Programming Syllabus
 * General Course Information
 
@@ -88,16 +88,15 @@ the impact of a requirement on your total grade.
 #+name: tbl:grading
 | REQUIREMENT | UNITS | PPU | TOTAL | % of TOTAL |
 |-------------+-------+-----+-------+------------|
-| Quizzes     |    10 |   5 |    50 |        20. |
-| Programs    |     5 |  10 |    50 |        20. |
-| Classwork   |    10 |   5 |    50 |        20. |
-| Exams       |     2 |  25 |    50 |        20. |
-| Project     |     2 |  25 |    50 |        20. |
-| HATS        |     2 |  25 |    50 |        20. |
+| Quizzes     |    12 |   5 |    60 |        20. |
+| Programs    |    10 |  10 |   100 |  33.333333 |
+| Classwork   |    16 |   5 |    80 |  26.666667 |
+| Exam        |     1 |  20 |    20 |  6.6666667 |
+| H.A.T.S.    |     2 |  20 |    40 |  13.333333 |
 |-------------+-------+-----+-------+------------|
-| TOTAL       |       |     |   250 |       100. |
+| TOTAL       |       |     |   300 | 100.000000 |
 |-------------+-------+-----+-------+------------|
-#+TBLFM: @2$4=$2*$3::@2$5=(@2$4/@8$4)*100::@3$4=$2*$3::@3$5=(@3$4/@8$4)*100::@4$4=$2*$3::@4$5=(@4$4/@8$4)*100::@5$4=$2*$3::@5$5=(@5$4/@8$4)*100::@6$4=$2*$3::@6$5=(@6$4/@8$4)*100::@7$4=$2*$3::@7$5=(@7$4/@8$4)*100::@8$4=vsum(@2..@6)::@8$5=vsum(@2..@6)
+#+TBLFM: @2$4=$2*$3::@2$5=(@2$4/@7$4)*100::@3$4=$2*$3::@3$5=(@3$4/@7$4)*100::@4$4=$2*$3::@4$5=(@4$4/@7$4)*100::@5$4=$2*$3::@5$5=(@5$4/@7$4)*100::@6$4=$2*$3::@6$5=(@6$4/@7$4)*100::@7$4=vsum(@2..@6)::@7$5=vsum(@2..@6)
 
 You should be able to see your current grade at any time using the
 Canvas gradebook for the course.
@@ -113,54 +112,40 @@ term results, only straight letters are given (by rounding up).
 |--------+---------------+---------------+--------|
 | 100-98 | A+            |               |        |
 |  97-96 | A             | A (passed -   |        |
-|  95-90 | A-            | very good)    |   225. |
+|  95-90 | A-            | very good)    |   270. |
 |--------+---------------+---------------+--------|
 |  89-86 | B+            |               |        |
 |  85-80 | B             | B (passed -   |        |
-|  79-76 | B-            | good)         |   190. |
+|  79-76 | B-            | good)         |   228. |
 |--------+---------------+---------------+--------|
 |  75-70 | C+            |               |        |
 |  69-66 | C             | C (passed -   |        |
-|  65-60 | C-            | satisfactory) |   150. |
+|  65-60 | C-            | satisfactory) |   180. |
 |--------+---------------+---------------+--------|
 |  59-56 | D+            |               |        |
-|  55-50 | D             | D (passed)    |   125. |
+|  55-50 | D             | D (passed)    |   150. |
 |--------+---------------+---------------+--------|
 |   49-0 | F             | F (failed)    |        |
 |--------+---------------+---------------+--------|
-#+TBLFM: @4$4=0.9*250::@7$4=0.76*250::@10$4=0.6*250::@12$4=.50*250
+#+TBLFM: @4$4=0.9*300::@7$4=0.76*300::@10$4=0.6*300::@12$4=.50*300
 
 *** Quizzes
-
 - Complete in class
 - Recall last chapter or section of class
 - Read relevant textbook chapters
-
 *** Programming assignments
-
 - Solve programming problems in or outside of class
 - Complete assignments outside of class if necessary
 - Be ready to present your solutions
-
 *** Class work / attendance
-
 - Complete assignments in class (participation)
 - Upload completed assignments (homework)
 - Be ready to present your results in class
-
 *** Exams
-- Midterm exam sourced from quiz 1-5
-- Final exam sourced from quiz 1-10
-
-*** Independent study project
-
-- Study a problem of your choice (options given)
-- Present prototype results for midterm grades
-- Present final result at end of course
-- Present during poster session at HATS
-
+- Final exam sourced from the quizzes only
+- Multiple choice questions only
+- Online exam taken in the classroom
 *** Humanities, Arts, and Science Symposium (HATS)
-
 - Participate in planning session
 - Co-create poster session
 - Present poster session (rotating groups)
@@ -368,21 +353,22 @@ possible - otherwise you risk losing touch with the material.
 
   | WEEK | DATE[fn:2]  | TESTS   | ASSIGNMENT     | READ TEXTBOOK CHAPTER     |
   |------+-------------+---------+----------------+---------------------------|
+  |    0 | Fri-12-Aug  |         |                |                           |
   |    1 | Tue-16-Aug  |         |                | 1.1 First Look at Snap!   |
   |    2 | Tue-23-Aug  | Quiz 1  | Program 1      | 1.2 Sequence and Sounds   |
   |    3 | Tue-30-Aug  | Quiz 2  | Program 2      | 1.3 Looping and Costumes  |
-  |    4 | Tue-06-Sept | Quiz 3  | Program 3:     | 1.4 Geometry and Motion   |
-  |    5 | Tue-13-Sept | Quiz 4  | "Animation"    | 1.5 Animation project     |
-  |    6 | Tue-20-Sept | Quiz 5  | Sprint Review  | 1.6 Broadcasting          |
-  |    7 | Tue-27-Sept | EXAM    | Sprint Review  |                           |
-  |    8 | Tue-11-Oct  | Quiz 6  | Program 4:     | 2.1 Events, Concurrency   |
-  |    9 | Tue-18-Oct  | Quiz 7  | "Helicopter"   | 2.2. Keyboard Interaction |
-  |   10 | Tue-25-Oct  | Quiz 8  | Program 5:     | 3.1 Mouse Interaction     |
-  |   11 | Tue-01-Nov  | Quiz 9  | "Game of Maze" | 3.2 Script Variables      |
-  |   12 | Tue-08-Nov  | Quiz 10 | H.A.T.S.[fn:2] |                           |
-  |   13 | Tue-15-Nov  | EXAM    |                |                           |
-  |   14 | Tue-22-Nov  |         | Sprint Review  |                           |
-  |   15 | Tue-29-Nov  |         | Sprint Review  |                           |
+  |    4 | Tue-06-Sept | Quiz 3  | Program 3      | 1.4 Geometry and Motion   |
+  |    5 | Tue-13-Sept | Quiz 4  | Program 4      | 1.5 Animation project     |
+  |    6 | Tue-20-Sept | Quiz 5  | Program 5      | 1.6 Broadcasting          |
+  |    7 | Tue-27-Sept | Quiz 6  | Program 6      | 1.7 Project Animation     |
+  |    8 | Tue-11-Oct  | Quiz 7  | Program 7      | 2.1 Events, Concurrency   |
+  |    9 | Tue-18-Oct  | Quiz 8  | Program 8      | 2.2. Keyboard Interaction |
+  |   10 | Tue-25-Oct  | Quiz 9  | Program 9      | 2.3 Project Helicopter    |
+  |   11 | Tue-01-Nov  | Quiz 10 | Program 10     | 3.1 Mouse Interaction     |
+  |   12 | Tue-08-Nov  | Quiz 11 | H.A.T.S.[fn:3] | 3.2 Variables             |
+  |   13 | Tue-15-Nov  | Quiz 12 |                | 3.3 Project Game of Maze  |
+  |   14 | Tue-22-Nov  | EXAM    |                |                           |
+  |   15 | Tue-29-Nov  |         | H.A.T.S        |                           |
 
 ** References
 
@@ -402,4 +388,7 @@ really, because Snap! is FOSS - Free and Open Source Software).
 [fn:2]Fall break: 1-4 October. Last day of fall classes: 2 Dec.
 
 [fn:3]Humanities, Arts, Technology and Science Symposium - lead by
-Student Mentor - prepare poster session for presentation.
+Student Mentor - prepare poster session for presentation. The poster
+could feature Snap! as a tool for teaching how to program, make games
+and design animations. It could use programs from the class or
+projects found at the Snap! site at the U of Berkeley.
