@@ -339,7 +339,7 @@ possible - otherwise you risk losing touch with the material.
 ** Schedule and session content
 
 - Extra dates:
-
+  #+name: tab:extra
   | DATE       | EXTRA CURRICULAR       |
   |------------+------------------------|
   | Fri-12-Aug | ORIENTATION            |
@@ -350,7 +350,7 @@ possible - otherwise you risk losing touch with the material.
   | Thu-20-Oct | SERVICE DAY            |
 
 - Classroom sessions:
-
+  #+name: tab:schedule
   | WEEK | DATE[fn:2]  | TESTS   | ASSIGNMENT     | READ TEXTBOOK CHAPTER     |
   |------+-------------+---------+----------------+---------------------------|
   |    0 | Fri-12-Aug  |         |                |                           |

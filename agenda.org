@@ -12,9 +12,12 @@ If we don't manage to finish a topic in one session, it'll be
 finished in the subsequent session(s) without change of the
 originally date.
 
-See the [[file:syllabus.org][course syllabus]] for a detailed schedule.
+See the course syllabus for a detailed schedule.
 
-* TODO Welcome (Aug-12)  - Orientation
+* Welcome (Aug-12)  - Orientation
+
+  #+attr_html: :width 400px
+  [[./img/snaplogo.png]]
 
 - [ ] Welcome to the course
 - [ ] Syllabus for this course
@@ -22,11 +25,11 @@ See the [[file:syllabus.org][course syllabus]] for a detailed schedule.
 - [ ] Get your free course textbook
 - [ ] First homework assignment: ch. 1.1
 
-* TODO Scots  (Aug-14)   - BOATING RACE
+* Scots  (Aug-14)   - BOATING RACE
 #+attr_html::width 300px
 #+caption: Claude Monet, Barques Regates a Argenteuil (1874)
 [[./img/sailboats.png]]
-* TODO Week 1  (Aug-16)  - First Look at Snap!
+* Week 1  (Aug-16)  - First Look at Snap!
 
 - [ ] Programming - why and what?
 - [ ] Why Snap!?
