@@ -13,7 +13,7 @@
 - Office hours: Monday through Friday after class (see Canvas)
 - Textbook: Joshi A B (2018). Learn CS Concepts with Snap!
 
-** About reading the book / further studies
+* About reading the book / further studies
 
 There aren't a lot of books about Snap! because the language is easy
 to learn and needs to be experienced rather than read about. As is
@@ -31,7 +31,7 @@ For further studies, I recommend the Snap! courses offered for free by
 that employs Snap!'s main developer and supports the development of
 the language[fn:1].
 
-** Objectives
+* Objectives
 
 In this course, you will complete a series of game and animation
 projects using the visual, drag-and-drop programming language Snap!
@@ -47,7 +47,7 @@ videos. You'll get to present your own work and (optionally) publish
 your finished projects for the whole world to see, and if things go
 well, perhaps we'll go to Snap!Con in California next year!
 
-** Target audience
+* Target audience
 
 This course is for you if you're curious about visual programming, if
 you don't know if working with computers is for you, or if you're
@@ -58,7 +58,7 @@ programming or media computation, you'll be right at home and can add
 visual languages to your skillset. The course also serves as an easy
 entry into computer or data science degree programs.
 
-** Student Learning Outcomes
+* Student Learning Outcomes
 
 Students who complete YearOne COR 100 "Snap! Programming Playground",
 will be able to:
@@ -70,7 +70,7 @@ will be able to:
 - Develop your critical thinking skills
 - Know how to effectively present assignment results
 
-** Course requirements
+* Course requirements
 
 No prior knowledge required. Some knowledge of, and experience with
 computers is useful but not critical. Curiosity is essential. You will
@@ -79,7 +79,7 @@ prepare you for further studies in computer and data science, or in
 other disciplines that use modern computing, i.e. every discipline,
 from accounting to zoology).
 
-** Grading system
+* Grading system
 
 The table lists course requirements, number of units (classroom
 sessions), points-per-unit (PPU), total points per requirement, and
@@ -88,20 +88,19 @@ the impact of a requirement on your total grade.
 #+name: tbl:grading
 | REQUIREMENT | UNITS | PPU | TOTAL | % of TOTAL |
 |-------------+-------+-----+-------+------------|
-| Quizzes     |    12 |   5 |    60 |        20. |
+| Quizzes     |    13 |   5 |    65 |  21.666667 |
 | Programs    |    10 |  10 |   100 |  33.333333 |
-| Classwork   |    16 |   5 |    80 |  26.666667 |
-| Exam        |     1 |  20 |    20 |  6.6666667 |
-| H.A.T.S.    |     2 |  20 |    40 |  13.333333 |
+| Classwork   |    15 |   5 |    75 |        25. |
+| H.A.T.S.    |     2 |  30 |    60 |        20. |
 |-------------+-------+-----+-------+------------|
-| TOTAL       |       |     |   300 | 100.000000 |
+| TOTAL       |       |     |   300 |       100. |
 |-------------+-------+-----+-------+------------|
-#+TBLFM: @2$4=$2*$3::@2$5=(@2$4/@7$4)*100::@3$4=$2*$3::@3$5=(@3$4/@7$4)*100::@4$4=$2*$3::@4$5=(@4$4/@7$4)*100::@5$4=$2*$3::@5$5=(@5$4/@7$4)*100::@6$4=$2*$3::@6$5=(@6$4/@7$4)*100::@7$4=vsum(@2..@6)::@7$5=vsum(@2..@6)
+#+TBLFM: @2$4=$2*$3::@2$5=(@2$4/@6$4)*100::@3$4=$2*$3::@3$5=(@3$4/@6$4)*100::@4$4=$2*$3::@4$5=(@4$4/@6$4)*100::@5$4=$2*$3::@5$5=(@5$4/@6$4)*100::@6$4=vsum(@2..@5)::@6$5=vsum(@2..@5)
 
 You should be able to see your current grade at any time using the
 Canvas gradebook for the course.
 
-*** Grading table
+* Grading table
 
 This table is used to convert completion rates into letter grades. For
 the midterm results, letter grades still carry signs, while for the
@@ -129,23 +128,19 @@ term results, only straight letters are given (by rounding up).
 |--------+---------------+---------------+--------|
 #+TBLFM: @4$4=0.9*300::@7$4=0.76*300::@10$4=0.6*300::@12$4=.50*300
 
-*** Quizzes
+* Quizzes
 - Complete in class
 - Recall last chapter or section of class
 - Read relevant textbook chapters
-*** Programming assignments
+* Programming assignments
 - Solve programming problems in or outside of class
 - Complete assignments outside of class if necessary
 - Be ready to present your solutions
-*** Class work / attendance
+* Class work / attendance
 - Complete assignments in class (participation)
 - Upload completed assignments (homework)
 - Be ready to present your results in class
-*** Exams
-- Final exam sourced from the quizzes only
-- Multiple choice questions only
-- Online exam taken in the classroom
-*** Humanities, Arts, and Science Symposium (HATS)
+* Humanities, Arts, and Science Symposium (HATS)
 - Participate in planning session
 - Co-create poster session
 - Present poster session (rotating groups)
@@ -266,12 +261,11 @@ of this syllabus. Those details will include at least the following:
 - Details about what constitutes acceptable and unacceptable student
   collaboration on graded work.
 - A clear statement about which LMS is being used for the course.
-* Course specific information
-** Learning Management System (LMS)
+* Learning Management System (LMS)
 
-We will use Canvas in this course.
+[[https://lyon.instructure.com/courses/865][We will use Canvas in this course]].
 
-** Assignments and Honor Code
+* Assignments and Honor Code
 
 There will be several assignments during the summer school,
 including programming assignments and multiple-choice tests. They
@@ -326,7 +320,7 @@ an extension. Extensions will *not* be granted for reasons such as:
     please e-mail me or leave a message on my phone before the
     scheduled time, and we can make arrangements when you return.
 
-** Attendance policy
+* Attendance policy
 
 In accordance with college policy, you must attend a minimum of 80% of
 non-cancelled meetings without risking a fail. This means that you can
@@ -336,7 +330,7 @@ the class. Any missed meetings result in an [[https://catalog.lyon.edu/class-att
 You should take care not to miss consecutive sessions if at all
 possible - otherwise you risk losing touch with the material.
 
-** Schedule and session content
+* Schedule and session content
 
 - Extra dates:
   #+name: tab:extra
@@ -367,11 +361,10 @@ possible - otherwise you risk losing touch with the material.
   |   11 | Tue-01-Nov  | Quiz 10 | Program 10     | 3.1 Mouse Interaction     |
   |   12 | Tue-08-Nov  | Quiz 11 | H.A.T.S.[fn:3] | 3.2 Variables             |
   |   13 | Tue-15-Nov  | Quiz 12 |                | 3.3 Project Game of Maze  |
-  |   14 | Tue-22-Nov  | EXAM    |                |                           |
+  |   14 | Tue-22-Nov  | Quiz 13 |                |                           |
   |   15 | Tue-29-Nov  |         | H.A.T.S        |                           |
 
-** References
-
+* References
 - Huegle J/Moenig J (2018). Get coding with Snap!. [[https://open.sap.com/courses/snap1/][URL: open.sap.com]].
 - Huegle J/Moenig J (2020). From media computation to data
   science. [[https://open.sap.com/courses/snap2/][URL: open.sap.com]].
