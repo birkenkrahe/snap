@@ -2,7 +2,7 @@
 #+AUTHOR:Marcus Birkenkrahe
 #+SUBTITLE: COR 100 - Fall 2022
 #+OPTIONS: toc:1
-#+STARTUP: overview hideblocks indent
+#+STARTUP: overview hideblocks indent inlineimages
 * README
 
 Agenda overview - what I had planned and what we achieved in each
@@ -26,7 +26,8 @@ See the course syllabus for a detailed schedule.
 - [ ] First homework assignment: ch. 1.1
 
 * Scots  (Aug-14)   - BOATING RACE
-#+attr_html::width 300px
+
+#+attr_html: :width 300px
 #+caption: Claude Monet, Barques Regates a Argenteuil (1874)
 [[./img/sailboats.png]]
 * Week 1  (Aug-16)  - First Look at Snap!
