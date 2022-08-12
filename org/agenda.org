@@ -17,7 +17,7 @@ See the course syllabus for a detailed schedule.
 * Welcome (Aug-12)  - Orientation
 
   #+attr_html: :width 400px
-  [[./img/snaplogo.png]]
+  [[../img/snaplogo.png]]
 
 - [ ] Welcome to the course
 - [ ] Syllabus for this course
@@ -25,11 +25,45 @@ See the course syllabus for a detailed schedule.
 - [ ] Get your free course textbook
 - [ ] First homework assignment: ch. 1.1
 
+* Who am I? (Marcus Speh Birkenkrahe)
+
+#+attr_html: :width 200px
+[[../img/poppy.jpg]]
+
+1) *One memorable thing about me.*
+
+2) *Why I am in this course.*
+
+3) *What I would really like (for this course)*.
+
+4) *What I would not like (for this course)*.
+
+5) *My word for today.*
+
+
+* Who are you?
+
+  #+attr_html: :width 250px
+  [[../img/monalisa.jpg]]
+
+1) What's your *name*?
+
+2) What's your main *interest* (at Lyon)?
+
+3) What's your main *interest* (outside of Lyon)?
+
+4) What would you like to *take away* from this course?
+
+5) What would you like to *avoid* in this course?
+
+6) What's your *word* for today?
+
 * Scots  (Aug-14)   - BOATING RACE
 
-#+attr_html: :width 300px
+#+attr_html: :width 500px
 #+caption: Claude Monet, Barques Regates a Argenteuil (1874)
-[[./img/sailboats.png]]
+[[../img/sailboats.png]]
+
 * Week 1  (Aug-16)  - First Look at Snap!
 
 - [ ] Programming - why and what?
@@ -37,23 +71,6 @@ See the course syllabus for a detailed schedule.
 - [ ] Register at snap.berkeley.edu
 - [ ] First Look at Snap!
 - [ ] Any questions? (See also [[https://github.com/birkenkrahe/org/blob/master/FAQ.org][FAQ@GitHub]])
-
-** TODO About me
-
-- German citizen, moved to AR in 08/2021
-- PhD in computational particle physics
-- Prof@HWR Berlin, Germany (on leave)
-- Assoc Prof of data science @Lyon College
-- One personal thing about me: I got a puppy!
-- More [[https://about.me/birkenkrahe][about me]].
-
-  #+attr_html: :width 300px
-  [[./img/poppy.jpg]]
-
-** TODO Introduce yourself
-
-- What are your expectations for this course?
-- Share a personal fact/feeling/opinion!
 
 ** TODO Next week
 
