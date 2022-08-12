@@ -389,5 +389,5 @@ really, because Snap! is FOSS - Free and Open Source Software).
 [fn:3]Humanities, Arts, Technology and Science Symposium - lead by
 Student Mentor - prepare poster session for presentation. The poster
 could feature Snap! as a tool for teaching how to program, make games
-and design animations. It could use programs from the class or
-projects found at the Snap! site at the U of Berkeley.
+and design animations. It could use programs from the class projects
+found at the Snap! site at the U of Berkeley, or your own projects

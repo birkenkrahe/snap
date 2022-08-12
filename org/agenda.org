@@ -19,13 +19,13 @@ See the course syllabus for a detailed schedule.
   #+attr_html: :width 400px
   [[../img/snaplogo.png]]
 
-- [ ] Welcome to the course
-- [ ] Syllabus for this course
-- [ ] Who Am I? And Who Are You?
-- [ ] Get your free course textbook
-- [ ] First homework assignment: ch. 1.1
+- [X] Welcome to the course
+- [X] Who Am I? And Who Are You?
+- [X] Syllabus for this course
+- [X] Get your free course textbook
+- [X] First homework assignment: ch. 1.1
 
-* Who am I? (Marcus Speh Birkenkrahe)
+** Who am I? (Marcus Speh Birkenkrahe)
 
 #+attr_html: :width 200px
 [[../img/poppy.jpg]]
@@ -40,13 +40,12 @@ See the course syllabus for a detailed schedule.
 
 5) *My word for today.*
 
-
-* Who are you?
+** Who are you?
 
   #+attr_html: :width 250px
   [[../img/monalisa.jpg]]
 
-1) What's your *name*?
+1) What's your *name*? (And where you're from)
 
 2) What's your main *interest* (at Lyon)?
 
@@ -58,7 +57,33 @@ See the course syllabus for a detailed schedule.
 
 6) What's your *word* for today?
 
-* Scots  (Aug-14)   - BOATING RACE
+** Summary - Today's Links
+
+Here's the summary of today's session as promised:
+
+1) [[https://tinyurl.com][Useful app to shorten URLs]]
+2) [[https://www.pablopicasso.org/guernica.jsp][20 facts about Picasso's Guernica]]
+3) [[https://liveandletsfly.com/mona-lisa-attacked/][Mona Lisa attacked in Louvre by young man disguised as old lady]]
+4) [[https://lyon.instructure.com/courses/865][Canvas platform for the course]]
+5) [[https://github.com/birkenkrahe/snap][GitHub platform for the course]]
+6) How should you read? ([[https://github.com/birkenkrahe/org/blob/master/FAQ.org#how-should-you-read][FAQ]] on GitHub)
+7) [[https://snap.berkeley.edu/project?user=birkenkrahe&project=TimeMachine][Snap! Time Machine project]]
+8) [[https://francescocirillo.com/pages/pomodoro-technique][Time management with the Pomodoro Technique]]
+9) [[https://www.pmi.org/learning/library/agile-project-management-scrum-6269][Agile project management with Scrum]]
+10) [[https://drive.google.com/drive/folders/1XoujMRyofhOQOZwIaAw5hVPRdlwtribg?usp=sharing][Whiteboard screenshots (GDrive)]]
+
+Your first assignment is to read the introduction and chapter 1.1
+("First Look at Snap!") in the textbook that you received in class
+(p.11-20).
+
+You do not have to work through this: we will take our time with it -
+just give it a quick look over a bowl of rice or cereal. It will be
+easier for you to follow if you have already seen the material, and
+perhaps you're intrigued and want to read on or register at
+snap.berkeley.edu already and try some of these commands.  If not, no
+harm done - we'll do this in class together, without rush or blush.
+
+* Scots  (Aug-14)   - Win the Boating Race
 
 #+attr_html: :width 500px
 #+caption: Claude Monet, Barques Regates a Argenteuil (1874)
