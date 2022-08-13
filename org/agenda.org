@@ -64,13 +64,15 @@ Here's the summary of today's session as promised:
 1) [[https://tinyurl.com][Useful app to shorten URLs]]
 2) [[https://www.pablopicasso.org/guernica.jsp][20 facts about Picasso's Guernica]]
 3) [[https://liveandletsfly.com/mona-lisa-attacked/][Mona Lisa attacked in Louvre by young man disguised as old lady]]
-4) [[https://lyon.instructure.com/courses/865][Canvas platform for the course]]
-5) [[https://github.com/birkenkrahe/snap][GitHub platform for the course]]
-6) How should you read? ([[https://github.com/birkenkrahe/org/blob/master/FAQ.org#how-should-you-read][FAQ]] on GitHub)
-7) [[https://snap.berkeley.edu/project?user=birkenkrahe&project=TimeMachine][Snap! Time Machine project]]
-8) [[https://francescocirillo.com/pages/pomodoro-technique][Time management with the Pomodoro Technique]]
-9) [[https://www.pmi.org/learning/library/agile-project-management-scrum-6269][Agile project management with Scrum]]
-10) [[https://drive.google.com/drive/folders/1XoujMRyofhOQOZwIaAw5hVPRdlwtribg?usp=sharing][Whiteboard screenshots (GDrive)]]
+4) [[https://www.louvre.fr/en/explore/the-palace/from-the-mona-lisa-to-the-wedding-feast-at-cana][The painting across from the Mona Lisa]]
+5) [[https://lyon.instructure.com/courses/865][Canvas platform for the course]]
+6) [[https://github.com/birkenkrahe/snap][GitHub platform for the course]]
+7) How should you read? ([[https://github.com/birkenkrahe/org/blob/master/FAQ.org#how-should-you-read][FAQ]] on GitHub)
+8) [[https://snap.berkeley.edu/project?user=birkenkrahe&project=TimeMachine][Snap! Time Machine project]]
+9) [[https://francescocirillo.com/pages/pomodoro-technique][Time management with the Pomodoro Technique]]
+10) [[https://templatelab.com/wp-content/uploads/2019/08/research-poster-template-18.jpg][Academic research poster template]]
+11) [[https://www.pmi.org/learning/library/agile-project-management-scrum-6269][Agile project management with Scrum]]
+12) [[https://drive.google.com/drive/folders/1XoujMRyofhOQOZwIaAw5hVPRdlwtribg?usp=sharing][Whiteboard screenshots (GDrive)]]
 
 Your first assignment is to read the introduction and chapter 1.1
 ("First Look at Snap!") in the textbook that you received in class
@@ -83,14 +85,24 @@ perhaps you're intrigued and want to read on or register at
 snap.berkeley.edu already and try some of these commands.  If not, no
 harm done - we'll do this in class together, without rush or blush.
 
-* Scots  (Aug-14)   - Win the Boating Race
+* Scots  (Aug-14)   - Win the Rafting Race
 
 #+attr_html: :width 500px
-#+caption: Claude Monet, Barques Regates a Argenteuil (1874)
-[[../img/sailboats.png]]
+#+caption: The Raft of the Medusa, by Theodore Gericault (1818)
+[[../img/medusa.jpg]]
+
+#+begin_notes
+Image: "The painting depicts a moment from the aftermath of the wreck
+of the French naval frigate Méduse, which ran aground off the coast of
+today's Mauritania on 2 July 1816. On 5 July 1816, at least 147 people
+were set adrift on a hurriedly constructed raft; all but 15 died in
+the 13 days before their rescue, and those who survived endured
+starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa][Wikipedia]])
+#+end_notes
 
 * Week 1  (Aug-16)  - First Look at Snap!
 
+- [ ] Quizzes: after signing the honor code = complete before class!
 - [ ] Programming - why and what?
 - [ ] Why Snap!?
 - [ ] Register at snap.berkeley.edu
