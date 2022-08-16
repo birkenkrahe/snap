@@ -103,8 +103,8 @@ starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.o
 * You said you'd win...and you did!
 
 #+attr_html: :width 500px
-#+caption: Raft Race 2022, Lyon College
-[[../img/raftrace.jpg]]
+#+caption: Raft Race 2022, Lyon College (Source: twitter.com)
+[[../img/raftrace.png]]
 
 [[https://drive.google.com/drive/folders/1ZzuhkyuSzIx6_97Hlq2jUFqHuGuBRe8A?usp=sharing][Link to videos and pics (GDrive)]]
 
