@@ -1,4 +1,4 @@
-#+TITLE:CC Agenda
+#+TITLE:Snap! Agenda
 #+AUTHOR:Marcus Birkenkrahe
 #+SUBTITLE: COR 100 - Fall 2022
 #+OPTIONS: toc:1
@@ -110,12 +110,35 @@ starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.o
 
 * Week 1  (Aug-16)  - First Look at Snap!
 
-- [ ] Quizzes: after signing the honor code = complete before class!
-- [ ] Programming - why and what?
-- [ ] Why Snap!?
-- [ ] Register at snap.berkeley.edu
-- [ ] First Look at Snap!
-- [ ] Any questions? (See also [[https://github.com/birkenkrahe/org/blob/master/FAQ.org][FAQ@GitHub]])
+- [X] Quizzes: after signing the honor code = complete before class!
+- [X] Programming - why and what?
+- [X] Why Snap!?
+- [X] Register at snap.berkeley.edu
+- [X] First Look at Snap!
+- [X] Any questions? (See also [[https://github.com/birkenkrahe/org/blob/master/FAQ.org][FAQ@GitHub]])
+
+** Summary, Aug 16
+
+A short summary of today's topics (see [[https://lyon.instructure.com/courses/865/pages/links][whiteboard]]):
+
+- [[https://en.wikipedia.org/wiki/Free_and_open-source_software][FOSS]]
+- [[https://en.wikipedia.org/wiki/Fortran][FORTRAN]]
+- [[https://www.datapine.com/dashboard-examples-and-templates/][Business dashboards (examples)]]
+- [[https://futurism.com/engineer-begged-google-test-experimental-ai-sentient][Google's false sentient AI, LaMDA]]
+- [[https://thelevel.ai/blog/a-glimpse-into-the-future-openais-gpt-3-2/][GPT-3 language model (Natural Language Processing)]]
+- [[https://plato.stanford.edu/entries/turing-test/][Turing test]]
+
+And a cartoon by the inimitable xkcd: "Skynet becomes too self-aware"
+(in case you're not aware: "skynet" is a thing from "Terminator"):
+[[../img/skynet.png]]
+
+*References:*
+- Harrison M (2022). Fired Engineer Says He Begged Google to Test
+  Whether Experimental AI Was Sentient. URL: futurism.com
+- N.A. (March 30, 2021). A glimpse into the future: OpenAI's
+  GPT-3. URL: thelevel.ai
+- Oppy G, Dowe D (2021). The Turing Test. Stanford Encyclopedia of
+  Philosophy. URL: plato.stanford.edu
 
 ** TODO Next week
 
@@ -125,13 +148,17 @@ starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.o
 
 * Week 2  (Aug-23)  - Sequence and Sounds
 
-** TODO Term projects
+- [ ] Notice the references in last week's summary
+- [ ] Review: quiz 1
+
+* TODO Term project - H.A.T.S.
+
+
 
 * Week 3  (Aug-30)  - Looping and Costumes
 * Week 4  (Sept-06) - Geometry and Motion
 * Week 5  (Sept-13) - Animation project
-* Week 6  (Sept-20) - Broadcasting & Sprint Review I
-* Week 7  (Sept-27) - Mid-term Exam & Sprint Review II
+* Week 6  (Sept-20) - Broadcasting & Sprint Review I* Week 7  (Sept-27) - Mid-term Exam & Sprint Review II
 * Week 8  (Oct-11)  - Events and Concurrency
 * Week 9  (Oct-18)  - Keyboard Interaction
 * Week 10 (Oct-20)  - SERVICE DAY
@@ -141,3 +168,5 @@ starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.o
 * Week 14 (Nov-15)  - Final Exam
 * Week 15 (Nov-22)  - Sprint Review III
 * Week 16 (Nov-23)  - Sprint Review IV
+
+
