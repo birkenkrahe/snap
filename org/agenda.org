@@ -100,6 +100,14 @@ the 13 days before their rescue, and those who survived endured
 starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa][Wikipedia]])
 #+end_notes
 
+* You said you'd win...and you did!
+
+#+attr_html: :width 500px
+#+caption: Raft Race 2022, Lyon College
+[[../img/raftrace.jpg]]
+
+[[https://drive.google.com/drive/folders/1ZzuhkyuSzIx6_97Hlq2jUFqHuGuBRe8A?usp=sharing][Link to videos and pics (GDrive)]]
+
 * Week 1  (Aug-16)  - First Look at Snap!
 
 - [ ] Quizzes: after signing the honor code = complete before class!
