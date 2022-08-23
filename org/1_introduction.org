@@ -1,4 +1,4 @@
-#+title: Snap! introduction
+#+title: Snap! Introduction
 #+options: toc:nil num:nil ^:nil
 #+startup: overview hideblocks indent inlineimages
 #+subtitle: COR100 Snap! Programming
