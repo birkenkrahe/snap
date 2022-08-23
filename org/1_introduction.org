@@ -1,0 +1,127 @@
+#+title: Snap! introduction
+#+options: toc:nil num:nil ^:nil
+#+startup: overview hideblocks indent inlineimages
+#+subtitle: COR100 Snap! Programming
+* Snap! vs. Scratch
+
+- Web-based online application (HTML5), no desktop app
+
+- Comparison between Snap! and Scratch ([[https://snap.berkeley.edu/about][About Snap!]]):
+  + Snap! allows the user to define *data structures* like trees, heaps,
+    hash tables etc. because you can define a "list of lists".
+  + In Snap!, you can also create *control structures* like functions
+    that allow you to automate things.
+  + Data and control structures are the backbone of any form of
+    *imperative* computer programming.
+
+** Scratch interface
+
+#+attr_html: :width 500px
+#+caption: Scratch 3 interface
+[[./img/snap_scratch.png]]
+
+** Snap! interface
+
+#+attr_html: :width 400px
+#+caption: Snap! 7 interface
+[[./img/snap1.png]]
+* INTRODUCTION
+* Programming
+
+- This could be your first ever programming course. Is it?
+
+  #+begin_quote Survey
+  + What were your other courses about?
+  + What did you take away from them?
+  + What's your view towards programming?
+  #+end_quote
+
+- Why should you bother to learn how to program?
+
+  #+begin_quote Answer:
+  + Understand the relationships of humans and machines[fn:1]
+  + Develop critical thinking skills[fn:2]
+  + Create games and animations[fn:3]
+  #+end_quote
+
+- The diagram shows different relevant levels of programming and
+  computing including hardware (bottom half) and software (top
+  half). In this course, we're working on /"Applications"/ that use the
+  computer to solve problems. Languages other than /Snap!/ on this level
+  include /C++/, /Java/, and /Python/ (all of these are OOP languages[fn:4]).
+  #+attr_html: :width 500px
+  #+caption: levels of computing (Source: Steinhart, 2019).
+  [[./img/steinhart.png]]
+
+- The top level "Users" refers to most people who only use computers
+  (mostly when operating their smart phones, or driving their
+  cars). As with phones or cars, most of the power is under the hood.
+
+- I recommend maintaining a (digital) notebook for this course. That's
+  exactly what I did when working through the textbook, using the [[https://orgmode.org/][GNU
+  Emacs editor with Org-mode]].
+* Why Snap!
+
+- It's a full-fledged programming language
+- It's easy to build animation and games in it
+- It's instantly, freely available online
+- It trains pseudocode and modular design
+- It's suited for data science applications
+- I've always wanted to get into it
+* UNIT 1: LOOPING, BROADCASTING, ANIMATION
+* Concepts
+
+- [X] Snap user interface (UI)
+- [ ] Paint editor
+- [ ] Sequence of commands
+- [ ] Motion commands
+- [ ] Simple looping (repeat, forever)
+- [ ] Absolute motion
+- [ ] Relative motion
+- [ ] Smooth motion using repeat
+- [ ] Nested looping
+- [ ] XY geometry
+- [ ] Costume-based animation
+* FIRST LOOK AT SNAP!
+* What is a User Interface?
+
+- A /user interface/ (UI) is the dashboard or platform that allows a
+  user to interact with an application. It's the first thing that you,
+  as a user, see.
+
+- UI/UX is an important, relatively new, interdisciplinary field that
+  includes art and design, usability analysis, etc. UX focuses on the
+  user's path to solving a problem (like shopping online), while UI
+  focuses on the look of the surface of an interactive product (like a
+  web site for online shopping). More: [[https://www.freecodecamp.org/news/use-user-reseach-to-create-the-perfect-ui-design/][freecodecamp.org video course]].
+* Snap! user interface
+
+- Connect to /snap.berkeley.edu/ and register using your name and Lyon
+  student email address.
+
+- For offline use - on any computer that you can administer,
+  i.e. where you can download and install programs as you please -
+  download the [[https://github.com/jmoenig/Snap/releases/tag/v7.3.1][source files from GitHub]], unpack the files, and open
+  ~snap.html~ in a browser.
+
+- This is how the interface looks like:
+  #+attr_html: :width 500px
+  #+caption: Snap! user interface (Source: Joshi, 2018)
+  [[./img/snap_ui.png]]
+
+- The interface is reminiscent of a movie maker's studio: /commands/ are
+  assembled in the /script/ area, and the resulting action plays out on
+  a /stage/ with a cast of characters called /sprites/. Every sprite has a
+  script associated with it.
+
+- Compare with Windows Movie Maker - commands on the left, script in
+  the lower half of the screen, sprites/characters in the middle, and
+  stage on the right hand side.
+  #+attr_html: :width 500px
+  #+caption: Windows Movie Maker
+  [[./img/snap_moviemaker.jpg]]
+
+- As a programmer, you are writing the script for each sprite,
+  including movements, sounds, and costumes, but you are also the
+  producer, casting director, and editor.
+

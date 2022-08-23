@@ -100,7 +100,7 @@ the 13 days before their rescue, and those who survived endured
 starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa][Wikipedia]])
 #+end_notes
 
-* You said you'd win...and you did!
+** You said you'd win...and you did!
 
 #+attr_html: :width 500px
 #+caption: Raft Race 2022, Lyon College (Source: twitter.com)
@@ -148,14 +148,13 @@ And a cartoon by the inimitable xkcd: "Skynet becomes too self-aware"
 
 * Week 2  (Aug-23)  - Sequence and Sounds
 
-- [ ] Notice the references in last week's summary
-- [ ] Review: quiz 1
-
-* TODO Term project - H.A.T.S.
-
-
+- [ ] Notice the references in last week's [[https://lyon.instructure.com/courses/865/discussion_topics/422][summary]]
+- [ ] Review: [[https://lyon.instructure.com/courses/865/assignments/997?display=full_width][quiz 1]]
+- [ ] Lecture & practice: Making scripts / sequence and sounds
+- [ ] First assignment due next week: "[[https://lyon.instructure.com/courses/865/assignments/999][Alonzo in an aquarium]]"
 
 * Week 3  (Aug-30)  - Looping and Costumes
+* TODO Term project - H.A.T.S.
 * Week 4  (Sept-06) - Geometry and Motion
 * Week 5  (Sept-13) - Animation project
 * Week 6  (Sept-20) - Broadcasting & Sprint Review I* Week 7  (Sept-27) - Mid-term Exam & Sprint Review II
