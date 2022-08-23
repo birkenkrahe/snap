@@ -1,0 +1,106 @@
+#+title: Snap! Scripting
+#+subtitle: COR100 Snap! Programming Fall 2022
+#+options: toc:nil num:nil ^:nil
+#+startup: overview hideblocks indent inlineimages
+  #+attr_html: :width 600px
+  [[../img/snap_dog.png]]
+
+* Sequences
+
+- The word /sequence/ comes from the Latin word /sequi/, "to follow".
+
+- Computers require exact sequences of steps or statements to
+  work - like a to do list:
+  1. Rise and wake puppy.
+  2. Feed puppy.
+  3. Walk puppy.
+
+- Deviations from the prescribed sequence lead to errors.
+
+- The worst errors are those that remain undiscovered: the script will
+  run but it won't do what we expect it to do.
+
+- A script like [[sequence]] below represents a series of steps.
+
+* *Practice* - Sequences
+
+1) Define a new project "Sequence" and build this script
+   in your Snap! dashboard. You can pick a non-standard sprite if you
+   like.
+
+   #+name: sequence
+   #+attr_html: :width 400px
+   #+caption: sample Snap! script (Source: Joshi)
+   [[./img/snap_sequence.png]]
+
+2) When you try to run the script a second time, nothing happens. What
+   could you do to re-run it properly?
+
+   #+begin_quote Answer
+   Add the ~Looks::show~ command at the top.
+   #+end_quote
+
+3) [[https://drive.google.com/file/d/1vcCJr7T_ISMoMmVbsaSSWYojlN0-JGwi/view?usp=sharing][This is how the result should look like (video).]]
+
+   #+attr_html: :width 300px
+   #+caption: screenshot - sample Snap! script (Source: Joshi)
+   [[./img/snap_sequence1.png]]
+
+4) Make the change and re-run the script.
+
+5) Save the [[https://snap.berkeley.edu/project?user=birkenkrahe&project=Sequence][Sequence]] project to the cloud and find it in *My Projects*.
+
+* Sounds
+
+- Every sprite has a ~Sounds~ tab
+
+- You can /import/ an existing sound from the Snap! library (~Sounds~
+  option in the main menu), or you can /upload/ your own sound (mp3).
+
+  #+attr_html: :width 500px
+  #+caption: dog sprite with library barking sound
+  [[./img/snap_dog.png]]
+
+- The ~play sound ... until done~ command moves do the next statement
+  only if the sound file has been played.
+
+  #+attr_html: :width 200px
+  #+caption: Play sound ... until done
+  [[./img/snap_play.png]]
+
+- The ~play sound...~ command starts playing the sound file and moves
+  immediately on to the next statement.
+
+  #+attr_html: :width 150px
+  #+caption: Play sound ...
+  [[./img/snap_play1.png]]
+
+- You can stop all sounds with the ~stop all sounds~ command.
+
+  #+attr_html: :width 120px
+  #+caption: Play sound ...
+  [[./img/snap_play2.png]]
+
+- [ ] What does this script sound like?
+
+  #+attr_html: :width 200px
+  #+caption: Script with sounds
+  [[./img/snap_dog1.png]]
+
+- [ ] What does this script sound like?
+
+  #+attr_html: :width 150px
+  #+caption: Script with sounds
+  [[./img/snap_dog2.png]]
+
+* *Practice* - Sounds
+
+1) Define a new project "SoundCheck".
+2) Pick a costume and a suitable sound.
+3) Write a script that produces 5 consecutive sounds *without loop*.
+4) ~Duplicate~ the script and add a ~repeat~ loop with only one sound
+   command
+5) Save the project to your ~My Projects~ list
+
+[[https://snap.berkeley.edu/project?user=birkenkrahe&project=SoundCheck][Practice solution - soundcheck]]
+
