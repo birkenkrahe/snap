@@ -2,6 +2,7 @@
 #+options: toc:nil num:nil ^:nil
 #+startup: overview hideblocks indent inlineimages
 #+subtitle: COR100 Snap! Programming
+* INTRODUCTION
 * Snap! vs. Scratch
 
 - Web-based online application (HTML5), no desktop app
@@ -25,7 +26,6 @@
 #+attr_html: :width 400px
 #+caption: Snap! 7 interface
 [[./img/snap1.png]]
-* INTRODUCTION
 * Programming
 
 - This could be your first ever programming course. Is it?
