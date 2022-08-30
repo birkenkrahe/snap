@@ -108,7 +108,7 @@ starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.o
 
 [[https://drive.google.com/drive/folders/1ZzuhkyuSzIx6_97Hlq2jUFqHuGuBRe8A?usp=sharing][Link to videos and pics (GDrive)]]
 
-* Week 1  (Aug-16)  - First Look at Snap!
+* Week 1  (Aug-16)  - Welcome to Snap!
 
 - [X] Quizzes: after signing the honor code = complete before class!
 - [X] Programming - why and what?
@@ -148,13 +148,31 @@ And a cartoon by the inimitable xkcd: "Skynet becomes too self-aware"
 
 * Week 2  (Aug-23)  - Sequence and Sounds
 
-- [ ] Notice the references in last week's [[https://lyon.instructure.com/courses/865/discussion_topics/422][summary]]
-- [ ] Review: [[https://lyon.instructure.com/courses/865/assignments/997?display=full_width][quiz 1]]
-- [ ] Lecture & practice: Making scripts / sequence and sounds
-- [ ] First assignment due next week: "[[https://lyon.instructure.com/courses/865/assignments/999][Alonzo in an aquarium]]"
+- [X] Microsoft Office 365 licence through Lyon
+- [X] Notice the references in last week's [[https://lyon.instructure.com/courses/865/discussion_topics/422][summary]]
+- [X] Review: [[https://lyon.instructure.com/courses/865/assignments/997?display=full_width][quiz 1]]
+- [X] Lecture & practice: Making scripts / sequence and sounds
+- [X] First assignment due next week: "[[https://lyon.instructure.com/courses/865/assignments/999][Alonzo in an aquarium]]"
 
 * Week 3  (Aug-30)  - Looping and Costumes
-* TODO Term project - H.A.T.S.
+
+- [ ] There was no quiz for this week (not enough new content)
+- [ ] GitHub issue: [[https://github.com/birkenkrahe/snap/issues/6][visual scripting in game development]]
+- [ ] Today: Sequence and sounds / looping and costumes
+
+** MS Office 365 @Lyon
+
+#+begin_quote
+Prof. Miller: "Today in one of my upper division classes, I was
+talking to students about MS Office and found that at least a few
+didn't know they had *access to the MS Office suite* through their Lyon
+accounts. It occured to me that this would probably be a good thing to
+mention to our Y1 students in class. IT has a good guide for
+installing MS Office [[[https://www.lyon.edu/IT-FAQ][in the IT FAQ]]] that you could share with your
+students."
+#+end_quote
+
+  
 * Week 4  (Sept-06) - Geometry and Motion
 * Week 5  (Sept-13) - Animation project
 * Week 6  (Sept-20) - Broadcasting & Sprint Review I* Week 7  (Sept-27) - Mid-term Exam & Sprint Review II

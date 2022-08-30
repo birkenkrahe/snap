@@ -2,8 +2,8 @@
 #+subtitle: COR100 Snap! Programming Fall 2022
 #+options: toc:nil num:nil ^:nil
 #+startup: overview hideblocks indent inlineimages
-  #+attr_html: :width 600px
-  [[../img/snap_dog.png]]
+#+attr_html: :width 600px
+[[../img/snap_dog.png]]
 
 * Sequences
 
@@ -27,11 +27,10 @@
 1) Define a new project "Sequence" and build this script
    in your Snap! dashboard. You can pick a non-standard sprite if you
    like.
-
    #+name: sequence
    #+attr_html: :width 400px
    #+caption: sample Snap! script (Source: Joshi)
-   [[./img/snap_sequence.png]]
+   [[../img/snap_sequence.png]]
 
 2) When you try to run the script a second time, nothing happens. What
    could you do to re-run it properly?
@@ -44,7 +43,7 @@
 
    #+attr_html: :width 300px
    #+caption: screenshot - sample Snap! script (Source: Joshi)
-   [[./img/snap_sequence1.png]]
+   [[../img/snap_sequence1.png]]
 
 4) Make the change and re-run the script.
 
@@ -59,39 +58,34 @@
 
   #+attr_html: :width 500px
   #+caption: dog sprite with library barking sound
-  [[./img/snap_dog.png]]
+  [[../img/snap_dog.png]]
 
 - The ~play sound ... until done~ command moves do the next statement
   only if the sound file has been played.
-
   #+attr_html: :width 200px
   #+caption: Play sound ... until done
-  [[./img/snap_play.png]]
+  [[../img/snap_play.png]]
 
 - The ~play sound...~ command starts playing the sound file and moves
   immediately on to the next statement.
-
   #+attr_html: :width 150px
   #+caption: Play sound ...
-  [[./img/snap_play1.png]]
+  [[../img/snap_play1.png]]
 
 - You can stop all sounds with the ~stop all sounds~ command.
-
   #+attr_html: :width 120px
   #+caption: Play sound ...
-  [[./img/snap_play2.png]]
+  [[../img/snap_play2.png]]
 
 - [ ] What does this script sound like?
-
   #+attr_html: :width 200px
   #+caption: Script with sounds
-  [[./img/snap_dog1.png]]
+  [[../img/snap_dog1.png]]
 
 - [ ] What does this script sound like?
-
   #+attr_html: :width 150px
   #+caption: Script with sounds
-  [[./img/snap_dog2.png]]
+  [[../img/snap_dog2.png]]
 
 * *Practice* - Sounds
 

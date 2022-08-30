@@ -173,11 +173,11 @@
      #+caption: You can share/unshare, and publish/unpublish projects
      [[../img/snap_share.png]]
 
-     - On the ~My Projects~ page, you also see if a project is shared
-       and/or published.
-       #+attr_html: :width 600px
-       #+caption: My "My Projects" page
-       [[../img/snap_projects.png]]
+   - On the ~My Projects~ page, you also see if a project is shared
+     and/or published.
+     #+attr_html: :width 600px
+     #+caption: My "My Projects" page
+     [[../img/snap_projects.png]]
 
    - You can add projects to collections.
      #+attr_html: :width 600px
