@@ -1,4 +1,4 @@
-#+title: Snap! Scripting
+#+title: Snap! Sequence and sounds
 #+subtitle: COR100 Snap! Programming Fall 2022
 #+options: toc:nil num:nil ^:nil
 #+startup: overview hideblocks indent inlineimages
@@ -9,16 +9,16 @@
 
 - The word /sequence/ comes from the Latin word /sequi/, "to follow".
 
-- Computers require exact sequences of steps or statements to
-  work - like a to do list:
+- Computers require /exact/ sequences of steps or statements to
+  work - like a /to do/ list:
   1. Rise and wake puppy.
   2. Feed puppy.
   3. Walk puppy.
 
-- Deviations from the prescribed sequence lead to errors.
+- /Deviations/ from the prescribed sequence lead to errors.
 
-- The worst errors are those that remain undiscovered: the script will
-  run but it won't do what we expect it to do.
+- The worst errors are those that remain /undiscovered/: the script will
+  run but it won't do what we expect it to do, and /debugging/ is hard.
 
 - A script like [[sequence]] below represents a series of steps.
 
@@ -33,11 +33,11 @@
    [[../img/snap_sequence.png]]
 
 2) When you try to run the script a second time, nothing happens. What
-   could you do to re-run it properly?
+   could you do to re-run it properly? - /Tip: check "Looks" commands./
 
-   #+begin_quote Answer
+   #+begin_notes
    Add the ~Looks::show~ command at the top.
-   #+end_quote
+   #+end_notes
 
 3) [[https://drive.google.com/file/d/1vcCJr7T_ISMoMmVbsaSSWYojlN0-JGwi/view?usp=sharing][This is how the result should look like (video).]]
 
