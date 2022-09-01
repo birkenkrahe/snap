@@ -7,6 +7,8 @@
 [[../img/snaplogo.png]]
 * General Course Information
 
+- Course number and section: COR 100.03
+- Course title: Snap! Programming Playground
 - Meeting Times: Tuesday from 11:00-11:50 am
 - Meeting place: Lyon Building Computer Lab room 104
 - Professor: Marcus Birkenkrahe
@@ -174,7 +176,7 @@ administrative withdrawal and the assigning of an “F” grade at four
 weeks. Students who are administratively withdrawn from more than one
 course will be placed on probation or suspended.
 
-** Disabilities
+** Academic Support
 
 The Morrow Academic Center (MAC) helps students who want to improve
 grades by providing peer-led services including Supplemental
@@ -199,7 +201,6 @@ your student login.
 
 - For Canvas, login at lyon.instructure.com
 - For Schoology, login at lyon.schoology.com
-
 
 ** Disabilities
 
