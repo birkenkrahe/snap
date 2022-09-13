@@ -357,7 +357,7 @@ possible - otherwise you risk losing touch with the material.
   |    1 | Tue-16-Aug  | +Quiz 0+  |                | 1.1 +First Look at Snap!+   |
   |    2 | Tue-23-Aug  | +Quiz 1+  | +Program 1+      | 1.2 +Sequence and Sounds+   |
   |    3 | Tue-30-Aug  | +Quiz 2+  | +Program 2+      | 1.3 +Looping and Costumes+  |
-  |    4 | Tue-06-Sept | +Quiz 3+  | +Program 3+      | 1.4 Geometry and Motion   |
+  |    4 | Tue-06-Sept | +Quiz 3+  | +Program 3+      | 1.4 +Geometry and Motion+ |
   |    5 | Tue-13-Sept | +Quiz 4+  | Program 4      | 1.5 Animation project     |
   |    6 | Tue-20-Sept | Quiz 5  | Program 5      | 1.6 Broadcasting          |
   |    7 | Tue-27-Sept | Quiz 6  | Program 6      | 1.7 Project Animation     |
