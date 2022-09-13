@@ -1,0 +1,106 @@
+#+title: Snap! XY Geometry, 3D, and Broadcasting
+#+subtitle: COR100 Snap! Programming Fall 2022
+#+options: toc:nil num:nil ^:nil
+#+startup: overview hideblocks indent inlineimages
+#+attr_html: :width 600px
+[[../img/broadcast.jpg]]
+
+* DONE XY Geometry and Motion
+
+- [X] Open a new project ~Geometry~
+  
+- [X] To see the grid, change the background to ~XY-grid~
+
+- Every point on the screen has two coordinates, ~x~ and ~y~
+
+- Every sprite in Snap! has a /center point/ which you can view and
+  change in the paint editor
+
+- [X] Open the ~Paint editor~ on the standard turtle sprite
+
+- [X] Turn the turtle into a *solid red square* in the center
+
+- [X] Go to ~Scripts~ and move the sprite to the exact position (0,0)
+
+- [X] Move it to (-200,100)
+
+- [X] Let it ~glide~ in ~2 secs~ to the center position (0,0)
+
+- [X] Add to the last command by changing the ~x~ position by ~-100~
+
+- [X] Add to the last commands and let the square glide ~5~
+  times in ~0.5 sec~ between the two positions
+
+  [[../img/snap_glide.png]]
+
+- [X] Duplicate the last program and make the square jump up and down
+  *smoothly* between the positions (0,0) and (0,10) ten times.
+
+  /Tip: smooth motion is a combo of ~repeat~ and ~change~./
+
+  [[../img/snap_jump4.png]]
+
+- [X] Add a command to the last program to ~repeat~ the jump ~5~ times -
+  this is called a /nested loop/. 
+
+  [[../img/snap_jump5.png]]
+
+* Absolute motion
+
+- Absolute motion is independent on current position and direction
+
+- Example: "Go to the Salty Dog"
+
+- Snap! commands that describe absolute motion:
+  
+  [[../img/snap_absolute.png]]
+
+* Relative motion
+
+- Relative motion depends on current position and direction
+
+- Example: "Turn right then left"
+
+- Snap! commands that describe relative motion:
+
+  [[../img/snap_relative.png]]
+
+* 3-D effect using looping
+
+- Sprite is fully 2-dimensional
+- For 3D effects you need to create illusions
+- Repetition and size change can do that
+
+- [X] Create a new project and call it ~3dim~
+  
+- [X] Load the costumes ~dove1 a~ and ~dove1 b~
+
+  [[../img/snap_dove.png]]
+
+- [X] Load any outdoor or indoor background
+
+- [ ] Create and run the following script
+
+  [[../img/snap_3dim.png]]
+
+* Synchronize sprites with broadcasting
+
+- Two sprites are not automatically synchronized
+- We can synchronize manually or rely on /broadcasting/
+- Broadcasting = sending message to a listener
+- This is also the basis of OOP
+
+- Snap! broadcasting commands:
+
+  [[../img/snap_broadcast.png]]
+
+- [ ] Create a new project ~broadcasting~
+
+- [ ] Create two sprites and give each one of these scripts:
+
+  #+attr_html: :width 300px
+  [[../img/snap_broadcast3.png]]
+
+  [[../img/snap_broadcast2.png]]
+
+

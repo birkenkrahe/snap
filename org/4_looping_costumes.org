@@ -207,5 +207,5 @@
    [[../img/snap_avery2.png]]
    #+end_quote
 
-   Practice solution: Project animation
+   [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=animation][Practice solution: Project animation]]
 
