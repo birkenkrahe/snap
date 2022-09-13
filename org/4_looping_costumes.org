@@ -132,7 +132,7 @@
 * *Practice* rotation styles
 
 #+attr_html: :width 400px
-[[../img/snap_snap_beetle.png]]
+[[../img/snap_beetle.png]]
 
 1) Define a project that implements the three rotation styles as shown
    [[https://drive.google.com/file/d/1ZNCaNwniNFfj1e2IBMjHlwgvO9SG22Y7/view?usp=sharing][in this video (GDrive)]].
