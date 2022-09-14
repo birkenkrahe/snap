@@ -340,19 +340,19 @@ possible - otherwise you risk losing touch with the material.
 
 - Extra dates:
   #+name: tab:extra
-  | DATE       | EXTRA CURRICULAR                  |
-  |------------+-----------------------------------|
-  | Fri-12-Aug | ORIENTATION                       |
-  | Sat-13-Aug | BUILD BOAT                        |
-  | Sun-14-Aug | BOAT RACE                         |
-  | October    | Midterm check and lunch (12-1 pm) |
-  | Thu-20-Oct | SERVICE DAY                       |
-  | November   | Spragins lunch (12-1 pm)          |
+  | DATE          | EXTRA CURRICULAR                  |
+  |---------------+-----------------------------------|
+  | Fri-12-Aug    | ORIENTATION                       |
+  | Sat-13-Aug    | BUILD BOAT                        |
+  | Sun-14-Aug    | BOAT RACE                         |
+  | Early October | Midterm check and lunch (12-1 pm) |
+  | Thu-20-Oct    | SERVICE DAY                       |
+  | November      | Spragins lunch (12-1 pm)          |
 
 - Classroom sessions:
   #+name: tab:schedule
   | WEEK | DATE[fn:2]  | TESTS   | ASSIGNMENT     | READ TEXTBOOK CHAPTER     |
-  |------+-------------+---------+----------------+---------------------------|
+ |------+-------------+---------+----------------+---------------------------|
   |    0 | Fri-12-Aug  |         |                |                           |
   |    1 | Tue-16-Aug  | +Quiz 0+  |                | 1.1 +First Look at Snap!+   |
   |    2 | Tue-23-Aug  | +Quiz 1+  | +Program 1+      | 1.2 +Sequence and Sounds+   |

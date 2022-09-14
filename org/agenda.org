@@ -177,10 +177,13 @@ students."
 
 * Week 4  (Sept-06) - Geometry and Motion
 
-- [ ] Review questions
-- [ ] Finish "[[https://github.com/birkenkrahe/snap/blob/piHome/org/4_looping_costumes.org][looping and costumes]]"
+- [X] Finish "[[https://github.com/birkenkrahe/snap/blob/piHome/org/4_looping_costumes.org][looping and costumes]]"
 
 * Week 5  (Sept-13) - Animation project
+
+- [ ] Review quiz questions
+- [ ] Project animation (in pairs)
+
 * Week 6  (Sept-20) - Broadcasting & Sprint Review I* Week 7  (Sept-27) - Mid-term Exam & Sprint Review II
 * Week 8  (Oct-11)  - Events and Concurrency
 * Week 9  (Oct-18)  - Keyboard Interaction
