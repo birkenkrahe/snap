@@ -177,19 +177,39 @@ students."
 
 * Week 4  (Sept-06) - Geometry and Motion
 
-- [X] Finish "[[https://github.com/birkenkrahe/snap/blob/piHome/org/4_looping_costumes.org][looping and costumes]]"
+- [X] Finish "[[https://github.com/birkenkrahe/snap/blob/piHome/org/4_looping_costumes.org][looping and costumes]]" (DIY)
 
 * Week 5  (Sept-13) - Animation project
 
-- [ ] Review quiz questions
-- [ ] Project animation (in pairs)
+- [X] Finish "Geometry & Motion", and "Broadcasting"
 
-* Week 6  (Sept-20) - Broadcasting & Sprint Review I* Week 7  (Sept-27) - Mid-term Exam & Sprint Review II
+* Week 6  (Sept-20) - Broadcasting
+#+begin_quote
+"I write an average of five new programs every week. Poets have to
+write poems. I have to write computer programs." [[https://www.quantamagazine.org/computer-scientist-donald-knuth-cant-stop-telling-stories-20200416/][Donald Knuth]]
+#+end_quote
+#+attr_html: :width 500px
+[[../img/knuth.jpg]]
+
+- [ ] [[https://lyon.instructure.com/courses/865/discussion_topics/376][Project animation (in pairs)]]
+- [ ] Put the story, or a short description, in the project notes
+- [ ] Present projects (1 min each)
+- [ ] Post URL of finished project in discussion thread
+
+* Week 7  (Sept-27) - Mid-term Exam
+
+* Review project animation
+
+#+attr_html: :width 600px      
+[[../img/TheMove.png]]
+
+[[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=TheMove][Project URL]]
+
 * Week 8  (Oct-11)  - Events and Concurrency
 * Week 9  (Oct-18)  - Keyboard Interaction
 * Week 10 (Oct-20)  - SERVICE DAY
 * Week 11 (Oct-25)  - Mouse Interaction
-* Week 12 (Nov-01)  - Script Variables
+* Week 12 (Nov-01)  - Script Variables & Spragins lunch
 * Week 13 (Nov-08)  - H.A.T.S. Preparation
 * Week 14 (Nov-15)  - Final Exam
 * Week 15 (Nov-22)  - Sprint Review III
