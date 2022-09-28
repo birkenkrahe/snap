@@ -197,13 +197,30 @@ write poems. I have to write computer programs." [[https://www.quantamagazine.or
 - [ ] Post URL of finished project in discussion thread
 
 * Week 7  (Sept-27) - Mid-term Exam
+  #+attr_html: :width 400px
+  [[../img/themovebpmn.png]]  
+
+- [ ] Review: project animation
+- [ ] Process events
+- [ ] Reset script
+- [ ] Graphic effects
+- [ ] Concurrency
+- [ ] User interaction
+- [ ] Conditions
+- [ ] Sensing touch
+- [ ] Conditional statements
+- [ ] Stopping scripts
 
 * Review project animation
 
 #+attr_html: :width 600px      
 [[../img/TheMove.png]]
 
-[[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=TheMove][Project URL]]
+
+- [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=TheMove]["The Move"]]
+- [[https://snap.berkeley.edu/project?username=isaac%2erice&projectname=High%20Ground]["High Ground"]] (Isaac, Jakobe, Ty)
+- [[https://snap.berkeley.edu/project?username=landryt04&projectname=Carlos%20Birthday]["Carlos' Birthday"]] (Bryceton, Tyler)
+- [[https://snap.berkeley.edu/project?username=rturks7596&projectname=superhero%20movie]["Superhero movie"]] (Rylan "The Lion" Turks)
 
 * Week 8  (Oct-11)  - Events and Concurrency
 * Week 9  (Oct-18)  - Keyboard Interaction
