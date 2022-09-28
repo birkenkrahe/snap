@@ -196,7 +196,7 @@ write poems. I have to write computer programs." [[https://www.quantamagazine.or
 - [ ] Present projects (1 min each)
 - [ ] Post URL of finished project in discussion thread
 
-* Week 7  (Sept-27) - Mid-term Exam
+* Week 7  (Sept-27) - Events, concurrency, graphics
   #+attr_html: :width 400px
   [[../img/themovebpmn.png]]  
 
@@ -211,7 +211,7 @@ write poems. I have to write computer programs." [[https://www.quantamagazine.or
 - [ ] Conditional statements
 - [ ] Stopping scripts
 
-* Review project animation
+** Review project animation
 
 #+attr_html: :width 600px      
 [[../img/TheMove.png]]
@@ -222,7 +222,7 @@ write poems. I have to write computer programs." [[https://www.quantamagazine.or
 - [[https://snap.berkeley.edu/project?username=landryt04&projectname=Carlos%20Birthday]["Carlos' Birthday"]] (Bryceton, Tyler)
 - [[https://snap.berkeley.edu/project?username=rturks7596&projectname=superhero%20movie]["Superhero movie"]] (Rylan "The Lion" Turks)
 
-* Week 8  (Oct-11)  - Events and Concurrency
+* Week 8  (Oct-11)  - 
 * Week 9  (Oct-18)  - Keyboard Interaction
 * Week 10 (Oct-20)  - SERVICE DAY
 * Week 11 (Oct-25)  - Mouse Interaction
@@ -231,5 +231,3 @@ write poems. I have to write computer programs." [[https://www.quantamagazine.or
 * Week 14 (Nov-15)  - Final Exam
 * Week 15 (Nov-22)  - Sprint Review III
 * Week 16 (Nov-23)  - Sprint Review IV
-
-
