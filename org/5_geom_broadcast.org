@@ -5,7 +5,7 @@
 #+attr_html: :width 600px
 [[../img/broadcast.jpg]]
 
-* DONE XY Geometry and Motion
+* XY Geometry and Motion
 
 - [X] Open a new project ~Geometry~
   

@@ -15,17 +15,19 @@
   + Data and control structures are the backbone of any form of
     *imperative* computer programming.
 
+- [[https://myarkansaspbs.pbslearningmedia.org/resource/2143a241-f8d9-4a54-a4a5-b9634797bd28/make-a-video-game/][How To Make A Video Game in Scratch]] (MIT course)
+    
 ** Scratch interface
 
 #+attr_html: :width 500px
 #+caption: Scratch 3 interface
-[[./img/snap_scratch.png]]
+[[../img/snap_scratch.png]]
 
 ** Snap! interface
 
 #+attr_html: :width 400px
 #+caption: Snap! 7 interface
-[[./img/snap1.png]]
+[[../img/snap1.png]]
 * Programming
 
 - This could be your first ever programming course. Is it?
@@ -51,7 +53,7 @@
   include /C++/, /Java/, and /Python/ (all of these are OOP languages[fn:4]).
   #+attr_html: :width 500px
   #+caption: levels of computing (Source: Steinhart, 2019).
-  [[./img/steinhart.png]]
+  [[../img/1_steinhart.png]]
 
 - The top level "Users" refers to most people who only use computers
   (mostly when operating their smart phones, or driving their
@@ -107,7 +109,7 @@
 - This is how the interface looks like:
   #+attr_html: :width 500px
   #+caption: Snap! user interface (Source: Joshi, 2018)
-  [[./img/snap_ui.png]]
+  [[../img/snap_ui.png]]
 
 - The interface is reminiscent of a movie maker's studio: /commands/ are
   assembled in the /script/ area, and the resulting action plays out on
@@ -119,9 +121,31 @@
   stage on the right hand side.
   #+attr_html: :width 500px
   #+caption: Windows Movie Maker
-  [[./img/snap_moviemaker.jpg]]
+  [[../img/snap_moviemaker.jpg]]
 
 - As a programmer, you are writing the script for each sprite,
   including movements, sounds, and costumes, but you are also the
   producer, casting director, and editor.
 
+* Footnotes
+
+[fn:1] This issue leads into deep questions of philosophy, science,
+and even theology. People in all of these fields are split with regard
+to fundamental questions like "will machines ever be truly
+intelligent?", or "are humans not just very complex machines?" As a
+starter, check out the [[https://plato.stanford.edu/entries/artificial-intelligence/][Stanford encyclopedia on AI (2018)]].
+
+[fn:2] This sounds kind of abstract but it is not. Just consider the
+that you can not not think (except perhaps when you sleep), and that
+thinking can have very different qualities, compare e.g. the
+statements /"I'm thinking of you"/, or /"I think therefore I am"/, or /"I
+think that programming is an important skill for any job."/
+
+[fn:3] We will do some of this in this course, but we're only
+scratching the surface. Fortunately, Snap! makes it fairly easy to
+develop fun games and animations.
+
+[fn:4]OOP = Object Oriented Programming is a programming paradigm that
+looks at the world as a collection of objects exchanging
+messages. This eases code reuse and allows you to define object class
+hierarchies.

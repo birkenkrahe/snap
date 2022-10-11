@@ -25,7 +25,7 @@
 
 - You can save your projects in your cloud account (if you are using
   the cloud version of Snap!), or you can save it locally as an XML
-  file[fn:5].
+  file[fn:1].
   #+attr_html: :width 500px
   #+caption: Snap! project example
   [[../img/snap_xml.png]]
@@ -54,7 +54,7 @@
 
 - This is where the costumes library resides on my computer at home
   (because I downloaded the Snap! source code):
-  ~/home/pi/Snap-7.3.1/Costumes~[fn:6].
+  ~/home/pi/Snap-7.3.1/Costumes~[fn:2].
   #+attr_html: :width 600px
   #+caption: Snap! top menu
   [[../img/snap_library.png]]
@@ -199,3 +199,17 @@
 - [[https://drive.google.com/file/d/1ChUnHeeH029J_KDOLFcS8b3ie_RtRiIL/view?usp=sharing][GDrive video]]
 - [[https://snap.berkeley.edu/project?user=birkenkrahe&project=FirstProject][Project URL]]
 
+* Footnotes
+
+[fn:1]XML, or eXtensible Markup Language is a layout language that
+looks a lot like HTML, but instead of web page display its focus is on
+wrapping layout information in text-based, tagged files.
+
+[fn:2]This is a file address: the computer needs to keep track of all
+its files. To do this, it uses a hierarchy, like a tree turned upside
+down, with the /root/ at the top. This particular address,
+~/home/pi/Snap-7.3.1/Costumes~ means that the costumes files are located
+in a directory ~/Snap-7.3.1~ (which contains all files for the Snap!
+version 7.3.1), which is contained in a directory ~/pi~ (that's my
+username on this computer), which is contained in the directory ~/home~
+right below the root directory ~/~.
