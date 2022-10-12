@@ -222,21 +222,29 @@ write poems. I have to write computer programs." [[https://www.quantamagazine.or
 - [[https://snap.berkeley.edu/project?username=landryt04&projectname=Carlos%20Birthday]["Carlos' Birthday"]] (Bryceton, Tyler)
 - [[https://snap.berkeley.edu/project?username=rturks7596&projectname=superhero%20movie]["Superhero movie"]] (Rylan "The Lion" Turks)
 
-* Week 8  (Oct-11)  - Review /
+* Week 8  (Oct-11)  - Review / Keyboard / IF statements
 #+attr_html: :width 400px
 [[../img/6_austen.png]]
 
-- [ ] Thursday 13 Oct: Lyon College Career Fair - attend and lurk!
-- [ ] Victors' lunch: liaise with Hunter! (Any Thursday except 20 Oct)
-- [ ] Review: rolling ball / crazy bird (Bryceton/Tyler)
-- [ ] Lecture/practice/quiz 6: keyboard interaction and conditionals
-- [ ] Programming assignment 6: bouncing ball/color circles (Oct 18)
+- [X] Thursday 13 Oct: Lyon College Career Fair - attend and lurk!
+- [X] Victors' lunch: liaise with Hunter! (Thursday 27th Oct 11.30)
+- [X] Review: rolling ball / crazy bird (Bryceton/Tyler)
+- [X] Lecture/practice/quiz 6: keyboard interaction and conditionals
+- [X] Programming assignment 6: bouncing ball/color circles (Oct 18)
 
-* Week 9  (Oct-18)  - Keyboard Interaction
-* Week 10 (Oct-20)  - SERVICE DAY 
-* Week 11 (Oct-25)  - Mouse Interaction
-* Week 12 (Nov-01)  - Script Variables & Spragins lunch
-* Week 13 (Nov-08)  - H.A.T.S. Preparation
-* Week 14 (Nov-15)  - Final Exam
-* Week 15 (Nov-22)  - Sprint Review III
-* Week 16 (Nov-23)  - Sprint Review IV
+* Week 9  (Oct-18)  - Mouse interaction / variables
+#+attr_html: :width 600px
+[[../img/valkyries.png]]
+
+- [ ] [[https://lyon.instructure.com/courses/865/discussion_topics/939][Assignments due this week]]
+- [ ] Today: Project helicopter (textbook p. 73)
+- [ ] Next: Project Game of Maze, Project Bricks
+- [ ] Topics: mouse interaction, variables and bouncing
+- [ ] You have to type along: [[https://www.inc.com/jeff-haden/youtube-google-video-overconfidence.html][just watching leads to overconfidence]]
+
+* Week 10 (Oct-25)  - Variables for remote control
+* Week 11 (Nov-01)  - Arithmetic, strings, random numbers
+* Week 12 (Nov-08)  - H.A.T.S. Preparation
+* Week 13 (Nov-15)  - H.A.T.S. Lab I: projects
+* Week 14 (Nov-22)  - H.A.T.S. Lab II: projects
+* Week 15 (Nov-29) - H.A.T.S. presentation / prize
