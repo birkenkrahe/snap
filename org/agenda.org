@@ -248,6 +248,8 @@ write poems. I have to write computer programs." [[https://www.quantamagazine.or
 #+attr_html: :width 600px
 [[../img/projecthelicopter.png]]
 
+Instructions at [[https://tinyurl.com/mrwtcjzy][tinyurl.com/mrwtcjzy]]
+
 * Week 10 (Oct-25)  - Variables for remote control
 * Week 11 (Nov-01)  - Arithmetic, strings, random numbers
 * Week 12 (Nov-08)  - H.A.T.S. Preparation
