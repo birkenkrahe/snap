@@ -238,10 +238,10 @@ write poems. I have to write computer programs." [[https://www.quantamagazine.or
 (Source: Apocalypse Now, [[https://youtu.be/GGU1P6lBW6Q][Song of the Valkyries by Richard Wagner]])
 
 - [ ] [[https://lyon.instructure.com/courses/865/discussion_topics/939][Assignments due this week]]
-- [ ] Today: Project helicopter (textbook p. 73)
+- [ ] Today: Project helicopter (textbook p. 73) in groups
 - [ ] Next: Project Game of Maze, Project Bricks
 - [ ] Topics: mouse interaction, variables and bouncing
-- [ ] You have to type along: [[https://www.inc.com/jeff-haden/youtube-google-video-overconfidence.html][just watching leads to overconfidence]]
+- [ ] Always type along: [[https://www.inc.com/jeff-haden/youtube-google-video-overconfidence.html][just watching leads to overconfidence]]
 
 * Week 10 (Oct-25)  - Variables for remote control
 * Week 11 (Nov-01)  - Arithmetic, strings, random numbers
