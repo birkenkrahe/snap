@@ -243,6 +243,11 @@ write poems. I have to write computer programs." [[https://www.quantamagazine.or
 - [ ] Topics: mouse interaction, variables and bouncing
 - [ ] Always type along: [[https://www.inc.com/jeff-haden/youtube-google-video-overconfidence.html][just watching leads to overconfidence]]
 
+
+* Group project: helicopter
+#+attr_html: :width 600px
+[[../img/projecthelicopter.png]]
+
 * Week 10 (Oct-25)  - Variables for remote control
 * Week 11 (Nov-01)  - Arithmetic, strings, random numbers
 * Week 12 (Nov-08)  - H.A.T.S. Preparation
