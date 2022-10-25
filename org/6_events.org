@@ -3,7 +3,6 @@
 #+options: toc:nil num:nil ^:nil
 #+startup: overview hideblocks indent inlineimages
 #+attr_html: :width 600px
-#+attr_html: :width 600px
 [[../img/highground.png]]
 * Events
 
