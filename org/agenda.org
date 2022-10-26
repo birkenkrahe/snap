@@ -265,12 +265,19 @@ Instructions at [[https://tinyurl.com/mrwtcjzy][tinyurl.com/mrwtcjzy]]
 #+attr_html: :width 400px
 [[../img/arkansascollege.png]]
 
-* Week 11 (Nov-01)  - Game of Pacman (group project)
+* NEXT Week 11 (Nov-01)  - Game of Pacman (group project)
 [[../img/pacmandoodle.png]]
+- [[https://www.google.com/logos/2010/pacman10-i.html][Online playable Pacman game Google doodle]]
 
-[[https://www.google.com/logos/2010/pacman10-i.html][Online playable Pacman game Google doodle]]
+- We're going to program this solo in class (with submission)
 
-* Week 12 (Nov-08)  - H.A.T.S. Preparation
-* Week 13 (Nov-15)  - H.A.T.S. Lab I: projects
-* Week 14 (Nov-22)  - H.A.T.S. Lab II: projects
-* Week 15 (Nov-29) - H.A.T.S. presentation / prize
+- Read the section on "Variables" (ch. 3.2, pp. 80-82) and the
+  specification for the "Game of maze" (p. 83-85) *before class*
+
+- You can also already prepare or program this game if you like (and
+  help others with their program in class)
+
+* Week 12 (Nov-08)  - H.A.T.S. Preparation w/Hunter
+* Week 13 (Nov-15)  - Project Bricks?
+* Week 14 (Nov-22)  - Project Falling Objects?
+* Week 15 (Nov-29) - H.A.T.S. presentation / win prize
