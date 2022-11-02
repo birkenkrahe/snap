@@ -61,7 +61,7 @@ usual to Canvas for practice points.
    #+attr_html: :width 200px
    [[../img/s_maze_received.png]]
 
- 3) [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=mazegame][Link to the final game]]
+3) [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=mazegame][Link to the final game]]
 
 * Refine the game
 
