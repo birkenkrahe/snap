@@ -345,7 +345,7 @@ possible - otherwise you risk losing touch with the material.
   | Fri-12-Aug | ORIENTATION                            |
   | Sat-13-Aug | BUILD BOAT                             |
   | Sun-14-Aug | BOAT RACE                              |
-  | October    | WINNING SCOTS RACE LUNCH (11.30-12.30) |
+  | October-27 | WINNING SCOTS RACE LUNCH (11.30-12.30) |
   | Thu-20-Oct | SERVICE DAY                            |
   | November 1 | SPRAGINS LUNCH (12-1 PM)               |
 

@@ -1,0 +1,71 @@
+#+title: Snap! Game of Maze Project
+#+subtitle: COR100 Snap! Programming Fall 2022
+#+options: toc:nil num:nil ^:nil
+#+startup: overview hideblocks indent inlineimages
+#+attr_html: :width 600px
+#+attr_html: :width 400px
+[[../img/maze.png]]
+* Objective
+We're going to code a game of maze together - you can
+then refine and finish the game on your own at will.
+
+Upload the finished game to the Snap! cloud and upload the URL as
+usual to Canvas for practice points.
+
+* Step 1: setup 
+#+attr_html: :width 400px
+[[../img/s_maze_setup.png]]
+
+1) Download the sprite, background and sounds as a ZIP file:
+   [[https://tinyurl.com/5n8xke8z][tinyurl.com/5n8xke8z]]
+
+2) Extract the file on your PC
+
+3) Create new Snap! project and save it as ~mazegame~
+   
+4) Set up /sprite/, /backgrounds/ and /sounds/:
+   - Set up (draggable) sprite ~player~
+   - Set up sprite sounds for ~buzzer~ (wall), ~clap~ (level up)
+   - Set up stage sound for winning the game (~yea~)
+   - Set up stage backgrounds: three levels and final screen
+
+* Step 2: sprite script
+
+1) Open the ~player~ script editor
+
+2) Make a new ~Motion~ block and call it ~MovePlayer~
+   #+attr_html: :width 300px
+   [[../img/s_maze_block.png]]
+
+3) Make a start script (green flag) that moves the ~player~ back to the
+   starting position (x = -218, y = 160)
+   #+attr_html: :width 200px
+   [[../img/s_maze_start.png]]
+   
+4) Set up keyboard actions for arrows
+   #+attr_html: :width 250px
+   [[../img/s_maze_arrows.png]]
+
+5) Modify the ~MovePlayer~ block
+   #+attr_html: :width 300px
+   [[../img/s_maze_move.png]]
+
+* Step 3: stage script
+
+1) When game starts, switch to ~level1~
+   #+attr_html: :width 200px
+   [[../img/s_maze_level1.png]]
+
+2) When ~next-level~ broadcast is received, change costume and play
+   winning sound when all levels are finished
+   #+attr_html: :width 200px
+   [[../img/s_maze_received.png]]
+
+* Refine the game
+
+ - Moving obstacles
+ - A monster follows the player
+ - Add a variable to track prize points and penalties
+ - Add a timer
+
+  

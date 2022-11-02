@@ -257,15 +257,15 @@ Instructions at [[https://tinyurl.com/mrwtcjzy][tinyurl.com/mrwtcjzy]]
 - [ ] FREE LUNCH on TUESDAY, Nov 1 12pm w/Profs Birkenkrahe/Oliveira
 - [ ] NO MORE FREE LUNCHES! END THIS MADNESS!
   
-* NEXT OCTOBER 27, 11.30am: FREE LUNCH AT LAS PLAYITAS
+** NEXT OCTOBER 27, 11.30am: FREE LUNCH AT LAS PLAYITAS
 #+attr_html: :width 400px
 [[../img/lasplayitas.jpg]]
 
-* NEXT NOVEMBER 1, 12pm: FREE LUNCH @ SPRAGINS HOUSE
+** NEXT NOVEMBER 1, 12pm: FREE LUNCH @ SPRAGINS HOUSE
 #+attr_html: :width 400px
 [[../img/arkansascollege.png]]
 
-* NEXT Week 11 (Nov-01)  - Game of Pacman (group project)
+* Week 11 (Nov-01)  - Game of Pacman (group project)
 [[../img/pacmandoodle.png]]
 - [[https://www.google.com/logos/2010/pacman10-i.html][Online playable Pacman game Google doodle]]
 
