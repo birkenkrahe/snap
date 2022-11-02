@@ -75,10 +75,9 @@ Use this same idea to make one sprite follow another:
 
 ** Use push-buttons on the stage
 
-- Click or push-buttons have a specific shape and a label like the
-  STOP button shown
+- Click or push-buttons have a specific shape and a label
   #+attr_html: :width 200px
-  [[../img/s8_stop.png]]
+  [[../img/s8_buttons.jpg]]
 
 - Make a new project to implement a click-button:
   1) Get a button sprite (no built-in buttons)
