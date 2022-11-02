@@ -61,11 +61,23 @@ usual to Canvas for practice points.
    #+attr_html: :width 200px
    [[../img/s_maze_received.png]]
 
+ 3) [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=mazegame][Link to the final game]]
+
 * Refine the game
 
  - Moving obstacles
  - A monster follows the player
  - Add a variable to track prize points and penalties
  - Add a timer
-
   
+* Sources
+
+Video examples:
+
+- CSP-Alabama (Sep 1, 2014). Unit 3: Maze Game Example. URL:
+  [[https://youtu.be/wlz08UEql9k][youtu.be/wlz08UEql9k]]
+- Joe Haas (Jul 11, 2020). maze game demo Snap! URL:
+  [[https://youtu.be/bi94erkDXdE][youtu.be/bi94erkDXdE]]
+
+Many more maze game examples are on snap.berkeley.edu.
+
