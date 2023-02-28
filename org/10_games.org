@@ -1,0 +1,31 @@
+#+title: Snap! Arcade games for the H.A.T.S. project
+#+subtitle: COR100 Snap! Programming Fall 2022
+#+options: toc:nil num:nil ^:nil
+#+startup: overview hideblocks indent inlineimages
+#+attr_html: :width 400px
+[[../img/hats.jpg]]
+
+* Pacman (by Rylan, Tyler and Matthew)
+#+attr_html: :width 300px
+[[../img/10_pacman.png]] 
+
+[[https://snap.berkeley.edu/embed?projectname=Pacman&username=matthew2022&showTitle=true&showAuthor=true&editButton=true&pauseButton=true][Link to Snap! cloud.]]
+
+* Asteroids (by Isaac)
+#+attr_html: :width 300px
+[[../img/10_asteroids.jpg]]
+
+[[https://snap.berkeley.edu/project?username=isaac%2erice&projectname=Asteroids][Link to Snap! cloud.]]
+
+* Space Invaders (by Jakobe and Bryceton)
+#+attr_html: :width 200px
+[[../img/10_spaceinvaders.gif]]
+
+Link to Snap! cloud.
+
+* Donkey Kong (by Ty, Clay and Smriti
+#+attr_html: :width 300px
+[[../img/10_kong.jpg]]
+
+Link to Snap! cloud.
+

@@ -278,6 +278,41 @@ Instructions at [[https://tinyurl.com/mrwtcjzy][tinyurl.com/mrwtcjzy]]
   help others with their program in class)
 
 * Week 12 (Nov-08)  - H.A.T.S. Preparation w/Hunter
-* Week 13 (Nov-15)  - Project Bricks?
-* Week 14 (Nov-22)  - Project Falling Objects?
-* Week 15 (Nov-29) - H.A.T.S. presentation / win prize
+* Week 13 (Nov-15)  - H.A.T.S. Project I
+* Week 14 (Nov-22)  - H.A.T.S. Project II
+#+attr_html: :width 700px
+[[../img/HATSposter.png]]
+
+* Week 15 (Nov-29/30) - [win] H.A.T.S. presentation
+ #+attr_html: :width 400px
+ [[../img/hats.jpg]]
+
+ - [ ] Complete course evaluation now!
+ - [ ] Snap! creator Jens Moenig wishes he could attend H.A.T.S.!
+ - [ ] Agree shifts/schedule for H.A.T.S. presentation tomorrow
+
+ 
+* TODO Course evaluation now! Hit me! Hard!
+#+attr_html: :width 480px
+[[../img/eval.png]]
+
+- *If you'd like for me to stick around, please evaluate (fairly) now*
+- *Extra credit (5 pts) for completing this in class today!*
+- *A couple of examples of useful feedback for me from past surveys:*
+#+attr_html: :width 700px
+[[../img/eval1.png]]
+
+* TODO Snap! creator wishes to be here!
+ #+attr_html: :width 400px
+ [[../img/snapTwitter.jpg]]
+
+* TODO H.A.T.S. schedule
+
+Place: Derby Science Center (my office: room 210, 1st floor)
+
+| TIME         | GAME           | TEAM                 |
+|--------------+----------------+----------------------|
+| 5:00-5:30 pm | PacMan         | Rylan, Tyler,Matthew |
+| 5.30-6.00 pm | Space Invaders | Bryceton, Jakobe     |
+| 6.00-6.30 pm | Asteroids      | Isaac, Hunter        |
+| 6.30-7.00 pm | Donkey Kong    | Smriti, Ty, Clay     |

@@ -2,10 +2,15 @@
 #+subtitle: COR100 Snap! Programming Fall 2022
 #+options: toc:nil num:nil ^:nil
 #+startup: overview hideblocks indent inlineimages
-#+attr_html: :width 600px
+:REVEAL_PROPERTIES:
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_REVEAL_JS_VERSION: 4
+#+REVEAL_INIT_OPTIONS: transition: 'cube'
+#+REVEAL_THEME: black
+:END:
+* Objective
 #+attr_html: :width 400px
 [[../img/maze.png]]
-* Objective
 We're going to code a game of maze together - you can
 then refine and finish the game on your own at will.
 
