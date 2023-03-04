@@ -1,6 +1,6 @@
-#+TITLE:STEMDemo Game Programming with Snap! 
+#+TITLE:STEMDemo Game Programming with Snap!
 #+AUTHOR:Marcus Birkenkrahe
-#+SUBTITLE:STEMDemo Game Programming with Snap! 
+#+SUBTITLE:STEMDemo Game Programming with Snap!
 #+STARTUP:overview hideblocks indent
 #+OPTIONS: toc:nil num:nil ^:nil
 :REVEAL_PROPERTIES:
@@ -13,6 +13,7 @@
 #+attr_html: :width 600px
 [[../img/stemdemo_overview.png]]
 
+View this presentation any time at: [[https://bit.ly/3mfNEaT][bit.ly/3mfNEaT]]
 ** Is this your first time?
 #+attr_html: :width 600px
 [[../img/stemdemo_kiss.jpg]]
@@ -31,7 +32,7 @@
 - Building a simple animation (15 min)
 - Building a simple game (30 min)
 - Advanced topics (15 min)
-- Q&A and wrap-up (15 min)
+- Summary and wrap-up (15 min)
 
 #+begin_notes
 - *Why am I teaching this course?* Gamer, programmer, teacher.
@@ -46,12 +47,21 @@
 [[https://docs.google.com/presentation/d/1f_1z4V1_tZ8PPGPil0WEUKGasgpf0jB-/edit?usp=sharing&ouid=102963037093118135110&rtpof=true&sd=true]["Snap! Oh Snap!" Lyon College Course - Fall'22]]
 
 #+begin_notes
- - *COR100/Y1*: Lyon's 1hr/week coursse teasers, fall'23 Snap! 12
-   students, weekly meetings of 50 minutes learning Snap!
-   together.
- - Final team projects: Retro Arcade Games - Donkey Kong, Pacman,
-   Space Invaders, and Asteroids.
+- *COR100/Y1*: Lyon's 1hr/week coursse teasers, fall'23 Snap! 12
+  students, weekly meetings of 50 minutes learning Snap!
+  together.
+- Final team projects: Retro Arcade Games - Donkey Kong, Pacman,
+  Space Invaders, and Asteroids.
+- Compared to other programming languages, visual, block-based
+  languages are very forgiving (computers are extremely picky and
+  panic easily) - attention to detail is key
 #+end_notes
+** How I got started
+#+attr_html: :width 600px
+[[../img/stemdemo_timemachine.png]]
+
+Open project: [[https://bit.ly/SnapTimeMachine][bit.ly/SnapTimeMachine]]
+
 ** What is Snap?
 #+attr_html: :width 500px
 [[../img/stemdemo_berkeley.png]]
@@ -73,6 +83,9 @@
 - Languages "for anything" allow you to build such structures
 #+end_notes
 * Getting started with Snap!
+#+attr_html: :width 600px
+[[../img/stemdemo_start.jpg]]
+
 ** Download the desktop app
 #+attr_html: :width 500px
 [[../img/stemdemo_desktop.png]]
@@ -91,8 +104,82 @@
 - Click on ~Join~ to keep your projects
 - Pick a simple password
 - Check your email for verification
-  
+** Snap! User Interface (UI)
+#+attr_html: :width 700px
+[[../img/stemdemo_ui.png]]
+
+- Sprites are controlled by scripts
+- Scripts consist of command blocks
+- Sprites (characters) act on stage
+- Settings add control, input and output
+#+begin_notes
+- Drag the "turtle" sprite around a little
+- Drag a "move 10 steps" block to the script area
+- Click the block / change 10 to 100 and click again
+#+end_notes  
+** Sprites, costumes, sounds
+#+attr_html: :width 700px
+[[../img/stemdemo_poofie.png]]
+
+- New *sprites* are created as "turtles"
+- You can create sprite *costumes* and *sounds* 
+- Every sprite is controlled by its *script*
+- Create your own barking Poofie now!
+#+begin_notes
+- Click on the sprite symbol below the stage
+- Open the *Costumes* tab next to the Scripts tab
+- Open the file menu at the top
+- Open the *Costumes* menu in the file menu
+- Find the *dog* costume (or *cat* if you prefer)
+- Click on the costume and *Import* it
+- Click on the *Sounds* tab
+- Open the *Sounds* menu, find *Dog 1* and *Import* it
+- Rename the sound *wuff*
+- Rename the Sprite *Poofie* 
+- Open the *Scripts* tab
+- Open the *Sound* command block section
+- Drag *play sound* into the script area
+- Select *wuff* and click the command block
+#+end_notes  
+** Write your first script
+#+attr_html: :width 600px
+[[../img/stemdemo_script.png]]
+** Save your first project
+#+attr_html: :width 600px
+[[../img/stemdemo_project.png]]
+#+attr_html: :width 600px
+[[../img/stemdemo_save.png]]
+
+** Any questions?
+#+attr_html: :width 700px
+[[../img/stemdemo_break.jpg]]
+
 * Building a simple animation
+#+attr_html: :width 600px
+[[../img/stemdemo_animation.png]]
+
 * Building a simple game
+#+attr_html: :width 600px
+[[../img/stemdemo_game.jpg]]
+
 * Advanced topics
-* Q&A and Wrap-Up
+#+attr_html: :width 600px
+[[../img/stemdemo_advanced.jpg]]
+
+
+* Summary and wrap-Up
+#+attr_html: :width 600px
+[[../img/stemdemo_ending.jpg]]
+
+** What you learnt (I hope)
+
+** Further learning
+#+attr_html: :width 200px
+[[../img/stemdemo_book.jpg]]
+
+- Joshi (2018). Learn CS Concepts with Snap! URL: [[https://amzn.to/3IOzsx9][amzn.to/3IOzsx9]]
+  ($8.99)
+- Huegle/Moenig (2020). Get Coding with Snap! URL:
+  [[https://open.sap.com/courses/snap1-1][open.sap.com/courses/snap1-1]] (Free)
+- Huegle/Moenig (2020). From Media Computation to Data Science. URL:
+  [[https://open.sap.com/courses/snap2][open.sap.com/courses/snap2]] (Free)
