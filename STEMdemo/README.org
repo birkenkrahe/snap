@@ -255,12 +255,12 @@ Create a new project "Mazegame"
 2) Extract the file on your PC using File Explorer
 3) Create new Snap! project and save it as mazegame
 4) Set up sprite, backgrounds and sounds:
-   - Set up (draggable) sprite player
+   - Set up (draggable) sprite player 
    - Set up sprite sounds for buzzer (wall), clap (level up)
    - Set up stage sound for winning the game (yea)
    - Set up stage backgrounds: three levels and final screen
 #+end_src
-** Make a new Motion block "MovePlayer"
+** Make a new Motion block
 #+attr_html: :width 200px
 [[../img/s_maze_block.png]]
 
@@ -287,7 +287,7 @@ Create a new project "Mazegame"
 - Left arrow: 270 degrees
 - Right arrow: 90 degrees
 
-** Modify the ~MovePlayer~ block
+** Modify the new motion block
 #+attr_html: :width 220px
 [[../img/s_maze_move.png]]
 ** Stage script
@@ -319,16 +319,6 @@ When game starts, switch to ~level1~.
 * Summary and wrap-Up
 #+attr_html: :width 600px
 [[../img/stemdemo_ending.jpg]]
-** Useful reset script
-#+attr_html: :width 200px
-[[../img/reset.png]]
-
-Import this script from
-- Start by pressing the 'r' key
-- Motion reset: go to center of stage
-- Graphics reset: remove effects
-- Show sprite
-
 ** What you learnt (I hope)
 #+attr_html: :width 600px
 [[../img/stemdemo_lions.png]]
