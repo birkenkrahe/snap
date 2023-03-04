@@ -116,13 +116,13 @@ Open project: [[https://bit.ly/SnapTimeMachine][bit.ly/SnapTimeMachine]]
 - Drag the "turtle" sprite around a little
 - Drag a "move 10 steps" block to the script area
 - Click the block / change 10 to 100 and click again
-#+end_notes  
+#+end_notes
 ** Sprites, costumes, sounds
 #+attr_html: :width 700px
 [[../img/stemdemo_poofie.png]]
 
 - New *sprites* are created as "turtles"
-- You can create sprite *costumes* and *sounds* 
+- You can create sprite *costumes* and *sounds*
 - Every sprite is controlled by its *script*
 - Create your own barking Poofie now!
 #+begin_notes
@@ -135,12 +135,12 @@ Open project: [[https://bit.ly/SnapTimeMachine][bit.ly/SnapTimeMachine]]
 - Click on the *Sounds* tab
 - Open the *Sounds* menu, find *Dog 1* and *Import* it
 - Rename the sound *wuff*
-- Rename the Sprite *Poofie* 
+- Rename the Sprite *Poofie*
 - Open the *Scripts* tab
 - Open the *Sound* command block section
 - Drag *play sound* into the script area
 - Select *wuff* and click the command block
-#+end_notes  
+#+end_notes
 ** Write your first script
 #+attr_html: :width 400px
 [[../img/stemdemo_script.png]]
@@ -179,7 +179,7 @@ Start a *New* project!
 #+attr_html: :width 600px
 [[../img/stemdemo_sequence.jpg]]
 
-What's the algorithm? 
+What's the algorithm?
 #+begin_notes
 Pseudocode:
 1) Move object in one direction
@@ -241,18 +241,80 @@ Set the sprite to "only face left/right".
 * Building a simple game
 #+attr_html: :width 600px
 [[../img/stemdemo_game.jpg]]
-
 ** The project
+#+attr_html: :width 400px
+[[../img/stemdemo_mazegame.gif]]
 
+Create a new project "Mazegame"
 
-** The algorithm
-** The game matter
-** The script
-** The game
+** Setup sprite, background, sounds
+#+attr_html: :width 400px
+[[../img/s_maze_setup.png]]
+#+begin_src
+1) Download ZIP file: https://tinyurl.com/5n8xke8z
+2) Extract the file on your PC using File Explorer
+3) Create new Snap! project and save it as mazegame
+4) Set up sprite, backgrounds and sounds:
+   - Set up (draggable) sprite player
+   - Set up sprite sounds for buzzer (wall), clap (level up)
+   - Set up stage sound for winning the game (yea)
+   - Set up stage backgrounds: three levels and final screen
+#+end_src
+** Make a new Motion block "MovePlayer"
+#+attr_html: :width 200px
+[[../img/s_maze_block.png]]
+
+- Open the ~Motion~ command block menu
+- Click on ~Make a block~
+- Enter ~MovePlayer~ as ~Command~
+- Click on right ~+~ sign to add ~direction~
+- Apply to all sprites 
+
+** Make start script
+#+attr_html: :width 200px
+[[../img/s_maze_start.png]]
+
+- Make a start script (green flag)
+- Point in dirction 90 degrees
+- Go to starting position (~x = -218~, ~y = 160~)
+
+** Set up keyboard action
+#+attr_html: :width 200px
+[[../img/s_maze_arrows.png]]
+
+- Down arrow: 180 degrees
+- Up arrow: 0 degrees
+- Left arrow: 270 degrees
+- Right arrow: 90 degrees
+
+** Modify the ~MovePlayer~ block
+#+attr_html: :width 220px
+[[../img/s_maze_move.png]]
+** Stage script
+#+attr_html: :width 200px
+[[../img/s_maze_level1.png]]
+
+When game starts, switch to ~level1~.
+#+attr_html: :width 200px
+[[../img/s_maze_received.png]]
+
+- When ~next-level~ broadcast is received, change costume.
+- Play winning sound when all levels are finished.
+
+** Refine the game
+#+attr_html: :width 600px
+[[../img/stemdemo_advanced.jpg]]
+
+- Create obstacles for the player
+- Add a monster that follows the player
+- Add prize points and penalties
+- Add a timer and a timeout penalty
+
+[[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=mazegame][Link to the final game]]
+
 ** Any questions?
 #+attr_html: :width 700px
 [[../img/stemdemo_penguins.jpg]]
-
 
 * Summary and wrap-Up
 #+attr_html: :width 600px
@@ -261,7 +323,7 @@ Set the sprite to "only face left/right".
 #+attr_html: :width 200px
 [[../img/reset.png]]
 
-Import this script from 
+Import this script from
 - Start by pressing the 'r' key
 - Motion reset: go to center of stage
 - Graphics reset: remove effects
@@ -270,10 +332,20 @@ Import this script from
 ** What you learnt (I hope)
 #+attr_html: :width 600px
 [[../img/stemdemo_lions.png]]
+
+- How to use the Snap! UI
+- How to write a simple script
+- How to make an image move
+- How to design a simple game
+  
 ** Further learning
 #+attr_html: :width 700px
 [[../img/stemdemo_datascience.png]]
 - Birkenkrahe (2023) Lyon College Data Science Program. URL: [[https://docs.google.com/presentation/d/1dSB-EIMkhJuECEgvQJ45hGODfOoZCo0aIpZ-t3EQSvc/edit?usp=sharing][lyon.edu]]
-- Joshi (2018). Learn CS Concepts with Snap! URL: [[https://amzn.to/3IOzsx9][amzn.to/3IOzsx9]]
 - Huegle/Moenig (2020). Get Coding with Snap! URL:
   [[https://open.sap.com/courses/snap1-1][open.sap.com/courses/snap1-1]] (Free)
+
+* References
+
+- Joshi (2018). Learn CS Concepts with Snap! URL: [[https://amzn.to/3IOzsx9][amzn.to/3IOzsx9]]
+- CSP-Alabama (2014) Mazegame. URL: [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=mazegame][snap.berkeley.edu]]
