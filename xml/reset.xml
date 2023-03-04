@@ -1,0 +1,1 @@
+<script app="Snap! 8.2, https://snap.berkeley.edu" version="2"><script><block s="receiveKey"><l><option>r</option></l><list></list></block><block s="gotoXY"><l>0</l><l>0</l></block><block s="setHeading"><l>90</l></block><block s="clearEffects"></block><block s="setScale"><l>100</l></block><block s="show"></block></script></script>

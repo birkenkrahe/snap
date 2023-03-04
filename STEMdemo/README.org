@@ -85,7 +85,6 @@ Open project: [[https://bit.ly/SnapTimeMachine][bit.ly/SnapTimeMachine]]
 * Getting started with Snap!
 #+attr_html: :width 600px
 [[../img/stemdemo_start.jpg]]
-
 ** Download the desktop app
 #+attr_html: :width 500px
 [[../img/stemdemo_desktop.png]]
@@ -149,14 +148,80 @@ Open project: [[https://bit.ly/SnapTimeMachine][bit.ly/SnapTimeMachine]]
 [[../img/stemdemo_project.png]]
 #+attr_html: :width 600px
 [[../img/stemdemo_save.png]]
-
+** If you're registered
+#+attr_html: :width 700px
+[[../img/stemdemo_saved.png]]
 ** Any questions?
 #+attr_html: :width 700px
 [[../img/stemdemo_break.jpg]]
 
-* Building a simple animation
+* Animating a character
 #+attr_html: :width 600px
 [[../img/stemdemo_animation.png]]
+** A walk in the park
+#+attr_html: :width 600px
+[[../img/stemdemo_park_project.png]]
+** The project
+#+attr_html: :width 600px
+[[../img/stemdemo_new.png]]
+
+Start a *New* project!
+#+begin_notes
+- Open a new project
+- Name the project "Avery walking" or "My first animation"
+- Add some notes right away (what this is about)
+#+end_notes
+** The algorithm
+#+attr_html: :width 600px
+[[../img/stemdemo_sequence.jpg]]
+
+What's the algorithm? 
+#+begin_notes
+Pseudocode:
+1) Move object in one direction
+2) Swing object's arms and legs
+3) If object hits a wall, bounce back
+#+end_notes
+** The illusion of walking
+#+attr_html: :width 650px
+[[../img/stemdemo_avery_walking.gif]]
+** The sprite
+#+attr_html: :width 600px
+
+[[../img/stemdemo_avery.png]]
+
+Set object *attributes* (aka sprite costumes).
+#+begin_notes
+- Highlight the turtle sprite
+- Pick the costumes tab
+- Find "Avery walking" sequence
+- Highlight one after the other and import them
+- Give the Sprite a name "Avery"
+- Go to the script tab
+#+end_notes
+** Useful reset script
+#+attr_html: :width 200px
+[[../img/reset.png]]
+
+Import this script from 
+- Start by pressing the 'r' key
+- Motion reset: go to center of stage
+- Graphics reset: remove effects
+- Show sprite
+
+** The script
+#+attr_html: :width 200px
+[[../img/stemdemo_algorithm.png]]
+
+Set object *methods* (aka sprite actions).
+#+begin_src
+- Find Control::forever and drag it into the script area
+- Find Motion::move 10 steps and drag it into the slot
+- Find Looks::next costume and add it below (with #)
+- 
+#+end_src
+** The background
+** Debugging and saving
 
 * Building a simple game
 #+attr_html: :width 600px
@@ -174,12 +239,9 @@ Open project: [[https://bit.ly/SnapTimeMachine][bit.ly/SnapTimeMachine]]
 ** What you learnt (I hope)
 
 ** Further learning
-#+attr_html: :width 200px
-[[../img/stemdemo_book.jpg]]
-
+#+attr_html: :width 700px
+[[../img/stemdemo_datascience.png]]
+- Birkenkrahe (2023) Lyon College Data Science Program. URL: [[https://docs.google.com/presentation/d/1dSB-EIMkhJuECEgvQJ45hGODfOoZCo0aIpZ-t3EQSvc/edit?usp=sharing][lyon.edu]]
 - Joshi (2018). Learn CS Concepts with Snap! URL: [[https://amzn.to/3IOzsx9][amzn.to/3IOzsx9]]
-  ($8.99)
 - Huegle/Moenig (2020). Get Coding with Snap! URL:
   [[https://open.sap.com/courses/snap1-1][open.sap.com/courses/snap1-1]] (Free)
-- Huegle/Moenig (2020). From Media Computation to Data Science. URL:
-  [[https://open.sap.com/courses/snap2][open.sap.com/courses/snap2]] (Free)
