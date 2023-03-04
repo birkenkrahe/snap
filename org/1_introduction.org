@@ -17,13 +17,13 @@
 
 - [[https://myarkansaspbs.pbslearningmedia.org/resource/2143a241-f8d9-4a54-a4a5-b9634797bd28/make-a-video-game/][How To Make A Video Game in Scratch]] (MIT course)
     
-** Scratch interface
+* Scratch interface
 
 #+attr_html: :width 500px
 #+caption: Scratch 3 interface
 [[../img/snap_scratch.png]]
 
-** Snap! interface
+* Snap! interface
 
 #+attr_html: :width 400px
 #+caption: Snap! 7 interface

@@ -3,3 +3,96 @@
 #+SUBTITLE:STEMDemo Game Programming with Snap! 
 #+STARTUP:overview hideblocks indent
 #+OPTIONS: toc:nil num:nil ^:nil
+:REVEAL_PROPERTIES:
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_REVEAL_JS_VERSION: 4
+#+REVEAL_INIT_OPTIONS: transition: 'cube'
+#+REVEAL_THEME: black
+:END:
+* Introduction
+#+attr_html: :width 600px
+[[../img/stemdemo_overview.png]]
+
+** Is this your first time?
+#+attr_html: :width 600px
+[[../img/stemdemo_kiss.jpg]]
+
+#+begin_notes
+- Has any of you already programmed?
+- Have you ever created an animation or a game?
+- Have you created a web page or used a "high level" language like
+  Python, C, C++, Java or JavaScript?
+- How would you describe the experience of programming?
+#+end_notes
+** Session overview
+
+- Introduction (15 min)
+- Getting started with Snap! (30 min)
+- Building a simple animation (15 min)
+- Building a simple game (30 min)
+- Advanced topics (15 min)
+- Q&A and wrap-up (15 min)
+
+#+begin_notes
+- *Why am I teaching this course?* Gamer, programmer, teacher.
+- *Background:* teaching data science and computer science
+- *Funny accent:* I am German, came to Batesville 2 years ago
+#+end_notes
+
+** Why Snap!?
+#+attr_html: :width 600px
+[[../img/stemdemo_arcade.png]]
+
+[[https://docs.google.com/presentation/d/1f_1z4V1_tZ8PPGPil0WEUKGasgpf0jB-/edit?usp=sharing&ouid=102963037093118135110&rtpof=true&sd=true]["Snap! Oh Snap!" Lyon College Course - Fall'22]]
+
+#+begin_notes
+ - *COR100/Y1*: Lyon's 1hr/week coursse teasers, fall'23 Snap! 12
+   students, weekly meetings of 50 minutes learning Snap!
+   together.
+ - Final team projects: Retro Arcade Games - Donkey Kong, Pacman,
+   Space Invaders, and Asteroids.
+#+end_notes
+** What is Snap?
+#+attr_html: :width 500px
+[[../img/stemdemo_berkeley.png]]
+
+- Web-based HTML5 online application
+- Block-based visual programming language
+- Create animations, games, simulations
+- Open source and free to use
+- [[https://snap.berkeley.edu][Developed at U. Berkeley, bought by SAP]]
+
+#+begin_notes
+- <Right-Mouse> View page source (HTML)
+- <Right-Mouse> Inspect (HTML, CSS, JavaScript, Media)
+- Developed by German programmer Jens Moenig
+- SAP is Germany's largest software company (ERP systems)
+- Unlike MIT's Scratch, Snap! can do anything
+- In programming, everything depends on data structures, e.g. numbers,
+  strings (that make up texts), tables, lists/dictionaries etc.
+- Languages "for anything" allow you to build such structures
+#+end_notes
+* Getting started with Snap!
+** Download the desktop app
+#+attr_html: :width 500px
+[[../img/stemdemo_desktop.png]]
+
+- In your browser, go to [[https://bit.ly/3kTxX8O][bit.ly/3kTxX8O]]
+- Download the ~.zip~ file
+- Extract the file to ~Downloads~
+- Open ~Downloads/Snap-8.2.0/snap.html~
+
+** Run Snap! in the cloud
+#+attr_html: :width 500px
+[[../img/stemdemo_cloud.png]]
+
+- Go to [[https://snap.berkeley.edu][snap.berkeley.edu]]
+- Click on ~Run Snap!~ to program
+- Click on ~Join~ to keep your projects
+- Pick a simple password
+- Check your email for verification
+  
+* Building a simple animation
+* Building a simple game
+* Advanced topics
+* Q&A and Wrap-Up
