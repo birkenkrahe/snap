@@ -1,6 +1,6 @@
-#+TITLE:STEMDemo Game Programming with Snap!
-#+AUTHOR:Marcus Birkenkrahe
-#+SUBTITLE:STEMDemo Game Programming with Snap!
+#+TITLE: Game Programming with Snap!
+#+AUTHOR: Marcus Birkenkrahe
+#+SUBTITLE: STEMonstration, Lyon College Academic Day
 #+STARTUP:overview hideblocks indent
 #+OPTIONS: toc:nil num:nil ^:nil
 :REVEAL_PROPERTIES:
@@ -16,7 +16,7 @@
 View this presentation any time at: [[https://bit.ly/3mfNEaT][bit.ly/3mfNEaT]]
 ** Is this your first time?
 #+attr_html: :width 600px
-[[../img/stemdemo_kiss.jpg]]
+[[../img/stemdemo_first_time.jpg]]
 
 #+begin_notes
 - Has any of you already programmed?
@@ -26,12 +26,13 @@ View this presentation any time at: [[https://bit.ly/3mfNEaT][bit.ly/3mfNEaT]]
 - How would you describe the experience of programming?
 #+end_notes
 ** Session overview
+#+attr_html: :width 400px
+[[../img/stemdemo_session.jpg]]
 
 - Introduction (15 min)
 - Getting started with Snap! (30 min)
-- Building a simple animation (15 min)
+- Building a simple animation (30 min)
 - Building a simple game (30 min)
-- Advanced topics (15 min)
 - Summary and wrap-up (15 min)
 
 #+begin_notes
@@ -141,7 +142,7 @@ Open project: [[https://bit.ly/SnapTimeMachine][bit.ly/SnapTimeMachine]]
 - Select *wuff* and click the command block
 #+end_notes  
 ** Write your first script
-#+attr_html: :width 600px
+#+attr_html: :width 400px
 [[../img/stemdemo_script.png]]
 ** Save your first project
 #+attr_html: :width 600px
@@ -161,6 +162,9 @@ Open project: [[https://bit.ly/SnapTimeMachine][bit.ly/SnapTimeMachine]]
 ** A walk in the park
 #+attr_html: :width 600px
 [[../img/stemdemo_park_project.png]]
+#+begin_notes
+Final project in the cloud: [[http://bit.ly/3J9RAmt][bit.ly/3J9RAmt]]
+#+end_notes
 ** The project
 #+attr_html: :width 600px
 [[../img/stemdemo_new.png]]
@@ -199,6 +203,60 @@ Set object *attributes* (aka sprite costumes).
 - Give the Sprite a name "Avery"
 - Go to the script tab
 #+end_notes
+** The script
+#+attr_html: :width 200px
+[[../img/stemdemo_algorithm.png]]
+
+Set object *methods* (aka sprite actions).
+#+begin_src
+- Find 'Control::forever' and drag it into the script area
+- Find 'Motion::move 10 steps' and drag it into the slot
+- Find 'Looks::next costume' and add it below (with #)
+- Find 'Control::wait 1 secs' and add it below (0.2 secs)
+- Find 'Motion::if on edge, bounce' and add it below
+- Find 'Control::when FLAG clicked' and add it at the top
+#+end_src
+#+begin_notes
+If you ever "lose" your sprite, right-click on the sprite icon and
+activate "show", and it will show up again. Better: reset script.
+#+end_notes
+** The orientation
+#+attr_html: :width 600px
+[[../img/stemdemo_face.png]]
+
+Set the sprite to "only face left/right".
+
+** The background
+#+attr_html: :width 500px
+[[../img/stemdemo_park.jpg]]
+
+- *Download* the park background: [[http://bit.ly/3SQaT7F][bit.ly/3SQaT7F]]
+- *Import* picture as *Stage* background
+- Do a final check then *Save* your project
+- Final project in the cloud: [[http://bit.ly/3J9RAmt][bit.ly/3J9RAmt]]
+** Any questions?
+#+attr_html: :width 700px
+[[../img/stemdemo_beach.jpg]]
+
+* Building a simple game
+#+attr_html: :width 600px
+[[../img/stemdemo_game.jpg]]
+
+** The project
+
+
+** The algorithm
+** The game matter
+** The script
+** The game
+** Any questions?
+#+attr_html: :width 700px
+[[../img/stemdemo_penguins.jpg]]
+
+
+* Summary and wrap-Up
+#+attr_html: :width 600px
+[[../img/stemdemo_ending.jpg]]
 ** Useful reset script
 #+attr_html: :width 200px
 [[../img/reset.png]]
@@ -209,35 +267,9 @@ Import this script from
 - Graphics reset: remove effects
 - Show sprite
 
-** The script
-#+attr_html: :width 200px
-[[../img/stemdemo_algorithm.png]]
-
-Set object *methods* (aka sprite actions).
-#+begin_src
-- Find Control::forever and drag it into the script area
-- Find Motion::move 10 steps and drag it into the slot
-- Find Looks::next costume and add it below (with #)
-- 
-#+end_src
-** The background
-** Debugging and saving
-
-* Building a simple game
-#+attr_html: :width 600px
-[[../img/stemdemo_game.jpg]]
-
-* Advanced topics
-#+attr_html: :width 600px
-[[../img/stemdemo_advanced.jpg]]
-
-
-* Summary and wrap-Up
-#+attr_html: :width 600px
-[[../img/stemdemo_ending.jpg]]
-
 ** What you learnt (I hope)
-
+#+attr_html: :width 600px
+[[../img/stemdemo_lions.png]]
 ** Further learning
 #+attr_html: :width 700px
 [[../img/stemdemo_datascience.png]]
