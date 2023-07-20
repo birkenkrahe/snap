@@ -142,6 +142,7 @@ term results, only straight letters are given (by rounding up).
 - Solve programming problems in or outside of class
 - Complete assignments outside of class if necessary
 - Be ready to present your solutions
+
 * Class work / attendance
 
 - Complete assignments in class (participation)

@@ -68,12 +68,12 @@ usual to Canvas for practice points.
 
 3) [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=mazegame][Link to the final game]]
 
-* Refine the game
+* DYI: Refine the game
 
- - Moving obstacles
+ - Create moving obstacles
  - A monster follows the player
  - Add a variable to track prize points and penalties
- - Add a timer
+ - Add a timer to penalize slow players
   
 * Sources
 

@@ -180,7 +180,7 @@
   - Clouds    
   #+end_quote
 
-* Helicopter - tips and links  
+* Helicopter - tips and links
 
 - [[https://snap.berkeley.edu/project?username=tasikass2024&projectname=Helicopter][Solution in Snap! by Tasikass2024]]
 

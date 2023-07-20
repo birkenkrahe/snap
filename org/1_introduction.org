@@ -3,6 +3,7 @@
 #+startup: overview hideblocks indent inlineimages
 #+subtitle: COR100 Snap! Programming
 * INTRODUCTION
+
 * Snap! vs. Scratch
 
 - Web-based online application (HTML5), no desktop app
@@ -63,6 +64,8 @@
   exactly what I did when working through the textbook, using the [[https://orgmode.org/][GNU
   Emacs editor with Org-mode]].
 * Why Snap!
+#+attr_html: :width 400px
+[[../img/stemdemo_arcade.png]]
 
 - It's a full-fledged programming language
 - It's easy to build animation and games in it
@@ -73,7 +76,7 @@
 * UNIT 1: LOOPING, BROADCASTING, ANIMATION
 * Concepts
 
-- [X] Snap user interface (UI)
+- [ ] Snap user interface (UI)
 - [ ] Paint editor
 - [ ] Sequence of commands
 - [ ] Motion commands
