@@ -1,13 +1,11 @@
 #+TITLE:Snap! Programming
 #+AUTHOR:Marcus Birkenkrahe
-#+SUBTITLE: COR 100 @ Lyon College Fall 2022
+#+SUBTITLE: COR 100 @ Lyon College Fall 2023
 #+OPTIONS: toc:nil
 #+startup: hideblocks overview indent
 * What's in this repo?
 
 Repository for COR 100 - Snap! Programming
-
-** Syllabus for a course overview
 
 * How to use GitHub (optional)
 
