@@ -20,7 +20,6 @@ See the course syllabus for a detailed schedule.
   [[../img/snaplogo.png]]
 
 
-
 * Week 1 (Aug 21-27) Raft race / Intro to Snap!
 #+attr_html: :width 500px
 #+caption: The Raft of the Medusa, by Theodore Gericault (1818)
@@ -46,6 +45,7 @@ starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.o
 - [ ] You can see the Snap!Chat Google chat space (optional)
 - [ ] You can log into Canvas (lyon.instructure.com)
 - [ ] You can see the gradebook in Canvas
+- [ ] You can add the Canvas calendar to your Google calendar
 - [ ] You can see the GitHub repo (github.com/birkenkrahe/snap)
 - [ ] Optional: register at GitHub (watch/star/fork repos)
 - [ ] You are registered at snap.berkeley.edu (use Lyon email)
