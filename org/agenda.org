@@ -34,8 +34,34 @@ the 13 days before their rescue, and those who survived endured
 starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa][Wikipedia]])
 #+end_notes
 
-* You said you'd win...
+* IN PROGRESS You said you'd win -
 #+attr_html: :width 500px
 #+caption: Raft Race 2022, Lyon College (Source: twitter.com)
 [[../img/raftrace.png]]
 
+* TODO [[https://docs.google.com/forms/d/1aKS9FTna_2I5LaLJrhnn5bCYzDhrwjl0O8HzjBFA6J0/edit#responses][Entry survey]] - Analysis
+* Getting started - infrastructure
+
+- [ ] You can log into your GMail account (mail.google.com)
+- [ ] You can see the Snap!Chat Google chat space (optional)
+- [ ] You can log into Canvas (lyon.instructure.com)
+- [ ] You can see the gradebook in Canvas
+- [ ] You can see the GitHub repo (github.com/birkenkrahe/snap)
+- [ ] Optional: register at GitHub (watch/star/fork repos)
+- [ ] You are registered at snap.berkeley.edu (use Lyon email)
+- [ ] You can ~Run Snap!~ from snap.berkeley.edu
+
+* NEXT Introduction to Snap! ([[https://github.com/birkenkrahe/snap/blob/piHome/org/1_introduction.org][GitHub]])
+
+- Snap vs. Scratch
+- Snap! interface and examples
+- Programming and programming languages
+- Importance of infrastructure (replit.com)
+  #+begin_example python
+  print('Hello World!')
+  name = input('What is your name? ').title()
+  print(f'{name} is a nice name!')
+  #+end_example
+- Why Snap!
+- UI/UX (User Interface/User eXperience) as a career
+- Next: first script

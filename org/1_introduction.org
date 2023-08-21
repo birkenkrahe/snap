@@ -1,7 +1,7 @@
-#+title: Snap! Introduction
+#+title: Introduction to Snap!
 #+options: toc:nil num:nil ^:nil
 #+startup: overview hideblocks indent inlineimages
-#+subtitle: UBMS Game and Robo Programming with Snap! and Python
+#+subtitle: Game and Robotics Programming with Snap! and Python
 * Introduction
 #+attr_html: :width 400px
 [[../img/westworld.jpg]]
