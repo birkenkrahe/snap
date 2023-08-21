@@ -1,0 +1,106 @@
+#+title: From Snap! to Python
+#+subtitle: UBMS Snap! Programming Summer 2023
+#+options: toc:nil num:nil ^:nil
+#+startup: overview hideblocks indent inlineimages
+#+property: header-args:python :results output :noweb yes
+:REVEAL_PROPERTIES:
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_REVEAL_JS_VERSION: 4
+#+REVEAL_INIT_OPTIONS: transition: 'cube'
+#+REVEAL_THEME: black
+:END:
+* Why Python?
+
+- Top 1 position on the TIOBE index:
+  #+attr_latex: :width 400px
+  [[../img/tiobe.png]]
+
+* Who uses Python?
+#+attr_latex: :width 400px
+[[../img/nasa.png]]
+
+  1) YouTube
+  2) Instagram
+  3) Pinterest
+  4) Spotify
+  5) Netflix
+  6) NASA
+
+* Strengths/Weaknesses
+#+attr_latex: :width 400px
+[[../img/pythonorg.png]]
+
+
+| STRENGTH   | WEAKNESS        |
+|------------+-----------------|
+| Simplicity | Performance     |
+| Automation | Industry demand |
+| Community  | Indentation     |
+
+* Contrast Snap! and Python
+#+attr_latex: :width 400px
+ [[../img/snap_name_age.png]]
+
+[[../img/py_name_age.png]]
+
+- Easier in Snap!: drag-and-drop coding / remembering
+- Easier in Python: debugging (finding mistakes)
+- Harder in Snap!: literate programming (documenting)
+- Harder in Python: animation and game development
+
+* First Python program
+#+attr_latex: :width 400px
+[[../img/colab.png]]
+
+- We're going to code this 'hello world' program ([[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=SnapVsPython][Snap!]])
+- Open colab.research.google.com in your browser
+- If you're logged into your Google account: check GDrive
+- All your colab notebooks are in one directory
+- Always start with a TEXT block (CTRL + ALT + T)
+- Continue with a CODE block (CTRL + ALT + I)
+- Run code blocks with CTRL + ENTER or SHIFT + ENTER
+
+You find the solution [[https://gist.github.com/birkenkrahe/2921e5c3afc0ee495bd64b23ff6df645][here as a GitHub code gist]].
+
+* 6 Ways to code in Python
+#+attr_latex: :width 400px
+[[../img/choice.jpg]]
+
+1) In the command line terminal (Python must be installed)
+   #+attr_latex: :width 400px
+   [[../img/cmd.png]]
+2) In Google Colaboratory (interactive Jupyter notebook)
+   #+attr_latex: :width 400px
+   [[../img/colaboratory.png]]
+3) In replit.com (REPL)
+   #+attr_latex: :width 400px
+   [[../img/replit.png]]
+4) In the browser (extension)
+   #+attr_latex: :width 400px
+   [[../img/chrome.png]]
+5) In the Python IDLE (Integrated Development Learning Environment)
+6) In an IDE (Integrated Development Environment): Emacs, VSCode etc.
+5) In the Python IDLE (Integrated Development Learning Environment)
+   #+attr_latex: :width 400px
+   [[../img/idle.png]]
+   #+attr_latex: :width 400px
+   [[../img/turtleDemo.png]]
+6) In an IDE (Integrated Development Environment): Emacs, VSCode,
+   PyCharm etc.
+   #+attr_latex: :width 400px
+   #+caption: Emacs IDE: Org-mode (top) and Python shell (bottom)
+   [[../img/emacs.png]]
+   #+attr_latex: :width 400px
+   #+caption: 'Hello world' in the Visual Studio Code editor (Microsoft)
+   [[../img/vscode.png]]
+   #+attr_latex: :width 400px
+   #+caption: Turtle racing game in PyCharm
+   [[../img/pycharm.png]]
+   
+* References
+
+- Birkenkrahe (2023). Introduction to programming in Python. URL:
+  [[https://github.com/birkenkrahe/py][github.com/birkenkrahe/py]]
+- Joshi (2021). Learn Python in a Snap! URL: [[http://www.abhayjoshi.net/spark/python/pythonsnap.pdf][abhayjoshi.net]].
+- Van Rossum, G., Drake, F. L. (2009). Python 3 Reference Manual. URL:
+  https://docs.python.org/3/reference/.

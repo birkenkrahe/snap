@@ -1,0 +1,118 @@
+#+title: Snap! XY Geometry and 3D effects
+#+subtitle: UBMS Game and Robo Programming with Snap! and Python
+#+options: toc:nil num:nil ^:nil
+#+startup: overview hideblocks indent inlineimages
+#+attr_html: :width 400px
+[[../img/geometry.jpg]]
+
+* XY Geometry and Motion
+
+- Open a new project ~Geometry~ in the cloud Snap! editor
+  
+- To see the grid, change the background to ~XY-grid~
+
+- Every point on the screen has two coordinates, ~x~ and ~y~
+
+- Every sprite in Snap! has a /center point/ which you can view and
+  change in the paint editor
+
+- Open the ~Paint editor~ on the standard turtle sprite
+
+- Turn the turtle into a *solid red square* in the center
+
+- Go to ~Scripts~ and move the sprite to the exact position (0,0)
+
+- Move it to (-200,100)
+
+- Let it ~glide~ in ~2 secs~ to the center position (0,0)
+
+- Add to the last command by changing the ~x~ position by ~-200~
+
+- Add to the last commands and let the square glide ~5~ times in ~0.5 sec~
+  back and forth between these the last two positions:
+  #+attr_latex: :width 200px
+  [[../img/snap_glide.png]]
+
+- Duplicate the last program and make the square jump up and down
+  *smoothly* between the positions (0,0) and (0,100) ten times
+  *without* using the ~glide~ command.
+
+  /Tip: smooth motion is a combo of ~repeat~ and ~change~./
+  #+attr_latex: :width 120px
+  [[../img/snap_jump4.png]]
+
+- Add a command to the last program to ~repeat~ the jump ~5~ times -
+  this is called a /nested loop/. 
+  #+attr_latex: :width 120px
+  [[../img/snap_jump5.png]]
+
+- Can you combine rotating and jumping as shown [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Geometry][in this project]]?
+  #+attr_latex: :width 120px
+  __[[../img/turnjump.png]]
+
+* Absolute motion
+
+- Absolute motion is independent on current position and direction:
+  1) motion commands yield a vector that ends at a fixed point no
+     matter where the sprite is before the command.
+  2) The movement looks different depending on where the sprite was
+     before the command.
+   
+- Example: "Go to the Salty Dog" (That's the Lyon College café)
+
+- Snap! commands that describe absolute motion:
+  #+attr_latex: :width 200px
+  [[../img/snap_absolute.png]]
+
+* Relative motion
+
+- Relative motion depends on current position and direction:
+  1) motion commands yield a vector that could be anywhere in the
+     plane. 
+  2) The movement looks the same no matter where the sprite was
+     before the command.
+
+- Example: "Turn right then left"
+
+- Snap! commands that describe relative motion:
+  #+attr_latex: :width 200px
+  [[../img/snap_relative.png]]
+
+* Practice 3-D effect using looping
+
+- Sprite is fully 2-dimensional
+
+- For 3D effects you need to create illusions
+
+- Repetition and size change can do that
+
+- Create a new project and call it ~3-dimensions~
+  
+- Load the costumes ~dove1 a~ and ~dove1 b~ on the same sprite
+
+  [[../img/snap_dove.png]]
+
+- Load any outdoor or indoor background as the stage
+
+- Create and run the following script:
+  #+attr_latex: :width 120px
+  [[../img/snap_3dim.png]]
+
+- Modify the script so that the dove slowly sinks to the floor and
+  stays there when it has arrived in the foreground, with its wings
+  down.
+  #+attr_latex: :width 120px
+  [[../img/snap_3dim1.png]]
+
+* Program 3: Flying bat
+#+attr_html: :width 400px
+[[../img/flyingbat.png]]
+
+- Create a new project called ~Flying_bat~
+- From the Snap! online library, load a bat costume
+- Make the sprite change costume so that it looks as if its wings flap up and down.
+- Add code so that when the script is started, the bat flies to the edge of the screen, bounces back, and changes direction forever.
+- Optionally, combine the 3D effect and make the bat not just fly from
+  left to right but from the background to the foreground as well.
+- Upload the program [[https://lyon.instructure.com/courses/1721/assignments/14945][to Canvas]]
+

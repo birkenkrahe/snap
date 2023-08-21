@@ -1,0 +1,145 @@
+#+title: Snap! Mouse interaction, push-buttons on stage
+#+subtitle: UBMS Snap! Programming Summer 2023
+#+options: toc:nil num:nil ^:nil
+#+startup: overview hideblocks indent inlineimages
+* Game design
+#+attr_html: :width 600px
+[[../img/s_unit3.jpg]]
+
+- [ ] User interaction using mouse pointer
+- [ ] Conditionals (Wait until)
+- [ ] Numeric variables (numbers)
+- [ ] Variables as sliders
+- [ ] Keyboard events (polling)
+- [ ] User input with buttons
+
+* Mouse interaction
+#+attr_html: :width 400px
+[[../img/s8_mouse.jpg]]
+
+* Mouse events for sprite and stage
+[[../img/mouseMoves.png]]
+
+- Write a short script for each of these interactions:
+  1) create a new project ~MouseMoves~,
+  2) import the ~reset~ script
+  3) write the first script, duplicate and alter accordingly.
+  4) Distinguish the examples with an action and a sound.
+  5) Add a short note on the purpose of this project for later.
+
+- [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=MouseMoves][My sample solution]]:
+  [[../img/mouseMoves1.png]]
+  1) Alonzo: mouse clicked/pressed/dropped.
+  2) Apple: moused-entered/mouse-departed.
+  3) Dino: scrolled-up/scrolled-down.
+  4) STOP: stopped.
+
+- The ~When I am stopped~ event is a little tricky: in particular, the
+  ~say...~ commands do not work with this event (I don't know why).
+     
+* Cat-and-mouse
+
+Use the mouse interaction events to make one sprite follow another:
+1) create a new sprite ~hunter~ and another sprite ~prey~
+2) add costumes ~cat~ and ~mouse~ - initially both are looking to the
+   right.
+   [[../img/catAndMouse.png]]
+3) import reset script for quick experimentation (add ~stop all~)
+4) remember that you need a reset script for both sprites
+5) write the code and test the script for these actions:
+   1. Start the script with the ~Green Flag~.
+   2. When mouse is ~dropped~ somewhere: cat pounces and sits on mouse!
+      (Tip: the sprites on the stage are 'layered'.)
+   3. Stop with ~stop~ button and restart with ~Green flag~.
+   4. When ~scrolled-up~, mouse turns to cat and glides towards it.
+      - When it is close, the mouse says "Hello".
+      - The cat turns to the mouse, says "Go away"
+      - The mouse responds with "Good-bye" and slowly disappears.
+   5. Reset with ~stop~ button.
+
+- [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=CatAndMouse][Sample solution]]
+- Free music scripts: [[https://bit.ly/434BbGT][bit.ly/434BbGT]] (max 10MB)
+
+* Use push-buttons on the stage
+
+- Click or push-buttons have a specific shape and a label:
+  #+attr_html: :width 200px
+  [[../img/s8_buttons.jpg]]
+
+- Copy the Cat-and-Mouse animation project and implement
+  three click-buttons:
+  1) Make three buttons: START, STOP and CONTINUE (you can copy
+     images or - better - make your own).
+  2) Use ~START~ sprite and the ~When sprite clicked~ event to activate
+     the cat-pounces-and-sits-on-mouse action.
+  3) Use the ~STOP~ sprite to stop the script and reset all scripts.
+  4) Use the ~CONTINUE~ sprite to run the
+     mouse-says-hello-and-disappears action.
+
+- The action should look like shown [[https://screenrec.com/share/ncJLCKfOeT][in this screencast]].
+
+- [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=CatAndMouse%20II][Link to sample solution:]]
+  [[../img/catAndMouse2.png]]
+
+* ~Wait until...~ command
+
+- Use this command if you want a sprite to wait for a condition to
+  become true. It waits as long as the condition is false.
+
+- For example, this block in the [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Helicopter%20%28minimal%29][minimal helicopter project]] will be
+  activated only when the helicopter has landed on the helipad:
+  [[../img/heli_wait_until.png]] [[../img/heli_wait_until_output.png]] 
+
+* Keyboard events ('polling')
+
+- The CPU has two ways to control events: 'handling' or 'polling'.
+
+- When it handles an event, it starts a process when the event has
+  been triggered:
+  [[../img/handling.png]]
+
+- This is easy on the CPU but it is less responsive than 'polling'
+  where the CPU runs continuously waiting for a signal:
+  [[../img/polling.png]]
+
+- The condition has to be wrapped in a ~forever~ loop to be tested
+  continuously.
+
+- Unlike event handlers (which always start a script), polling
+  commands can be compounded. For example, this script checks if both
+  the 'f' and the 'right arrow' key are pressed before it runs:
+  [[../img/poling1.png]]
+
+* Making blocks
+
+- Snap allows you to define your own procedures using the ~Make a block~
+  command (in the sidebar or via right-click in the script area).
+
+- In the dialog, you can specify:
+  1) ~Command~ = procedure without a return value, like a greeting that
+     only prints a string like "hello" on the screen.
+  2) ~Reporter~ = function with a return value, like a computation of F
+     = m * a that takes mass (m) and acceleration (a) as parameters
+     and returns the value of F.
+  3) ~Predicate~ = function that return Boolean (True or False) values
+     only.
+
+ - Make a ~Command~ block, name it ~Greeting~ and add a ~Looks~ command:
+   [[../img/MakeBlock.png]] [[../img/BlockEditor.png]]
+
+ - You can now use the block, which appears in the ~Looks~ menu,
+   anywhere in the project:
+   [[../img/greetings.png]]
+
+ - Another example: make a block ~Square~ in the ~Motion~ category and
+   instruct it to draw a square:
+   [[../img/square.png]]
+
+ - If you want to draw squares of different sizes, you can use the
+   ~Input name~ dialog: click on the plus on the right of the block name
+   and enter the variable ~size~, then exchange the constant ~100~ steps
+   by the variable ~size~:
+   [[../img/size.png]] [[../img/pen.png]]
+
+
+   

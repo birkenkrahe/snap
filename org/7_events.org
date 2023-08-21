@@ -1,0 +1,164 @@
+#+title: Snap! Events, Concurrency, and Graphical Effects
+#+subtitle: UBMS Game and Robo Programming with Snap! and Python
+#+options: toc:nil num:nil ^:nil
+#+startup: overview hideblocks indent inlineimages
+#+attr_latex: :width 400px
+[[../img/bird.png]]
+
+* Events
+
+- A central concept to humans running the world is "process"
+
+- What's a process? What are its elements?
+  #+begin_quote
+    1) agent or actor or role or pool or swimlane
+    2) start event
+    3) tasks or intermediate events
+    4) decision points or gateways or logical operators
+    5) flow (sequence of events or tasks)
+    6) end event
+  #+end_quote
+
+- Example: BPMN diagrams with the Signavio Process Manager
+  #+attr_latex: :width 400px
+  [[../img/themovebpmn.png]]  
+
+- Here is a process model that I made for a webscraping project in
+  Python ([[https://bit.ly/searchpypi][bit.ly/searchpypi]]):
+  #+attr_latex: :width 400px
+  _[[../img/search_full_bpmn.png]]  
+  
+- Events in data science: 
+  1) every digital device produces event logs
+  2) event logs can be mined (process mining)
+  3) event data mining can lead to pattern detection (EDA)
+  4) event data can be labeled to build predictive models (ML)
+
+* Birth of the modern novel
+#+attr_latex: :width 500px
+[[../img/6_austen.png]]
+
+- For most of human history, stories where just like "one thing
+  happens, and then another" - a sequence of events between a starting
+  and an ending point. Not overly riveting!
+
+- This changed when Jane Auston wrote her novels ("Pride and
+  Prejudice", "Emma", "Sense and Sensibility" etc.) - these were the
+  first novels with "decision points" in the name of love. Much more
+  fun!  
+
+* Snap! events
+#+attr_latex: :width 400px
+[[../img/s_events.png]]
+
+Example:
+
+#+attr_latex: :width 300px
+[[../img/s_event.png]]
+
+* Reset scripts
+
+- Events represent a state. Changing events changes the state of a
+  system.
+
+- Every sprite has a set of properties or attributes, which determine
+  its state.
+  1) Screen position (default x=0, y=0)
+  2) Orientation angle (default 90 degrees to North)
+  3) Color (default 0 for first sprite)
+  4) Size (default is 100%)
+  5) Visibility (default is visible)
+  6) Costume # (default is the turtle at creation)
+  7) Graphic effects (default is ???)
+
+* Practice: reset script
+
+1) Create a project "reset"
+
+2) Create a script for a sprite, e.g. Alonzo:
+
+   #+attr_latex: :width 300px
+   [[../img/s_change.png]]
+   
+3) Run the script. The turtle disappears. It's "expensive" to return
+   the sprite to its original state.
+
+4) Create a reset script:
+   #+attr_latex: :width 300px
+   [[../img/s_reset.png]]
+
+5) Save this script as ~reset.xml~ on your PC so that you can import it
+   into any project and script.
+
+6) In the following exercises, you can ~Import~ the reset script to a
+   sprite and then either drag it to a new sprite or clone that sprite.
+
+* Concurrency
+
+- This is also called parallelism
+
+- Important current concept for system design and operations
+
+- In OS, (true) parallelism is an illusion if you only have 1 core -
+  even with multiple cores, the main job of the OS is to manage
+  processes so fast and so efficiently that the user experiences
+  concurrency
+
+- In database design, concurrency is important (multi-user operation)
+  though the most common database system (SQLite) lacks concurrency
+
+- The following script doesn't quite work. Can you see where the
+  problem lies? Try it in Snap!
+  #+attr_latex: :width 200px
+  [[../img/s_con.png]]
+  #+begin_quote
+  The script is held up by the conditional step in the middle.
+  #+end_quote
+
+- Split the script up into two concurrent scripts like this:
+  #+attr_latex: :width 200px
+  [[../img/s_con1.png]]
+
+* Practice concurrency
+
+1) Create a new project "concurrency"
+
+2) Pick a sprite with some 'surface area' (to see changes better)
+
+3) Create three scripts for one sprite
+  #+attr_latex: :width 200px
+  [[../img/snap_concurrency.png]]
+
+4) Try each script before you create the next one.
+
+5) Press the SPACE bar to start the three concurrent actions.
+
+* Programming assignment: Bird/Ball
+
+For this programming assignment, pick either option 1 or 2 below. If
+you complete both programs, you get up to 10 bonus points (provided
+the program does what it should). Great opportunity to make up for low
+quiz scores!
+
+1) Make a *bird* sprite fly around the screen while changing size and
+   color at the same time. Have it make some sound every 5
+   seconds. Insert graphic effects like the ghost, the fisheye or the
+   whirl effect.
+   
+   [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Bird%20%28Tyler%20Landry%29][Solution by Tyler Landry (Fall '22)]] / [[https://snap.berkeley.edu/snap/snap.html#present:Username=birkenkrahe&ProjectName=Bird][My sample solution]]
+   #+attr_latex: :width 400px
+   [[../img/birdFlying.png]]
+
+2) Make a *ball* roll from left to right of the screen: the ball should
+   appear at the left edge, roll to the right, disappear across the
+   right edge, and reappear again at the left edge. Insert graphic
+   effects like the ghost, the fisheye or the whirl effect.
+
+   [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Rolling%20Ball%20%28Bryceton%20Church%29][Solution by Bryceton Church (Fall '22)]] / [[https://snap.berkeley.edu/snap/snap.html#present:Username=birkenkrahe&ProjectName=Ball][My sample solution]] 
+   #+attr_latex: :width 400px
+   [[../img/ballRolling.png]]
+
+*Submit* the URL of your final, working program [[roam:https://lyon.instructure.com/courses/1721/assignments/14947][in Canvas]] (if you submit
+two programs, use the text entry option and paste both URLs into the
+text field).
+

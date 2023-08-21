@@ -1,0 +1,5 @@
+###Git ignore files for Hummingbird Bit 
+*.docx
+.DS_Store
+__pycache__
+tmp/*

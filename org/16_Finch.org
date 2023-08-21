@@ -1,0 +1,373 @@
+#+title: The Finch 2.0 Robot
+#+subtitle: UBMS Snap! Programming Summer 2023
+#+options: toc:nil num:nil ^:nil
+#+startup: overview hideblocks indent inlineimages
+#+property: header-args:python :results output :noweb yes
+* Programming the Finch 2.0
+#+attr_latex: :width 400px
+#+caption: 5 Ways to program the Finch 2.0 robot
+[[../img/finch_programming.png]]
+
+- You need to match language, purpose and platform ([[https://learn.birdbraintechnologies.com/software-guidance-chart/#finchrobot2][guidance chart]]).
+
+- The Finch can actually be programmed with 9 different languages.
+
+* Robots and AI
+
+- *What is Computational thinking?*
+  #+begin_quote
+  1) Abstraction
+  2) Evaluation
+  3) Algorithms
+  4) Decomposition
+  5) Pattern recognition
+  #+end_quote
+
+- What is a robot?
+  #+begin_quote
+  [[../img/finch_robot.png]]
+  - The word 'robot' was first used to denote a fictional humanoid in
+    a 1920 Czech-language play [[https://en.wikipedia.org/wiki/R.U.R.][R.U.R.]] (Rossumovi Univerzální Roboti –
+    Rossum's Universal Robots) by Karel Čapek ("The new Adam and Eve")
+
+- Technically, a robot is a non-virtual "rational agent".
+
+- As "Artificial Intelligence", robots are "rational agents":
+  #+attr_latex: :width 400px
+  #+caption: Artificial Intelligence as agents (AIMA, 2021).
+  [[../img/agents.png]]
+  1) Upper left: machines that act like humans ("Turing test")
+  2) Lower left: machines that think like humans (Neural nets)
+  3) Upper right: machines that act rationally (unlike humans)
+  4) Lower right: machines that think rationally (not emotionally) -
+     the robot arrives at conclusions after computing them.
+
+- How does it work with the Finch?
+  [[../img/finch_robot1.png]]
+  1) "Sense": Finch sensors at the front
+  2) "Think": Microbit controls actions
+  3) "Act": LEDs, motors, buzzer, moves, draw etc.
+
+* Setting the Finch robot 2.0 up with Snap!
+
+- Microbit input: sensor data (light, acceleration, temperature,
+  magnetism, sound) - see [[https://microbit.org/get-started/user-guide/overview/][user guide]].
+  [[../img/microbit.png]]
+
+- Install the micro:bit by sliding it into the tail of the Finch and
+  make sure it is charged:
+  #+attr_latex: :width 400px
+  [[../img/finch_find_robots.png]]
+
+- You can choose a platform and a language:
+  #+attr_latex: :width 400px
+  [[../img/finch_selection.png]]
+
+- There are many different activities available:
+  #+attr_latex: :width 400px
+  [[../img/finch_windows_snap.png]]
+
+- With [[https://learn.birdbraintechnologies.com/downloads/installers/BlueBirdConnector.msi][Bluebird Connection Web app]] or [[https://snap.birdbraintechnologies.com/][Snap! Web app]]:
+  1) Switch on your (charged) robot (black button at bottom).
+  2) Click on ~Finding robots~ on the web page.
+  3) Your robot should be listed - only connect to yours!
+  #+attr_latex: :width 400px
+  [[../img/finch_find_robots.png]]
+
+- The BlueBird Connector App always finds robots by name, too:
+  #+attr_latex: :width 400px
+  [[../img/finch_connect1.png]]
+  [[../img/finch_connect2.png]]
+
+- Installation details (completed for classroom use):
+  1) Full charge lasts ca. 8 hrs and takes 8 hrs to charge. Green
+     lights when turning it on indicate the charging state (4 lights =
+     full).
+  2) Update the firmware with a ~.hex~ file for the micro:bit every 6
+     months or so (get the file [[https://learn.birdbraintechnologies.com/downloads/installers/BBTFirmware.hex][from here]]).
+  3) Once uploaded, the micro:bit responds directly by giving three
+     letters (DAT - "Deluxe Apricot Tyrannosaurus") followed by
+     pound # sign and its number, e.g. FNC3929.
+
+- Try moving the Finch after connecting to it:
+  [[../img/finch_move.png]]
+
+- Overview: [[https://learn.birdbraintechnologies.com/finch/snap/program/1-14][14 additional programming videos]].
+
+* Moving and turning
+#+attr_latex: :width 400px
+[[../img/finch_angles.png]]
+
+- Move forward 10 cm at 25% full speed, then backward by 20 cm at full
+  speed:
+  [[../img/finch_moving.png]]
+
+- Turn right by 20 degrees at 50% full speed, then left by 90 degrees
+  at 75% full speed:
+  [[../img/finch_turning.png]]
+
+- Repeat the turning motion 5 times:
+  [[../img/finch_repeat.png]]
+
+- Practice:
+  1) Make the Finch move in a square, then play a sound.
+  2) Put this program into a ~Motion~ block ~Finch square~.
+
+- Solution:
+  #+begin_quote
+  [[../img/finch_square.png]]
+  #+end_quote
+
+* Controlling wheels
+#+attr_latex: :width 400px
+#+caption: Muriel Long with bicycle decorated for street procession.
+[[../img/wheels.jpg]]
+
+- For a counter-clockwise spinning motion, make the left wheel go
+  backward and the right wheel go forward:
+  [[../img/finch_spin_left.png]]
+
+- For a clockwise spinning motion, make the right wheel go backward
+  and the left wheel go forward:
+  [[../img/finch_spin_right.png]]
+
+- To stop, use the "Finch Stop" block or the red STOP editor button:
+  [[../img/finch_wait_spin.png]]
+
+- To make the Finch move around in a circle, make the wheels go at
+  different speeds while moving forward:
+  [[../img/finch_circle.png]]
+
+* Finch movement activities
+
+- Activity idea: finch jousting - known the ball off a cup using
+  e.g. a fork on a straw:
+  #+attr_latex: :width 400px
+  [[../img/finch_jousting.png]]
+
+* Drawing shapes with the pen mount
+
+- Draw a right triangle (use Pythagoras to compute the length of the
+  hypothenuse):
+  [[../img/finch_right_triangle.png]]
+
+- Drawing shapes activity:
+  1) decomposition (drawing the triangle step by step)
+  2) evaluation (testing to see if you got what you wanted)
+
+* Practice: Drawing a spiral
+
+1) When the Finch's two motors move at the same speed, it moves in a
+   straight line. When they move at different speeds, it moves in a
+   circle. The following script works more or less - not quite sure
+   about the ~speed~ values - but it produces a spiral.
+   #+begin_quote
+   #+attr_html: :width 200px
+   [[../img/finch_spiral1.jpg]] [[../img/finch_spiral_code1.png]]
+   #+end_quote
+   
+3) An alternative is to use the move + turn commands - this script
+   draws a spiral for the turtle:
+   #+begin_quote
+   #+attr_html: :width 210px
+   [[../img/finch_spiral_turtle.png]] [[../img/finch_spiral_turtle_code.png]]
+   #+end_quote
+
+4) This will produce a spiral:
+   #+begin_quote
+   #+attr_html: :width 200px
+   [[../img/finch_spiral.jpg]] [[../img/finch_spiral_code.png]]
+   #+end_quote
+
+* Finch LEDs 
+#+attr_latex: :width 200px
+[[../img/finch_rgb.png]]
+
+- Red, blue and green are the primary colors of (white) light.
+
+- Turning the Finch's beak red, green then blue forever:
+  #+attr_latex: :width 400px
+  [[../img/finch_rgb_forever.png]]
+
+- Why do blue and green make yellow?
+  #+begin_quote
+  The combination of red and green to make yellow can be explained in
+  the context of additive color mixing, which is the way colors of
+  light combine. This is the method used by digital displays like
+  computer monitors, televisions, and projector screens.
+
+  In the additive color model, the primary colors are red, green, and
+  blue. When red light and green light combine, they create yellow
+  light. This may seem counterintuitive if you're used to the
+  subtractive color model (like mixing paints), where red and yellow
+  make orange.
+
+  The reason this happens has to do with how our eyes perceive
+  color. We have three types of color receptors, or cones, in our eyes
+  that are sensitive to short (blue), medium (green), and long (red)
+  wavelengths of light. When we see yellow, it's usually because an
+  object is reflecting both red and green light to our eyes,
+  stimulating both the long and medium wavelength cones. Our brains
+  interpret this combination as the color yellow.
+
+  So, when a screen wants to create the perception of yellow, it emits
+  both red and green light. Our eyes see this combination of red and
+  green light, and our brain interprets it as yellow.
+  #+end_quote
+
+- Create an LED disco effect ([[https://drive.google.com/file/d/1ktyLvQTbW9WwVLbVJkrksWgp6yOqHJc3/view?usp=sharing][see video]]): make LEDs 1,2,3,4 (from the
+  right)
+
+- Solution code:
+  #+attr_latex: :width 400px
+  [[../img/finch_led_disco.png]]
+
+- You get white light by mixing all colors with the same weight - the
+  lower the number the fainter the light: try setting it to 1%
+  #+attr_latex: :width 400px
+  [[../img/finch_led_white.png]]
+
+- How does a prism work?
+  #+begin_quote
+  As sunlight (white light) enters a prism, its components travel with
+  different speeds (wavelengths) leading to refraction - as it exits,
+  it is dispersed - cp. Snell's law, which describes the relationship
+  between the angles of incidence and refraction for light or other
+  waves passing between two different isotropic media (e.g. water,
+  glass, air where no direction is privileged over another).
+  #+end_quote
+
+- Challenge:
+  1) Make every LED in tail and beak show a different color
+  2) Turn all LED's white at the same time
+  3) Make them blink off/on three times before turning all of them
+     off.
+
+- Solution code:
+  #+attr_latex: :width 400px
+  [[../img/finch_led_challenge.png]]
+
+- Or with a "blink N times" Finch block:
+  #+attr_latex: :width 400px
+  [[../img/finch_led_challenge_block.png]] [[../img/finch_blink.png]]
+
+- Activity: "Finch parade" - turn a Finch in a parade float using
+  Lego bricks, blinking lights and movement mixes.
+
+- Computational thinking:
+  1) algorithm = order of things
+  2) decomposition = parallel blocks
+  3) evaluation = match goal to result
+
+* Finch sounds
+#+attr_latex: :width 400px
+[[../img/soundFinch.png]]
+
+- There is only one Finch-specific sound command:
+  #+attr_latex: :width 250px
+  [[../img/finch_play_sound.png]]
+  
+- The notes corresponds to a MIDI keyboard:
+  #+attr_latex: :width 350px
+  [[../img/finch_sound.png]]
+  #+begin_quote
+  A MIDI (Musical Instrument Digital Interface) keyboard is an
+  electronic instrument that sends MIDI signals to other devices like
+  computers, synthesizers, or drum machines. It doesn't produce sound
+  itself but triggers sounds stored in digital devices. MIDI keyboards
+  come in different sizes, can have additional control features like
+  pads and knobs, and usually connect via USB or MIDI cables. They are
+  essential tools for digital music production and performance.
+  #+end_quote
+
+- Practice: create the 'Frere Jacques' with disco lights (for a video,
+  see: [[https://tinyurl.com/frereJacquesDisco][tinyurl.com/frereJacquesDisco]]) - lyrics are here:
+  [[https://tinyurl.com/BrotherJack][tinyurl.com/BrotherJack]].
+
+- Solution ([[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Frere_Jacques][cloud file]]):
+  #+attr_latex: :width 400px
+  [[../img/frereJacquesDisco.png]]
+
+- Challenge: make the Finch play the song and dance to it. Here is a
+  fancy example, the "Finch chorus line" - https://youtu.be/qouVW_oVDPs
+
+* Sensors: distance, lights, lines (numeric)
+#+attr_latex: :width 400px
+[[../img/finch_sensors.png]]
+- Finch sensors include: light, line, distance, buttons A/B,
+  accelerometer, compass, temperature, orientation, and sound.
+
+- The Finch can measure DISTANCE using the two sensors in front -
+  click on this command to get the current reading:
+  [[../img/finch_distance.png]]
+
+- To continuously update the distance reading, use the output as the
+  string in a ~say~ command and wrap it in a ~forever~ loop:
+  [[../img/finch_distance_forever.png]]
+  
+- Data gathering mission: use the other blocks inside this code.
+  [[../img/finch_left_light.png]]   [[../img/finch_right_light.png]]
+
+- Sensor overview video on the [[https://learn.birdbraintechnologies.com/finch/snap/program/10-1][Snap/sensor programming page]] -
+  especially for registering the minimum/maximum values.
+
+- PRACTICE: use the value of the light sensor as a dimmer for LED
+  where the LED gets brighter in proportion to increasing light
+  falling on one of the sensors.
+
+- Write a script that turns the beak BLUE when the left, and RED when
+  the right light sensor are covered.
+
+- Solution:
+  [[../img/finch_dimmer.png]]
+
+- PRACTICE: Modify the script to include that the beak goes GREEN when
+  BOTH light sensors are covered.
+
+- Solution:
+  [[../img/finch_dimmer_RGB.png]]
+
+* Sensors: buttons, orientation (Boolean)
+#+attr_latex: :width 400px
+[[../img/buttons.jpg]]
+
+- Practice: write a script that shows a button "A" whenever the left
+  A-button of the Finch is pressed, and a button "B" whenever the
+  right B-button of the Finch is pressed.
+
+- Solution:
+  [[../img/abutton.png]]  [[../img/bbutton.png]]  
+
+- Practice: write a script that plays the different sounds of a scale
+  depending on the orientation of the Finch's beak, and try to play
+  "Frère Jacques" with the Finch.
+
+- Solution: the playing reminds me of the "bamboo Katana challenge" in
+  "Ghost of Tsushima":
+   [[../img/finch_orientation_scale.png]]
+
+* TODO Compass, acceleration, sound, temperature (numeric)
+* Finch with Python - what changes?
+#+attr_latex: :width 400px
+[[../img/fpy_snap.png]]
+
+- Different setup: [[https://brython.birdbraintechnologies.com/][use this web app to connect]].
+- Different course to learn how to (must register).
+- More and different ways to work with numeric and Boolean data.
+- Good for using the Finch as a data gathering device (data science).
+  
+* SOMEDAY Play with the Finch robot remotely
+#+attr_latex: :width 400px
+[[../img/remoteFinch.png]]
+
+- I will set up a server for remote Finch manipulation ([[https://www.youtube.com/playlist?list=PLPF7p1VM8NT8tcvIG18ALU5skugQ2W7C0][see here]]).
+
+- Let me know if you want to test that for me in July/August.
+
+- Instead of spending 150$ on a Finch + micro:bit you get to use the
+  robot for free at a distance and also learn client/server computing.
+
+- There is no guarantee that this will succeed (depends on local
+  infrastructure/firewalls) but I'll give it a try.
+
+- This is how it looks ([[https://youtu.be/5YMJP7RhJCk?t=1140][Finch Robot 2.0 Playground - 11/30/20]]).

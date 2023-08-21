@@ -1,0 +1,280 @@
+#+title: Snap! Keyboard interaction, stopping scripts, helicopter
+#+subtitle: UBMS Snap! Programming Summer 2023
+#+options: toc:nil num:nil ^:nil
+#+startup: overview hideblocks indent inlineimages entitiespretty
+#+attr_html: :width 600px
+#+attr_html: :width 400px
+[[../img/s6_keyboard.jpg]]
+* Event-controlled block
+
+- Any time you run the selected key (0-9, a-z, arrows, enter, space,
+  +/-), the following command is run
+  #+attr_html: :width 200px
+  [[../img/s7_event.png]]
+
+- Create a new project ~Conditional_statements~ to practice the material
+
+- Save your [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Reset][reset script]] as a script in XML on your computer, import
+  and run it while developing a script (link: [[https://tinyurl.com/3pnbn9wh][tinyurl.com/3pnbn9wh]])
+
+- Build these two examples in Snap! yourself:
+  1) before running them, consider what each of them might do
+  2) what effect does it have if you keep pressing the keys?
+  #+attr_html: :width 250px
+  [[../img/s7_uparrow.png]]
+  #+begin_notes
+  - Doubles the size of the sprite
+  - Sprite points upwards
+  - Sprite moves 5 steps
+  - Repeated keys only move the sprite further up
+  #+end_notes
+  
+  #+attr_html: :width 200px
+  [[../img/s7_hkey.png]]
+  #+begin_notes
+  - Doubles the size of the sprite
+  - Sprite shows if it was hidden
+  - Sprite hides after 5 seconds
+  - Repeated keys have no effect
+  #+end_notes
+
+* Sensing touch
+
+- You can check if things are touching one another, resulting in a
+  Boolean value (TRUE or FALSE)
+
+- The *Boolean* value can be used to control conditional statements like
+  If, Wait until, Repeat until etc.
+
+- The ~touching~ command checks if the sprite is touching the mouse
+  pointer, the screen edges, a pen drawing or another sprite
+  #+attr_html: :width 200px
+  [[../img/s7_touching.png]]
+  #+attr_html: :width 200px
+  [[../img/s7_edge.png]]
+  #+attr_html: :width 200px
+  [[../img/s7_pen.png]]
+
+- You can also sense if a sprite is touching a color - the selector
+  leads to a color palette
+  #+attr_html: :width 140px
+  [[../img/s7_col.png]]
+
+- Create this script, and think first what it might do:
+  #+attr_html: :width 270px
+  [[../img/s7_touching1.png]]
+  #+begin_notes
+  - When starting the script, it waits in the background forever
+  - When you touch the sprite with the mouse, you see the text (2sec)
+  #+end_notes
+- Here is a BPMN diagram of this decision:
+  #+attr_latex: :width 400px
+  [[../img/diagram.png]]
+
+- Make a pen-trail:
+  #+attr_latex: :width 200px
+  [[../img/pentrail.png]]
+
+- Write a small program where the turtle goes around and whenever it
+  collides with the pen trail, it changes color or size.
+  #+attr_latex: :width 200px
+  [[../img/collision.png]]
+
+* The story behind the IF
+
+- A condition is another name for a logic operation
+
+- Do you know examples for such operations?
+  
+- The result of the operation determines its truth or falsehood,
+  represented as ~TRUE~ or ~FALSE~, represented by ~1~ or ~0~ in the computer
+
+- An OOP way of thinking about IF statements: the inside of the IF
+  statement is a local environment that interacts with the outside
+  only via the conditional statement
+
+- Another approach views the IF as a decision point - the condition is
+  a question leading in one or the other direction
+
+* IF statements
+
+- The ~Sensing~ and ~Operators~ tab offers several conditions
+
+- This operator checks the condition: ~Is 100 less than 200?~ 
+   #+attr_html: :width 140px
+   [[../img/s7_less.png]]
+
+- When you execute the command, the operation is evaluated. You can
+  alter the result of the condition - the computer is not picky, it
+  wants to serve its master!
+
+- Add the following script to your project, think about what it might
+  do and run it
+  #+attr_html: :width 200px
+  [[../img/s7_fire.png]]
+  #+begin_notes
+  - Check if sprite touches the sprite called ~Fire~
+  - If the condition holds, say ~Help!Fire!~ for  2 seconds
+  - Turn in the opposite direction and move away for 100 steps
+  #+end_notes
+  
+* IF-ELSE statements
+
+- IF-ELSE statements are gateway points of the program flow
+
+- If the IF condition is not met, the code following ELSE is executed
+
+- Example: the following script is run when the up arrow is
+  pressed. The sprite is moved up until it hits an edge:
+  #+attr_html: :width 200px
+  [[../img/s7_ifelse.png]]
+  
+- The gateway (or the conditional test) question is: "is the sprite
+  touching any edge?" If the answer is yes, the sprite stops, if it is
+  no, it is moved up in small steps of 5.
+  
+* Stopping scripts
+
+- The ~STOP~ commands (~Control~ tab) permit stopping Snap! scripts
+
+- The following command stops all scripts when the /variable/ ~time~
+  exceeds the value ~60~
+  #+attr_html: :width 250px
+  [[../img/s7_stop_all.png]]
+  
+- The command ~stop this script~ stops only the current script
+
+- Create a new project or reuse an old project:
+  1) Generate two sprites and name one ~pacman~
+  2) Create the following two scripts
+  3) Start the script with the green flag
+  4) Move the sprite towards the ~pacman~ sprite
+  5) See what happens when the sprite touches ~pacman~
+
+  #+attr_html: :width 200px
+  [[../img/s7_stop_script.png]]
+  #+attr_html: :width 200px
+  [[../img/s7_stop_all1.png]]
+  
+- If you want to stop all script of the current sprite, you need to
+  include the stopping script:
+  #+attr_html: :width 200px
+  [[../img/s7_stop_script1.png]]
+
+* Assignments: ball and paddle / color circles
+
+For this programming assignment, pick either option 1 or 2 below. If
+you complete both programs, you get up to 10 bonus points (provided
+the program does what it should).
+
+1) Design a program in which a ball bounces up and down and is
+   deflected by a paddle. The user should be able to move the paddle
+   horizontally using the arrow keys.
+
+   Sample solutions [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Ball%20and%20Paddle%20%28Bryceton%20Church%29][by Bryceton Church]] (Fall'22) and by [[https://snap.berkeley.edu/project?username=bdawg69420&projectname=RGB%20Pong][Brayden Burrow]]!
+
+2) Design a program in which there are several separate color circles
+   (red, blue, green etc.) on the screen. When the green flag is
+   clicked, an animal sprite starts following the mouse
+   pointer. Whenever it touches a circle, its color becomes the same
+   as the circle's color. Tip: to make the animal sprite follow the
+   pointer, use the "point towards" and "move" commands in a "forever"
+   loop:
+   [[../img/s8_follow.png]]
+
+
+   [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Color%20Circles%20%28Isaac%20Rice%29][Sample solution by Isaac Rice (Fall'22)]]
+
+Remember to add notes to your program (or lose points).
+
+[[https://lyon.instructure.com/courses/1721/assignments/14948][Submit the URL(s) of your final, working program in Canvas]] (if you
+submit two programs, use the text entry option and paste both URLs
+in). If Canvas does not let you upload (there has been trouble
+lately), send me your URLs via email.
+
+If you're curious to try the BPMN process modeling method that I
+mentioned in class, you can do so for free at bpmn.ioLinks to an
+external site.. Take a screenshot of your model and send it to me via
+email for 5 bonus points.
+
+** Solutions - ball and paddle
+
+- We have two sprites but only the ball has interesting code. Here's
+  the paddle (costume straight from the Snap! cloud):
+  [[../img/paddle.png]]
+
+- Here is the flow diagram for the simple solution, a ball that moves
+  up and down and is deflected (opposite) by the paddle: there is a
+  decision implied in the code block.
+  [[../img/ball1bpmn.png]]
+
+- Here is the code: activated with ~<up arrow>~
+  [[../img/ball1snap.png]]
+
+- [[https://screenrec.com/share/enEVmDTb2G][See the screenrecording.]]  
+
+- The action is more interesting if the ball bounces around (not just
+  vertically) though this was not asked in the assignment - here we
+  must program the decision explicitly:
+  [[../img/ball2bpmn.png]]
+
+- Here is the code: activated with ~<enter>~
+  [[../img/ball2snap.png]]
+
+- [[https://screenrec.com/share/NjovisHQFn][See the screenrecording.]]
+    
+- Finally, let's add some physics to the paddle deflection: the exit
+  angle is opposite the entrance angle (direction): to compute it, we
+  must take a look at the relationship of entrance angle (\gamma), the
+  direction recorded by Snap! (\delta), and the desired exit angle (\epsilon):
+  #+attr_latex: :width 400px
+  [[../img/ballPaddle.jpg]]
+
+- Here is the code:
+  [[../img/ball4snap.png]]
+
+- [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Ball%20and%20paddle][Code link]]
+
+** Solutions - color circles
+
+- This script makes the sprite orient itself towards the mouse
+  pointer:
+  [[../img/move.png]]
+
+- We can add a smooth motion block to make the sprite follow the mouse
+  pointer:
+  [[../img/moveMouse.png]]
+
+- To solve the problem, we need color circles to touch.
+  
+- My first attempt was to create a background with color circles and
+  use an approximation to the color for a touch-set-color combo:
+  [[../img/color.png]]
+
+- The resulting script works approximately and not for all colors:
+  [[../img/colorCircles.png]]
+
+- [[https://screenrec.com/share/9YNubROrLC][See screencast.]] Here is the [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Color%20circles%20III][code link]].
+  
+- I was frustrated with the fact that the color effect picker does not
+  allow you to identify the color. I looked it up in the reference
+  manual and found a color library with a lot of choice that you can
+  import in the ~pen~ command category.
+
+- In the second solution, I use a pen sprite to draw circles in
+  exactly the color I want and make sure that the sprite changes into
+  that color:
+  [[../img/colorPen.png]]
+
+- The full program calls upon the pen to draw the circles and then
+  enables the color change through touching:
+  [[../img/colorCirclesPen.png]]
+
+- [[https://screenrec.com/share/O4xEUZt0Gp][See screenrecording]] (45 sec) and [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Color%20Circles%20I][code link]].
+
+- Another solution is to create sprites that are color balls or
+  circles and then upon touching copy the color of the sprite, Alonzo
+  changes to one of his (colored) pre-programmed costumes:
+  [[../img/colorCirclesII.png]]
+
+- [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Color%20circles%20II][Code link.]]

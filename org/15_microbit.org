@@ -1,0 +1,127 @@
+#+title: The micro:bit micro-controller
+#+subtitle: UBMS Snap! Programming Summer 2023
+#+options: toc:nil num:nil ^:nil
+#+startup: overview hideblocks indent inlineimages
+#+property: header-args:python :results output :noweb yes
+* Tail of the Finch: the micro:bit
+  #+attr_latex: :width 300px
+  #+caption: micro:bit v2 in the tail of a Finch 2.0 robot Encased micro:bit v1
+  [[../img/finch_tail.png]] 
+  #+attr_latex: :width 300px
+  #+caption: Encased micro:bit v1
+  [[../img/microbitv1.jpg]]
+
+- The "brain" of the Finch 2.0 robot is a /[[https://en.wikipedia.org/wiki/Microcontroller][microcontroller]]/, a small
+  single-chip computer in an /[[https://en.wikipedia.org/wiki/Embedded_system][embedded system]]/ to control a single
+  function or a set of functions, the [[https://microbit.org/get-started/user-guide/overview/][BBC micro:bit]].
+  #+attr_latex: :width 400px
+  #+caption: micro:bit v2 front and back
+  [[../img/microbit.png]]
+  
+- Even cooler than the device is the fact that you can simulate the
+  micro:bit online - here is the Python editor: [[https://python.microbit.org/v/3][python.microbit.org]].
+  #+attr_latex: :width 400px
+  #+caption: Microbit Python editor and debugger (source: microbit.org)
+  [[../img/microbitPythonEditor.png]]   [[../img/microbitPythonDebugger.png]] 
+  
+- But the easiest way to program the micro:bit (and, by implication,
+  also the robot) is with Microsoft's MakeCode, which is like a
+  micro-version of Scratch or Snap! [[https://makecode.microbit.org/][makecode.microbit.org/]].
+  #+attr_latex: :width 400px
+  #+caption: Microbit Microsoft Makecode editor (and debugger)
+  [[../img/microbitMakecode.png]]
+
+* Demonstration: MicroPython editor
+
+- Open python.microbit.org on the editor/simulator/debugger:
+  #+attr_latex: :width 400px
+  #+caption: micro:bit Python editor v3 
+  [[../img/microbit_editor.png]]
+
+- This is actually not "Python" but "MicroPython" - a Python version
+  for microcontrollers written in C++ ([[https://tech.microbit.org/software/micropython/][info]]).
+
+- Parts of this platform interface:
+  1) sidebar with reference, mini-project ideas, API (data)
+  2) editor pane for Python scripting
+  3) simulator for simulating a physical micro:bit
+  4) extractor for sending .hex file to micro:bit
+  5) menu to save .py or .hex files to your PC
+
+- The editor opens to a sample animation on the display:
+  #+begin_example python
+  from microbit import *
+  while True:
+      display.show(Image.HEART)
+      sleep(1000)
+      display.scroll('Hello')
+  #+end_example
+
+- After importing the ~microbit~ library, these functions are called:
+  1) ~display.show~ to show images on the 5 x 5 diode display
+  2) ~sleep~ to pause for a given number of microseconds (100 \mu s = 1 s)
+  3) ~display.scroll~ to scroll a string argument on the display
+
+* Practice 1: Pacman
+[[../img/pacman.png]]
+
+- Open the simulator and run it for the sample program that appears
+  when you open python.microbit.org.
+
+- Change the image from ~HEART~ to ~pacman~. Run the simulator again and
+  check the display for the debugging message.
+
+- Open the ~Reference > Display~ in the sidebar and find the correct
+  image descriptor for "pacman". Fix the code and run it on the
+  simulator.
+
+* Practice 2: Alarm Clock with four hands
+
+- Look for ~Display > Images: make your own~ in the reference manual.
+
+- Create a clock that moves a hand clock-wise changing position once
+  per second, and that makes a 'Ba-ding' sound when the hand changes.
+
+- [[https://drive.google.com/file/d/1mPjhzL04T6ungjOBGolpYHVLaxiH0spo/view?usp=sharing][Solution video (micro:bit v1)]].
+
+- [[https://github.com/birkenkrahe/ubms/blob/main/py/alarmClock.py][Solution code (Python)]].
+
+* Practice 3: Frère Jacques
+#+attr_latex: :width 400px
+[[../img/frere_jacques_lyrics.png]]
+
+1) Open the ~Ideas > Frère Jacques~ tab in the sidebar.
+
+2) Load the first code shown by clicking on ~Open~ below the code block.
+
+3) In the simulator, run the code.
+
+4) In the code editor, complete the code for the lullaby. If you can't
+   read music, this is the sequence of the notes [[https://github.com/birkenkrahe/ubms/blob/main/img/frere_jacques_lyrics.png][shown in the image]]:
+   #+begin_example
+   F G A F - F G A F - A B C - A B C - C D C B A F - C D C B A F - F C F - F C F
+   #+end_example
+   The black crotchets are quarter length (~:4~), the open crotchets are
+   2 x quarter length (~:8~), and the crotchets with the bars between
+   them are 1/2 quarter length (~:2~).
+
+5) Check using the simulator that you succeeded.
+
+6) Save the final code as .hex and .py on your PC.
+
+Solutions:
+- [[https://drive.google.com/file/d/1liEEgg9xYNMy0oGdXvfLMKvEZYB3P98S/view?usp=sharing][video with Finch]],
+- [[https://drive.google.com/file/d/1m1J5A9WP54_G0BzIWqNXvFkrXynv3sbK/view?usp=sharing][video with micro-bit v1]]
+- [[https://github.com/birkenkrahe/ubms/blob/main/py/frere_jacques.py][Python code]]
+
+* [[https://microbit.org/projects/make-it-code-it/?filters=makecode,python][More activities with the BBC micro:bit]]
+* Also on the [Android] phone
+
+Samsung app for micro:bit (also other Android phones):
+#+attr_latex: :width 200px
+[[../img/androidApp.jpg]] [[../img/androidApp1.jpg]] [[../img/androidApp2.jpg]]
+
+- Pair with any micro:bit.
+- Code in MakeCode, JavaScript or Python.
+- Simulate code in app and flash to micro:bit.
+

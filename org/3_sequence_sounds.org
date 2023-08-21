@@ -1,5 +1,5 @@
 #+title: Snap! Sequence and sounds
-#+subtitle: COR100 Snap! Programming Fall 2022
+#+subtitle: UBMS Game and Robo Programming with Snap! and Python
 #+options: toc:nil num:nil ^:nil
 #+startup: overview hideblocks indent inlineimages
 #+attr_html: :width 600px
@@ -34,7 +34,6 @@
 
 2) When you try to run the script a second time, nothing happens. What
    could you do to re-run it properly? - /Tip: check "Looks" commands./
-
    #+begin_notes
    Add the ~Looks::show~ command at the top.
    #+end_notes
@@ -87,7 +86,7 @@
   #+caption: Script with sounds
   [[../img/snap_dog2.png]]
 
-* *Practice* - Sounds
+* *Practice* (in class) - Sounds
 
 1) Define a new project "SoundCheck".
 2) Pick a costume and a suitable sound.
@@ -97,4 +96,37 @@
 5) Save the project to your ~My Projects~ list
 
 [[https://snap.berkeley.edu/project?user=birkenkrahe&project=SoundCheck][Practice solution - soundcheck]]
+
+* Program 2 (in class)
+
+- In the remaining time, solve the 2nd programming problem
+  ([[https://lyon.instructure.com/courses/1721/assignments/14944]["Soundbites" in Canvas]])
+
+- If you cannot finish it in class, finish it at home or during study
+  time (by tonight at 10 pm)
+
+- We will look at the solution tomorrow and also have a 3rd quiz!
+
+* Bonus problem
+
+- When clicked, your program should play a composition (sequence of
+  sounds). [[https://snap.berkeley.edu/project?username=matthew2022&projectname=Composition%20%28bonus%20program%29][A simple example from a previous course is here]]. Here is
+  another one [[https://snap.berkeley.edu/project?username=amare912&projectname=Song%20for%20ms%20li][with a choice of music]] (much more complicated code).
+
+- You must however take care to NOT use music that has a COPYRIGHT on
+  it: either compose yourself, or use free music (e.g. [[https://commons.wikimedia.org/w/index.php?search=audio&title=Special:MediaSearch&go=Go&type=audio][Wikimedia]])
+
+* Summary
+
+- Computers required exact syntactically correct sequences of
+  instructions to work at all.
+- A typical animation sequence includes at least code from: MOTION
+  (sprite movement), CONTROL (program flow), and LOOKS (appearance and
+  messages).
+- You can upload sounds from the web (as long as the copyright permits
+  it), or from the Snap! cloud platform, or record your own directly
+  in the editor.
+- Some commands will have to complete an action until the script can
+  continue, others will cause an action and simply continue even if
+  the action is not completed.
 

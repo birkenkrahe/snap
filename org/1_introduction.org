@@ -1,13 +1,32 @@
 #+title: Snap! Introduction
 #+options: toc:nil num:nil ^:nil
 #+startup: overview hideblocks indent inlineimages
-#+subtitle: COR100 Snap! Programming
-* INTRODUCTION
+#+subtitle: UBMS Game and Robo Programming with Snap! and Python
+* Introduction
+#+attr_html: :width 400px
+[[../img/westworld.jpg]]
+
+- [X] Snap! vs. Scratch
+- [X] Scratch interface vs. Snap! interface
+- [X] Programming - why? how? what?
+- [X] Programming languages vs. natural languages
+- [X] Look under the hood: infrastructure you're (not) dealing with
+- [ ] Why Snap! (Why not just Python?)
 
 * Snap! vs. Scratch
+#+attr_latex: :width 400px
+[[../img/tiobe.png]]
 
-- Web-based online application (HTML5), no desktop app
-
+- Web-based online application (HTML5), no desktop app though you can
+  (and should) download it from here:
+  1) In your browser, go to [[https://github.com/jmoenig/Snap/releases/][github.com/jmoenig/Snap/releases]]
+  2) Click on "Source code (zip)" for instant download
+  3) In your browser (or on your PC) navigate to ~Downloads~
+  4) ~Extract all~ files to any location (~Downloads~ is OK)
+  5) Go to the Snap directory, open it and click on ~snap.html~ to start
+  6) Close the editor again, and enter ~Snap~ in the Windows search bar
+  7) Pin the Snap! app to the taskbar for later use.
+     
 - Comparison between Snap! and Scratch ([[https://snap.berkeley.edu/about][About Snap!]]):
   + Snap! allows the user to define *data structures* like trees, heaps,
     hash tables etc. because you can define a "list of lists".
@@ -16,23 +35,59 @@
   + Data and control structures are the backbone of any form of
     *imperative* computer programming.
 
-- [[https://myarkansaspbs.pbslearningmedia.org/resource/2143a241-f8d9-4a54-a4a5-b9634797bd28/make-a-video-game/][How To Make A Video Game in Scratch]] (MIT course)
-    
-* Scratch interface
+- This enables you to do things you cannot do in Scratch, including
+  anything other high-level languages like C++ or Python can do
 
-#+attr_html: :width 500px
+- See also: Harvey & Mönig (2010). Bringing “No Ceiling” to Scratch:
+  Can One Language Serve Kids and Computer Scientists? URL:
+  [[https://bjc.berkeley.edu/documents/2010%20Constructionism%20-%20Bringing%20No%20Ceiling%20to%20Scratch%20-%20Can%20One%20Language%20Serve%20Kids%20and%20Computer%20Scientists.pdf][berkeley.edu]]
+  
+* Scratch interface
+#+attr_latex: :width 400px
 #+caption: Scratch 3 interface
 [[../img/snap_scratch.png]]
 
-* Snap! interface
+- You can program the Sphero Bolt robot with Scratch ([[https://sphero.com/blogs/news/sphero-edu-implements-scratch][see here]]) or
+  with Python (we'll do that).
+  #+attr_latex: :width 400px
+  #+caption: Sphero Bolt in human hand
+  [[../img/bolt.jpg]]
 
-#+attr_html: :width 400px
+* Snap! interface and examples
+#+attr_latex: :width 400px
 #+caption: Snap! 7 interface
 [[../img/snap1.png]]
+
+- Example: [[https://snap.berkeley.edu/project?username=qw23&projectname=Conway%e2%80%99s%20Life%20infinite%20playing%20field][Conway's Game of Life]] - check it out now:
+  1) In your browser, navigate to [[https://snap.berkeley.edu][snap.berkeley.edu]]
+  2) In the search bar, enter [[https://snap.berkeley.edu/search?query=conway][Conway]]
+  3) Select the project [[https://snap.berkeley.edu/search?query=conway][Conway's Life infinite playing field]]
+  4) Click on the "full screen symbol"
+  5) Click on the ~green flag~
+  6) Enter cellular automata by clicking on the squares
+  7) Start the simulation and let it run until the end
+  8) Leave the full screen
+  9) Select ~See Code~
+  10) [[https://snap.berkeley.edu/snap/snap.html#present:Username=qw23&ProjectName=Conway%e2%80%99s%20Life%20infinite%20playing%20field&editMode&noRun][Check out the program]] (we might get back to it)
+
+- Check out one of my own creations: a "[[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=TimeMachine][Time Machine]]" (of sorts)
+  1) Go back to the Snap! home page at snap.berkeley.edu
+  2) Search for ~birkenkrahe~
+  3) On my ~public page~ click ~follow this user~
+  4) [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=TimeMachine][Open the "Time Machine" project]]
+  5) Go to "full screen"
+  6) Click the ~green flag~
+  7) Click on the grey circle and move it around to see what happens
+  8) Leave the full screen
+  9) Click on ~see code~
+  10) Check out the code
+
 * Programming
+#+attr_latex: :width 400px
+#+caption: Punched card with FORTRAN statement (at top)
+[[../img/punchcard.jpg]]
 
 - This could be your first ever programming course. Is it?
-
   #+begin_quote Survey
   + What were your other courses about?
   + What did you take away from them?
@@ -40,19 +95,18 @@
   #+end_quote
 
 - Why should you bother to learn how to program?
-
   #+begin_quote Answer:
-  + Understand the relationships of humans and machines[fn:1]
-  + Develop critical thinking skills[fn:2]
-  + Create games and animations[fn:3]
+  + Understand the relationships of humans and machines
+  + Develop critical thinking skills
+  + Create games and animations
   #+end_quote
 
 - The diagram shows different relevant levels of programming and
   computing including hardware (bottom half) and software (top
   half). In this course, we're working on /"Applications"/ that use the
   computer to solve problems. Languages other than /Snap!/ on this level
-  include /C++/, /Java/, and /Python/ (all of these are OOP languages[fn:4]).
-  #+attr_html: :width 500px
+  include /C++/, /Java/, and /Python/ (all of these are OOP languages
+  #+attr_latex: :width 500px
   #+caption: levels of computing (Source: Steinhart, 2019).
   [[../img/1_steinhart.png]]
 
@@ -61,20 +115,96 @@
   cars). As with phones or cars, most of the power is under the hood.
 
 - I recommend maintaining a (digital) notebook for this course. That's
-  exactly what I did when working through the textbook, using the [[https://orgmode.org/][GNU
-  Emacs editor with Org-mode]].
+  exactly what I did when working through the textbook, using
+  [[https://orgmode.org/][Emacs]]. (Talk to me if you want to know more about Emacs.)
+  
+* Programming languages are languages
+
+- C/C++ is like Latin
+  #+attr_latex: :width 150px
+  #+Caption: "C/C++ is like Latin"
+  [[../img/0_cpp.png]]
+
+- SQL is like English
+  #+attr_latex: :width 200px
+  #+Caption: "SQL is like English"
+  [[../img/0_sqlite.png]]
+
+- Lisp is like French
+  #+attr_latex: :width 150px
+  #+Caption: "Lisp is like French"
+  [[../img/0_lisp.png]]
+  
+- R is like Italian
+  #+attr_latex: :width 150px
+  #+Caption: "R is like Italian"
+  [[../img/0_rlogo.png]]
+
+- Snap! is like Russian or Japanese
+  #+attr_latex: :width 150px
+  #+Caption: "Snap! is like Russian"
+  [[../img/0_snap.png]]
+
+- FORTRAN is like Hebrew
+  #+attr_latex: :width 150px
+  #+Caption: "FORTRAN is like Hebrew"
+  [[../img/0_fortran.png]]
+
+- HTML is like Gaelic
+  #+attr_latex: :width 150px
+  #+Caption: "HTML is like Gaelic"
+  [[../img/0_html.jpg]]
+
+- Python is like Spanish
+  #+attr_latex: :width 150px
+  #+Caption: "Python is like Spanish"
+  [[../img/0_python.png]]
+  
+* Importance of infrastructure: a look under the hood
+#+attr_latex: :width 400px
+#+caption: Photo by Landon Martin on Unsplash
+[[../img/0_nesting.jpg]]
+
+Some infrastructure that separates you from just "getting on" with it:
+
+1. Network server / network
+2. Keyboard / Screen
+3. Operating system (OS)
+4. OS shell / terminal / console
+5. Python shell / console
+6. File system
+7. Compiler/interpreter
+8. Editor
+9. Middleware and meta data
+10. Graphical user interface
+
+(Most of these infrastructure components are written in C/C++.)
+
+In Snap!, most of these elements (but not all) are hidden from you.
+
 * Why Snap!
-#+attr_html: :width 400px
+#+attr_latex: :width 400px
+#+caption: Donkey Kong and Pacman arcade games in Snap!
 [[../img/stemdemo_arcade.png]]
 
+*Why Snap!*
 - It's a full-fledged programming language
 - It's easy to build animation and games in it
 - It's instantly, freely available online
 - It trains pseudocode and modular design
-- It's suited for data science applications
+- It's suited for data science applications (muldidim arrays)
+- It allows you to define recursive functions ([[https://youtu.be/4Cyer8NwMXw][see here]])
 - I've always wanted to get into it
-* UNIT 1: LOOPING, BROADCASTING, ANIMATION
-* Concepts
+  
+*But why not just Python?*
+- My intuition (better for beginners and tourists)
+- Much, much steeper learning curve to get to game design
+- Snotty developer community (arrogant nerds aren't nice)
+- Compare Python reference vs. Snap! reference manual:
+  #+attr_latex: :width 300px
+  [[../img/python.png]] _[[../img/snapref.png]]
+
+* Next: looping, broadcasting, animation
 
 - [ ] Snap user interface (UI)
 - [ ] Paint editor
@@ -87,8 +217,11 @@
 - [ ] Nested looping
 - [ ] XY geometry
 - [ ] Costume-based animation
-* FIRST LOOK AT SNAP!
+
 * What is a User Interface?
+#+attr_latex: :width 400px
+#+caption: Blackboard user interface (our Berlin kitchen)
+[[../img/ui.jpg]]
 
 - A /user interface/ (UI) is the dashboard or platform that allows a
   user to interact with an application. It's the first thing that you,
@@ -99,7 +232,10 @@
   user's path to solving a problem (like shopping online), while UI
   focuses on the look of the surface of an interactive product (like a
   web site for online shopping). More: [[https://www.freecodecamp.org/news/use-user-reseach-to-create-the-perfect-ui-design/][freecodecamp.org video course]].
+
 * Snap! user interface
+#+attr_latex: :width 400px
+[[../img/snap.png]]
 
 - Connect to /snap.berkeley.edu/ and register using your name and Lyon
   student email address.
@@ -110,7 +246,7 @@
   ~snap.html~ in a browser.
 
 - This is how the interface looks like:
-  #+attr_html: :width 500px
+  #+attr_latex: :width 500px
   #+caption: Snap! user interface (Source: Joshi, 2018)
   [[../img/snap_ui.png]]
 
@@ -122,33 +258,25 @@
 - Compare with Windows Movie Maker - commands on the left, script in
   the lower half of the screen, sprites/characters in the middle, and
   stage on the right hand side.
-  #+attr_html: :width 500px
+  #+attr_latex: :width 500px
   #+caption: Windows Movie Maker
   [[../img/snap_moviemaker.jpg]]
 
 - As a programmer, you are writing the script for each sprite,
   including movements, sounds, and costumes, but you are also the
   producer, casting director, and editor.
+  
+* Summary
 
-* Footnotes
-
-[fn:1] This issue leads into deep questions of philosophy, science,
-and even theology. People in all of these fields are split with regard
-to fundamental questions like "will machines ever be truly
-intelligent?", or "are humans not just very complex machines?" As a
-starter, check out the [[https://plato.stanford.edu/entries/artificial-intelligence/][Stanford encyclopedia on AI (2018)]].
-
-[fn:2] This sounds kind of abstract but it is not. Just consider the
-that you can not not think (except perhaps when you sleep), and that
-thinking can have very different qualities, compare e.g. the
-statements /"I'm thinking of you"/, or /"I think therefore I am"/, or /"I
-think that programming is an important skill for any job."/
-
-[fn:3] We will do some of this in this course, but we're only
-scratching the surface. Fortunately, Snap! makes it fairly easy to
-develop fun games and animations.
-
-[fn:4]OOP = Object Oriented Programming is a programming paradigm that
-looks at the world as a collection of objects exchanging
-messages. This eases code reuse and allows you to define object class
-hierarchies.
+- Berkeley's Snap! is a development of MIT's Scratch, created in HTML5
+  (with JavaScript), available online or on your PC for download.
+- In Snap!, you can define multidimensional arrays and recursive
+  functions, which means that you can do anything a high-level
+  language like Python can do, too.
+- Programming can help you understand machines, your own thinking, and
+  you can build applications for humans (like games and animations).
+- Programming languages are like natural languages, only much stricter.
+- Many layers of computing infrastructure separate you from just
+  "getting on with it" - in Snap! you won't have to know most of them.
+- A user interface allows a user to interact with an
+  application. UI/UX design is an important, growing career field.

@@ -1,6 +1,6 @@
-#+TITLE:Snap! Agenda
+#+TITLE:Game and Robotics Programming with Snap! and Python - Agenda
 #+AUTHOR:Marcus Birkenkrahe
-#+SUBTITLE: COR 100 - Fall 2022
+#+SUBTITLE: COR 100 - Fall 2023
 #+OPTIONS: toc:1
 #+STARTUP: overview hideblocks indent inlineimages
 * README
@@ -14,83 +14,17 @@ originally date.
 
 See the course syllabus for a detailed schedule.
 
-* Welcome (Aug-12)  - Orientation
+* Welcome (Aug-18)  - Orientation
 
   #+attr_html: :width 400px
   [[../img/snaplogo.png]]
 
-- [X] Welcome to the course
-- [X] Who Am I? And Who Are You?
-- [X] Syllabus for this course
-- [X] Get your free course textbook
-- [X] First homework assignment: ch. 1.1
 
-** Who am I? (Marcus Speh Birkenkrahe)
 
-#+attr_html: :width 200px
-[[../img/poppy.jpg]]
-
-1) *One memorable thing about me.*
-
-2) *Why I am in this course.*
-
-3) *What I would really like (for this course)*.
-
-4) *What I would not like (for this course)*.
-
-5) *My word for today.*
-
-** Who are you?
-
-  #+attr_html: :width 250px
-  [[../img/monalisa.jpg]]
-
-1) What's your *name*? (And where you're from)
-
-2) What's your main *interest* (at Lyon)?
-
-3) What's your main *interest* (outside of Lyon)?
-
-4) What would you like to *take away* from this course?
-
-5) What would you like to *avoid* in this course?
-
-6) What's your *word* for today?
-
-** Summary - Today's Links
-
-Here's the summary of today's session as promised:
-
-1) [[https://tinyurl.com][Useful app to shorten URLs]]
-2) [[https://www.pablopicasso.org/guernica.jsp][20 facts about Picasso's Guernica]]
-3) [[https://liveandletsfly.com/mona-lisa-attacked/][Mona Lisa attacked in Louvre by young man disguised as old lady]]
-4) [[https://www.louvre.fr/en/explore/the-palace/from-the-mona-lisa-to-the-wedding-feast-at-cana][The painting across from the Mona Lisa]]
-5) [[https://lyon.instructure.com/courses/865][Canvas platform for the course]]
-6) [[https://github.com/birkenkrahe/snap][GitHub platform for the course]]
-7) How should you read? ([[https://github.com/birkenkrahe/org/blob/master/FAQ.org#how-should-you-read][FAQ]] on GitHub)
-8) [[https://snap.berkeley.edu/project?user=birkenkrahe&project=TimeMachine][Snap! Time Machine project]]
-9) [[https://francescocirillo.com/pages/pomodoro-technique][Time management with the Pomodoro Technique]]
-10) [[https://templatelab.com/wp-content/uploads/2019/08/research-poster-template-18.jpg][Academic research poster template]]
-11) [[https://www.pmi.org/learning/library/agile-project-management-scrum-6269][Agile project management with Scrum]]
-12) [[https://drive.google.com/drive/folders/1XoujMRyofhOQOZwIaAw5hVPRdlwtribg?usp=sharing][Whiteboard screenshots (GDrive)]]
-
-Your first assignment is to read the introduction and chapter 1.1
-("First Look at Snap!") in the textbook that you received in class
-(p.11-20).
-
-You do not have to work through this: we will take our time with it -
-just give it a quick look over a bowl of rice or cereal. It will be
-easier for you to follow if you have already seen the material, and
-perhaps you're intrigued and want to read on or register at
-snap.berkeley.edu already and try some of these commands.  If not, no
-harm done - we'll do this in class together, without rush or blush.
-
-* Scots  (Aug-14)   - Win the Rafting Race
-
+* Week 1 (Aug 21-27) Raft race / Intro to Snap!
 #+attr_html: :width 500px
 #+caption: The Raft of the Medusa, by Theodore Gericault (1818)
 [[../img/medusa.jpg]]
-
 #+begin_notes
 Image: "The painting depicts a moment from the aftermath of the wreck
 of the French naval frigate Méduse, which ran aground off the coast of
@@ -100,219 +34,8 @@ the 13 days before their rescue, and those who survived endured
 starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa][Wikipedia]])
 #+end_notes
 
-** You said you'd win...and you did!
-
+* You said you'd win...
 #+attr_html: :width 500px
 #+caption: Raft Race 2022, Lyon College (Source: twitter.com)
 [[../img/raftrace.png]]
 
-[[https://drive.google.com/drive/folders/1ZzuhkyuSzIx6_97Hlq2jUFqHuGuBRe8A?usp=sharing][Link to videos and pics (GDrive)]]
-
-* Week 1  (Aug-16)  - Welcome to Snap!
-
-- [X] Quizzes: after signing the honor code = complete before class!
-- [X] Programming - why and what?
-- [X] Why Snap!?
-- [X] Register at snap.berkeley.edu
-- [X] First Look at Snap!
-- [X] Any questions? (See also [[https://github.com/birkenkrahe/org/blob/master/FAQ.org][FAQ@GitHub]])
-
-** Summary, Aug 16
-
-A short summary of today's topics (see [[https://lyon.instructure.com/courses/865/pages/links][whiteboard]]):
-
-- [[https://en.wikipedia.org/wiki/Free_and_open-source_software][FOSS]]
-- [[https://en.wikipedia.org/wiki/Fortran][FORTRAN]]
-- [[https://www.datapine.com/dashboard-examples-and-templates/][Business dashboards (examples)]]
-- [[https://futurism.com/engineer-begged-google-test-experimental-ai-sentient][Google's false sentient AI, LaMDA]]
-- [[https://thelevel.ai/blog/a-glimpse-into-the-future-openais-gpt-3-2/][GPT-3 language model (Natural Language Processing)]]
-- [[https://plato.stanford.edu/entries/turing-test/][Turing test]]
-
-And a cartoon by the inimitable xkcd: "Skynet becomes too self-aware"
-(in case you're not aware: "skynet" is a thing from "Terminator"):
-[[../img/skynet.png]]
-
-*References:*
-- Harrison M (2022). Fired Engineer Says He Begged Google to Test
-  Whether Experimental AI Was Sentient. URL: futurism.com
-- N.A. (March 30, 2021). A glimpse into the future: OpenAI's
-  GPT-3. URL: thelevel.ai
-- Oppy G, Dowe D (2021). The Turing Test. Stanford Encyclopedia of
-  Philosophy. URL: plato.stanford.edu
-
-** TODO Next week
-
-- Read chapter 1.2 Sequence and Sounds
-- Feel free to try stuff on your own!
-- Introduction to the term projects
-
-* Week 2  (Aug-23)  - Sequence and Sounds
-
-- [X] Microsoft Office 365 licence through Lyon
-- [X] Notice the references in last week's [[https://lyon.instructure.com/courses/865/discussion_topics/422][summary]]
-- [X] Review: [[https://lyon.instructure.com/courses/865/assignments/997?display=full_width][quiz 1]]
-- [X] Lecture & practice: Making scripts / sequence and sounds
-- [X] First assignment due next week: "[[https://lyon.instructure.com/courses/865/assignments/999][Alonzo in an aquarium]]"
-
-* Week 3  (Aug-30)  - Looping and Costumes
-
-- [X] There was *no quiz* for this week (not enough new content)
-- [X] GitHub issue: [[https://github.com/birkenkrahe/snap/issues/6][visual scripting in game development]]
-- [X] [[https://lyon.instructure.com/courses/865/assignments/999][Program 1 assignment]] review: "[[https://snap.berkeley.edu/project?user=birkenkrahe&project=Program_1][Alonzo in the aquarium]]"
-- [X] [[https://lyon.instructure.com/courses/865/assignments/1054][Program 2 assignment]]: "Soundbites"
-- [X] Keep flipping through textbook before class ([[https://lyon.instructure.com/courses/865/assignments/syllabus][syllabus]])
-- [X] Today: "[[https://github.com/birkenkrahe/snap/blob/piHome/org/3_sequence_sounds.org][sequence and sounds]]" / "[[https://github.com/birkenkrahe/snap/blob/piHome/org/4_looping_costumes.org][looping and costumes]]"
-
-** MS Office 365 @Lyon
-
-#+begin_quote
-Prof. Miller: "Today in one of my upper division classes, I was
-talking to students about MS Office and found that at least a few
-didn't know they had *access to the MS Office suite* through their Lyon
-accounts. It occured to me that this would probably be a good thing to
-mention to our Y1 students in class. IT has a good guide for
-installing MS Office [[[https://www.lyon.edu/IT-FAQ][in the IT FAQ]]] that you could share with your
-students."
-#+end_quote
-
-* Week 4  (Sept-06) - Geometry and Motion
-
-- [X] Finish "[[https://github.com/birkenkrahe/snap/blob/piHome/org/4_looping_costumes.org][looping and costumes]]" (DIY)
-
-* Week 5  (Sept-13) - Animation project
-
-- [X] Finish "Geometry & Motion", and "Broadcasting"
-
-* Week 6  (Sept-20) - Broadcasting
-#+begin_quote
-"I write an average of five new programs every week. Poets have to
-write poems. I have to write computer programs." [[https://www.quantamagazine.org/computer-scientist-donald-knuth-cant-stop-telling-stories-20200416/][Donald Knuth]]
-#+end_quote
-#+attr_html: :width 500px
-[[../img/knuth.jpg]]
-
-- [ ] [[https://lyon.instructure.com/courses/865/discussion_topics/376][Project animation (in pairs)]]
-- [ ] Put the story, or a short description, in the project notes
-- [ ] Present projects (1 min each)
-- [ ] Post URL of finished project in discussion thread
-
-* Week 7  (Sept-27) - Events, concurrency, graphics
-  #+attr_html: :width 400px
-  [[../img/themovebpmn.png]]  
-
-- [ ] Review: project animation
-- [ ] Process events
-- [ ] Reset script
-- [ ] Graphic effects
-- [ ] Concurrency
-- [ ] User interaction
-- [ ] Conditions
-- [ ] Sensing touch
-- [ ] Conditional statements
-- [ ] Stopping scripts
-
-** Review project animation
-
-#+attr_html: :width 600px      
-[[../img/TheMove.png]]
-
-
-- [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=TheMove]["The Move"]]
-- [[https://snap.berkeley.edu/project?username=isaac%2erice&projectname=High%20Ground]["High Ground"]] (Isaac, Jakobe, Ty)
-- [[https://snap.berkeley.edu/project?username=landryt04&projectname=Carlos%20Birthday]["Carlos' Birthday"]] (Bryceton, Tyler)
-- [[https://snap.berkeley.edu/project?username=rturks7596&projectname=superhero%20movie]["Superhero movie"]] (Rylan "The Lion" Turks)
-
-* Week 8  (Oct-11)  - Review / Keyboard / IF statements
-#+attr_html: :width 400px
-[[../img/6_austen.png]]
-
-- [X] Thursday 13 Oct: Lyon College Career Fair - attend and lurk!
-- [X] Victors' lunch: liaise with Hunter! (Thursday 27th Oct 11.30)
-- [X] Review: rolling ball / crazy bird (Bryceton/Tyler)
-- [X] Lecture/practice/quiz 6: keyboard interaction and conditionals
-- [X] Programming assignment 6: bouncing ball/color circles (Oct 18)
-
-* Week 9  (Oct-18)  - Project helicopter
-#+attr_html: :width 600px
-[[../img/valkyries.png]]
-(Source: Apocalypse Now, [[https://youtu.be/GGU1P6lBW6Q][Song of the Valkyries by Richard Wagner]])
-
-- [ ] [[https://lyon.instructure.com/courses/865/discussion_topics/939][Assignments due this week]]
-- [ ] Today: Project helicopter (textbook p. 73) in groups
-- [ ] Next: Project Game of Maze, Project Bricks
-- [ ] Topics: mouse interaction, variables and bouncing
-- [ ] Always type along: [[https://www.inc.com/jeff-haden/youtube-google-video-overconfidence.html][just watching leads to overconfidence]]
-
-** Group project: helicopter
-#+attr_html: :width 600px
-[[../img/projecthelicopter.png]]
-
-Instructions at [[https://tinyurl.com/mrwtcjzy][tinyurl.com/mrwtcjzy]]
-
-* Week 10 (Oct-25)  - Mouse interaction, remote control
-#+attr_html: :width 400px
-[[../img/mouse.jpg]]
-
-- [ ] FREE LUNCH on THURSDAY, Oct 27 11.30am w/Prof Cassia Oliveira
-- [ ] FREE LUNCH on TUESDAY, Nov 1 12pm w/Profs Birkenkrahe/Oliveira
-- [ ] NO MORE FREE LUNCHES! END THIS MADNESS!
-  
-** NEXT OCTOBER 27, 11.30am: FREE LUNCH AT LAS PLAYITAS
-#+attr_html: :width 400px
-[[../img/lasplayitas.jpg]]
-
-** NEXT NOVEMBER 1, 12pm: FREE LUNCH @ SPRAGINS HOUSE
-#+attr_html: :width 400px
-[[../img/arkansascollege.png]]
-
-* Week 11 (Nov-01)  - Game of Pacman (group project)
-[[../img/pacmandoodle.png]]
-- [[https://www.google.com/logos/2010/pacman10-i.html][Online playable Pacman game Google doodle]]
-
-- We're going to program this solo in class (with submission)
-
-- Read the section on "Variables" (ch. 3.2, pp. 80-82) and the
-  specification for the "Game of maze" (p. 83-85) *before class*
-
-- You can also already prepare or program this game if you like (and
-  help others with their program in class)
-
-* Week 12 (Nov-08)  - H.A.T.S. Preparation w/Hunter
-* Week 13 (Nov-15)  - H.A.T.S. Project I
-* Week 14 (Nov-22)  - H.A.T.S. Project II
-#+attr_html: :width 700px
-[[../img/HATSposter.png]]
-
-* Week 15 (Nov-29/30) - [win] H.A.T.S. presentation
- #+attr_html: :width 400px
- [[../img/hats.jpg]]
-
- - [ ] Complete course evaluation now!
- - [ ] Snap! creator Jens Moenig wishes he could attend H.A.T.S.!
- - [ ] Agree shifts/schedule for H.A.T.S. presentation tomorrow
-
- 
-* TODO Course evaluation now! Hit me! Hard!
-#+attr_html: :width 480px
-[[../img/eval.png]]
-
-- *If you'd like for me to stick around, please evaluate (fairly) now*
-- *Extra credit (5 pts) for completing this in class today!*
-- *A couple of examples of useful feedback for me from past surveys:*
-#+attr_html: :width 700px
-[[../img/eval1.png]]
-
-* TODO Snap! creator wishes to be here!
- #+attr_html: :width 400px
- [[../img/snapTwitter.jpg]]
-
-* TODO H.A.T.S. schedule
-
-Place: Derby Science Center (my office: room 210, 1st floor)
-
-| TIME         | GAME           | TEAM                 |
-|--------------+----------------+----------------------|
-| 5:00-5:30 pm | PacMan         | Rylan, Tyler,Matthew |
-| 5.30-6.00 pm | Space Invaders | Bryceton, Jakobe     |
-| 6.00-6.30 pm | Asteroids      | Isaac, Hunter        |
-| 6.30-7.00 pm | Donkey Kong    | Smriti, Ty, Clay     |

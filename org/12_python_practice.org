@@ -1,0 +1,555 @@
+#+title: From Snap! to Python (practice)
+#+subtitle: UBMS Snap! Programming Summer 2023
+#+options: toc:nil num:nil ^:nil
+#+startup: overview hideblocks indent inlineimages
+#+property: header-args:python :results output :noweb yes
+:REVEAL_PROPERTIES:
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_REVEAL_JS_VERSION: 4
+#+REVEAL_INIT_OPTIONS: transition: 'cube'
+#+REVEAL_THEME: black
+:END:
+* First Python program (online demo)
+
+- We're going to code this [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=SnapVsPython][Snap!]] program in Python
+- Open colab.research.google.com in your browser
+- If you're logged into your Google account: check GDrive
+- All your colab notebooks are in one directory
+- Always start with a TEXT block (CTRL + ALT + T)
+- Continue with a CODE block (CTRL + ALT + I)
+- Run code blocks with CTRL + ENTER or SHIFT + ENTER
+
+You find the solution [[https://gist.github.com/birkenkrahe/2921e5c3afc0ee495bd64b23ff6df645][here as a GitHub code gist]].
+
+* Getting started in Colab
+
+1) Log into your (Lyon) Google account
+
+2) Open https://colab.research.google.com
+
+3) Select ~New notebook~.
+
+4) At the top, change ~Untitled~ in the title to ~ColabDemo~.
+
+5) You're on a free (virtual) Linux server (see sidebar).
+
+6) Enter ~CTRL + ALT + T~ or select ~+Text~ for a text block.
+
+7) This is /Markup/, a minimal layout language like HTML.
+
+8) Create a headline: ~# Import CSV data as DataFrame~
+
+9) Enter ~CTRL + ALT + I~ or select ~+Code~ for a code block.
+
+10) Text and code blocks can be moved up and down.
+
+11) The code block is an /IPython/ shell that sits on top of the Python
+    shell, which is a terminal for the Python interpreter, which
+    runs your commands right away.
+
+12) IPython allows you to practice interactive computing. For example,
+    you can import CSV files, print them as a table and get summary
+    stats information:
+    #+begin_src ipython
+      import pandas as pd
+      df = pd.read_csv("./sample_data/california_housing_test.csv")
+    #+end_src
+
+13) In Colab, run a code block with ~CTRL + ENTER~ or with ~SHIFT + ENTER~
+    (creates a new code block below it). This is just like in Snap!
+    which is also an /interpreted/ language (written in JavaScript and
+    compiled to an HTML5 executable).
+
+14) You can print the data frame as a table by typing its name:
+    #+begin_src ipython
+      df
+    #+end_src
+
+15) You can see that there are 3000 rows or records and 9 columns or
+    features describing the CA housing market. You can quickly get
+    statistical information on this dataset:
+    #+begin_src ipython
+      df.describe()
+    #+end_src
+
+16) You recognize the total count (number of entries or records or
+    rows), the average, the minimum and maximum. Without more
+    information about these data (units) this means little. It does
+    however, not make sense to average over longitude and latitude.
+
+17) This command limits the function to the columns 3 through 9
+    (excluding columns 1-2): the notation between the [ ] uses the
+    'slicing' operator to subset the rows and columns:
+    #+begin_src ipython
+      df.iloc[:,2:9].describe()
+    #+end_src
+
+18) In fact there are three operators and two functions at work here:
+    1. The dot operator to extract methods/functions
+    2. The [] operator to index the data frame
+    3. The , operator to separate rows and columns
+    4. The : operator to slice off rows and columns
+    5. The ~iloc[]~ method to identify a data frame value based on index
+    6. The ~describe()~ method to compute a stats summary
+
+19) In IPython, you can quickly make plots using the ~matplotlib~
+    library, which contains a module ~pyplot~, which in turn contains
+    plotting functions like ~boxplot~ or ~scatter~:
+    #+begin_src ipython
+      import matplotlib.pyplot as plt
+      plt.boxplot(df[:100]['median_house_value'],vert=False)
+      plt.show()
+    #+end_src
+
+20) In the last code block, we imported the plotting library
+    ~matplotlib~ and the ~pyplot~ module in it, and told Python to plot a
+    boxplot for one variable/column only, the median house value, and
+    to restrict the plot to the first 100 records (i.e. locations).
+
+21) The ~plt.show()~ command indicates that there's a difference, to
+    Python, between making the plot and displaying it, or sending it
+    to the standard output.
+
+22) You can see in the box plot that there are five 'outliers', houses
+    that are much more valuable than the rest, in this data, and that
+    the middle magnitude (or median) is at around 180,000 USD
+    (i.e. half the houses (except the outliers) are less, the other
+    half more expensive.
+
+23) Another useful plot is the scatterplot - that's what we did in the
+    R programming language for the ~mtcars~ dataset and the variables
+    ~mpg~ vs. ~wt~ (miles per gallon vs. car weight). Now, we plot the
+    median income as a function of the house value - and we expect
+    them to be /positively correlated/, that is to increase together:
+    #+begin_src ipython
+      plt.scatter(df.median_house_value,df.median_income)
+      plt.show()
+    #+end_src
+
+24) It's hard to see anything in this plot (there are 3000 values
+    here, one for each record) so let's reduce the number of
+    (x,y)-values to 100 each:
+    #+begin_src ipython
+      plt.scatter(df.median_house_value[:100],df.median_income[:100])
+      plt.show()
+    #+end_src
+
+25) We can customize this plot minimally by adding labels and a title:
+    #+begin_src ipython
+      plt.scatter(df.median_house_value[:100],df.median_income[:100])
+      plt.xlabel('Median Income')
+      plt.ylabel('Median House Value')
+      plt.title('Scatterplot: Median Income vs. Median House Value')
+      plt.show()
+    #+end_src
+
+26) IPython/Colab has a lot more power, e.g. there are many 'magic
+    commands' with additional information. For example, enter ~%whos~
+    now for a list of all the user-defined variables and functions
+    that you created in this notebook session.
+    #+begin_example ipython
+      %whos
+    #+end_example
+    #+begin_example
+    Variable   Type         Data/Info
+    ---------------------------------
+    df         DataFrame    ... [3000 rows x 9 columns]
+    pd         module       <module 'pandas' ...
+    plt        module       <module 'matplotlib.pyplot' ...
+    #+end_example
+
+This concludes a quick demonstration of Colab's IPython capabilities
+and some of Python's data and plotting abilities. See here for the
+complete Colab notebook as a GitHub gist: [[https://bit.ly/3NS6sbu][bit.ly/3NS6sbu]].
+
+* Randomize ~babynames~ dataset
+
+#+begin_src python
+  import pandas as pd
+
+  # Load the CSV data into a pandas DataFrame
+  data = pd.read_csv('../data/babynames_original.csv')
+
+  # Randomize the DataFrame
+  data = data.sample(frac=1).reset_index(drop=True)
+
+  # Save the randomized DataFrame back to a CSV file
+  data.to_csv('../data/babynames.csv', index=False)
+
+  # Show data frame
+  print(data)
+#+end_src
+
+#+RESULTS:
+#+begin_example
+        year     name   percent   sex
+0       1904    Selma  0.000790  girl
+1       2002  Xzavier  0.000112   boy
+2       2006    Kadyn  0.000094   boy
+3       1965      Von  0.000049   boy
+4       1974     Abel  0.000202   boy
+...      ...      ...       ...   ...
+257995  1920  Queenie  0.000053  girl
+257996  1982     Wade  0.000351   boy
+257997  1988   Lesley  0.000250  girl
+257998  1943     Vada  0.000061  girl
+257999  1942     Eloy  0.000039   boy
+
+[258000 rows x 4 columns]
+#+end_example
+
+* Practice yourself with ~babynames~
+
+Transfer the code from the previous section to a new dataset.
+
+This practice file (without answers) is available in Colab as:
+[[https://tinyurl.com/babyNamesColab][tinyurl.com/babyNamesColab]].
+
+The solution file is here: [[https://tinyurl.com/babyNamesNotebook][tinyurl.com/babyNamesNotebook]].
+
+1) Download this file of baby names to your PC as ~babynames.csv~:
+   [[https://tinyurl.com/babyNamesRandomized][tinyurl.com/babyNamesRandomized]]
+
+2) Import the file from your ~Downloads~ directory to a data frame named
+   ~baby~.
+   #+name: baby
+   #+begin_src python :results silent
+     import pandas as pd
+     import matplotlib.pyplot as plt
+     baby = pd.read_csv("../data/babynames.csv")
+   #+end_src
+
+3) Print the data frame to make sure the import worked - how many
+   names does this data set contain?
+   #+begin_src python
+     <<baby>>
+     print(baby)
+   #+end_src
+
+   #+RESULTS:
+   #+begin_example
+           year     name   percent   sex
+   0       1904    Selma  0.000790  girl
+   1       2002  Xzavier  0.000112   boy
+   2       2006    Kadyn  0.000094   boy
+   3       1965      Von  0.000049   boy
+   4       1974     Abel  0.000202   boy
+   ...      ...      ...       ...   ...
+   257995  1920  Queenie  0.000053  girl
+   257996  1982     Wade  0.000351   boy
+   257997  1988   Lesley  0.000250  girl
+   257998  1943     Vada  0.000061  girl
+   257999  1942     Eloy  0.000039   boy
+
+   [258000 rows x 4 columns]
+   #+end_example
+
+4) There is only one numeric column, the ~percent~ (of records that
+   #+begin_src python
+     <<baby>>
+     print(baby.iloc[:,2].describe())
+     print(baby.loc[:,'year'].min())
+     print(baby.loc[:,'year'].max())
+   #+end_src
+
+   #+RESULTS:
+   #+begin_example
+   count    258000.000000
+   mean          0.000894
+   std           0.003016
+   min           0.000026
+   25%           0.000081
+   50%           0.000164
+   75%           0.000507
+   max           0.081541
+   Name: percent, dtype: float64
+   1880
+   2008
+   #+end_example
+
+5) Make a /horizontal/ boxplot of ~percent~ values of the
+   data set (remember that you need to import the graphics library and
+   its plotting module):
+   #+begin_src python :results silent
+     <<baby>>
+     plt.boxplot(baby[:100]['percent'],vert=False)
+     plt.show()
+   #+end_src
+
+6) I had randomized the ~babynames~ data set and removed the groupings
+   of years and sex - from the result, you can see that, at least
+   among the first 100 names, there are a few outliers - names that
+   are massively more popular than the lot, while the rest of the
+   names are close together. To see better, one can transform the
+   values logarithmically using the ~numpy~ package:
+   #+begin_src python :results silent
+     <<baby>>
+     import numpy as np
+     baby_log = baby
+     baby_log['percent'] = np.log10(baby['percent'])
+     plt.boxplot(baby_log[:100]['percent'],vert=False)
+     plt.show()
+   #+end_src
+
+7) Make a /scatterplot/ of the ~percent~ values: for the x-argument of the
+   ~plt.scatter~ function use the ~index~, which is stored in ~baby.index~:
+   #+begin_src python :results silent
+     <<baby>>
+     plt.scatter(baby.index,baby.percent)
+     plt.show()
+   #+end_src
+
+8) It's very hard to see any trends with so many data points! Plot
+   again but this time limit the number of data points to 100:
+   #+begin_src python :results silent
+     <<baby>>
+     plt.scatter(baby.index[:100],baby.percent[:100])
+     plt.show()
+   #+end_src
+
+9) To see this better, you can sort the values in descending order
+   using ~sort_values~:
+   #+begin_src python :results silent
+     <<baby>>
+     baby = baby.sort_values(by='percent',ascending=False).reset_index(drop=True)
+     baby_top100 = baby[:100]
+     plt.scatter(baby_top100.index,baby_top100.percent)
+     plt.show()
+   #+end_src
+
+10) Print the functions that you used with the corresponding magic
+    command.
+    #+begin_example ipython
+      %whos
+    #+end_example
+
+11) Lastly, save a Python (~.py~) version of your code to your PC. You
+    can now run this code from the terminal or from within IDLE.
+
+* The 'hello world' program
+
+1) Open a ~New notebook~ in the ~File~ menu at the top.
+
+2) Name the notebook ~SnapToPython.ipynb~.
+
+3) Enter ~CTRL + ALT + T~ or select ~+Text~ for a text block.
+
+4) Create a headline: ~# My first Python program~.
+
+5) Open this Snap! file, ~edit~ the code and extract a picture of the
+   code block: [[https://tinyurl.com/SnapToPython][tinyurl.com/SnapToPython]] to your PC.
+   #+attr_latex: :width 400px
+   [[../img/snaptopythonsnap.png]]
+
+6) Create another text block and open the image symbol to ~insert
+   image~, then insert the PNG image that you downloaded.
+
+7) Now leave the editor by clicking on the crossed out pen symbol at
+   the top of the text block. You should see the image embedded in
+   your notebook.
+
+8) Create a new code block with ~CTRL + ALT + I~ (you can see all the
+   keyboard short cuts in the sidebar at the bottom of the screen).
+
+9) Enter the 'hello world' program and run it with ~SHIFT + ENTER~:
+   #+begin_src ipython
+     print('hello world')
+   #+end_src
+
+10) In the next code block (that should already have appeared), enter
+    another ~print~ statement and run it also with ~SHIFT + ENTER~:
+    #+begin_src ipython
+      print("What's your name?")
+    #+end_src
+
+11) Notice the use of single quotes in the first, and double quotes in
+    the second code block: both are permitted but if you want to use
+    single quotes in a /string literal/ (the thing that Python should
+    print), then you need to use double quotes.
+
+12) So far we've only seen output. To get input, like for the ~ask~
+    function in Snap!, we use the ~input~ function in Python:
+    #+begin_src ipython
+      input()
+    #+end_src
+
+13) When you run this command, you're prompted for an input. If you
+    enter nothing (or rather: the empty string ~''~), you get
+    nothing. If you enter something, it's played back to you.
+
+14) This is like the ~ask~ function in Snap!: the input is not stored
+    anywhere. Now we store it in a variable ~name~ - run this command:
+    #+begin_src ipython
+      name = input()
+    #+end_src
+
+15) And in the next code block, print the content of ~name~:
+    #+begin_src ipython
+      name
+    #+end_src
+
+16) In the next line, we use the ~len~ function to count the number of
+    characters of the string stored in ~name~:
+    #+begin_src ipython
+      print('Your name has',len(name),'characters.')
+    #+end_src
+
+17) The result of running ~len~ with the argument ~name~ is simply
+    sandwiched between two other strings.
+
+18) Next, we ask for the user's age. This time, we combine ~print~ and
+    ~input~ by putting the ~prompt~ inside the parentheses, and store the
+    received value in the variable ~age~.
+    #+begin_src ipython
+      age = input("What's your age? ")
+    #+end_src
+
+19) To get short information, called a /docstring/ on any function, you
+    can type the name followed by a question mark. For more detailed
+    help, use ~help(input)~:
+    #+begin_src ipython
+      input?
+    #+end_src
+
+20) Like Snap!, Python has data types (string, number, Boolean), and
+    like in Snap! you do not have to declare them but they are
+    dynamically assigned when they are created by you.
+
+21) The next line checks the data type of ~age~, which we entered as a
+    number, so it's reasonable to assume that it's an integer:
+    #+begin_src ipython
+      type(age)
+    #+end_src
+
+22) Lo and behold, it's not ~int~ but ~str~ for string! This implies that
+    we cannot compute using ~age~ without converting it. Notice that
+    Snap! did not ask us to do that.
+
+23) The last line contains such a computation - there are several
+    things at work here:
+    - The string literal (between "") is printed as an /f-string/
+      (formatted).
+    - The printed value is enclosed in {}
+    - The value is computed using ~int~ to convert ~age~ to an integer
+    - The resulting integer is added to ~1~
+    - The integer is converted back to a string with ~str~ so that it
+      can be printed:
+      #+begin_src ipython
+        print(f"You're going to be {str(int(age)+1)} years old.")
+      #+end_src
+
+24) Here are two alternative printing ways:
+    #+begin_src ipython
+        print("You're going to be", str(int(age)+1), "years old.")
+        print("You're going to be " + str(int(age)+1) + " years old.")
+    #+end_src
+
+25) To save the code blocks as one Python program ~hello.py~, select
+    ~File~ > ~Download~ > ~Download as .py~ in the top menu.
+
+26) Open the terminal and run the Python file on the command line:
+
+See here for a copy of the program ~SnapToPython~ as a [[https://gist.github.com/birkenkrahe/2921e5c3afc0ee495bd64b23ff6df645][GitHub gist]]:
+[[https://tinyurl.com/helloWorldColab][tinyurl.com/helloWorldColab]]. Here is the full Python program:
+#+begin_src python
+  print('Hello, world!')
+  print("What's your name?")
+  name = input("What's your name? ")
+  print('Your name has', len(name), 'characters.')
+  print('Your name has ' + str(len(name)) + ' characters.')
+  print('a' + str(2))
+  print(f'Your name has {len(name)} characters.')
+  age = input('What is your age? ')
+  print('You are going to be', str(int(age) + 1), 'years old.')
+  print(f'You are going to be {int(age) + 1} years old.')
+  Age = int(age)
+  print(f'You are going to be {Age+1} years old')
+#+end_src
+
+* 6 ways to code in Python (online demo)
+
+1) In the command line terminal (Python must be installed)
+   #+attr_latex: :width 400px
+   [[../img/cmd.png]]
+
+   - Open a command line terminal in Windows (Search > CMD)
+
+   - Open the Python shell by entering ~python~ at the prompt
+
+2) In Google Colaboratory (interactive Jupyter notebook)
+   #+attr_latex: :width 400px
+   [[../img/colaboratory.png]]
+
+   - Opening a browser to ~colab.research.google.com~ opens an IPython
+     console by default.
+
+   - Colab also offers R on a different address: ~colab.to/r~.
+
+3) In replit.com (REPL)
+   #+attr_latex: :width 400px
+   [[../img/replit.png]]
+
+   - Open replit.com at the browser
+
+   - Click on "Start creating" then create a Replit account using your
+     lyon.edu Google address
+
+   - Click on ~+ Create Repl~ at the top left
+
+   - Select the ~Python~ template then ~+ Create Repl~ again
+
+   - In the ~main.py~ template, type ~print("hello world")~ in line one
+     and run with the ~Play~ button. You see the result in the ~Console~
+     window.
+
+   - There is also a (virtual) Linux shell under the ~Shell~ tab: open
+     it and type ~ls -l~ at the prompt (brings up the list of files).
+
+   - Enter ~cat main.py~ to see the code.
+
+   - Run the file with ~python main.py~ on the shell.
+
+   - The shell experiences delays.
+
+4) In the browser (extension)
+   #+attr_latex: :width 400px
+   [[../img/chrome.png]]
+
+   - In Google chrome, at the top (three dots), open ~Extensions~ >
+     ~Visit Chrome Web Store~. Search for ~python~.
+
+   - Download the ~Python Shell~ extension. It will show up at the top
+     of your browser.
+
+5) In the Python IDLE (Integrated Development Learning Environment)
+   #+attr_latex: :width 400px
+   [[../img/idle.png]]
+
+   - Find and open IDLE in the Windows search bar
+
+   - It comes with an interactive Python shell, and with a file editor
+
+   - There are also Turtle demo animations and games (~Help~ tab)
+     #+attr_latex: :width 400px
+     [[../img/turtleDemo.png]]
+
+6) In an IDE (Integrated Development Environment): Emacs, VSCode etc.
+   #+attr_latex: :width 400px
+   #+caption: Emacs IDE: Org-mode (top) and Python shell (bottom)
+   [[../img/emacs.png]]
+
+   #+attr_latex: :width 400px
+   #+caption: 'Hello world' in the Visual Studio Code editor (Microsoft)
+   [[../img/vscode.png]]
+
+   #+attr_latex: :width 400px
+   #+caption: Turtle racing game in PyCharm
+   [[../img/pycharm.png]]
+
+* References
+
+- Birkenkrahe (2023). Introduction to programming in Python. URL:
+  [[https://github.com/birkenkrahe/py][github.com/birkenkrahe/py]]
+- Joshi (2021). Learn Python in a Snap! URL: [[http://www.abhayjoshi.net/spark/python/pythonsnap.pdf][abhayjoshi.net]].
+- Van Rossum, G., Drake, F. L. (2009). Python 3 Reference Manual. URL:
+  https://docs.python.org/3/reference/.
