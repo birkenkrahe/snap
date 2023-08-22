@@ -1,22 +1,28 @@
+:REVEAL_PROPERTIES:
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_REVEAL_JS_VERSION: 4
+#+REVEAL_INIT_OPTIONS: transition: 'cube'
+#+REVEAL_THEME: black
+:END:
 #+title: Introduction to Snap!
 #+options: toc:nil num:nil ^:nil
 #+startup: overview hideblocks indent inlineimages
 #+subtitle: Game and Robotics Programming with Snap! and Python
 * Introduction
 #+attr_html: :width 400px
-[[../img/westworld.jpg]]
-
-- [X] Snap! vs. Scratch
-- [X] Scratch interface vs. Snap! interface
-- [X] Programming - why? how? what?
-- [X] Programming languages vs. natural languages
-- [X] Look under the hood: infrastructure you're (not) dealing with
-- [ ] Why Snap! (Why not just Python?)
-
+[[../img/cover.png]]
+#+begin_example
+- Snap! vs. Scratch
+- Scratch interface vs. Snap! interface
+- Programming - why? how? what?
+- Programming languages vs. natural languages
+- Look under the hood: infrastructure you're (not) dealing with
+- Why Snap! (Why not just Python?)
+#+end_example
 * Snap! vs. Scratch
 #+attr_latex: :width 400px
 [[../img/tiobe.png]]
-
+#+begin_notes
 - Web-based online application (HTML5), no desktop app though you can
   (and should) download it from here:
   1) In your browser, go to [[https://github.com/jmoenig/Snap/releases/][github.com/jmoenig/Snap/releases]]
@@ -26,7 +32,7 @@
   5) Go to the Snap directory, open it and click on ~snap.html~ to start
   6) Close the editor again, and enter ~Snap~ in the Windows search bar
   7) Pin the Snap! app to the taskbar for later use.
-     
+
 - Comparison between Snap! and Scratch ([[https://snap.berkeley.edu/about][About Snap!]]):
   + Snap! allows the user to define *data structures* like trees, heaps,
     hash tables etc. because you can define a "list of lists".
@@ -41,22 +47,29 @@
 - See also: Harvey & Mönig (2010). Bringing “No Ceiling” to Scratch:
   Can One Language Serve Kids and Computer Scientists? URL:
   [[https://bjc.berkeley.edu/documents/2010%20Constructionism%20-%20Bringing%20No%20Ceiling%20to%20Scratch%20-%20Can%20One%20Language%20Serve%20Kids%20and%20Computer%20Scientists.pdf][berkeley.edu]]
-  
+#+end_notes
+
 * Scratch interface
 #+attr_latex: :width 400px
-#+caption: Scratch 3 interface
 [[../img/snap_scratch.png]]
 
-- You can program the Sphero Bolt robot with Scratch ([[https://sphero.com/blogs/news/sphero-edu-implements-scratch][see here]]) or
-  with Python (we'll do that).
-  #+attr_latex: :width 400px
-  #+caption: Sphero Bolt in human hand
-  [[../img/bolt.jpg]]
-
-* Snap! interface and examples
+#+begin_notes
+You can program the Sphero Bolt robot with Scratch ([[https://sphero.com/blogs/news/sphero-edu-implements-scratch][see here]]) or
+with Python (we'll do that).
 #+attr_latex: :width 400px
-#+caption: Snap! 7 interface
+#+caption: Sphero Bolt in human hand
+[[../img/bolt.jpg]]
+#+end_notes
+
+* Snap! UI and examples
+#+attr_latex: :width 300px
 [[../img/snap1.png]]
+
+** Example: Conway's Game of Life
+#+attr_latex: :width 400px
+[[../img/conway.jpg]]
+
+#+begin_notes
 
 - Example: [[https://snap.berkeley.edu/project?username=qw23&projectname=Conway%e2%80%99s%20Life%20infinite%20playing%20field][Conway's Game of Life]] - check it out now:
   1) In your browser, navigate to [[https://snap.berkeley.edu][snap.berkeley.edu]]
@@ -70,6 +83,13 @@
   9) Select ~See Code~
   10) [[https://snap.berkeley.edu/snap/snap.html#present:Username=qw23&ProjectName=Conway%e2%80%99s%20Life%20infinite%20playing%20field&editMode&noRun][Check out the program]] (we might get back to it)
 
+#+end_notes
+
+** Time Machine
+#+attr_latex: :width 400px
+[[../img/timeMachine.png]]
+
+#+begin_notes
 - Check out one of my own creations: a "[[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=TimeMachine][Time Machine]]" (of sorts)
   1) Go back to the Snap! home page at snap.berkeley.edu
   2) Search for ~birkenkrahe~
@@ -82,10 +102,13 @@
   9) Click on ~see code~
   10) Check out the code
 
+#+end_notes
+
 * Programming
 #+attr_latex: :width 400px
-#+caption: Punched card with FORTRAN statement (at top)
 [[../img/punchcard.jpg]]
+
+#+begin_notes
 
 - This could be your first ever programming course. Is it?
   #+begin_quote Survey
@@ -96,19 +119,21 @@
 
 - Why should you bother to learn how to program?
   #+begin_quote Answer:
-  + Understand the relationships of humans and machines
-  + Develop critical thinking skills
-  + Create games and animations
+  1. Understand the relationships of humans and machines
+  2. Develop critical thinking skills
+  3. Create games and animations
   #+end_quote
+#+end_notes
+** Computing vs. programming
+#+attr_latex: :width 500px
+[[../img/1_steinhart.png]]
 
+#+begin_notes
 - The diagram shows different relevant levels of programming and
   computing including hardware (bottom half) and software (top
   half). In this course, we're working on /"Applications"/ that use the
   computer to solve problems. Languages other than /Snap!/ on this level
   include /C++/, /Java/, and /Python/ (all of these are OOP languages
-  #+attr_latex: :width 500px
-  #+caption: levels of computing (Source: Steinhart, 2019).
-  [[../img/1_steinhart.png]]
 
 - The top level "Users" refers to most people who only use computers
   (mostly when operating their smart phones, or driving their
@@ -117,54 +142,51 @@
 - I recommend maintaining a (digital) notebook for this course. That's
   exactly what I did when working through the textbook, using
   [[https://orgmode.org/][Emacs]]. (Talk to me if you want to know more about Emacs.)
-  
-* Programming languages are languages
 
-- C/C++ is like Latin
-  #+attr_latex: :width 150px
-  #+Caption: "C/C++ is like Latin"
-  [[../img/0_cpp.png]]
-
-- SQL is like English
-  #+attr_latex: :width 200px
-  #+Caption: "SQL is like English"
-  [[../img/0_sqlite.png]]
-
-- Lisp is like French
-  #+attr_latex: :width 150px
-  #+Caption: "Lisp is like French"
-  [[../img/0_lisp.png]]
-  
-- R is like Italian
-  #+attr_latex: :width 150px
-  #+Caption: "R is like Italian"
-  [[../img/0_rlogo.png]]
-
-- Snap! is like Russian or Japanese
-  #+attr_latex: :width 150px
-  #+Caption: "Snap! is like Russian"
-  [[../img/0_snap.png]]
-
-- FORTRAN is like Hebrew
-  #+attr_latex: :width 150px
-  #+Caption: "FORTRAN is like Hebrew"
-  [[../img/0_fortran.png]]
-
-- HTML is like Gaelic
-  #+attr_latex: :width 150px
-  #+Caption: "HTML is like Gaelic"
-  [[../img/0_html.jpg]]
-
-- Python is like Spanish
-  #+attr_latex: :width 150px
-  #+Caption: "Python is like Spanish"
-  [[../img/0_python.png]]
-  
-* Importance of infrastructure: a look under the hood
+#+end_notes
+** Computing vs. programming
 #+attr_latex: :width 400px
-#+caption: Photo by Landon Martin on Unsplash
+[[../img/1_steinhart2.png]]
+
+** Programming languages are languages
+
+*** C/C++ is like Latin
+#+attr_latex: :width 150px
+[[../img/0_cpp.png]]
+
+*** SQL is like English
+#+attr_latex: :width 200px
+[[../img/0_sqlite.png]]
+
+*** Lisp is like French
+#+attr_latex: :width 150px
+[[../img/0_lisp.png]]
+
+*** R is like Italian
+#+attr_latex: :width 150px
+[[../img/0_rlogo.png]]
+
+*** Snap! is like Japanese
+#+attr_latex: :width 150px
+[[../img/0_snap.png]]
+
+*** FORTRAN is like Finnish
+#+attr_latex: :width 150px
+[[../img/0_fortran.png]]
+
+*** HTML is like Braille
+#+attr_latex: :width 150px
+[[../img/0_html.jpg]]
+
+*** Python is like Spanish
+#+attr_latex: :width 150px
+[[../img/0_python.png]]
+
+* The Importance of Infrastructure
+#+attr_latex: :width 400px
 [[../img/0_nesting.jpg]]
 
+#+begin_notes
 Some infrastructure that separates you from just "getting on" with it:
 
 1. Network server / network
@@ -182,11 +204,16 @@ Some infrastructure that separates you from just "getting on" with it:
 
 In Snap!, most of these elements (but not all) are hidden from you.
 
+#+end_notes
+** The truth about Snap!
+#+attr_latex: :width 400px
+[[../img/infrastructure.png]]
+
 * Why Snap!
 #+attr_latex: :width 400px
-#+caption: Donkey Kong and Pacman arcade games in Snap!
 [[../img/stemdemo_arcade.png]]
 
+#+begin_notes
 *Why Snap!*
 - It's a full-fledged programming language
 - It's easy to build animation and games in it
@@ -195,7 +222,7 @@ In Snap!, most of these elements (but not all) are hidden from you.
 - It's suited for data science applications (muldidim arrays)
 - It allows you to define recursive functions ([[https://youtu.be/4Cyer8NwMXw][see here]])
 - I've always wanted to get into it
-  
+
 *But why not just Python?*
 - My intuition (better for beginners and tourists)
 - Much, much steeper learning curve to get to game design
@@ -204,25 +231,13 @@ In Snap!, most of these elements (but not all) are hidden from you.
   #+attr_latex: :width 300px
   [[../img/python.png]] _[[../img/snapref.png]]
 
-* Next: looping, broadcasting, animation
-
-- [ ] Snap user interface (UI)
-- [ ] Paint editor
-- [ ] Sequence of commands
-- [ ] Motion commands
-- [ ] Simple looping (repeat, forever)
-- [ ] Absolute motion
-- [ ] Relative motion
-- [ ] Smooth motion using repeat
-- [ ] Nested looping
-- [ ] XY geometry
-- [ ] Costume-based animation
+#+end_notes
 
 * What is a User Interface?
 #+attr_latex: :width 400px
-#+caption: Blackboard user interface (our Berlin kitchen)
 [[../img/ui.jpg]]
 
+#+begin_notes
 - A /user interface/ (UI) is the dashboard or platform that allows a
   user to interact with an application. It's the first thing that you,
   as a user, see.
@@ -232,10 +247,13 @@ In Snap!, most of these elements (but not all) are hidden from you.
   user's path to solving a problem (like shopping online), while UI
   focuses on the look of the surface of an interactive product (like a
   web site for online shopping). More: [[https://www.freecodecamp.org/news/use-user-reseach-to-create-the-perfect-ui-design/][freecodecamp.org video course]].
+#+end_notes
 
-* Snap! user interface
+** Snap! user interface
 #+attr_latex: :width 400px
 [[../img/snap.png]]
+
+#+begin_notes
 
 - Connect to /snap.berkeley.edu/ and register using your name and Lyon
   student email address.
@@ -244,30 +262,34 @@ In Snap!, most of these elements (but not all) are hidden from you.
   i.e. where you can download and install programs as you please -
   download the [[https://github.com/jmoenig/Snap/releases/tag/v7.3.1][source files from GitHub]], unpack the files, and open
   ~snap.html~ in a browser.
+#+end_notes
 
-- This is how the interface looks like:
-  #+attr_latex: :width 500px
-  #+caption: Snap! user interface (Source: Joshi, 2018)
-  [[../img/snap_ui.png]]
+** Snap interface
+#+attr_latex: :width 500px
+[[../img/snap_ui.png]]
 
+#+begin_notes
 - The interface is reminiscent of a movie maker's studio: /commands/ are
   assembled in the /script/ area, and the resulting action plays out on
   a /stage/ with a cast of characters called /sprites/. Every sprite has a
   script associated with it.
 
+#+end_notes
+** Windows Movie Maker
+#+attr_latex: :width 500px
+[[../img/snap_moviemaker.jpg]]
+
+#+begin_notes
 - Compare with Windows Movie Maker - commands on the left, script in
   the lower half of the screen, sprites/characters in the middle, and
   stage on the right hand side.
-  #+attr_latex: :width 500px
-  #+caption: Windows Movie Maker
-  [[../img/snap_moviemaker.jpg]]
-
 - As a programmer, you are writing the script for each sprite,
   including movements, sounds, and costumes, but you are also the
   producer, casting director, and editor.
-  
-* Summary
+#+end_notes
 
+* Summary
+#+begin_example
 - Berkeley's Snap! is a development of MIT's Scratch, created in HTML5
   (with JavaScript), available online or on your PC for download.
 - In Snap!, you can define multidimensional arrays and recursive
@@ -280,3 +302,19 @@ In Snap!, most of these elements (but not all) are hidden from you.
   "getting on with it" - in Snap! you won't have to know most of them.
 - A user interface allows a user to interact with an
   application. UI/UX design is an important, growing career field.
+
+#+end_example
+* Next: looping, broadcasting, animation
+
+- Snap user interface (UI)
+- Paint editor
+- Sequence of commands
+- Motion commands
+- Simple looping (repeat, forever)
+- Absolute motion
+- Relative motion
+- Smooth motion using repeat
+- Nested looping
+- XY geometry
+- Costume-based animation
+

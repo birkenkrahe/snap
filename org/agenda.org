@@ -1,6 +1,12 @@
-#+TITLE:Game and Robotics Programming with Snap! and Python - Agenda
+:REVEAL_PROPERTIES:
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_REVEAL_JS_VERSION: 4
+#+REVEAL_INIT_OPTIONS: transition: 'cube'
+#+REVEAL_THEME: black
+:END:
+#+TITLE:Game and Robotics Programming with Snap! and Python
 #+AUTHOR:Marcus Birkenkrahe
-#+SUBTITLE: COR 100 - Fall 2023
+#+SUBTITLE: COR 100/Y1 - Fall 2023
 #+OPTIONS: toc:1
 #+STARTUP: overview hideblocks indent inlineimages
 * README
@@ -19,7 +25,6 @@ See the course syllabus for a detailed schedule.
   #+attr_html: :width 400px
   [[../img/snaplogo.png]]
 
-
 * Week 1 (Aug 21-27) Raft race / Intro to Snap!
 #+attr_html: :width 500px
 #+caption: The Raft of the Medusa, by Theodore Gericault (1818)
@@ -33,23 +38,37 @@ the 13 days before their rescue, and those who survived endured
 starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa][Wikipedia]])
 #+end_notes
 
-* IN PROGRESS You said you'd win -
+* You said you'd win - and then...
 #+attr_html: :width 500px
 #+caption: Raft Race 2022, Lyon College (Source: twitter.com)
 [[../img/raftrace.png]]
 
-* TODO [[https://docs.google.com/forms/d/1aKS9FTna_2I5LaLJrhnn5bCYzDhrwjl0O8HzjBFA6J0/edit#responses][Entry survey]] - Analysis
-* Getting started - infrastructure
+* ...you half did
+#+attr_html: :width 500px
+#+caption: The Raft of the Medusa, by Theodore Gericault (1818)
+[[../img/medusa.jpg]]
+#+begin_notes
+Image: "The painting depicts a moment from the aftermath of the wreck
+of the French naval frigate Méduse, which ran aground off the coast of
+today's Mauritania on 2 July 1816. On 5 July 1816, at least 147 people
+were set adrift on a hurriedly constructed raft; all but 15 died in
+the 13 days before their rescue, and those who survived endured
+starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa][Wikipedia]])
+#+end_notes
 
-- [ ] You can log into your GMail account (mail.google.com)
-- [ ] You can see the Snap!Chat Google chat space (optional)
-- [ ] You can log into Canvas (lyon.instructure.com)
-- [ ] You can see the gradebook in Canvas
-- [ ] You can add the Canvas calendar to your Google calendar
-- [ ] You can see the GitHub repo (github.com/birkenkrahe/snap)
-- [ ] Optional: register at GitHub (watch/star/fork repos)
-- [ ] You are registered at snap.berkeley.edu (use Lyon email)
-- [ ] You can ~Run Snap!~ from snap.berkeley.edu
+* TODO [[https://docs.google.com/forms/d/1aKS9FTna_2I5LaLJrhnn5bCYzDhrwjl0O8HzjBFA6J0/edit#responses][Entry survey]] - Review
+* Getting started - infrastructure
+#+begin_example
+- You can log into your GMail account (mail.google.com)
+- You can see the Snap!Chat Google chat space (optional)
+- You can log into Canvas (lyon.instructure.com)
+- You can see the gradebook in Canvas
+- You can add the Canvas calendar to your Google calendar
+- You can see the GitHub repo (github.com/birkenkrahe/snap)
+- Optional: register at GitHub (watch/star/fork repos)
+- You are registered at snap.berkeley.edu (use Lyon email)
+- You can 'Run Snap!' from snap.berkeley.edu
+#+end_example
 
 * NEXT Introduction to Snap! ([[https://github.com/birkenkrahe/snap/blob/piHome/org/1_introduction.org][GitHub]])
 
