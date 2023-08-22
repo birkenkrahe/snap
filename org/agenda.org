@@ -7,19 +7,8 @@
 #+TITLE:Game and Robotics Programming with Snap! and Python
 #+AUTHOR:Marcus Birkenkrahe
 #+SUBTITLE: COR 100/Y1 - Fall 2023
-#+OPTIONS: toc:1
+#+OPTIONS: toc:1 num:nil
 #+STARTUP: overview hideblocks indent inlineimages
-* README
-
-Agenda overview - what I had planned and what we achieved in each
-session of the course.
-
-If we don't manage to finish a topic in one session, it'll be
-finished in the subsequent session(s) without change of the
-originally date.
-
-See the course syllabus for a detailed schedule.
-
 * Welcome (Aug-18)  - Orientation
 
   #+attr_html: :width 400px
@@ -27,27 +16,18 @@ See the course syllabus for a detailed schedule.
 
 * Week 1 (Aug 21-27) Raft race / Intro to Snap!
 #+attr_html: :width 500px
-#+caption: The Raft of the Medusa, by Theodore Gericault (1818)
-[[../img/medusa.jpg]]
-#+begin_notes
-Image: "The painting depicts a moment from the aftermath of the wreck
-of the French naval frigate Méduse, which ran aground off the coast of
-today's Mauritania on 2 July 1816. On 5 July 1816, at least 147 people
-were set adrift on a hurriedly constructed raft; all but 15 died in
-the 13 days before their rescue, and those who survived endured
-starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa][Wikipedia]])
-#+end_notes
+[[../img/raftrace.png]]
 
 * You said you'd win - and then...
 #+attr_html: :width 500px
-#+caption: Raft Race 2022, Lyon College (Source: twitter.com)
-[[../img/raftrace.png]]
+[[../img/raftrace2023.png]]
 
-* ...you half did
+* ...you almost did!
 #+attr_html: :width 500px
-#+caption: The Raft of the Medusa, by Theodore Gericault (1818)
 [[../img/medusa.jpg]]
 #+begin_notes
+The Raft of the Medusa, by Theodore Gericault (1818)
+
 Image: "The painting depicts a moment from the aftermath of the wreck
 of the French naval frigate Méduse, which ran aground off the coast of
 today's Mauritania on 2 July 1816. On 5 July 1816, at least 147 people
@@ -56,7 +36,7 @@ the 13 days before their rescue, and those who survived endured
 starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa][Wikipedia]])
 #+end_notes
 
-* TODO [[https://docs.google.com/forms/d/1aKS9FTna_2I5LaLJrhnn5bCYzDhrwjl0O8HzjBFA6J0/edit#responses][Entry survey]] - Review
+* [[https://docs.google.com/forms/d/1aKS9FTna_2I5LaLJrhnn5bCYzDhrwjl0O8HzjBFA6J0/edit#responses][Entry survey]] - Review
 * Getting started - infrastructure
 #+begin_example
 - You can log into your GMail account (mail.google.com)
@@ -70,17 +50,12 @@ starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.o
 - You can 'Run Snap!' from snap.berkeley.edu
 #+end_example
 
-* NEXT Introduction to Snap! ([[https://github.com/birkenkrahe/snap/blob/piHome/org/1_introduction.org][GitHub]])
+* Introduction to Snap! ([[https://github.com/birkenkrahe/snap/blob/piHome/org/1_introduction.org][GitHub]])
 
 - Snap vs. Scratch
 - Snap! interface and examples
 - Programming and programming languages
-- Importance of infrastructure (replit.com)
-  #+begin_example python
-  print('Hello World!')
-  name = input('What is your name? ').title()
-  print(f'{name} is a nice name!')
-  #+end_example
+- Importance of infrastructure
 - Why Snap!
 - UI/UX (User Interface/User eXperience) as a career
 - Next: first script

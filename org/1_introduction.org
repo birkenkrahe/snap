@@ -5,22 +5,22 @@
 #+REVEAL_THEME: black
 :END:
 #+title: Introduction to Snap!
-#+options: toc:nil num:nil ^:nil
+#+options: toc:1 num:nil ^:nil
 #+startup: overview hideblocks indent inlineimages
 #+subtitle: Game and Robotics Programming with Snap! and Python
 * Introduction
-#+attr_html: :width 400px
+#+attr_html: :width 700px
 [[../img/cover.png]]
-#+begin_example
+#+begin_notes
 - Snap! vs. Scratch
 - Scratch interface vs. Snap! interface
 - Programming - why? how? what?
 - Programming languages vs. natural languages
 - Look under the hood: infrastructure you're (not) dealing with
 - Why Snap! (Why not just Python?)
-#+end_example
+#+end_notes
 * Snap! vs. Scratch
-#+attr_latex: :width 400px
+#+attr_html: :width 700px
 [[../img/tiobe.png]]
 #+begin_notes
 - Web-based online application (HTML5), no desktop app though you can
@@ -50,23 +50,23 @@
 #+end_notes
 
 * Scratch interface
-#+attr_latex: :width 400px
+#+attr_html: :width 700px
 [[../img/snap_scratch.png]]
 
 #+begin_notes
 You can program the Sphero Bolt robot with Scratch ([[https://sphero.com/blogs/news/sphero-edu-implements-scratch][see here]]) or
 with Python (we'll do that).
-#+attr_latex: :width 400px
+#+attr_html: :width 700px
 #+caption: Sphero Bolt in human hand
 [[../img/bolt.jpg]]
 #+end_notes
 
 * Snap! UI and examples
-#+attr_latex: :width 300px
+#+attr_html: :width 700px
 [[../img/snap1.png]]
 
 ** Example: Conway's Game of Life
-#+attr_latex: :width 400px
+#+attr_html: :width 700px
 [[../img/conway.jpg]]
 
 #+begin_notes
@@ -86,7 +86,7 @@ with Python (we'll do that).
 #+end_notes
 
 ** Time Machine
-#+attr_latex: :width 400px
+#+attr_html: :width 700px
 [[../img/timeMachine.png]]
 
 #+begin_notes
@@ -105,7 +105,7 @@ with Python (we'll do that).
 #+end_notes
 
 * Programming
-#+attr_latex: :width 400px
+#+attr_html: :width 700px
 [[../img/punchcard.jpg]]
 
 #+begin_notes
@@ -125,7 +125,7 @@ with Python (we'll do that).
   #+end_quote
 #+end_notes
 ** Computing vs. programming
-#+attr_latex: :width 500px
+#+attr_html: :width 700px
 [[../img/1_steinhart.png]]
 
 #+begin_notes
@@ -145,45 +145,45 @@ with Python (we'll do that).
 
 #+end_notes
 ** Computing vs. programming
-#+attr_latex: :width 400px
+#+attr_html: :width 700px
 [[../img/1_steinhart2.png]]
 
 ** Programming languages are languages
 
 *** C/C++ is like Latin
-#+attr_latex: :width 150px
+#+attr_html: :width 150px
 [[../img/0_cpp.png]]
 
 *** SQL is like English
-#+attr_latex: :width 200px
+#+attr_html: :width 200px
 [[../img/0_sqlite.png]]
 
 *** Lisp is like French
-#+attr_latex: :width 150px
+#+attr_html: :width 150px
 [[../img/0_lisp.png]]
 
 *** R is like Italian
-#+attr_latex: :width 150px
+#+attr_html: :width 150px
 [[../img/0_rlogo.png]]
 
 *** Snap! is like Japanese
-#+attr_latex: :width 150px
+#+attr_html: :width 150px
 [[../img/0_snap.png]]
 
 *** FORTRAN is like Finnish
-#+attr_latex: :width 150px
+#+attr_html: :width 150px
 [[../img/0_fortran.png]]
 
 *** HTML is like Braille
-#+attr_latex: :width 150px
+#+attr_html: :width 150px
 [[../img/0_html.jpg]]
 
 *** Python is like Spanish
-#+attr_latex: :width 150px
+#+attr_html: :width 150px
 [[../img/0_python.png]]
 
 * The Importance of Infrastructure
-#+attr_latex: :width 400px
+#+attr_html: :width 700px
 [[../img/0_nesting.jpg]]
 
 #+begin_notes
@@ -206,11 +206,20 @@ In Snap!, most of these elements (but not all) are hidden from you.
 
 #+end_notes
 ** The truth about Snap!
-#+attr_latex: :width 400px
+#+attr_html: :width 700px
 [[../img/infrastructure.png]]
 
+** Your friend(ly) REPL
+#+attr_html: :width 700px
+[[../img/replit2.png]]
+#+begin_notes
+print('Hello World!')
+name = input('What is your name? ').title()
+print(f'{name} is a nice name!')
+#+end_notes
+
 * Why Snap!
-#+attr_latex: :width 400px
+#+attr_html: :width 700px
 [[../img/stemdemo_arcade.png]]
 
 #+begin_notes
@@ -222,19 +231,25 @@ In Snap!, most of these elements (but not all) are hidden from you.
 - It's suited for data science applications (muldidim arrays)
 - It allows you to define recursive functions ([[https://youtu.be/4Cyer8NwMXw][see here]])
 - I've always wanted to get into it
+#+end_notes
+* Why not just Python?
+#+attr_html: :width 400px
+[[../img/python.png]]
+#+attr_html: :width 400px
+[[../img/snapref.png]]
+
+#+begin_notes
 
 *But why not just Python?*
 - My intuition (better for beginners and tourists)
 - Much, much steeper learning curve to get to game design
 - Snotty developer community (arrogant nerds aren't nice)
 - Compare Python reference vs. Snap! reference manual:
-  #+attr_latex: :width 300px
-  [[../img/python.png]] _[[../img/snapref.png]]
 
 #+end_notes
 
 * What is a User Interface?
-#+attr_latex: :width 400px
+#+attr_html: :width 700px
 [[../img/ui.jpg]]
 
 #+begin_notes
@@ -250,7 +265,7 @@ In Snap!, most of these elements (but not all) are hidden from you.
 #+end_notes
 
 ** Snap! user interface
-#+attr_latex: :width 400px
+#+attr_html: :width 700px
 [[../img/snap.png]]
 
 #+begin_notes
@@ -265,7 +280,7 @@ In Snap!, most of these elements (but not all) are hidden from you.
 #+end_notes
 
 ** Snap interface
-#+attr_latex: :width 500px
+#+attr_html: :width 700px
 [[../img/snap_ui.png]]
 
 #+begin_notes
@@ -276,7 +291,7 @@ In Snap!, most of these elements (but not all) are hidden from you.
 
 #+end_notes
 ** Windows Movie Maker
-#+attr_latex: :width 500px
+#+attr_html: :width 700px
 [[../img/snap_moviemaker.jpg]]
 
 #+begin_notes
@@ -292,14 +307,19 @@ In Snap!, most of these elements (but not all) are hidden from you.
 #+begin_example
 - Berkeley's Snap! is a development of MIT's Scratch, created in HTML5
   (with JavaScript), available online or on your PC for download.
+
 - In Snap!, you can define multidimensional arrays and recursive
   functions, which means that you can do anything a high-level
   language like Python can do, too.
+
 - Programming can help you understand machines, your own thinking, and
   you can build applications for humans (like games and animations).
+
 - Programming languages are like natural languages, only much stricter.
+
 - Many layers of computing infrastructure separate you from just
   "getting on with it" - in Snap! you won't have to know most of them.
+
 - A user interface allows a user to interact with an
   application. UI/UX design is an important, growing career field.
 
@@ -317,4 +337,3 @@ In Snap!, most of these elements (but not all) are hidden from you.
 - Nested looping
 - XY geometry
 - Costume-based animation
-
