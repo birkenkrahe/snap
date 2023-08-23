@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Game Programming with Snap!</title>
+<meta name="author" content="Marcus Birkenkrahe"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css" id="theme"/>
+
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Game Programming with Snap!</h1><p class="subtitle">STEMonstration, Lyon College Academic Day</p>
+<h2 class="author">Marcus Birkenkrahe</h2><p class="date">Created: 2023-03-04 Sat 12:05</p>
+</section>
+<section>
+<section id="slide-org6e556f7">
+<h2 id="org6e556f7">Introduction</h2>
+
+<div id="orgbc15772" class="figure">
+<p><img src="../img/stemdemo_overview.png" alt="stemdemo_overview.png" width="600px" />
+</p>
+</div>
+
+<p>
+View this presentation any time at: <a href="https://bit.ly/3mfNEaT">bit.ly/3mfNEaT</a>
+</p>
+</section>
+<section id="slide-orgb6b7e70">
+<h3 id="orgb6b7e70">Is this your first time?</h3>
+
+<div id="org0d9136f" class="figure">
+<p><img src="../img/stemdemo_first_time.jpg" alt="stemdemo_first_time.jpg" width="600px" />
+</p>
+</div>
+
+<aside class="notes">
+<ul>
+<li>Has any of you already programmed?</li>
+<li>Have you ever created an animation or a game?</li>
+<li>Have you created a web page or used a "high level" language like
+Python, C, C++, Java or JavaScript?</li>
+<li>How would you describe the experience of programming?</li>
+
+</ul>
+
+</aside>
+</section>
+<section id="slide-orga7caea6">
+<h3 id="orga7caea6">Session overview</h3>
+
+<div id="org10adc28" class="figure">
+<p><img src="../img/stemdemo_session.jpg" alt="stemdemo_session.jpg" width="400px" />
+</p>
+</div>
+
+<ul>
+<li>Introduction (15 min)</li>
+<li>Getting started with Snap! (30 min)</li>
+<li>Building a simple animation (30 min)</li>
+<li>Building a simple game (30 min)</li>
+<li>Summary and wrap-up (15 min)</li>
+
+</ul>
+
+<aside class="notes">
+<ul>
+<li><b>Why am I teaching this course?</b> Gamer, programmer, teacher.</li>
+<li><b>Background:</b> teaching data science and computer science</li>
+<li><b>Funny accent:</b> I am German, came to Batesville 2 years ago</li>
+
+</ul>
+
+</aside>
+
+</section>
+<section id="slide-org284d02a">
+<h3 id="org284d02a">Why Snap!?</h3>
+
+<div id="orge6b8ffb" class="figure">
+<p><img src="../img/stemdemo_arcade.png" alt="stemdemo_arcade.png" width="600px" />
+</p>
+</div>
+
+<p>
+<a href="https://docs.google.com/presentation/d/1f_1z4V1_tZ8PPGPil0WEUKGasgpf0jB-/edit?usp=sharing&amp;ouid=102963037093118135110&amp;rtpof=true&amp;sd=true">"Snap! Oh Snap!" Lyon College Course - Fall'22</a>
+</p>
+
+<aside class="notes">
+<ul>
+<li><b>COR100/Y1</b>: Lyon's 1hr/week coursse teasers, fall'23 Snap! 12
+students, weekly meetings of 50 minutes learning Snap!
+together.</li>
+<li>Final team projects: Retro Arcade Games - Donkey Kong, Pacman,
+Space Invaders, and Asteroids.</li>
+<li>Compared to other programming languages, visual, block-based
+languages are very forgiving (computers are extremely picky and
+panic easily) - attention to detail is key</li>
+
+</ul>
+
+</aside>
+</section>
+<section id="slide-org2c715eb">
+<h3 id="org2c715eb">How I got started</h3>
+
+<div id="orga059e00" class="figure">
+<p><img src="../img/stemdemo_timemachine.png" alt="stemdemo_timemachine.png" width="600px" />
+</p>
+</div>
+
+<p>
+Open project: <a href="https://bit.ly/SnapTimeMachine">bit.ly/SnapTimeMachine</a>
+</p>
+
+</section>
+<section id="slide-org7e1abd9">
+<h3 id="org7e1abd9">What is Snap?</h3>
+
+<div id="orgcd09c89" class="figure">
+<p><img src="../img/stemdemo_berkeley.png" alt="stemdemo_berkeley.png" width="500px" />
+</p>
+</div>
+
+<ul>
+<li>Web-based HTML5 online application</li>
+<li>Block-based visual programming language</li>
+<li>Create animations, games, simulations</li>
+<li>Open source and free to use</li>
+<li><a href="https://snap.berkeley.edu">Developed at U. Berkeley, bought by SAP</a></li>
+
+</ul>
+
+<aside class="notes">
+<ul>
+<li>&lt;Right-Mouse&gt; View page source (HTML)</li>
+<li>&lt;Right-Mouse&gt; Inspect (HTML, CSS, JavaScript, Media)</li>
+<li>Developed by German programmer Jens Moenig</li>
+<li>SAP is Germany's largest software company (ERP systems)</li>
+<li>Unlike MIT's Scratch, Snap! can do anything</li>
+<li>In programming, everything depends on data structures, e.g. numbers,
+strings (that make up texts), tables, lists/dictionaries etc.</li>
+<li>Languages "for anything" allow you to build such structures</li>
+
+</ul>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-org8b142a7">
+<h2 id="org8b142a7">Getting started with Snap!</h2>
+
+<div id="org0f791f2" class="figure">
+<p><img src="../img/stemdemo_start.jpg" alt="stemdemo_start.jpg" width="600px" />
+</p>
+</div>
+</section>
+<section id="slide-org1e08d29">
+<h3 id="org1e08d29">Download the desktop app</h3>
+
+<div id="org6d9367b" class="figure">
+<p><img src="../img/stemdemo_desktop.png" alt="stemdemo_desktop.png" width="500px" />
+</p>
+</div>
+
+<ul>
+<li>In your browser, go to <a href="https://bit.ly/3kTxX8O">bit.ly/3kTxX8O</a></li>
+<li>Download the <code>.zip</code> file</li>
+<li>Extract the file to <code>Downloads</code></li>
+<li>Open <code>Downloads/Snap-8.2.0/snap.html</code></li>
+
+</ul>
+
+</section>
+<section id="slide-orgb733261">
+<h3 id="orgb733261">Run Snap! in the cloud</h3>
+
+<div id="orgd9669ba" class="figure">
+<p><img src="../img/stemdemo_cloud.png" alt="stemdemo_cloud.png" width="500px" />
+</p>
+</div>
+
+<ul>
+<li>Go to <a href="https://snap.berkeley.edu">snap.berkeley.edu</a></li>
+<li>Click on <code>Run Snap!</code> to program</li>
+<li>Click on <code>Join</code> to keep your projects</li>
+<li>Pick a simple password</li>
+<li>Check your email for verification</li>
+
+</ul>
+</section>
+<section id="slide-org55f4c09">
+<h3 id="org55f4c09">Snap! User Interface (UI)</h3>
+
+<div id="orgf07f245" class="figure">
+<p><img src="../img/stemdemo_ui.png" alt="stemdemo_ui.png" width="700px" />
+</p>
+</div>
+
+<ul>
+<li>Sprites are controlled by scripts</li>
+<li>Scripts consist of command blocks</li>
+<li>Sprites (characters) act on stage</li>
+<li>Settings add control, input and output</li>
+
+</ul>
+<aside class="notes">
+<ul>
+<li>Drag the "turtle" sprite around a little</li>
+<li>Drag a "move 10 steps" block to the script area</li>
+<li>Click the block / change 10 to 100 and click again</li>
+
+</ul>
+
+</aside>
+</section>
+<section id="slide-org7c61684">
+<h3 id="org7c61684">Sprites, costumes, sounds</h3>
+
+<div id="org492dcb8" class="figure">
+<p><img src="../img/stemdemo_poofie.png" alt="stemdemo_poofie.png" width="700px" />
+</p>
+</div>
+
+<ul>
+<li>New <b>sprites</b> are created as "turtles"</li>
+<li>You can create sprite <b>costumes</b> and <b>sounds</b></li>
+<li>Every sprite is controlled by its <b>script</b></li>
+<li>Create your own barking Poofie now!</li>
+
+</ul>
+<aside class="notes">
+<ul>
+<li>Click on the sprite symbol below the stage</li>
+<li>Open the <b>Costumes</b> tab next to the Scripts tab</li>
+<li>Open the file menu at the top</li>
+<li>Open the <b>Costumes</b> menu in the file menu</li>
+<li>Find the <b>dog</b> costume (or <b>cat</b> if you prefer)</li>
+<li>Click on the costume and <b>Import</b> it</li>
+<li>Click on the <b>Sounds</b> tab</li>
+<li>Open the <b>Sounds</b> menu, find <b>Dog 1</b> and <b>Import</b> it</li>
+<li>Rename the sound <b>wuff</b></li>
+<li>Rename the Sprite <b>Poofie</b></li>
+<li>Open the <b>Scripts</b> tab</li>
+<li>Open the <b>Sound</b> command block section</li>
+<li>Drag <b>play sound</b> into the script area</li>
+<li>Select <b>wuff</b> and click the command block</li>
+
+</ul>
+
+</aside>
+</section>
+<section id="slide-orgc8b1bd6">
+<h3 id="orgc8b1bd6">Write your first script</h3>
+
+<div id="orgd625c23" class="figure">
+<p><img src="../img/stemdemo_script.png" alt="stemdemo_script.png" width="400px" />
+</p>
+</div>
+</section>
+<section id="slide-org55e8aa4">
+<h3 id="org55e8aa4">Save your first project</h3>
+
+<div id="org2ba82e5" class="figure">
+<p><img src="../img/stemdemo_project.png" alt="stemdemo_project.png" width="600px" />
+</p>
+</div>
+
+<div id="org8f9551a" class="figure">
+<p><img src="../img/stemdemo_save.png" alt="stemdemo_save.png" width="600px" />
+</p>
+</div>
+</section>
+<section id="slide-org5220a92">
+<h3 id="org5220a92">If you're registered</h3>
+
+<div id="org0ccd72c" class="figure">
+<p><img src="../img/stemdemo_saved.png" alt="stemdemo_saved.png" width="700px" />
+</p>
+</div>
+</section>
+<section id="slide-org879ee12">
+<h3 id="org879ee12">Any questions?</h3>
+
+<div id="orgdce6269" class="figure">
+<p><img src="../img/stemdemo_break.jpg" alt="stemdemo_break.jpg" width="700px" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgfd2c23c">
+<h2 id="orgfd2c23c">Animating a character</h2>
+
+<div id="org97d60f1" class="figure">
+<p><img src="../img/stemdemo_animation.png" alt="stemdemo_animation.png" width="600px" />
+</p>
+</div>
+</section>
+<section id="slide-org8c29930">
+<h3 id="org8c29930">A walk in the park</h3>
+
+<div id="org60c5e8a" class="figure">
+<p><img src="../img/stemdemo_park_project.png" alt="stemdemo_park_project.png" width="600px" />
+</p>
+</div>
+<aside class="notes">
+<p>
+Final project in the cloud: <a href="http://bit.ly/3J9RAmt">bit.ly/3J9RAmt</a>
+</p>
+
+</aside>
+</section>
+<section id="slide-orgce6caf0">
+<h3 id="orgce6caf0">The project</h3>
+
+<div id="orgef27dc3" class="figure">
+<p><img src="../img/stemdemo_new.png" alt="stemdemo_new.png" width="600px" />
+</p>
+</div>
+
+<p>
+Start a <b>New</b> project!
+</p>
+<aside class="notes">
+<ul>
+<li>Open a new project</li>
+<li>Name the project "Avery walking" or "My first animation"</li>
+<li>Add some notes right away (what this is about)</li>
+
+</ul>
+
+</aside>
+</section>
+<section id="slide-org65f1207">
+<h3 id="org65f1207">The algorithm</h3>
+
+<div id="orgd917cf6" class="figure">
+<p><img src="../img/stemdemo_sequence.jpg" alt="stemdemo_sequence.jpg" width="600px" />
+</p>
+</div>
+
+<p>
+What's the algorithm?
+</p>
+<aside class="notes">
+<p>
+Pseudocode:
+</p>
+<ol>
+<li>Move object in one direction</li>
+<li>Swing object's arms and legs</li>
+<li>If object hits a wall, bounce back</li>
+
+</ol>
+
+</aside>
+</section>
+<section id="slide-orga759a7b">
+<h3 id="orga759a7b">The illusion of walking</h3>
+
+<div id="orgcbcceb3" class="figure">
+<p><img src="../img/stemdemo_avery_walking.gif" alt="stemdemo_avery_walking.gif" width="650px" />
+</p>
+</div>
+</section>
+<section id="slide-org2076f89">
+<h3 id="org2076f89">The sprite</h3>
+
+<div id="orgf3cc3b8" class="figure">
+<p><img src="../img/stemdemo_avery.png" alt="stemdemo_avery.png" />
+</p>
+</div>
+
+<p>
+Set object <b>attributes</b> (aka sprite costumes).
+</p>
+<aside class="notes">
+<ul>
+<li>Highlight the turtle sprite</li>
+<li>Pick the costumes tab</li>
+<li>Find "Avery walking" sequence</li>
+<li>Highlight one after the other and import them</li>
+<li>Give the Sprite a name "Avery"</li>
+<li>Go to the script tab</li>
+
+</ul>
+
+</aside>
+</section>
+<section id="slide-org9c5b6c0">
+<h3 id="org9c5b6c0">The script</h3>
+
+<div id="org5d9ccc6" class="figure">
+<p><img src="../img/stemdemo_algorithm.png" alt="stemdemo_algorithm.png" width="200px" />
+</p>
+</div>
+
+<p>
+Set object <b>methods</b> (aka sprite actions).
+</p>
+<pre  class="example" >
+- Find 'Control::forever' and drag it into the script area
+- Find 'Motion::move 10 steps' and drag it into the slot
+- Find 'Looks::next costume' and add it below (with #)
+- Find 'Control::wait 1 secs' and add it below (0.2 secs)
+- Find 'Motion::if on edge, bounce' and add it below
+- Find 'Control::when FLAG clicked' and add it at the top
+</pre>
+<aside class="notes">
+<p>
+If you ever "lose" your sprite, right-click on the sprite icon and
+activate "show", and it will show up again. Better: reset script.
+</p>
+
+</aside>
+</section>
+<section id="slide-org566fee7">
+<h3 id="org566fee7">The orientation</h3>
+
+<div id="org4d1006b" class="figure">
+<p><img src="../img/stemdemo_face.png" alt="stemdemo_face.png" width="600px" />
+</p>
+</div>
+
+<p>
+Set the sprite to "only face left/right".
+</p>
+
+</section>
+<section id="slide-org9c607a5">
+<h3 id="org9c607a5">The background</h3>
+
+<div id="orgb1e286b" class="figure">
+<p><img src="../img/stemdemo_park.jpg" alt="stemdemo_park.jpg" width="500px" />
+</p>
+</div>
+
+<ul>
+<li><b>Download</b> the park background: <a href="http://bit.ly/3SQaT7F">bit.ly/3SQaT7F</a></li>
+<li><b>Import</b> picture as <b>Stage</b> background</li>
+<li>Do a final check then <b>Save</b> your project</li>
+<li>Final project in the cloud: <a href="http://bit.ly/3J9RAmt">bit.ly/3J9RAmt</a></li>
+
+</ul>
+</section>
+<section id="slide-org363d125">
+<h3 id="org363d125">Any questions?</h3>
+
+<div id="org263721d" class="figure">
+<p><img src="../img/stemdemo_beach.jpg" alt="stemdemo_beach.jpg" width="700px" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orged7217a">
+<h2 id="orged7217a">Building a simple game</h2>
+
+<div id="org3df5633" class="figure">
+<p><img src="../img/stemdemo_game.jpg" alt="stemdemo_game.jpg" width="600px" />
+</p>
+</div>
+</section>
+<section id="slide-orga3b6da2">
+<h3 id="orga3b6da2">The project</h3>
+
+<div id="org2139992" class="figure">
+<p><img src="../img/stemdemo_mazegame.gif" alt="stemdemo_mazegame.gif" width="400px" />
+</p>
+</div>
+
+<p>
+Create a new project "Mazegame"
+</p>
+
+</section>
+<section id="slide-org7a5bfe7">
+<h3 id="org7a5bfe7">Setup sprite, background, sounds</h3>
+
+<div id="org7d2e995" class="figure">
+<p><img src="../img/s_maze_setup.png" alt="s_maze_setup.png" width="400px" />
+</p>
+</div>
+<pre  class="example" >
+1) Download ZIP file: https://tinyurl.com/5n8xke8z
+2) Extract the file on your PC using File Explorer
+3) Create new Snap! project and save it as mazegame
+4) Set up sprite, backgrounds and sounds:
+   - Set up (draggable) sprite player 
+   - Set up sprite sounds for buzzer (wall), clap (level up)
+   - Set up stage sound for winning the game (yea)
+   - Set up stage backgrounds: three levels and final screen
+</pre>
+</section>
+<section id="slide-org379851f">
+<h3 id="org379851f">Make a new Motion block</h3>
+
+<div id="orgefc522a" class="figure">
+<p><img src="../img/s_maze_block.png" alt="s_maze_block.png" width="200px" />
+</p>
+</div>
+
+<ul>
+<li>Open the <code>Motion</code> command block menu</li>
+<li>Click on <code>Make a block</code></li>
+<li>Enter <code>MovePlayer</code> as <code>Command</code></li>
+<li>Click on right <code>+</code> sign to add <code>direction</code></li>
+<li>Apply to all sprites</li>
+
+</ul>
+
+</section>
+<section id="slide-orge393b10">
+<h3 id="orge393b10">Make start script</h3>
+
+<div id="orga4b47e4" class="figure">
+<p><img src="../img/s_maze_start.png" alt="s_maze_start.png" width="200px" />
+</p>
+</div>
+
+<ul>
+<li>Make a start script (green flag)</li>
+<li>Point in dirction 90 degrees</li>
+<li>Go to starting position (<code>x = -218</code>, <code>y = 160</code>)</li>
+
+</ul>
+
+</section>
+<section id="slide-org2d47e79">
+<h3 id="org2d47e79">Set up keyboard action</h3>
+
+<div id="orgceb0123" class="figure">
+<p><img src="../img/s_maze_arrows.png" alt="s_maze_arrows.png" width="200px" />
+</p>
+</div>
+
+<ul>
+<li>Down arrow: 180 degrees</li>
+<li>Up arrow: 0 degrees</li>
+<li>Left arrow: 270 degrees</li>
+<li>Right arrow: 90 degrees</li>
+
+</ul>
+
+</section>
+<section id="slide-orgd20c582">
+<h3 id="orgd20c582">Modify the new motion block</h3>
+
+<div id="org942937b" class="figure">
+<p><img src="../img/s_maze_move.png" alt="s_maze_move.png" width="220px" />
+</p>
+</div>
+</section>
+<section id="slide-org8e44e73">
+<h3 id="org8e44e73">Stage script</h3>
+
+<div id="org90ef2a5" class="figure">
+<p><img src="../img/s_maze_level1.png" alt="s_maze_level1.png" width="200px" />
+</p>
+</div>
+
+<p>
+When game starts, switch to <code>level1</code>.
+</p>
+
+<div id="org65f9212" class="figure">
+<p><img src="../img/s_maze_received.png" alt="s_maze_received.png" width="200px" />
+</p>
+</div>
+
+<ul>
+<li>When <code>next-level</code> broadcast is received, change costume.</li>
+<li>Play winning sound when all levels are finished.</li>
+
+</ul>
+
+</section>
+<section id="slide-org8ea2951">
+<h3 id="org8ea2951">Refine the game</h3>
+
+<div id="org3ca9595" class="figure">
+<p><img src="../img/stemdemo_advanced.jpg" alt="stemdemo_advanced.jpg" width="600px" />
+</p>
+</div>
+
+<ul>
+<li>Create obstacles for the player</li>
+<li>Add a monster that follows the player</li>
+<li>Add prize points and penalties</li>
+<li>Add a timer and a timeout penalty</li>
+
+</ul>
+
+<p>
+<a href="https://snap.berkeley.edu/project?username=birkenkrahe&amp;projectname=mazegame">Link to the final game</a>
+</p>
+
+</section>
+<section id="slide-org6572dc4">
+<h3 id="org6572dc4">Any questions?</h3>
+
+<div id="org5b1642d" class="figure">
+<p><img src="../img/stemdemo_penguins.jpg" alt="stemdemo_penguins.jpg" width="700px" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgb848058">
+<h2 id="orgb848058">Summary and wrap-Up</h2>
+
+<div id="org43a8df2" class="figure">
+<p><img src="../img/stemdemo_ending.jpg" alt="stemdemo_ending.jpg" width="600px" />
+</p>
+</div>
+</section>
+<section id="slide-orgbe87868">
+<h3 id="orgbe87868">Useful reset script</h3>
+
+<div id="org782367b" class="figure">
+<p><img src="../img/reset.png" alt="reset.png" width="200px" />
+</p>
+</div>
+
+<p>
+Import this script from
+</p>
+<ul>
+<li>Start by pressing the 'r' key</li>
+<li>Motion reset: go to center of stage</li>
+<li>Graphics reset: remove effects</li>
+<li>Show sprite</li>
+
+</ul>
+
+</section>
+<section id="slide-org85938bf">
+<h3 id="org85938bf">What you learnt (I hope)</h3>
+
+<div id="org75102ac" class="figure">
+<p><img src="../img/stemdemo_lions.png" alt="stemdemo_lions.png" width="600px" />
+</p>
+</div>
+
+<ul>
+<li>How to use the Snap! UI</li>
+<li>How to write a simple script</li>
+<li>How to make an image move</li>
+<li>How to design a simple game</li>
+
+</ul>
+
+</section>
+<section id="slide-org5e874d3">
+<h3 id="org5e874d3">Further learning</h3>
+
+<div id="org70fac6a" class="figure">
+<p><img src="../img/stemdemo_datascience.png" alt="stemdemo_datascience.png" width="700px" />
+</p>
+</div>
+<ul>
+<li>Birkenkrahe (2023) Lyon College Data Science Program. URL: <a href="https://docs.google.com/presentation/d/1dSB-EIMkhJuECEgvQJ45hGODfOoZCo0aIpZ-t3EQSvc/edit?usp=sharing">lyon.edu</a></li>
+<li>Huegle/Moenig (2020). Get Coding with Snap! URL:
+<a href="https://open.sap.com/courses/snap1-1">open.sap.com/courses/snap1-1</a> (Free)</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org7cc7b00">
+<h2 id="org7cc7b00">References</h2>
+<ul>
+<li>Joshi (2018). Learn CS Concepts with Snap! URL: <a href="https://amzn.to/3IOzsx9">amzn.to/3IOzsx9</a></li>
+<li>CSP-Alabama (2014) Mazegame. URL: <a href="https://snap.berkeley.edu/project?username=birkenkrahe&amp;projectname=mazegame">snap.berkeley.edu</a></li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom/zoom.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js"></script>
+
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+plugins: [RevealMarkdown, RevealZoom, RevealNotes],
+transition: 'cube'
+});
+
+</script>
+</body>
+</html>

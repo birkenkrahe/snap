@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Introduction to Snap!</title>
+<meta name="author" content=""/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css" id="theme"/>
+
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Introduction to Snap!</h1><p class="subtitle">Game and Robotics Programming with Snap! and Python</p>
+<p class="date">Created: 2023-08-22 Tue 10:35</p>
+</section>
+<section id="sec-table-of-contents"><div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#/slide-orgf94ff2b">Introduction</a></li>
+<li><a href="#/slide-org27feb10">Snap! vs. Scratch</a></li>
+<li><a href="#/slide-org029b3ba">Scratch interface</a></li>
+<li><a href="#/slide-orgdc686a2">Snap! UI and examples</a></li>
+<li><a href="#/slide-org914875f">Programming</a></li>
+<li><a href="#/slide-org10c66f0">The Importance of Infrastructure</a></li>
+<li><a href="#/slide-org882ea6f">Why Snap!</a></li>
+<li><a href="#/slide-org2f53e5f">Why not just Python?</a></li>
+<li><a href="#/slide-org2c457bd">What is a User Interface?</a></li>
+<li><a href="#/slide-org2f42f35">Summary</a></li>
+<li><a href="#/slide-org6151594">Next: looping, broadcasting, animation</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<section id="slide-orgf94ff2b">
+<h2 id="orgf94ff2b">Introduction</h2>
+
+<div id="orgf1a4f2d" class="figure">
+<p><img src="../img/cover.png" alt="cover.png" width="700px" />
+</p>
+</div>
+<aside class="notes">
+<ul>
+<li>Snap! vs. Scratch</li>
+<li>Scratch interface vs. Snap! interface</li>
+<li>Programming - why? how? what?</li>
+<li>Programming languages vs. natural languages</li>
+<li>Look under the hood: infrastructure you're (not) dealing with</li>
+<li>Why Snap! (Why not just Python?)</li>
+
+</ul>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-org27feb10">
+<h2 id="org27feb10">Snap! vs. Scratch</h2>
+
+<div id="org392ab49" class="figure">
+<p><img src="../img/tiobe.png" alt="tiobe.png" width="700px" />
+</p>
+</div>
+<aside class="notes">
+<ul>
+<li>Web-based online application (HTML5), no desktop app though you can
+(and should) download it from here:
+<ol>
+<li>In your browser, go to <a href="https://github.com/jmoenig/Snap/releases/">github.com/jmoenig/Snap/releases</a></li>
+<li>Click on "Source code (zip)" for instant download</li>
+<li>In your browser (or on your PC) navigate to <code>Downloads</code></li>
+<li><code>Extract all</code> files to any location (<code>Downloads</code> is OK)</li>
+<li>Go to the Snap directory, open it and click on <code>snap.html</code> to start</li>
+<li>Close the editor again, and enter <code>Snap</code> in the Windows search bar</li>
+<li>Pin the Snap! app to the taskbar for later use.</li>
+
+</ol></li>
+
+<li>Comparison between Snap! and Scratch (<a href="https://snap.berkeley.edu/about">About Snap!</a>):
+<ul>
+<li>Snap! allows the user to define <b>data structures</b> like trees, heaps,
+hash tables etc. because you can define a "list of lists".</li>
+<li>In Snap!, you can also create <b>control structures</b> like functions
+that allow you to automate things.</li>
+<li>Data and control structures are the backbone of any form of
+<b>imperative</b> computer programming.</li>
+
+</ul></li>
+
+<li>This enables you to do things you cannot do in Scratch, including
+anything other high-level languages like C++ or Python can do</li>
+
+<li>See also: Harvey &amp; Mönig (2010). Bringing “No Ceiling” to Scratch:
+Can One Language Serve Kids and Computer Scientists? URL:
+<a href="https://bjc.berkeley.edu/documents/2010%20Constructionism%20-%20Bringing%20No%20Ceiling%20to%20Scratch%20-%20Can%20One%20Language%20Serve%20Kids%20and%20Computer%20Scientists.pdf">berkeley.edu</a></li>
+
+</ul>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-org029b3ba">
+<h2 id="org029b3ba">Scratch interface</h2>
+
+<div id="org885ebae" class="figure">
+<p><img src="../img/snap_scratch.png" alt="snap_scratch.png" width="700px" />
+</p>
+</div>
+
+<aside class="notes">
+<p>
+You can program the Sphero Bolt robot with Scratch (<a href="https://sphero.com/blogs/news/sphero-edu-implements-scratch">see here</a>) or
+with Python (we'll do that).
+</p>
+
+<div id="orgb267d03" class="figure">
+<p><img src="../img/bolt.jpg" alt="bolt.jpg" width="700px" />
+</p>
+<p><span class="figure-number">Figure 1: </span>Sphero Bolt in human hand</p>
+</div>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-orgdc686a2">
+<h2 id="orgdc686a2">Snap! UI and examples</h2>
+
+<div id="org2bfa25d" class="figure">
+<p><img src="../img/snap1.png" alt="snap1.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org849b64b">
+<h3 id="org849b64b">Example: Conway's Game of Life</h3>
+
+<div id="org3f0f6fa" class="figure">
+<p><img src="../img/conway.jpg" alt="conway.jpg" width="700px" />
+</p>
+</div>
+
+<aside class="notes">
+<p>
+
+</p>
+
+<ul>
+<li>Example: <a href="https://snap.berkeley.edu/project?username=qw23&amp;projectname=Conway%e2%80%99s%20Life%20infinite%20playing%20field">Conway's Game of Life</a> - check it out now:
+<ol>
+<li>In your browser, navigate to <a href="https://snap.berkeley.edu">snap.berkeley.edu</a></li>
+<li>In the search bar, enter <a href="https://snap.berkeley.edu/search?query=conway">Conway</a></li>
+<li>Select the project <a href="https://snap.berkeley.edu/search?query=conway">Conway's Life infinite playing field</a></li>
+<li>Click on the "full screen symbol"</li>
+<li>Click on the <code>green flag</code></li>
+<li>Enter cellular automata by clicking on the squares</li>
+<li>Start the simulation and let it run until the end</li>
+<li>Leave the full screen</li>
+<li>Select <code>See Code</code></li>
+<li><a href="https://snap.berkeley.edu/snap/snap.html#present:Username=qw23&amp;ProjectName=Conway%e2%80%99s%20Life%20infinite%20playing%20field&amp;editMode&amp;noRun">Check out the program</a> (we might get back to it)</li>
+
+</ol></li>
+
+</ul>
+
+</aside>
+
+</section>
+<section id="slide-org0e188de">
+<h3 id="org0e188de">Time Machine</h3>
+
+<div id="org3093858" class="figure">
+<p><img src="../img/timeMachine.png" alt="timeMachine.png" width="700px" />
+</p>
+</div>
+
+<aside class="notes">
+<ul>
+<li>Check out one of my own creations: a "<a href="https://snap.berkeley.edu/project?username=birkenkrahe&amp;projectname=TimeMachine">Time Machine</a>" (of sorts)
+<ol>
+<li>Go back to the Snap! home page at snap.berkeley.edu</li>
+<li>Search for <code>birkenkrahe</code></li>
+<li>On my <code>public page</code> click <code>follow this user</code></li>
+<li><a href="https://snap.berkeley.edu/project?username=birkenkrahe&amp;projectname=TimeMachine">Open the "Time Machine" project</a></li>
+<li>Go to "full screen"</li>
+<li>Click the <code>green flag</code></li>
+<li>Click on the grey circle and move it around to see what happens</li>
+<li>Leave the full screen</li>
+<li>Click on <code>see code</code></li>
+<li>Check out the code</li>
+
+</ol></li>
+
+</ul>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-org914875f">
+<h2 id="org914875f">Programming</h2>
+
+<div id="org4c332c7" class="figure">
+<p><img src="../img/punchcard.jpg" alt="punchcard.jpg" width="700px" />
+</p>
+</div>
+
+<aside class="notes">
+<p>
+
+</p>
+
+<ul>
+<li><p>
+This could be your first ever programming course. Is it?
+</p>
+<blockquote >
+<ul>
+<li>What were your other courses about?</li>
+<li>What did you take away from them?</li>
+<li>What's your view towards programming?</li>
+
+</ul>
+</blockquote></li>
+
+<li><p>
+Why should you bother to learn how to program?
+</p>
+<blockquote >
+<ol>
+<li>Understand the relationships of humans and machines</li>
+<li>Develop critical thinking skills</li>
+<li>Create games and animations</li>
+
+</ol>
+</blockquote></li>
+
+</ul>
+
+</aside>
+</section>
+<section id="slide-org180891a">
+<h3 id="org180891a">Computing vs. programming</h3>
+
+<div id="org53f6747" class="figure">
+<p><img src="../img/1_steinhart.png" alt="1_steinhart.png" width="700px" />
+</p>
+</div>
+
+<aside class="notes">
+<ul>
+<li>The diagram shows different relevant levels of programming and
+computing including hardware (bottom half) and software (top
+half). In this course, we're working on <i>"Applications"</i> that use the
+computer to solve problems. Languages other than <i>Snap!</i> on this level
+include <i>C++</i>, <i>Java</i>, and <i>Python</i> (all of these are OOP languages</li>
+
+<li>The top level "Users" refers to most people who only use computers
+(mostly when operating their smart phones, or driving their
+cars). As with phones or cars, most of the power is under the hood.</li>
+
+<li>I recommend maintaining a (digital) notebook for this course. That's
+exactly what I did when working through the textbook, using
+<a href="https://orgmode.org/">Emacs</a>. (Talk to me if you want to know more about Emacs.)</li>
+
+</ul>
+
+</aside>
+</section>
+<section id="slide-orgcd73819">
+<h3 id="orgcd73819">Computing vs. programming</h3>
+
+<div id="orgb0cb049" class="figure">
+<p><img src="../img/1_steinhart2.png" alt="1_steinhart2.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgdfbe3c3">
+<h3 id="orgdfbe3c3">Programming languages are languages</h3>
+<div class="outline-text-3" id="text-orgdfbe3c3">
+</div>
+</section>
+<section id="slide-orgcc4891b">
+<h4 id="orgcc4891b">C/C++ is like Latin</h4>
+
+<div id="orge319675" class="figure">
+<p><img src="../img/0_cpp.png" alt="0_cpp.png" width="150px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orga616439">
+<h4 id="orga616439">SQL is like English</h4>
+
+<div id="org90aabf5" class="figure">
+<p><img src="../img/0_sqlite.png" alt="0_sqlite.png" width="200px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org2e12667">
+<h4 id="org2e12667">Lisp is like French</h4>
+
+<div id="org99eeb48" class="figure">
+<p><img src="../img/0_lisp.png" alt="0_lisp.png" width="150px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgce3c327">
+<h4 id="orgce3c327">R is like Italian</h4>
+
+<div id="org91ec077" class="figure">
+<p><img src="../img/0_rlogo.png" alt="0_rlogo.png" width="150px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgeb47315">
+<h4 id="orgeb47315">Snap! is like Japanese</h4>
+
+<div id="orgf8951bb" class="figure">
+<p><img src="../img/0_snap.png" alt="0_snap.png" width="150px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org430392b">
+<h4 id="org430392b">FORTRAN is like Finnish</h4>
+
+<div id="org114b230" class="figure">
+<p><img src="../img/0_fortran.png" alt="0_fortran.png" width="150px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org1b0c48a">
+<h4 id="org1b0c48a">HTML is like Braille</h4>
+
+<div id="orgb0f7fdb" class="figure">
+<p><img src="../img/0_html.jpg" alt="0_html.jpg" width="150px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgfe238c2">
+<h4 id="orgfe238c2">Python is like Spanish</h4>
+
+<div id="orgbbe2d17" class="figure">
+<p><img src="../img/0_python.png" alt="0_python.png" width="150px" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org10c66f0">
+<h2 id="org10c66f0">The Importance of Infrastructure</h2>
+
+<div id="org77b0bdf" class="figure">
+<p><img src="../img/0_nesting.jpg" alt="0_nesting.jpg" width="700px" />
+</p>
+</div>
+
+<aside class="notes">
+<p>
+Some infrastructure that separates you from just "getting on" with it:
+</p>
+
+<ol>
+<li>Network server / network</li>
+<li>Keyboard / Screen</li>
+<li>Operating system (OS)</li>
+<li>OS shell / terminal / console</li>
+<li>Python shell / console</li>
+<li>File system</li>
+<li>Compiler/interpreter</li>
+<li>Editor</li>
+<li>Middleware and meta data</li>
+<li>Graphical user interface</li>
+
+</ol>
+
+<p>
+(Most of these infrastructure components are written in C/C++.)
+</p>
+
+<p>
+In Snap!, most of these elements (but not all) are hidden from you.
+</p>
+
+</aside>
+</section>
+<section id="slide-orgdbdc52d">
+<h3 id="orgdbdc52d">The truth about Snap!</h3>
+
+<div id="org4e22a11" class="figure">
+<p><img src="../img/infrastructure.png" alt="infrastructure.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org17d034b">
+<h3 id="org17d034b">Your friend(ly) REPL</h3>
+
+<div id="orge2326d6" class="figure">
+<p><img src="../img/replit2.png" alt="replit2.png" width="700px" />
+</p>
+</div>
+<aside class="notes">
+<p>
+print('Hello World!')
+name = input('What is your name? ').title()
+print(f'{name} is a nice name!')
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-org882ea6f">
+<h2 id="org882ea6f">Why Snap!</h2>
+
+<div id="org2d5773f" class="figure">
+<p><img src="../img/stemdemo_arcade.png" alt="stemdemo_arcade.png" width="700px" />
+</p>
+</div>
+
+<aside class="notes">
+<p>
+<b>Why Snap!</b>
+</p>
+<ul>
+<li>It's a full-fledged programming language</li>
+<li>It's easy to build animation and games in it</li>
+<li>It's instantly, freely available online</li>
+<li>It trains pseudocode and modular design</li>
+<li>It's suited for data science applications (muldidim arrays)</li>
+<li>It allows you to define recursive functions (<a href="https://youtu.be/4Cyer8NwMXw">see here</a>)</li>
+<li>I've always wanted to get into it</li>
+
+</ul>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-org2f53e5f">
+<h2 id="org2f53e5f">Why not just Python?</h2>
+
+<div id="orga826083" class="figure">
+<p><img src="../img/python.png" alt="python.png" width="400px" />
+</p>
+</div>
+
+<div id="org9f7287c" class="figure">
+<p><img src="../img/snapref.png" alt="snapref.png" width="400px" />
+</p>
+</div>
+
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+<b>But why not just Python?</b>
+</p>
+<ul>
+<li>My intuition (better for beginners and tourists)</li>
+<li>Much, much steeper learning curve to get to game design</li>
+<li>Snotty developer community (arrogant nerds aren't nice)</li>
+<li>Compare Python reference vs. Snap! reference manual:</li>
+
+</ul>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-org2c457bd">
+<h2 id="org2c457bd">What is a User Interface?</h2>
+
+<div id="org20a29d2" class="figure">
+<p><img src="../img/ui.jpg" alt="ui.jpg" width="700px" />
+</p>
+</div>
+
+<aside class="notes">
+<ul>
+<li>A <i>user interface</i> (UI) is the dashboard or platform that allows a
+user to interact with an application. It's the first thing that you,
+as a user, see.</li>
+
+<li>UI/UX is an important, relatively new, interdisciplinary field that
+includes art and design, usability analysis, etc. UX focuses on the
+user's path to solving a problem (like shopping online), while UI
+focuses on the look of the surface of an interactive product (like a
+web site for online shopping). More: <a href="https://www.freecodecamp.org/news/use-user-reseach-to-create-the-perfect-ui-design/">freecodecamp.org video course</a>.</li>
+
+</ul>
+
+</aside>
+
+</section>
+<section id="slide-org6f31082">
+<h3 id="org6f31082">Snap! user interface</h3>
+
+<div id="org4d22894" class="figure">
+<p><img src="../img/snap.png" alt="snap.png" width="700px" />
+</p>
+</div>
+
+<aside class="notes">
+<p>
+
+</p>
+
+<ul>
+<li>Connect to <i>snap.berkeley.edu</i> and register using your name and Lyon
+student email address.</li>
+
+<li>For offline use - on any computer that you can administer,
+i.e. where you can download and install programs as you please -
+download the <a href="https://github.com/jmoenig/Snap/releases/tag/v7.3.1">source files from GitHub</a>, unpack the files, and open
+<code>snap.html</code> in a browser.</li>
+
+</ul>
+
+</aside>
+
+</section>
+<section id="slide-org6e37ab3">
+<h3 id="org6e37ab3">Snap interface</h3>
+
+<div id="org2769f16" class="figure">
+<p><img src="../img/snap_ui.png" alt="snap_ui.png" width="700px" />
+</p>
+</div>
+
+<aside class="notes">
+<ul>
+<li>The interface is reminiscent of a movie maker's studio: <i>commands</i> are
+assembled in the <i>script</i> area, and the resulting action plays out on
+a <i>stage</i> with a cast of characters called <i>sprites</i>. Every sprite has a
+script associated with it.</li>
+
+</ul>
+
+</aside>
+</section>
+<section id="slide-org0a9ef5b">
+<h3 id="org0a9ef5b">Windows Movie Maker</h3>
+
+<div id="org22afc88" class="figure">
+<p><img src="../img/snap_moviemaker.jpg" alt="snap_moviemaker.jpg" width="700px" />
+</p>
+</div>
+
+<aside class="notes">
+<ul>
+<li>Compare with Windows Movie Maker - commands on the left, script in
+the lower half of the screen, sprites/characters in the middle, and
+stage on the right hand side.</li>
+<li>As a programmer, you are writing the script for each sprite,
+including movements, sounds, and costumes, but you are also the
+producer, casting director, and editor.</li>
+
+</ul>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-org2f42f35">
+<h2 id="org2f42f35">Summary</h2>
+<pre class="example" id="org3c6cccd">
+- Berkeley's Snap! is a development of MIT's Scratch, created in HTML5
+  (with JavaScript), available online or on your PC for download.
+
+- In Snap!, you can define multidimensional arrays and recursive
+  functions, which means that you can do anything a high-level
+  language like Python can do, too.
+
+- Programming can help you understand machines, your own thinking, and
+  you can build applications for humans (like games and animations).
+
+- Programming languages are like natural languages, only much stricter.
+
+- Many layers of computing infrastructure separate you from just
+  "getting on with it" - in Snap! you won't have to know most of them.
+
+- A user interface allows a user to interact with an
+  application. UI/UX design is an important, growing career field.
+
+</pre>
+</section>
+</section>
+<section>
+<section id="slide-org6151594">
+<h2 id="org6151594">Next: looping, broadcasting, animation</h2>
+<ul>
+<li>Snap user interface (UI)</li>
+<li>Paint editor</li>
+<li>Sequence of commands</li>
+<li>Motion commands</li>
+<li>Simple looping (repeat, forever)</li>
+<li>Absolute motion</li>
+<li>Relative motion</li>
+<li>Smooth motion using repeat</li>
+<li>Nested looping</li>
+<li>XY geometry</li>
+<li>Costume-based animation</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom/zoom.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js"></script>
+
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+plugins: [RevealMarkdown, RevealZoom, RevealNotes],
+transition: 'cube'
+});
+
+</script>
+</body>
+</html>
