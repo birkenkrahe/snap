@@ -1,0 +1,157 @@
+:REVEAL_PROPERTIES:
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_REVEAL_JS_VERSION: 4
+#+REVEAL_INIT_OPTIONS: transition: 'cube'
+#+REVEAL_THEME: black
+:END:
+#+TITLE:Game and Robotics Programming with Snap! and Python
+#+AUTHOR:Marcus Birkenkrahe
+#+SUBTITLE: COR 100/Y1 - Fall 2023
+#+OPTIONS: toc:1 num:nil
+#+STARTUP: overview hideblocks indent inlineimages
+* Welcome (Aug-18)  - Orientation
+
+#+attr_html: :width 400px
+[[../img/snaplogo.png]]
+
+* Week 1 (Aug 21-27) Raft race / Intro to Snap!
+#+attr_html: :width 500px
+[[../img/raftrace.png]]
+
+** You said you'd win - and then...
+#+attr_html: :width 500px
+[[../img/raftrace2023.png]]
+
+** ...you almost did!
+#+attr_html: :width 500px
+[[../img/medusa.jpg]]
+#+begin_notes
+The Raft of the Medusa, by Theodore Gericault (1818)
+
+Image: "The painting depicts a moment from the aftermath of the wreck
+of the French naval frigate Méduse, which ran aground off the coast of
+today's Mauritania on 2 July 1816. On 5 July 1816, at least 147 people
+were set adrift on a hurriedly constructed raft; all but 15 died in
+the 13 days before their rescue, and those who survived endured
+starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa][Wikipedia]])
+#+end_notes
+
+** [[https://docs.google.com/forms/d/1aKS9FTna_2I5LaLJrhnn5bCYzDhrwjl0O8HzjBFA6J0/edit#responses][Entry survey]] - Review
+** Getting started - infrastructure
+#+begin_example
+- You can log into your GMail account (mail.google.com)
+- You can see the Snap!Chat Google chat space (optional)
+- You can log into Canvas (lyon.instructure.com)
+- You can see the gradebook in Canvas
+- You can add the Canvas calendar to your Google calendar
+- You can see the GitHub repo (github.com/birkenkrahe/snap)
+- Optional: register at GitHub (watch/star/fork repos)
+- You are registered at snap.berkeley.edu (use Lyon email)
+- You can 'Run Snap!' from snap.berkeley.edu
+#+end_example
+
+** Introduction to Snap! ([[https://github.com/birkenkrahe/snap/blob/piHome/org/1_introduction.org][GitHub]])
+
+- Snap vs. Scratch
+- Snap! interface and examples
+- Programming and programming languages
+- Importance of infrastructure
+- Why Snap!
+- UI/UX (User Interface/User eXperience) as a career
+- Next: first script
+
+* IN PROGRESS Week 2: First Snap!
+* Test 1 available in Canvas (complete by Sept-3)
+* Review week 1
+
+- How are programming languages ranked?
+  #+begin_quote
+  By introducing a suitable metric (measure of greatness), like search
+  activity (TIOBE), or customized survey ([[https://survey.stackoverflow.co/2023/][StackOverflow]], [[https://spectrum.ieee.org/top-programming-languages-2022][IEEE]]).
+  #+attr_html: :width 400px
+  #+caption: Stackoverflow Developers Survey 2023
+  [[../img/stackoverflow.png]]
+
+  #+attr_html: :width 400px
+  #+caption: IEEE ranking of programming languages (2022)
+  [[../img/ieee_ranking.png]]
+  
+  "Thinking about how your workflow and process changes over time, how
+  similar or different do you anticipate your workflow to be 1 year
+  from now as a result of AI tools you are currently using?"
+  #+end_quote
+
+- How is a [[https://www.europeana.eu/en/exhibitions/recording-and-playing-machines/player-piano][player piano]] similar to a computer?
+  #+attr_html: :width 400px
+  [[../img/player_piano.jpg]]
+
+  #+begin_quote
+  The score is an instruction set that is translated into music by the
+  piano just like a [[https://en.wikipedia.org/wiki/Punched_card][punched card]] for an early computer is translated
+  into a program. Content (score, code) is separate from form but "the
+  medium is the message" ([[https://en.wikipedia.org/wiki/The_medium_is_the_message][Marshall McLuhan]]): the artifact carries
+  meaning, and it matters in which medium we program machines.
+  #+end_quote
+
+- Name parts of the infrastructure that enable Snap! programming.
+  #+begin_quote
+  #+attr_html: :width 400px
+  [[../img/infrastructure.png]]
+
+  - Internet
+  - Operating system (OS)
+  - Web (HTTP) server at the University of Berkeley
+  - Snap! HTML5 (web) application
+
+  Needed only when installing Snap! on your PC:
+  - File system for Snap! XML files
+  #+end_quote
+
+* Snap! example: Conway's Game of Life
+#+attr_html: :width 700px
+[[../img/conway.jpg]]
+
+#+begin_notes
+- Example: [[https://snap.berkeley.edu/project?username=qw23&projectname=Conway%e2%80%99s%20Life%20infinite%20playing%20field][Conway's Game of Life]] - check it out now:
+  1) In your browser, navigate to [[https://snap.berkeley.edu][snap.berkeley.edu]]
+  2) In the search bar, enter [[https://snap.berkeley.edu/search?query=conway][Conway]]
+  3) Select the project [[https://snap.berkeley.edu/search?query=conway][Conway's Life infinite playing field]]
+  4) Click on the "full screen symbol"
+  5) Click on the ~green flag~
+  6) Enter cellular automata by clicking on the squares
+  7) Start the simulation and let it run until the end
+  8) Leave the full screen
+  9) Select ~See Code~
+  10) [[https://snap.berkeley.edu/snap/snap.html#present:Username=qw23&ProjectName=Conway%e2%80%99s%20Life%20infinite%20playing%20field&editMode&noRun][Check out the program]] (we might get back to it)
+
+#+end_notes
+
+* Snap! example: Time Machine
+#+attr_html: :width 700px
+[[../img/timeMachine.png]]
+
+#+begin_notes
+- Check out one of my own creations: a "[[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=TimeMachine][Time Machine]]" (of sorts)
+  1) Go back to the Snap! home page at snap.berkeley.edu
+  2) Search for ~birkenkrahe~
+  3) On my ~public page~ click ~follow this user~
+  4) [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=TimeMachine][Open the "Time Machine" project]]
+  5) Go to "full screen"
+  6) Click the ~green flag~
+  7) Click on the grey circle and move it around to see what happens
+  8) Leave the full screen
+  9) Click on ~see code~
+  10) Check out the code
+#+end_notes
+
+* NEXT First Snap! script
+
+- Difference compilation vs. interpretation (REPL).
+  
+- "Hello, world" program (aka script) in Python and in Snap!
+
+- Online REPL in replit.com and in snap.berkeley.edu
+
+- Code along now!
+
+
