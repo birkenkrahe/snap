@@ -9,6 +9,7 @@
 #+SUBTITLE: COR 100/Y1 - Fall 2023
 #+OPTIONS: toc:1 num:nil
 #+STARTUP: overview hideblocks indent inlineimages
+#+PROPERTY: header-args:R :results output :noweb yes :session *R*
 * Welcome (Aug-18)  - Orientation
 
 #+attr_html: :width 400px
@@ -60,9 +61,9 @@ starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.o
 - UI/UX (User Interface/User eXperience) as a career
 - Next: first script
 
-* IN PROGRESS Week 2: First Snap!
-* Test 1 available in Canvas (complete by Sept-3)
-* Review week 1
+* Week 2: First Snap!
+** Test 1 available in Canvas (complete by Sept-3)
+** Review week 1
 
 - How are programming languages ranked?
   #+begin_quote
@@ -107,7 +108,7 @@ starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.o
   - File system for Snap! XML files
   #+end_quote
 
-* Snap! example: Conway's Game of Life
+** Snap! example: Conway's Game of Life
 #+attr_html: :width 700px
 [[../img/conway.jpg]]
 
@@ -126,7 +127,7 @@ starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.o
 
 #+end_notes
 
-* Snap! example: Time Machine
+** Snap! example: Time Machine
 #+attr_html: :width 700px
 [[../img/timeMachine.png]]
 
@@ -144,7 +145,7 @@ starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.o
   10) Check out the code
 #+end_notes
 
-* NEXT First Snap! script
+** First Snap! script
 
 - Difference compilation vs. interpretation (REPL).
   
@@ -153,5 +154,77 @@ starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.o
 - Online REPL in replit.com and in snap.berkeley.edu
 
 - Code along now!
+
+* Week 3: Test 1 review / Sequence & Sounds
+
+** Test 1 review
+
+- 35% of you missed the deadline! You can still submit for 50%.
+
+- Let's look at the results of the others:
+  #+begin_src R :results graphics output file :file ../data/test1.png
+    test_1 <- c(4.5,8.25,9,8.5,7.25,6.75,8.5,6.25,8.25)
+    hist(test_1,main="Histogram of Test 1 results",xlab="Points")
+    abline(v=mean(test_1),col="red",lwd=2,lty=2)
+  #+end_src
+
+  #+RESULTS:
+  [[file:../data/test1.png]]
+  
+- Smoothed distribution with customization:
+  #+begin_src R :results graphics output file :file ../data/test1cust.png
+    test_1 <- c(4.5,8.25,9,8.5,7.25,6.75,8.5,6.25,8.25)
+    avg_1 <- mean(test_1)
+    avg_pc <- sprintf("%.0f%%", avg_1 * 10)
+    plot(density(test_1), lwd=2,
+         xlab="Points [max = 10]",
+         main="Test 1 Game & Robotics Programming Results")
+    abline(v=avg_1,col="red",lwd=2,lty=2)
+    text(x=avg_1+0.25,y=0.05,labels=avg_pc,adj=0,col="red")
+  #+end_src
+
+  #+RESULTS:
+  [[file:../data/test1cust.png]]
+
+- What is a sprint in project management with Scrum?
+
+- What is Git in GitHub?
+  
+- Where are the whiteboard photos for this course?
+
+- What's IMRaD about?
+
+- Infrastructure to code at snap.berkeley.edu?
+  #+begin_quote
+  Yes: network (Internet), operating system (OS), Snap! web app
+  (HTML5), web server (HTTPD).
+
+  No: file system for Snap! XML files, command line terminal to
+  execute OS commands.
+  #+end_quote
+
+- Test 2 available later today: complete by Sunday, Sept-10.
+
+** Review "First Snap!" program
+
+- Which programming mistakes does a computer tolerate?
+  #+begin_quote
+  NONE. Computers are programmed in formal languages, which means that
+  there is NO margin of error for grammar mistakes (syntax).
+  #+end_quote
+- Where can you save your Snap! projects?
+  #+begin_quote
+  In the cloud (snap.berkeley.edu if registered); on a PC as [[https://github.com/birkenkrahe/snap/blob/piHome/img/snap_xml.png][XML]] file.
+  #+end_quote
+- What does the Snap! application offer?
+  #+begin_quote
+  1) code to move, look, sound, control, sense, draw (& make blocks)
+  2) file menu (open/save and import files)
+  3) stage with sprites, backgrounds and sounds
+  4) sprites with scripts, costumes and sounds
+  #+end_quote
+  
+** NEXT Sequence & Sounds
+
 
 
