@@ -61,7 +61,7 @@ starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.o
 - UI/UX (User Interface/User eXperience) as a career
 - Next: first script
 
-* Week 2: First Snap!
+* Week 2: First look at Snap!
 ** Test 1 available in Canvas (complete by Sept-3)
 ** Review week 1
 
@@ -155,8 +155,7 @@ starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.o
 
 - Code along now!
 
-* Week 3: Test 1 review / Sequence & Sounds
-
+* Week 3: Test 1 review / First Snap! program
 ** Test 1 review
 
 - 35% of you missed the deadline! You can still submit for 50%.
@@ -167,6 +166,9 @@ starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.o
     <<plot histogram of test results>>
     <<plot average of test results>>
   #+end_src
+
+  #+RESULTS:
+  [[file:../data/test1.png]]
 
 - Smoothed distribution with customization:
   #+begin_src R :results graphics output file :file ../data/test1cust.png
@@ -202,7 +204,7 @@ starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.o
 
 - *Test 2 available later today: complete by Sunday, Sept-10.*
 
-** Review "First Snap!" program
+** Review last week
 
 Ask yourself if you know the answer as I'm reading the question.
 
@@ -238,9 +240,8 @@ Ask yourself if you know the answer as I'm reading the question.
   4) sprites with scripts, costumes and sounds
   #+end_quote
 
-** NEXT First Snap! cont'd & Sequence & Sounds
-
-* Noweb code blocks
+** First Snap! program
+** Noweb code blocks
 
 #+name: store test results in variable
 #+begin_src R :results graphics output file :file ../data/test1.png
@@ -254,3 +255,13 @@ Ask yourself if you know the answer as I'm reading the question.
 #+begin_src R :results graphics output file :file ../data/test1.png
   abline(v=mean(test_1),col="red",lwd=2,lty=2)
 #+end_src
+** Summary
+
+- Test 1 grades as histogram with the R language
+- Uploading a project to the cloud with notes
+- Uploading costumes and background for sprite and stage
+- First Snap! script with motion and control commands
+
+* NEXT Week 4: Sequence & Sounds & Smooth Motion
+
+
