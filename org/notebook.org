@@ -76,7 +76,7 @@ starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.o
   #+attr_html: :width 400px
   #+caption: IEEE ranking of programming languages (2022)
   [[../img/ieee_ranking.png]]
-  
+
   "Thinking about how your workflow and process changes over time, how
   similar or different do you anticipate your workflow to be 1 year
   from now as a result of AI tools you are currently using?"
@@ -148,7 +148,7 @@ starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.o
 ** First Snap! script
 
 - Difference compilation vs. interpretation (REPL).
-  
+
 - "Hello, world" program (aka script) in Python and in Snap!
 
 - Online REPL in replit.com and in snap.berkeley.edu
@@ -163,14 +163,11 @@ starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.o
 
 - Let's look at the results of the others:
   #+begin_src R :results graphics output file :file ../data/test1.png
-    test_1 <- c(4.5,8.25,9,8.5,7.25,6.75,8.5,6.25,8.25)
-    hist(test_1,main="Histogram of Test 1 results",xlab="Points")
-    abline(v=mean(test_1),col="red",lwd=2,lty=2)
+    <<store test results in variable>>
+    <<plot histogram of test results>>
+    <<plot average of test results>>
   #+end_src
 
-  #+RESULTS:
-  [[file:../data/test1.png]]
-  
 - Smoothed distribution with customization:
   #+begin_src R :results graphics output file :file ../data/test1cust.png
     test_1 <- c(4.5,8.25,9,8.5,7.25,6.75,8.5,6.25,8.25)
@@ -189,7 +186,7 @@ starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.o
 - What is a sprint in project management with Scrum?
 
 - What is Git in GitHub?
-  
+
 - Where are the whiteboard photos for this course?
 
 - What's IMRaD about?
@@ -203,10 +200,27 @@ starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.o
   execute OS commands.
   #+end_quote
 
-- Test 2 available later today: complete by Sunday, Sept-10.
+- *Test 2 available later today: complete by Sunday, Sept-10.*
 
 ** Review "First Snap!" program
 
+Ask yourself if you know the answer as I'm reading the question.
+
+- What does REPL mean and what does it deliver?
+  #+begin_quote
+  Read-Eval-Print-Loop - refers to the ability of a shell to take
+  input from you, evaluate it and print the result without you having
+  to do anything. Afterwards, the program awaits further instructions
+  (hence the 'loop').
+  #+end_quote
+- Is Snap! a compiled or an interpreted programming language?
+  #+begin_quote
+  Strictly speaking, all programming languages must be compiled,
+  i.e. source code must be converted to machine code. Interpreted
+  languages like R, Python, Snap! conceal this from you by creating
+  machine code behind the scenes and then running it for you line by
+  line.
+  #+end_quote
 - Which programming mistakes does a computer tolerate?
   #+begin_quote
   NONE. Computers are programmed in formal languages, which means that
@@ -223,8 +237,20 @@ starvation and dehydration and practiced cannibalism." ([[https://en.wikipedia.o
   3) stage with sprites, backgrounds and sounds
   4) sprites with scripts, costumes and sounds
   #+end_quote
-  
-** NEXT Sequence & Sounds
 
+** NEXT First Snap! cont'd & Sequence & Sounds
 
+* Noweb code blocks
 
+#+name: store test results in variable
+#+begin_src R :results graphics output file :file ../data/test1.png
+  test_1 <- c(4.5,8.25,9,8.5,7.25,6.75,8.5,6.25,8.25)
+#+end_src
+#+name: plot histogram of test results
+#+begin_src R :results graphics output file :file ../data/test1.png
+  hist(test_1,main="Histogram of Test 1 results",xlab="Points")
+#+end_src
+#+name: plot average of test results
+#+begin_src R :results graphics output file :file ../data/test1.png
+  abline(v=mean(test_1),col="red",lwd=2,lty=2)
+#+end_src

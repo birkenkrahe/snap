@@ -81,7 +81,7 @@ log in or out, click on the cloud symbol in the editor.
 - The *stage* is where you see the results
 - The *modules* area is where you see all your characters and scenes
 
-* Sprites and costumes
+* NEXT Sprites and costumes
 #+attr_latex: :width 400px
 [[../img/turtle.jpg]]
 
@@ -90,7 +90,7 @@ triangular shape.
 
 Every new Turtle sprite appears at a random place on the screen,
 facing a random direction, and has a random color.
-#+attr_latex: :width 600px
+#+attr_latex: :width 400px
 #+caption: Snap! sprites.
 [[../img/snap_turtles.png]]
 
@@ -98,20 +98,20 @@ Click on the turtle symbol below the stage to create additional
 sprites or characters.
 
 You can also use your /camera/ to create a sprite.
-#+attr_latex: :width 600px
+#+attr_latex: :width 400px
 #+caption: Snap! sprite, created with camera
 [[../img/snap_camera.png]]
 
 To change the appearance of the standard Turtle sprite, load a new
 costume. There are many ready-made costumes provided.
-#+attr_latex: :width 600px
+#+attr_latex: :width 400px
 #+caption: Snap! costume from the media library
 [[../img/snap_costumes.png]]
 
 This is where the costumes library resides on my computer at home
 (because I downloaded the Snap! source code):
 ~/home/pi/Snap-7.3.1/Costumes~.
-#+attr_latex: :width 600px
+#+attr_latex: :width 400px
 #+caption: Snap! top menu
 [[../img/snap_library.png]]
 
@@ -126,13 +126,13 @@ directory ~/~.
 
 Back to costumes! You can also create or modify an existing costume
 using the paint editor.
-#+attr_latex: :width 600px
+#+attr_latex: :width 400px
 #+caption: Self-drawn Snap! costume
 [[../img/snap_paint.png]]
 
 To import an image or go to the Costumes library, open the top (or
 "file") menu next to the Snap! logo, marked by a document symbol.
-#+attr_latex: :width 600px
+#+attr_latex: :width 400px
 #+caption: Snap! top menu
 [[../img/snap_menu.png]]
 
@@ -140,12 +140,12 @@ To import an image or go to the Costumes library, open the top (or
 
 Similar to the costume library, Snap! comes with backgrounds that
 you can load for your stage.
-#+attr_latex: :width 600px
+#+attr_latex: :width 400px
 #+caption: Snap! standard background ~woods.gif~
 [[../img/snap_background.png]]
 
 You can also modify or import backgrounds from your computer.
-#+attr_latex: :width 600px
+#+attr_latex: :width 400px
 #+caption: Snap! background changed to a painting by Cezanne.
 [[../img/2_cezanne_with_plane.png]]
 
@@ -254,28 +254,28 @@ glowing. Clicking on a running script again will stop it.
    - You can now publish the project, which means that it will be
      visible (and searchable) in the Snap! website
    - On the project page, you can ~Unshare~ and ~Unpublish~ your project.
-     #+attr_latex: :width 600px
+     #+attr_latex: :width 400px
      #+caption: You can share/unshare, and publish/unpublish projects
      [[../img/snap_share.png]]
    - On the ~My Projects~ page, you also see if a project is shared
      and/or published.
-     #+attr_latex: :width 600px
+     #+attr_latex: :width 400px
      #+caption: My "My Projects" page
      [[../img/snap_projects.png]]
    - You can add projects to collections.
-     #+attr_latex: :width 600px
+     #+attr_latex: :width 400px
      #+caption: My collection of projects for this course
      [[../img/snap_collection.png]]
    - Published projects and collections are displayed on your public
      page.
-     #+attr_latex: :width 600px
+     #+attr_latex: :width 400px
      #+caption: My collection of projects for this course
      [[../img/snap_public.png]]
 
 * Practice solution - first script
 
 - Screenshot:
-  #+attr_latex: :width 600px
+  #+attr_latex: :width 400px
   [[../img/snap_FirstProjectSolution.png]]
 
 - [[https://youtu.be/Q2jmy1OEFsY][YouTube video]]
