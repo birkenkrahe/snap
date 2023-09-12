@@ -249,23 +249,56 @@ Ask yourself if you know the answer as I'm reading the question.
 - First Snap! script with motion and control commands
 
 * Week 4: Sequence & Sounds & Smooth Motion
+** Vote for Lyon College this week!
 
-** Test 2 results
+Put this in your daily calendar for daily vote through September 15!
+From Lyon marketing:
+#+begin_quote
+Lyon College is a finalist for best four-year college in the AMP
+(Arkansas Money and Politics) Best of 2023!
 
-- Test results are much worse (76% completion rate)!?
+You can vote once per day through Sept. 15! Go Scots!
+
+https://arkansasmoneypolitics.secondstreetapp.com/og/e404fba6-f03f-4d70-939a-b72afd1dcb42/gallery/396819790
+#+end_quote
+
+** Test 2 results and review
+
+- Test results are much worse (76% completion rate)!? ([[https://github.com/birkenkrahe/snap/blob/piHome/img/test2cust.png][GitHub]])
   #+attr_html: :width 500px
   [[file:../img/test2cust.png]]
 
 - Tests are OPEN BOOK which means you can and should open Snap! while
   answering questions. 30 minutes more than enough time to try stuff.
-  
+
+- I will open the old tests after the deadline so that you can see
+  your mistakes and try again if you wish.
+
+- Test 3 needs to be completed by next week. Almost all questions can
+  be checked right away with the Snap! editor.
+
+*** Review
+
+1. A Snap! project is stored on your PC as an XML file.
+2. XML files are text files.
+3. Computers do NOT tolerate small programming mistakes.
+4. Snap! does allow you to upload your own image.
+5. Computers convert human-readable source code into machine code.
+6. A Snap! script is blocks snapped together.
+7. Snap! is a programming language for graphics and animation.
+8. You stop a running script by clicking on it again.
+9. You can get background images from anywhere (if allowed).
+10. Stage and sprites have scripts, sounds, background/costumes.
+
 ** Programming assignments
 
 - I will grade your submissions today and give you feedback.
   
 - Two more assignments today (until next week).
 
-* Code
+** Today: Sequence, sounds, start/stop, looping
+
+* Graph code
 ** Grades graph
 #+name: test 1 and test 2 results
 #+begin_src R :results graphics output file :file ../img/test2cust.png

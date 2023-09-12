@@ -32,10 +32,16 @@
    #+caption: sample Snap! script (Source: Joshi)
    [[../img/snap_sequence.png]]
 
+   - Make Alonso change color 4 times. Test individual bits as
+     subroutines.
+
+   - How many colors are there? Check the reference manual (0-99)
+
 2) When you try to run the script a second time, nothing happens. What
    could you do to re-run it properly? - /Tip: check "Looks" commands./
    #+begin_notes
-   Add the ~Looks::show~ command at the top.
+   - Add the ~Looks::show~ command at the top.
+   - Add the ~Looks::clear graphic effects~ command in front of it.
    #+end_notes
 
 3) [[https://drive.google.com/file/d/1vcCJr7T_ISMoMmVbsaSSWYojlN0-JGwi/view?usp=sharing][This is how the result should look like (video).]]
@@ -77,14 +83,14 @@
   [[../img/snap_play2.png]]
 
 - [ ] What does this script sound like?
-  #+attr_html: :width 200px
-  #+caption: Script with sounds
-  [[../img/snap_dog1.png]]
-
-- [ ] What does this script sound like?
   #+attr_html: :width 150px
   #+caption: Script with sounds
   [[../img/snap_dog2.png]]
+
+- [ ] What does this script sound like?
+  #+attr_html: :width 200px
+  #+caption: Script with sounds
+  [[../img/snap_dog1.png]]
 
 * *Practice* (in class) - Sounds
 
