@@ -75,8 +75,8 @@ Python" will be able to:
 
 | Week | Date          | TEXTBOOK CHAPTER       |
 |------+---------------+------------------------|
-|    1 | Aug 21-Aug 25 | First Look at Snap!    |
-|    2 | Aug 28-Sep 01 | Sequence and Sounds    |
+|    1 | Aug 21-Aug 25 | +First Look at Snap!+    |
+|    2 | Aug 28-Sep 01 | +Sequence and Sounds+    |
 |    3 | Sep 04-Sep 08 | Looping and Costumes   |
 |    4 | Sep 11-Sep 15 | Geometry and Motion    |
 |    5 | Sep 18-Sep 22 | Broadcasting           |

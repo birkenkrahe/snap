@@ -241,7 +241,57 @@ Ask yourself if you know the answer as I'm reading the question.
   #+end_quote
 
 ** First Snap! program
-** Noweb code blocks
+** Summary
+
+- Test 1 grades as histogram with the R language
+- Uploading a project to the cloud with notes
+- Uploading costumes and background for sprite and stage
+- First Snap! script with motion and control commands
+
+* Week 4: Sequence & Sounds & Smooth Motion
+
+** Test 2 results
+
+- Test results are much worse (76% completion rate)!?
+  #+attr_html: :width 500px
+  [[file:../img/test2cust.png]]
+
+- Tests are OPEN BOOK which means you can and should open Snap! while
+  answering questions. 30 minutes more than enough time to try stuff.
+  
+** Programming assignments
+
+- I will grade your submissions today and give you feedback.
+  
+- Two more assignments today (until next week).
+
+* Code
+** Grades graph
+#+name: test 1 and test 2 results
+#+begin_src R :results graphics output file :file ../img/test2cust.png
+  test_1 <- c(4.5,8.25,9,8.5,7.25,6.75,8.5,6.25,8.25)
+  test_2 <- c(1.5,5,5.5,5.75,7,6,4,3.5,6.5,6,4.75,4.75,6)
+  avg_1 <- mean(test_1)
+  avg_2 <- mean(test_2)
+  avg_pc_1 <- sprintf("%.0f%%", avg_1 * 10)
+  avg_pc_2 <- sprintf("%.0f%%", avg_2 * 10)
+  d1 = density(test_1)
+  d2 = density(test_2)
+  xlims <- c(min(d1$x, d2$x), max(d1$x, d2$x))
+  ylims <- c(min(d1$y, d2$y), max(d1$y, d2$y))
+  plot(d1, lwd=1, col="blue", xlab="Points [max = 10]",
+       main="",xlim=xlims,ylim=ylims)
+  title("Game & Robotics Programming Test Results")
+  lines(d2, lwd=1, col="red", xlab="Points [max = 10]")
+  abline(v=avg_1,col="blue",lwd=1,lty=2)
+  abline(v=avg_2,col="red",lwd=1,lty=2)
+  text(x=avg_1+0.25,y=0.05,
+       labels=paste("avg 1: ", avg_pc_1),adj=0,col="blue")
+  text(x=avg_2+0.25,y=0.05,
+       labels=paste("avg 2: ", avg_pc_2),adj=0,col="red")
+#+end_src
+
+** Noweb code blocks (test 1)
 
 #+name: store test results in variable
 #+begin_src R :results graphics output file :file ../data/test1.png
@@ -255,13 +305,18 @@ Ask yourself if you know the answer as I'm reading the question.
 #+begin_src R :results graphics output file :file ../data/test1.png
   abline(v=mean(test_1),col="red",lwd=2,lty=2)
 #+end_src
-** Summary
 
-- Test 1 grades as histogram with the R language
-- Uploading a project to the cloud with notes
-- Uploading costumes and background for sprite and stage
-- First Snap! script with motion and control commands
+** Noweb code blocks (test 2)
 
-* NEXT Week 4: Sequence & Sounds & Smooth Motion
-
-
+#+name: store test 2 results in variable
+#+begin_src R
+  test_2 <- c(1.5,5,5.5,5.75,7,6,4,3.5,6.5,6,4.75,4.75,6)
+#+end_src
+#+name: plot histogram of test 2 results
+#+begin_src R
+  hist(test_2,main="Histogram of Test 2 results (76% of class)",xlab="Points")
+#+end_src
+#+name: plot average of test 2 results
+#+begin_src R
+  abline(v=mean(test_2),col="red",lwd=2,lty=2)
+#+end_src
