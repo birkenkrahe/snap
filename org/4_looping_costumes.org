@@ -88,7 +88,7 @@
   360/5 = 72 iterations.
   #+end_notes
   
-* NEXT Jumping up and down
+* Jumping up and down
 
 - To code along: create a new project and add the X-Y-Grid background.
 
