@@ -298,21 +298,24 @@ https://arkansasmoneypolitics.secondstreetapp.com/og/e404fba6-f03f-4d70-939a-b72
 
 ** Today: Sequence, sounds, start/stop, looping
 
-
 * Week 5:
-
 ** Fantastic test improvements!
 
-Nothing to complain about here: average result 82%!
+Nothing to complain about here: average result 82%! ([[https://github.com/birkenkrahe/snap/blob/piHome/img/test1-3.png][GitHub]])
 #+attr_html: :width 500px
 [[../img/test1-3.png]]
 
 ** New test and new assignment coming today
+
+I will grade your previous assignments by next week.
+
+You can complete all assignments late for 50% of the points.
+
 ** Today: jumping up and down, smooth motion, 3D-effects
 
 Covering chapters 4-5 in your textbook and in my script (see GitHub).
 
-* Graph code
+* Grade graph code
 ** Grades graph
 #+name: test 1-3 results
 #+begin_src R :results graphics output file :file ../img/test2cust.png

@@ -87,8 +87,10 @@
   The sprite will spin around itself forever - one full spin will take
   360/5 = 72 iterations.
   #+end_notes
+  
+* NEXT Jumping up and down
 
-* Jumping up and down
+- To code along: create a new project and add the X-Y-Grid background.
 
 - To make a sprite jump up and down repeatedly:
   1) get the basic command sequence (what the sprite should do)
