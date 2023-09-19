@@ -298,35 +298,56 @@ https://arkansasmoneypolitics.secondstreetapp.com/og/e404fba6-f03f-4d70-939a-b72
 
 ** Today: Sequence, sounds, start/stop, looping
 
+
 * Week 5:
 
+** Fantastic test improvements!
 
+Nothing to complain about here: average result 82%!
+#+attr_html: :width 500px
+[[../img/test1-3.png]]
+
+** New test and new assignment coming today
+** Today: jumping up and down, smooth motion, 3D-effects
+
+Covering chapters 4-5 in your textbook and in my script (see GitHub).
 
 * Graph code
 ** Grades graph
-#+name: test 1 and test 2 results
+#+name: test 1-3 results
 #+begin_src R :results graphics output file :file ../img/test2cust.png
   test_1 <- c(4.5,8.25,9,8.5,7.25,6.75,8.5,6.25,8.25)
   test_2 <- c(1.5,5,5.5,5.75,7,6,4,3.5,6.5,6,4.75,4.75,6)
+  test_3 <- c(10,8,7.5,8.5,6.5,6.5,8.5,10,8,6.5,9.5,9.5)
   avg_1 <- mean(test_1)
   avg_2 <- mean(test_2)
+  avg_3 <- mean(test_3)
   avg_pc_1 <- sprintf("%.0f%%", avg_1 * 10)
   avg_pc_2 <- sprintf("%.0f%%", avg_2 * 10)
+  avg_pc_3 <- sprintf("%.0f%%", avg_3 * 10)
   d1 = density(test_1)
   d2 = density(test_2)
+  d3 = density(test_3)
   xlims <- c(min(d1$x, d2$x), max(d1$x, d2$x))
-  ylims <- c(min(d1$y, d2$y), max(d1$y, d2$y))
+  ylims <- c(min(d1$y, d2$y, d3$y), max(d1$y, d2$y, d3$y))
   plot(d1, lwd=1, col="blue", xlab="Points [max = 10]",
        main="",xlim=xlims,ylim=ylims)
   title("Game & Robotics Programming Test Results")
-  lines(d2, lwd=1, col="red", xlab="Points [max = 10]")
+  lines(d2, lwd=1, col="red", xlab="")
+  lines(d3, lwd=2, col="darkgreen", xlab="Points [max = 10]")
   abline(v=avg_1,col="blue",lwd=1,lty=2)
   abline(v=avg_2,col="red",lwd=1,lty=2)
+  abline(v=avg_3,col="darkgreen",lwd=2,lty=2)
   text(x=avg_1+0.25,y=0.05,
        labels=paste("avg 1: ", avg_pc_1),adj=0,col="blue")
   text(x=avg_2+0.25,y=0.05,
        labels=paste("avg 2: ", avg_pc_2),adj=0,col="red")
+  text(x=avg_3+0.5,y=0.32,
+       labels=paste("avg 3: ", avg_pc_3),adj=0,col="darkgreen")
 #+end_src
+
+#+RESULTS: test 1-3 results
+[[file:../img/test2cust.png]]
 
 ** Noweb code blocks (test 1)
 

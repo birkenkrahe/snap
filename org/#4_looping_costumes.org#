@@ -1,0 +1,268 @@
+#+title: Snap! Looping and costumes
+#+subtitle: UBMS Game and Robo Programming with Snap! and Python
+#+options: toc:nil num:nil ^:nil
+#+startup: overview hideblocks indent inlineimages
+#+attr_latex: :width 400px
+[[../img/loop.jpg]]
+* Green flag
+
+- The project GreenFlag contains two sprites. Each sprite has its own
+  script. There is no way to run both these scripts simultaneously.
+  #+attr_latex: :width 400px
+  #+caption: Two scripts for two sprites on one stage
+  [[../img/snap_greenflag.png]]
+
+- When attaching the /green flag/ block to each of the scripts, they
+  will start at the same time.
+  #+attr_latex: :width 400px
+  #+caption: two scripts for two sprites on one stage with green flag
+  [[../img/snap_greenflag1.png]]
+
+- But this is a conversation: to build in pauses, alter the program
+  and use the ~wait N secs~ command:
+  #+attr_latex: :width 400px
+  #+caption: a conversation between two characters
+  [[../img/snap_greenflag2.png]]
+
+- See project [[https://snap.berkeley.edu/project?user=birkenkrahe&project=GreenFlag][GreenFlag]] in the cloud ([[https://drive.google.com/file/d/13VaRsjnak8CeahCxoPaNPhpdrpCkz4Y6/view?usp=sharing][video/GDrive]])
+
+- Having a conversation, even between digital beings, relies on
+  pausing to listen to the other - who'd have known!?
+
+- Object orientation is about classes and methods (things the classes
+  can do, but also about exchanging messages between objects (the
+  ability to send and receive a message is a method, too).
+
+- In Snap!, this will be mimicked by the ~broadcast~ and ~receive~
+  commands
+  
+* Process model of a conversation
+
+- There are two ways to implement this process in BPMN:
+  1) the process has two lanes, one for each participant
+  2) the process has two pools, one for each participant
+  3) ground rules: inside a pool, only sequence flow, between pools
+     only message flow.
+
+- Your job (bonus points) - I'll show you how to get started:
+  1) draw the process model for this conversation in [[https://bpmn.io][bpmn.io]]
+  2) draw the 2-lane version
+  3) save the model as a ~.bpmn~ file to your PC
+  4) upload the file [[https://lyon.instructure.com/courses/1721/assignments/15076][here to Canvas]]
+
+- Beginning diagrams for 2-lane and for 2-pool solutions:
+  #+attr_latex: :width 400px
+  [[../img/lanes.png]]
+
+- Bonus points will be applied at the end of the course only.
+
+* Simple Looping
+#+attr_latex: :width 400px
+[[../img/looping.png]]
+
+- See project [[https://snap.berkeley.edu/project?user=birkenkrahe&project=Looping][Looping]] online
+
+- If you want to code along, open a new Snap! project now
+  
+* Looping commands
+
+- Looping (or /iteration/) is the repetition of a sequence of commands
+
+- The commands ~repeat~ and ~forever~ in Snap! allow simple looping
+
+- [ ] What does this command do?
+  #+attr_latex: :width 150px
+  #+caption: Simple loop with `repeat`
+  [[../img/snap_repeat.png]]
+  #+begin_notes
+  The sprite will move around in a square. Each move takes it 100
+  steps before it turns 90 degrees.
+  #+end_notes
+
+- [ ] What does this command do?
+  #+attr_latex: :width 150px
+  #+caption: Simple loop with `forever`
+  [[../img/snap_forever3.png]]
+  #+begin_notes
+  The sprite will spin around itself forever - one full spin will take
+  360/5 = 72 iterations.
+  #+end_notes
+  
+* Jumping up and down
+
+- To make a sprite jump up and down repeatedly:
+  1) get the basic command sequence (what the sprite should do)
+  2) repeat the sequence
+
+- This command moves the sprite along the y-axis (vertically):
+  #+attr_latex: :width 200px
+  #+caption: Gliding in 1/2 second to (0,100)
+  [[../img/snap_jump1.png]]
+
+- This command brings the sprite back to the origin:
+  #+attr_latex: :width 200px
+  #+caption: Gliding in 1/2 second between (0,100) and (0,0)
+  [[../img/snap_jump2.png]]
+
+- Finally, we use ~repeat~ to iterate four times:
+  #+attr_latex: :width 200px
+  #+caption: Gliding in 1/2 second between (0,100) and (0,0) 4 times
+  [[../img/snap_jump3.png]]
+
+- [[https://snap.berkeley.edu/snap/snap.html#present:Username=birkenkrahe&ProjectName=Looping&editMode&noRun][See the complete code here.]] The XY-geometry of the background will
+  be covered in an upcoming lesson. When animating, add the X-Y-grid
+  as a background as I've done it here.
+
+* Smooth motion
+
+- Place your sprite somewhere near the left edge, add and click the
+  following script:
+  #+attr_latex: :width 150px
+  #+caption: Seemingly instantaneous jump to the right
+  [[../img/snap_move.png]]
+
+- Looping reveals that these commands are not instantaneous: the
+  sprite moves the same number of 300 = 10 * 30 steps.
+  #+attr_latex: :width 150px
+  #+caption: Few loops, large steps make for choppy motion
+  [[../img/snap_move1.png]]
+
+- Reducing the number of steps per iteration and increasing the number
+  of iterations still moves 300 = 30 * 10 steps, but the movement is
+  now much smoother.
+  #+attr_latex: :width 150px
+  #+caption: Many loops, small steps make for smooth motion
+  [[../img/snap_move2.png]]
+
+* *Practice* - looping
+
+1) Define a new project called "Looping".
+2) Create three ~sprites~ and pick different ~costumes~ for them so that
+   you can distinguish them. Name them according to the action.
+3) Make the ~spinning~ sprite spin around itself really slowly
+   ~forever~. Tip: slow motion means many small degree changes.
+4) Make the ~jumping~ sprite jump up and down 10 times: the sprite
+   should move down slowly (over 2 seconds) and bounce up fast (over
+   0.5 seconds).
+5) Make the ~smooth~ sprite move smoothly 200 steps to the right. Tip: to
+   bring a sprite back that has left the stage, move it with a
+   negative number of steps - e.g. ~-200~.
+6) When you're all finished, save your project to the Snap! cloud and
+   share the URL in the Google ~Snap!Chat~ *in the thread that I'll
+   start* in class. Thanks!
+   
+[[https://snap.berkeley.edu/project?user=birkenkrahe&project=Looping][Practice solution - looping]]
+
+* Rotation style
+
+- If you want your sprite to walk horizontally (East-West) forever,
+  let it bounce upon hitting an edge.
+  #+attr_latex: :width 150px
+  #+caption: Sprite bounces off edge in chosen rotation style
+  [[../img/snap_bounce.png]]
+
+- You can control the orientation of the sprite after bouncing using
+  the rotation style buttons located left of the little sprite image
+  that indicates the currently chosen rotation style:
+   #+attr_latex: :width 150px
+  #+caption: Sprite bounces off edge in chosen rotation style
+  [[../img/rotation.png]]
+  1) top = sprite can rotate when hitting the edge
+  2) middle = sprite turns around instantly when hitting the edge
+  3) bottom = sprite doesn't rotate, keeps direction at edge
+
+* *Practice* rotation styles
+#+attr_latex: :width 400px
+#+caption: Illustrating three rotation styles upon hitting the edge
+[[../img/snap_beetle.png]]
+
+1) *Create* a project that implements the three rotation styles as shown
+   [[https://drive.google.com/file/d/1ZNCaNwniNFfj1e2IBMjHlwgvO9SG22Y7/view?usp=sharing][in this video (GDrive)]].
+
+2) *Start* by defining three sprites, and download the beetle
+   costume. *Tip: you can download it once only and drag it onto a
+   sprite in the sprite area below the stage.*
+
+3) *Script:* point the beetle in the same direction (90). In a ~forever~
+   loop, make it ~move 10 steps~ and if on edge, bounce it.
+
+4) Choose a *different rotation style* for each beetle.
+
+5) You need three identical scripts (remember a script is tied to a
+   sprite). To start all three beetles at the same time, add a Green
+   Flag start command. *Tip: You can duplicate scripts and drag them
+   onto sprites, too.*
+
+6) /Optional:/ once you're done, add speech bubbles and experiment with
+   making them start at different times, move at different paces, and
+   add the XY geometry background (as shown in my video).
+
+7) When you're all finished, save your project to the Snap! cloud and
+   share the URL in the Google ~Snap!Chat~ *in the thread that I'll
+   start*. Thanks!
+   
+[[https://snap.berkeley.edu/project?user=birkenkrahe&project=RotationStyle][Practice solution - rotation style]]
+
+* Animation using costumes
+#+attr_latex: :width 400px
+#+caption: Horse in motion by Eadweard Muybridge (1878)
+[[../img/illusion.jpg]]
+
+- Animation (images brought to life) is an illusion of action or
+  motion, a trick played on our eyes (and ears, with sounds).
+
+- To create this illusion visually, you can use a series of sprite
+  costumes - going through the sequence is like Muybridge's horse:
+  #+attr_latex: :width 200px
+  [[../img/snap_animation.png]]
+
+* *Practice* animation using costumes
+
+1) Define a new project and call it ~animation~.
+
+2) Make a sprite and name it "walk".
+
+3) Open the /Costumes/ menu of the sprite. Download 4 costumes of
+   /"avery walking a/b/c/d"/ from the library for the same sprite.
+   #+attr_latex: :width 400px
+   #+caption: Four "Avery walking" costumes from the Snap! library
+   [[../img/avery.png]]
+
+4) Show avery dragging her feet: write a script that makes her move to
+   the right 10 steps at a time *whenever the space bar is pressed*
+   (that's a control command). Do this a few times, then drag /avery/
+   back to her starting position.
+
+5) Add the command "next costume" at the end of the script and run
+   it again: avery now seems to walk to the right side of the
+   stage. In fact, you move through four different static costumes.
+
+6) Make avery walk /frantically/ off stage: enclose the last script in
+   a "forever" loop and add a green flag starting command at the
+   top.
+   #+attr_latex: :width 200px
+   [[../img/snap_avery1.png]]
+
+7) To bring the sprite back to the stage, right click in the stage
+   area and choose "Show all". You'll have to drag the sprite to the
+   starting position.
+
+8) To stop the frantic motion, add a "wait 0.2 secs" command at the
+   end of the script. Avery now walks normally.
+
+9) Finally, use your knowledge of rotation styles to stop Avery from
+   walking off stage and give her a suitable background to walk in.
+   #+begin_quote
+   Add "if on edge, bounce" after the "wait" command inside the
+   "forever" loop, and change the rotation style to "only face
+   left/right":
+   #+attr_latex: :width 200px
+   [[../img/snap_avery2.png]]
+   #+end_quote
+
+10) When you're all finished, save your project to the Snap! cloud and
+    share the URL in the Google ~Snap!Chat~ *in the thread that I'll
+    start*. Thanks!
+
+[[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=animation][Practice solution: Project animation]]
+
