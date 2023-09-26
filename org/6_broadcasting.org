@@ -110,14 +110,17 @@
    #+end_quote
 
 2) Team up with one other partner
+
 3) Design a short story animation. Something like:
    - a nursery rhyme
    - a folk story
    - your own story
    - a clip from your favorite story or film or game
+
 4) The story should be narrated as sub-titles or as part of the
    animation (you can create subtitles with the ~write [..] size [..]~
    code block in the ~Pen~ category.
+
 5) Requirements:
    - Green flag should start the animation
    - At least 2 sprites
