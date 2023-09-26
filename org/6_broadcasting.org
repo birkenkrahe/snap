@@ -138,7 +138,7 @@
    Here is a story example "[[https://snap.berkeley.edu/project?username=isaac%2erice&projectname=High%20Ground][High Ground]]" by Isaac Rice and Jakobe Alcorn
      (Fall 2022)
 
-6) Upload your solution to Canvas when you're done.
+6) Upload your solution to the Google Snap!Chat space.
 
 7) This exercise may go over two sessions - if you can't finish on day
    one, we'll take as much as 1/2 of day 2 to complete.
