@@ -79,8 +79,8 @@ Python" will be able to:
 |    2 | Aug 28-Sep 01 | +Sequence and Sounds+    |
 |    3 | Sep 04-Sep 08 | +Looping and Costumes+   |
 |    4 | Sep 11-Sep 15 | +Geometry and Motion+    |
-|    5 | Sep 18-Sep 22 | Broadcasting           |
-|    6 | Sep 25-Sep 29 | Animation project      |
+|    5 | Sep 18-Sep 22 | +Broadcasting+           |
+|    6 | Sep 25-Sep 29 | +Animation project+      |
 |    7 | Oct 02-Oct 06 | Events and Concurrency |
 |    8 | Oct 09-Oct 13 | Keyboard interaction   |
 |    9 | Oct 16-Oct 20 | Mouse interaction      |
