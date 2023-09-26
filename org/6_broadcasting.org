@@ -48,15 +48,30 @@
   #+caption: A conversation between two characters
   [[../img/snap_greenflag2.png]]
 
-- Open this project to get the original script: [[https://bit.ly/greenFlag][bit.ly/greenFlag]]
+- Open this project to get the original script: [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Conversation][Link]]
 
-- Duplicate the whole script for each sprite before changing it
+- Save the project to a new file "Conversation-broadcasting"
 
-- Once completed and tested, SAVE the project to your cloud repo for later reference
+- Replace the ~wait~ commands by broadcasting commands, and add the
+  corresponding commands for Sharkie.
+
+- Import your ~reset.xml~ script to both sprites to be able to reset
+  quickly and accurately. The positions of Sharkie and Alonzo are x =
+  -100 and x = 100, respectively, and y = 0.
+
+- Once you got the program transformed so that it runs like the old
+  version, make an addition:
+  1) let Alonzo broadcast that he's breakfast
+  2) to which Sharkie responds by gliding to Alonzo's position and
+     "eating" him (i.e. make Alonzo hide).
+
+- Once completed and tested, SAVE the project to your cloud repo for
+  later reference, SHARE it and post it in the chat in the thread for
+  broadcasting.
 
 - [[https://bit.ly/GreenFlagBroadcast][Practice solution]]
 
-* Program 4: Circus
+* Assignment: program 4: Circus
 
 - Write a "circus" program in which the ringmaster calls animals (like
   an elephant) or actors (like a clown) one by one and each performs
@@ -76,6 +91,7 @@
   yourself feel good (looking for pics, applause sounds, etc.) but
   first lay down the logic and the code and then customize if you have
   time to spare (which in class or in a job interview, you don't).
+
 * Pair programming: project animation
 #+attr_html: :width 400px
 [[../img/highground.png]]
