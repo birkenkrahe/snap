@@ -15,7 +15,7 @@
 #+attr_html: :width 400px
 [[../img/snaplogo.png]]
 
-* Week 1 (Aug 21-27) Raft race / Intro to Snap!
+* Week 1: (Aug 21-27) Raft race / Intro to Snap!
 #+attr_html: :width 500px
 [[../img/raftrace.png]]
 
@@ -317,15 +317,63 @@ Covering chapters 4-5 in your textbook and in my script (see GitHub).
 
 * Week 6 + 7: Broadcasting and story animation project
 * Week 8: Fall break
-* Week 9: Spragins House lunch / Events, concurrency
+* Week 9: Spragins House lunch/Events & concurrency
 * Week 10: Keyboard interaction
-* Week 11: Mouse interaction
-* Week 12: Maze game [H.A.T.S. preparation]
+[[../img/class.png]]
+
+** Concern about grades [posted]
+
+A few of you have come forward with concerns about your grades (in
+this class). Most of you are in good shape - but a few of you are
+toying with fate.
+
+To improve your grade:
+- In the remaining tests, work through the questions using Snap! (Why
+  would anyone not have 10 points who followed that advice? 
+- I gave you 100% participation already because everyone's
+  engaged. I'll reduce that grade accordingly if someone's very
+  severely slacking.
+- We'll start the programming exercises in class so that you have
+  something to work with and you can finish and submit them later.
+- The H.A.T.S. grade is 25% of your total grade: participate actively
+  in the challenge and you'll be OK.
+- For the remaining 4 tests, not your first but your best grade will
+  be retained. This means that you can redo a test until you get 100%
+  (however, there's a waiting period between tests and you won't get
+  the correct answers).
+
+** Events and concurrency
+  
+Welcome back after three weeks of no-code or low-code!
+
+After our story animation, I asked you to work through the topics
+"events" and "concurrency" on your own (pp. 53-63 in the textbook).
+
+Events and concurrency example: [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Ball][rolling ball]] - two events triggered by
+the green flag:
+1) glide to right end of the screen then wrap around
+2) turn 4 degrees at one time forever
+
+The [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Bird][bird]] has even more events:
+1) wait and turn
+2) change costume and bounce off edge
+3) change color
+4) change size
+5) change whirl effect
+6) play sound every 5 seconds
+
+** Today: keyboard input (towards "Helicopter")
+
+[[https://github.com/birkenkrahe/snap/blob/piHome/org/8_keyboard.org][Script in GitHub as always.]]
+
+
+* Week 11: Mouse interaction [helicopter]
+* Week 12: Maze game & [H.A.T.S. preparation]
 * Week 13: Finch 2.0 Motion
 * Week 14: Finch 2.0 Lights and sensors
 * Week 15: Finch 2.0 parade
 * H.A.T.S. presentation (Nov 30)
-* Week 16:
+* Week 16: Summary
 * Grade graph code
 ** Grades graph
 #+name: test 1-3 results

@@ -16,6 +16,8 @@
 
 - Save your [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Reset][reset script]] as a script in XML on your computer, import
   and run it while developing a script (link: [[https://tinyurl.com/3pnbn9wh][tinyurl.com/3pnbn9wh]])
+  #+attr_latex: :width 220px
+  [[../img/Conditional_statements_fall23 script pic.png]]
 
 - Build these two examples in Snap! yourself:
   1) before running them, consider what each of them might do
@@ -71,30 +73,37 @@
   #+attr_latex: :width 400px
   [[../img/diagram.png]]
 
-- Make a pen-trail:
-  #+attr_latex: :width 200px
-  [[../img/pentrail.png]]
+- Make a pen-trail to create a pentagon:
+  #+attr_latex: :width 180px
+  [[../img/pentagon.png]]
 
-- Write a small program where the turtle goes around and whenever it
-  collides with the pen trail, it changes color or size.
+- Change the program to create a hexagon instead!
+
+- Make another sprite. Write a small program where the turtle
+  goes around and whenever it collides with the pen trail, it
+  changes color or size. The program should start whenever the
+  "t" key is pressed.
   #+attr_latex: :width 200px
   [[../img/collision.png]]
 
 * The story behind the IF
 
-- A condition is another name for a logic operation
+- A condition is another name for a logic operation.
 
-- Do you know examples for such operations?
+- For example: "If she doesn't love me, I will go." I will only
+  go if the condition evaluates to "NO" or "FALSE" otherwise I'll
+  stay.
   
 - The result of the operation determines its truth or falsehood,
-  represented as ~TRUE~ or ~FALSE~, represented by ~1~ or ~0~ in the computer
+  represented as ~TRUE~ or ~FALSE~, represented by ~1~ or ~0~ in the
+  computer.
 
 - An OOP way of thinking about IF statements: the inside of the IF
   statement is a local environment that interacts with the outside
-  only via the conditional statement
+  only via the conditional statement.
 
-- Another approach views the IF as a decision point - the condition is
-  a question leading in one or the other direction
+- Another approach views the IF as a decision point - the
+  condition is a question leading in one or the other direction.
 
 * IF statements
 
@@ -104,12 +113,12 @@
    #+attr_html: :width 140px
    [[../img/s7_less.png]]
 
-- When you execute the command, the operation is evaluated. You can
-  alter the result of the condition - the computer is not picky, it
-  wants to serve its master!
+- When you execute the command, the operation is evaluated. You
+  can alter the result of the condition - the computer is not
+  picky, it wants to serve its master!
 
-- Add the following script to your project, think about what it might
-  do and run it
+- Add the following script to your project, think about what it
+  might do and run it:
   #+attr_html: :width 200px
   [[../img/s7_fire.png]]
   #+begin_notes
@@ -122,7 +131,8 @@
 
 - IF-ELSE statements are gateway points of the program flow
 
-- If the IF condition is not met, the code following ELSE is executed
+- If the IF condition is not met, the code following ELSE is
+  executed
 
 - Example: the following script is run when the up arrow is
   pressed. The sprite is moved up until it hits an edge:
@@ -139,27 +149,26 @@
 
 - The following command stops all scripts when the /variable/ ~time~
   exceeds the value ~60~
-  #+attr_html: :width 250px
-  [[../img/s7_stop_all.png]]
+  #+attr_html: :width 200px
+  [[../img/s7_stopall.png]]
   
 - The command ~stop this script~ stops only the current script
 
 - Create a new project or reuse an old project:
   1) Generate two sprites and name one ~pacman~
-  2) Create the following two scripts
-  3) Start the script with the green flag
-  4) Move the sprite towards the ~pacman~ sprite
-  5) See what happens when the sprite touches ~pacman~
+  2) Create the following script
+  3) Make a variable ~points~
+  4) Start the script with the green flag
+  5) Move the sprite towards the ~pacman~ sprite
+  6) See what happens when the sprite touches ~pacman~
 
   #+attr_html: :width 200px
-  [[../img/s7_stop_script.png]]
-  #+attr_html: :width 200px
-  [[../img/s7_stop_all1.png]]
+  [[../img/pacmanscript.png]]
   
 - If you want to stop all script of the current sprite, you need to
   include the stopping script:
   #+attr_html: :width 200px
-  [[../img/s7_stop_script1.png]]
+  [[../img/stopping.png]]
 
 * Assignments: ball and paddle / color circles
 
@@ -181,7 +190,6 @@ the program does what it should).
    pointer, use the "point towards" and "move" commands in a "forever"
    loop:
    [[../img/s8_follow.png]]
-
 
    [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Color%20Circles%20%28Isaac%20Rice%29][Sample solution by Isaac Rice (Fall'22)]]
 

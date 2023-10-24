@@ -82,8 +82,8 @@ Python" will be able to:
 |    5 | Sep 18-Sep 22 | +Broadcasting+           |
 |    6 | Sep 25-Sep 29 | +Animation project+      |
 |    7 | Oct 02-Oct 06 | +Events and Concurrency+ |
-|    8 | Oct 09-Oct 13 | Keyboard interaction   |
-|    9 | Oct 16-Oct 20 | Mouse interaction      |
+|    8 | Oct 09-Oct 13 | +Keyboard interaction+   |
+|    9 | Oct 16-Oct 20 | +Mouse interaction+      |
 |   10 | Oct 23-Oct 27 | Paddle and bricks      |
 |   11 | Oct 30-Nov 03 | From Snap! to Python   |
 |   12 | Nov 06-Nov 10 | Finch 2.0 Motion       |
