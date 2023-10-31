@@ -366,7 +366,6 @@ The [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Bird][b
 
 [[https://github.com/birkenkrahe/snap/blob/piHome/org/8_keyboard.org][Script in GitHub as always.]]
 
-
 * Week 11: Mouse interaction [helicopter]
 * Week 12: Maze game & [H.A.T.S. preparation]
 * Week 13: Finch 2.0 Motion
