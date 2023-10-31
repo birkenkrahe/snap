@@ -3,18 +3,18 @@
 #+options: toc:nil num:nil ^:nil
 #+startup: overview hideblocks indent inlineimages entitiespretty
 * Project helicopter
-#+attr_latex: :width 400px
+#+attr_latex: :width 300px
 #+caption: BPMN diagram for the helicopter navigation
 [[../img/apokalypseNow.jpg]]
 
-- Building the minimal helicopter:
+- Building the minimal helicopter (in class):
   1) Background = variable
   2) Costumes = helicopter, base structure
   3) Sprites = helicopter, landing pad
   4) Navigation = use arrow keys
   5) Gravity = when helicopter not operated, it moves down
 
-- Optional improvements:
+- Optional improvements (home assignment = bonus points):
   1) Costumes/navigation: Helicopter points in the direction it is
      flying
   2) Navigation: physical gravity = helicopter accelerates down
@@ -31,6 +31,8 @@
 
 [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Helicopter%20%28minimal%29][Link to the finished project.]]
 
+Link to the description (PDF): [[https://tinyurl.com/ProjectHelicopter][tinyurl.com/ProjectHelicopter]].
+
 1) Background: standard background ~Night city with street~.
 
 2) Costumes: download the ~helicopter~ costume from the library.
@@ -38,26 +40,34 @@
 3) Sprites:
    - The helipad is the green ~paddle~ costume from the standard
      library. It is placed on a house on the right side of the stage:
-     #+attr_latex: :width 400px
+     #+attr_latex: :width 200px
      [[../img/heli_background.png]]
-
    - The exact position is immaterial since we control successful
-     landing with the ~touching Sprite~ command:
-     [[../img/heli_land1.png]]  [[../img/heli_land2.png]]
+     landing with the ~touching Sprite~ command: this must be in a
+     ~forever~ loop so that the loop block action is continuously
+     checked:
+     #+attr_latex: :width 150px     
+     [[../img/heli_land1.png]]
+
+     #+attr_latex: :width 200px
+      [[../img/heli_land2.png]]
 
 4) Navigation:
    
    - Arrow keys change x and y coordinates by 10 steps per activation:
-     #+attr_latex: :width 400px
+     #+attr_latex: :width 200px
      [[../img/heli_navigation.png]]
 
-   - The default starting position on street is (-153,-56). The reset  script resets to that position:
+   - The default starting position on street is (-153,-56). The reset
+     script resets to that position:
+     #+attr_latex: :width 150px
      [[../img/heli_reset.png]]
 
 5) Gravity: whenever we are not on the landing pad or on the ground,
    we want to lose height. This means that we ~forever~ reduce ~y~ by a
    small amount unless we're on the landing pad or ~y~ is ground level
-   (-55 in my case):
+   (-55 in my case). This got to be a /concurrent/ script:
+   #+attr_latex: :width 300px
    [[../img/heli_land.png]]
 
 * [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Helicopter%20%28improved%29][Improved helicopter]]
@@ -73,7 +83,7 @@
      ~heli_right~
    - Duplicate costume, edit it in the paint editor, flip it
      horizontally and rename it to ~heli-left~.
-     #+attr_latex: :width 400px
+     #+attr_latex: :width 200px
      [[../img/heli_flip.png]]
 
 2) Improved gravity ([[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Gravity][demo script]]):
@@ -89,13 +99,17 @@
 
    - In the ~Variables~ menu, ~Make a variable~ called ~y velocity~ which is
      ~for this sprite only~ and ~show~ it on the stage:
-     [[../img/y_velocity.png]] [[../img/y_velocity_show.png]]
+     #+attr_latex: :width 250px
+     [[../img/y_velocity.png]]
+     #+attr_latex: :width 250px
+     [[../img/y_velocity_show.png]]
 
    - When velocity is a positive number, the plane moves up, when it
      is negative, it moves down.
 
    - Gravity makes objects accelerate downwards: the speed at which it
      moves must change negatively /while the program is running/:
+     #+attr_latex: :width 150px
      [[../img/gravity.png]]
 
    - When you start the script, the ~y velocity~ is set to ~0~ (the object
@@ -113,11 +127,12 @@
 
    - You also want to add some ground-level code so that the object
      doesn't fall forever:
+     #+attr_latex: :width 150px
      [[../img/Gravity_script_pic.png]]
 
    - For this to work, you have to ~make~ and ~set~ the ~Ground~ variable:
      it's global variable (that is, it is known to all sprites).
-     #+attr_latex: :width 400px
+     #+attr_latex: :width 200px
      [[../img/gravity_up.png]] [[../img/gravity_down.png]]
 
    - When you transfer this script to the helicopter, you'll have to
