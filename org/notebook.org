@@ -366,7 +366,7 @@ The [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Bird][b
 
 [[https://github.com/birkenkrahe/snap/blob/piHome/org/8_keyboard.org][Script in GitHub as always.]]
 
-* NEXT Week 11: Project helicopter [H.A.T.S.]
+* DONE Week 11: Project helicopter [H.A.T.S.]
 
 - In the first part of the session, we'll build a minimal helicopter.
 - You can upload your finished file for 10 points [[https://lyon.instructure.com/courses/2031/assignments/16834][in Canvas]].
@@ -374,7 +374,7 @@ The [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Bird][b
 - We'll look at the best results in class next week.
 - In 2nd part of the session, discuss H.A.T.S. poster / presentation.
 
-* Week 12: Introducing the Finch 2.0 robot
+* Week 12: Introducing the Finch 2.0 robot (and Python)
 * Week 13: Finch 2.0 Motion
 * Week 14: Finch 2.0 Lights and sensors
 * Week 15: Finch 2.0 parade
