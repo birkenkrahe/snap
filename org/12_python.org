@@ -1,102 +1,118 @@
 #+title: From Snap! to Python
-#+subtitle: UBMS Snap! Programming Summer 2023
+#+subtitle: Game and Robotics Programming in Snap! and Python
 #+options: toc:nil num:nil ^:nil
 #+startup: overview hideblocks indent inlineimages
 #+property: header-args:python :results output :noweb yes
-:REVEAL_PROPERTIES:
-#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
-#+REVEAL_REVEAL_JS_VERSION: 4
-#+REVEAL_INIT_OPTIONS: transition: 'cube'
-#+REVEAL_THEME: black
-:END:
-* Why Python?
+[[../img/python.jpeg]]
 
-- Top 1 position on the TIOBE index:
-  #+attr_latex: :width 400px
-  [[../img/tiobe.png]]
+* Why Python? Top 1 position on the TIOBE index ([[https://www.tiobe.com/tiobe-index/][tiobe.com/tiobe-index/]]):
+#+attr_latex: :width 750px
+[[../img/tiobeOct23.png]]
+
+* You can program the Finch robot in Python, too:
+#+attr_latex: :width 750px
+[[../img/finchlanguages.png]]
+
+- You have a choice if you want to code your robot in Python or Snap!
+  #+attr_latex: :width 750px
+  [[../img/finchpython1.png]]
 
 * Who uses Python?
 #+attr_latex: :width 400px
 [[../img/nasa.png]]
 
-  1) YouTube
-  2) Instagram
-  3) Pinterest
-  4) Spotify
-  5) Netflix
-  6) NASA
+Applications that are largely written in Python:
+1) YouTube
+2) Instagram
+3) Pinterest
+4) Spotify
+5) Netflix
+6) NASA
 
 * Strengths/Weaknesses
-#+attr_latex: :width 400px
-[[../img/pythonorg.png]]
+#+attr_latex: :width 750px
+[[../img/comparison.png]]
 
+- We teach Snap!, Python, SQL, Java, R and C++ at Lyon!
+* Take my introduction to programming with C++ course in spring!
+#+attr_latex: :width 600px
+[[../img/cpp_poster.png]]
 
-| STRENGTH   | WEAKNESS        |
-|------------+-----------------|
-| Simplicity | Performance     |
-| Automation | Industry demand |
-| Community  | Indentation     |
+* In 30 years, C++ has never been out of the top 5 languages!
+#+attr_latex: :width 750px
+[[../img/tiobe3.png]]
 
+Notice the popularity increase in SQL from ~251~ in 2018 to ~8~ in 2023!
+* 6 Ways to code in Python
+#+attr_latex: :width 750px
+[[../img/choice.jpg]]
+
+* In the command line terminal (Python must be installed)
+#+attr_latex: :width 750px
+[[../img/cmd.png]]
+* In the browser (extension)
+#+attr_latex: :width 500px
+[[../img/chrome.png]]
+* In replit.com (REPL = Read-Eval-Print-Loop)
+#+attr_latex: :width 750px
+[[../img/replit.png]]
+* In the Python IDLE (Integrated Development Learning Environment)
+#+attr_latex: :width 650px
+[[../img/idle.png]]
+#+attr_latex: :width 650px
+[[../img/turtleDemo.png]]
+* In an IDE (Integrated Development Environment):
+
+Emacs ([[https://realpython.com/emacs-the-best-python-editor/][the best way]], and the "hacker way" at Lyon College), VSCode,
+PyCharm etc.
+#+attr_latex: :width 650px#+attr_html: :width 650px
+[[../img/emacs2.png]]
+
+* In Google Colaboratory (interactive Jupyter notebook)
+#+attr_latex: :width 750px
+[[../img/colaboratory.png]]
 * Contrast Snap! and Python
-#+attr_latex: :width 400px
- [[../img/snap_name_age.png]]
+#+attr_latex: :width 550px
+[[../img/snap_name_age.png]]
 
-[[../img/py_name_age.png]]
+#+begin_example python
+  print("Hello, world!")
+  name = input('What is your name? ')
+  print('Good to meet you,' + name)
+  print('Your name has', len(name), 'characters')
+  age = input("What's your age? ")
+  print("You're going to be " + str(int(age)+1) + " years old.")
+#+end_example
 
-- Easier in Snap!: drag-and-drop coding / remembering
-- Easier in Python: debugging (finding mistakes)
-- Harder in Snap!: literate programming (documenting)
-- Harder in Python: animation and game development
+- Easier in =Snap!=: drag-and-drop coding (finding code chunks)
+- Easier in ~Python~: debugging (finding mistakes)
+- Harder in =Snap!=: literate programming (documenting)
+- Harder in ~Python~: animation and game development
+
+* Code the Snap! program first
+#+attr_latex: :width 700px
+[[../img/snap_name_age.png]]
+
+- Open ~snap.berkeley.edu~ and ~Run Snap!~
+- Enter the program and run it line by line.
+- We'll then move over to Python and recreate it in Colab.
+- Sample solution: tinyurl.com/SnapToPython
 
 * First Python program
-#+attr_latex: :width 400px
-[[../img/colab.png]]
+#+attr_latex: :width 550px
+[[../img/snap_name_age.png]]
 
 - We're going to code this 'hello world' program ([[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=SnapVsPython][Snap!]])
-- Open colab.research.google.com in your browser
-- If you're logged into your Google account: check GDrive
+- Open ~colab.research.google.com~ in your browser
+- Open this notebook in Colab: [[https://tinyurl.com/snap2python][tinyurl.com/snap2python]]
+- If you're logged into your Google account: check ~GDrive~
 - All your colab notebooks are in one directory
-- Always start with a TEXT block (CTRL + ALT + T)
-- Continue with a CODE block (CTRL + ALT + I)
-- Run code blocks with CTRL + ENTER or SHIFT + ENTER
+- Always start with a TEXT block (~CTRL + ALT + T~)
+- Continue with a CODE block (~CTRL + ALT + I~)
+- Run code blocks with ~CTRL + ENTER~ or ~SHIFT + ENTER~
 
 You find the solution [[https://gist.github.com/birkenkrahe/2921e5c3afc0ee495bd64b23ff6df645][here as a GitHub code gist]].
 
-* 6 Ways to code in Python
-#+attr_latex: :width 400px
-[[../img/choice.jpg]]
-
-1) In the command line terminal (Python must be installed)
-   #+attr_latex: :width 400px
-   [[../img/cmd.png]]
-2) In Google Colaboratory (interactive Jupyter notebook)
-   #+attr_latex: :width 400px
-   [[../img/colaboratory.png]]
-3) In replit.com (REPL)
-   #+attr_latex: :width 400px
-   [[../img/replit.png]]
-4) In the browser (extension)
-   #+attr_latex: :width 400px
-   [[../img/chrome.png]]
-5) In the Python IDLE (Integrated Development Learning Environment)
-6) In an IDE (Integrated Development Environment): Emacs, VSCode etc.
-5) In the Python IDLE (Integrated Development Learning Environment)
-   #+attr_latex: :width 400px
-   [[../img/idle.png]]
-   #+attr_latex: :width 400px
-   [[../img/turtleDemo.png]]
-6) In an IDE (Integrated Development Environment): Emacs, VSCode,
-   PyCharm etc.
-   #+attr_latex: :width 400px
-   #+caption: Emacs IDE: Org-mode (top) and Python shell (bottom)
-   [[../img/emacs.png]]
-   #+attr_latex: :width 400px
-   #+caption: 'Hello world' in the Visual Studio Code editor (Microsoft)
-   [[../img/vscode.png]]
-   #+attr_latex: :width 400px
-   #+caption: Turtle racing game in PyCharm
-   [[../img/pycharm.png]]
-   
 * References
 
 - Birkenkrahe (2023). Introduction to programming in Python. URL:

@@ -374,10 +374,19 @@ The [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Bird][b
 - We'll look at the best results in class next week.
 - In 2nd part of the session, discuss H.A.T.S. poster / presentation.
 
-* Week 12: Introducing the Finch 2.0 robot (and Python)
-* Week 13: Finch 2.0 Motion
-* Week 14: Finch 2.0 Lights and sensors
-* Week 15: Finch 2.0 parade
+* Week 12: Introducing Python
+
+- We're skipping "mouse control" and "making blocks" (GitHub).
+- Making blocks means that you can make your own functions.
+- [[https://lyon.instructure.com/courses/2031/assignments/16835][3-level maze game instructions]] (bonus assignment)
+- Introduction to Python and ="hello, world"= in Snap! and Python
+- Introduction to Google Colaboratory (~colab.research.google.com~)
+- Optional: look at "Ball and paddle" in Python using ~replit.com~
+- Home assignment: explore the ~microbit~ - the brain of the Finch
+  
+* Week 13: Programming the Finch 2.0: Motion
+* Week 14: Programming the Finch 2.0: Lights and sensors
+* Week 15: Programming the Finch 2.0: parade project
 * H.A.T.S. presentation (Nov 30)
 * Week 16: Summary and finish
 * Grade graph code

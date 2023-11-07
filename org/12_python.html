@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>From Snap! to Python</title>
+<meta name="author" content=""/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css" id="theme"/>
+
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">From Snap! to Python</h1><p class="subtitle">Game and Robotics Programming in Snap! and Python</p>
+<p class="date">Created: 2023-11-07 Tue 09:02</p>
+</section>
+<section>
+<section id="slide-orga996887">
+<h2 id="orga996887">Why Python?</h2>
+<ul>
+<li><p>
+Top 1 position on the TIOBE index (<a href="https://www.tiobe.com/tiobe-index/">tiobe.com/tiobe-index/</a>):
+</p>
+
+<div id="orge9e3bf5" class="figure">
+<p><img src="../img/tiobeOct23.png" alt="tiobeOct23.png" />
+</p>
+</div></li>
+
+<li><p>
+You can program the Finch robot in Python, too:
+</p>
+
+<div id="org35d232c" class="figure">
+<p><img src="../img/finchlanguages.png" alt="finchlanguages.png" />
+</p>
+</div></li>
+
+<li>You have a choice if you want to code your robot in Python or Snap!</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org14b6e0e">
+<h2 id="org14b6e0e">Who uses Python?</h2>
+
+<div id="orgd6d34af" class="figure">
+<p><img src="../img/nasa.png" alt="nasa.png" />
+</p>
+</div>
+
+<ol>
+<li>YouTube</li>
+<li>Instagram</li>
+<li>Pinterest</li>
+<li>Spotify</li>
+<li>Netflix</li>
+<li>NASA</li>
+
+</ol>
+
+</section>
+</section>
+<section>
+<section id="slide-org94adc12">
+<h2 id="org94adc12">Strengths/Weaknesses</h2>
+
+<div id="org8ab03c2" class="figure">
+<p><img src="../img/comparison.png" alt="comparison.png" />
+</p>
+</div>
+
+<ul>
+<li>We teach Snap!, Python, SQL, Java, R and C++ at Lyon!</li>
+<li>Take my introduction to programming with C++ course in spring!</li>
+
+</ul>
+
+<div id="org4f0e96c" class="figure">
+<p><img src="../img/cpp_poster.png" alt="cpp_poster.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org2fadbcf">
+<h2 id="org2fadbcf">Contrast Snap! and Python</h2>
+
+<div id="org253d96b" class="figure">
+<p><img src="../img/snap_name_age.png" alt="snap_name_age.png" />
+</p>
+</div>
+
+
+<div id="orgf8fe98d" class="figure">
+<p><img src="../img/py_name_age.png" alt="py_name_age.png" />
+</p>
+</div>
+
+<ul>
+<li>Easier in Snap!: drag-and-drop coding / remembering</li>
+<li>Easier in Python: debugging (finding mistakes)</li>
+<li>Harder in Snap!: literate programming (documenting)</li>
+<li>Harder in Python: animation and game development</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc93ba25">
+<h2 id="orgc93ba25">6 Ways to code in Python</h2>
+
+<div id="org397012f" class="figure">
+<p><img src="../img/choice.jpg" alt="choice.jpg" />
+</p>
+</div>
+
+<ol>
+<li><p>
+In the command line terminal (Python must be installed)
+</p>
+
+<div id="orgd911d88" class="figure">
+<p><img src="../img/cmd.png" alt="cmd.png" />
+</p>
+</div></li>
+<li><p>
+In Google Colaboratory (interactive Jupyter notebook)
+</p>
+
+<div id="orgfc333b3" class="figure">
+<p><img src="../img/colaboratory.png" alt="colaboratory.png" />
+</p>
+</div></li>
+<li><p>
+In replit.com (REPL)
+</p>
+
+<div id="orgb285fd4" class="figure">
+<p><img src="../img/replit.png" alt="replit.png" />
+</p>
+</div></li>
+<li><p>
+In the browser (extension)
+</p>
+
+<div id="orga162fda" class="figure">
+<p><img src="../img/chrome.png" alt="chrome.png" />
+</p>
+</div></li>
+<li><p>
+In the Python IDLE (Integrated Development Learning Environment)
+</p>
+
+<div id="orgb9d868d" class="figure">
+<p><img src="../img/idle.png" alt="idle.png" />
+</p>
+</div>
+
+<div id="orgb082ab1" class="figure">
+<p><img src="../img/turtleDemo.png" alt="turtleDemo.png" />
+</p>
+</div></li>
+<li><p>
+In an IDE (Integrated Development Environment): Emacs, VSCode,
+PyCharm etc.
+</p>
+
+<div id="org03fc245" class="figure">
+<p><img src="../img/emacs.png" alt="emacs.png" />
+</p>
+<p><span class="figure-number">Figure 1: </span>Emacs IDE: Org-mode (top) and Python shell (bottom)</p>
+</div>
+
+<div id="orgb7e2b21" class="figure">
+<p><img src="../img/vscode.png" alt="vscode.png" />
+</p>
+<p><span class="figure-number">Figure 2: </span>'Hello world' in the Visual Studio Code editor (Microsoft)</p>
+</div>
+
+<div id="orgaab513e" class="figure">
+<p><img src="../img/pycharm.png" alt="pycharm.png" />
+</p>
+<p><span class="figure-number">Figure 3: </span>Turtle racing game in PyCharm</p>
+</div></li>
+
+</ol>
+
+</section>
+</section>
+<section>
+<section id="slide-org21d5214">
+<h2 id="org21d5214">First Python program</h2>
+
+<div id="org3607ad3" class="figure">
+<p><img src="../img/colab.png" alt="colab.png" />
+</p>
+</div>
+
+<ul>
+<li>We're going to code this 'hello world' program (<a href="https://snap.berkeley.edu/project?username=birkenkrahe&amp;projectname=SnapVsPython">Snap!</a>)</li>
+<li>Open <code>colab.research.google.com</code> in your browser</li>
+<li>If you're logged into your Google account: check <code>GDrive</code></li>
+<li>All your colab notebooks are in one directory</li>
+<li>Always start with a TEXT block (<code>CTRL + ALT + T</code>)</li>
+<li>Continue with a CODE block (<code>CTRL + ALT + I</code>)</li>
+<li>Run code blocks with <code>CTRL + ENTER</code> or <code>SHIFT + ENTER</code></li>
+
+</ul>
+
+<p>
+You find the solution <a href="https://gist.github.com/birkenkrahe/2921e5c3afc0ee495bd64b23ff6df645">here as a GitHub code gist</a>.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org846687a">
+<h2 id="org846687a">References</h2>
+<ul>
+<li>Birkenkrahe (2023). Introduction to programming in Python. URL:
+<a href="https://github.com/birkenkrahe/py">github.com/birkenkrahe/py</a></li>
+<li>Joshi (2021). Learn Python in a Snap! URL: <a href="http://www.abhayjoshi.net/spark/python/pythonsnap.pdf">abhayjoshi.net</a>.</li>
+<li>Van Rossum, G., Drake, F. L. (2009). Python 3 Reference Manual. URL:
+<a href="https://docs.python.org/3/reference/">https://docs.python.org/3/reference/</a>.</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom/zoom.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js"></script>
+
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+plugins: [RevealMarkdown, RevealZoom, RevealNotes],
+transition: 'cube'
+});
+
+</script>
+</body>
+</html>
