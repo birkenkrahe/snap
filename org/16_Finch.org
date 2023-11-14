@@ -103,7 +103,10 @@ magnetism, sound) - see [[https://microbit.org/get-started/user-guide/overview/]
      letters (DAT - "Deluxe Apricot Tyrannosaurus") followed by
      pound # sign and its number, e.g. FNC3929.
 
-- Add the ~finchCostume.png~ from here to change the turtle:
+- Change the turtle with the Finch Costume: download this file and
+  =import= it to Snap!: [[https://tinyurl.com/finchCostume][tinyurl.com/finchCostume]]
+  #+attr_html: :width 250px
+  [[../img/finchCostume.png]]
    
 - Try moving the Finch after connecting to it (don't let it go):
   [[../img/finch_move.png]]
@@ -127,12 +130,14 @@ magnetism, sound) - see [[https://microbit.org/get-started/user-guide/overview/]
 
 - Practice:
   1) Make the Finch move in a square, then play a sound.
-  2) Put this program into a ~Motion~ block ~Finch square~.
+  2) Put this program into a ~Motion~ block ~Finch square~:
+     - In the =Motion= menu, =Make a block=
+     - Inside the block, add the code below
+     - Click OK
+     - Drag the new block ~Square~ in the script editor
+     - Run it (make sure the Finch is safe to move)
 
-- Solution:
-  #+begin_quote
   [[../img/finch_square.png]]
-  #+end_quote
 
 * Controlling wheels
 #+attr_latex: :width 600px
@@ -202,7 +207,7 @@ magnetism, sound) - see [[https://microbit.org/get-started/user-guide/overview/]
 - Red, blue and green are the primary colors of (white) light.
 
 - Turning the Finch's beak red, green then blue forever:
-  #+attr_latex: :width 600px
+  #+attr_latex: :width 300px
   [[../img/finch_rgb_forever.png]]
 
 - Why do blue and green make yellow?
@@ -235,12 +240,12 @@ magnetism, sound) - see [[https://microbit.org/get-started/user-guide/overview/]
   right)
 
 - Solution code:
-  #+attr_latex: :width 600px
+  #+attr_latex: :width 300px
   [[../img/finch_led_disco.png]]
 
 - You get white light by mixing all colors with the same weight - the
   lower the number the fainter the light: try setting it to 1%
-  #+attr_latex: :width 600px
+  #+attr_latex: :width 300px
   [[../img/finch_led_white.png]]
 
 - How does a prism work?
@@ -260,11 +265,11 @@ magnetism, sound) - see [[https://microbit.org/get-started/user-guide/overview/]
      off.
 
 - Solution code:
-  #+attr_latex: :width 600px
+  #+attr_latex: :width 350px
   [[../img/finch_led_challenge.png]]
 
 - Or with a "blink N times" Finch block:
-  #+attr_latex: :width 600px
+  #+attr_latex: :width 300px
   [[../img/finch_led_challenge_block.png]] [[../img/finch_blink.png]]
 
 - Activity: "Finch parade" - turn a Finch in a parade float using
