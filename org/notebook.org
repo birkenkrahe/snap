@@ -374,7 +374,7 @@ The [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Bird][b
 - We'll look at the best results in class next week.
 - In 2nd part of the session, discuss H.A.T.S. poster / presentation.
 
-* Week 12: Introducing Python
+* DONE Week 12: Introducing Python
 
 - We're skipping "mouse control" and "making blocks" (GitHub).
 - Making blocks means that you can make your own functions.
@@ -385,6 +385,19 @@ The [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Bird][b
 - Home assignment: explore the ~microbit~ - the brain of the Finch
   
 * Week 13: Programming the Finch 2.0: Motion
+
+- Come to the convocation talk on Thursday for some extra bonus
+  points: register with the QR code at the entrance.
+
+- Jakobe and I finished the poster "Mechanical Depression". Sigmund
+  Freud would be proud of you (apropos [[https://en.wikipedia.org/wiki/Freudian_slip][parapraxis]]).
+  #+attr_html: :width 600px
+  [[../img/HATS_COR_100_09.png]]
+
+  PDF: file:../pdf/HATS_COR_100_09.pdf
+
+  - Lecture and practice: Finch 2.0 motion
+
 * Week 14: Programming the Finch 2.0: Lights and sensors
 * Week 15: Programming the Finch 2.0: parade project
 * H.A.T.S. presentation (Nov 30)

@@ -1,16 +1,18 @@
 #+title: The Finch 2.0 Robot
-#+subtitle: UBMS Snap! Programming Summer 2023
+#+subtitle: COR 100.09 Game & Robotics Programming Fall 2023
 #+options: toc:nil num:nil ^:nil
 #+startup: overview hideblocks indent inlineimages
 #+property: header-args:python :results output :noweb yes
+#+attr_latex: :width 600px
+[[../img/finch20.png]]
 * Programming the Finch 2.0
-#+attr_latex: :width 400px
+#+attr_latex: :width 600px
 #+caption: 5 Ways to program the Finch 2.0 robot
 [[../img/finch_programming.png]]
 
 - You need to match language, purpose and platform ([[https://learn.birdbraintechnologies.com/software-guidance-chart/#finchrobot2][guidance chart]]).
 
-- The Finch can actually be programmed with 9 different languages.
+- The Finch can actually be programmed in 9 different languages.
 
 * Robots and AI
 
@@ -23,8 +25,8 @@
   5) Pattern recognition
   #+end_quote
 
-- What is a robot?
-  #+begin_quote
+- *What is a robot?*
+  #+attr_html: :width 600px
   [[../img/finch_robot.png]]
   - The word 'robot' was first used to denote a fictional humanoid in
     a 1920 Czech-language play [[https://en.wikipedia.org/wiki/R.U.R.][R.U.R.]] (Rossumovi Univerzální Roboti –
@@ -33,7 +35,7 @@
 - Technically, a robot is a non-virtual "rational agent".
 
 - As "Artificial Intelligence", robots are "rational agents":
-  #+attr_latex: :width 400px
+  #+attr_latex: :width 600px
   #+caption: Artificial Intelligence as agents (AIMA, 2021).
   [[../img/agents.png]]
   1) Upper left: machines that act like humans ("Turing test")
@@ -49,50 +51,64 @@
   3) "Act": LEDs, motors, buzzer, moves, draw etc.
 
 * Setting the Finch robot 2.0 up with Snap!
+#+attr_html: :width 600px
+[[../img/finch_use_with_snap.png]]
 
-- Microbit input: sensor data (light, acceleration, temperature,
-  magnetism, sound) - see [[https://microbit.org/get-started/user-guide/overview/][user guide]].
-  [[../img/microbit.png]]
+* Microbit input
+
+Microbit input: sensor data (light, acceleration, temperature,
+magnetism, sound) - see [[https://microbit.org/get-started/user-guide/overview/][user guide]].
+[[../img/microbit.png]]
 
 - Install the micro:bit by sliding it into the tail of the Finch and
   make sure it is charged:
-  #+attr_latex: :width 400px
-  [[../img/finch_find_robots.png]]
+  #+attr_latex: :width 600px
+  [[../img/finch_charged.png]]
+
+* Choose language and programming platform
 
 - You can choose a platform and a language:
-  #+attr_latex: :width 400px
+  #+attr_latex: :width 600px
   [[../img/finch_selection.png]]
 
 - There are many different activities available:
-  #+attr_latex: :width 400px
+  #+attr_latex: :width 600px
   [[../img/finch_windows_snap.png]]
+
+* Connect Snap! editor to your robot
 
 - With [[https://learn.birdbraintechnologies.com/downloads/installers/BlueBirdConnector.msi][Bluebird Connection Web app]] or [[https://snap.birdbraintechnologies.com/][Snap! Web app]]:
   1) Switch on your (charged) robot (black button at bottom).
   2) Click on ~Finding robots~ on the web page.
   3) Your robot should be listed - only connect to yours!
-  #+attr_latex: :width 400px
+  #+attr_latex: :width 600px
   [[../img/finch_find_robots.png]]
 
-- The BlueBird Connector App always finds robots by name, too:
-  #+attr_latex: :width 400px
-  [[../img/finch_connect1.png]]
-  [[../img/finch_connect2.png]]
+- Click on the compass and (re)calibrate until you see a smiley face:
+  #+attr_latex: :width 600px
+  [[../img/finch_compass.png]]
 
-- Installation details (completed for classroom use):
+* DONE Installation details
+
+- Installation details (already completed for classroom use):
   1) Full charge lasts ca. 8 hrs and takes 8 hrs to charge. Green
      lights when turning it on indicate the charging state (4 lights =
      full).
+
   2) Update the firmware with a ~.hex~ file for the micro:bit every 6
-     months or so (get the file [[https://learn.birdbraintechnologies.com/downloads/installers/BBTFirmware.hex][from here]]).
+     months or so (get the file [[https://learn.birdbraintechnologies.com/downloads/installers/BBTFirmware.hex][from here]]). The micro:bit does not
+     have an operating system but it has MicroPython.
+
   3) Once uploaded, the micro:bit responds directly by giving three
      letters (DAT - "Deluxe Apricot Tyrannosaurus") followed by
      pound # sign and its number, e.g. FNC3929.
 
-- Try moving the Finch after connecting to it:
+- Add the ~finchCostume.png~ from here to change the turtle:
+   
+- Try moving the Finch after connecting to it (don't let it go):
   [[../img/finch_move.png]]
 
-- Overview: [[https://learn.birdbraintechnologies.com/finch/snap/program/1-14][14 additional programming videos]].
+- If you're interested: there are [[https://learn.birdbraintechnologies.com/finch/snap/program/1-14][14 additional programming videos]].
 
 * Moving and turning
 #+attr_latex: :width 400px
@@ -119,7 +135,7 @@
   #+end_quote
 
 * Controlling wheels
-#+attr_latex: :width 400px
+#+attr_latex: :width 600px
 #+caption: Muriel Long with bicycle decorated for street procession.
 [[../img/wheels.jpg]]
 
@@ -142,7 +158,7 @@
 
 - Activity idea: finch jousting - known the ball off a cup using
   e.g. a fork on a straw:
-  #+attr_latex: :width 400px
+  #+attr_latex: :width 600px
   [[../img/finch_jousting.png]]
 
 * Drawing shapes with the pen mount
@@ -186,7 +202,7 @@
 - Red, blue and green are the primary colors of (white) light.
 
 - Turning the Finch's beak red, green then blue forever:
-  #+attr_latex: :width 400px
+  #+attr_latex: :width 600px
   [[../img/finch_rgb_forever.png]]
 
 - Why do blue and green make yellow?
@@ -219,12 +235,12 @@
   right)
 
 - Solution code:
-  #+attr_latex: :width 400px
+  #+attr_latex: :width 600px
   [[../img/finch_led_disco.png]]
 
 - You get white light by mixing all colors with the same weight - the
   lower the number the fainter the light: try setting it to 1%
-  #+attr_latex: :width 400px
+  #+attr_latex: :width 600px
   [[../img/finch_led_white.png]]
 
 - How does a prism work?
@@ -244,11 +260,11 @@
      off.
 
 - Solution code:
-  #+attr_latex: :width 400px
+  #+attr_latex: :width 600px
   [[../img/finch_led_challenge.png]]
 
 - Or with a "blink N times" Finch block:
-  #+attr_latex: :width 400px
+  #+attr_latex: :width 600px
   [[../img/finch_led_challenge_block.png]] [[../img/finch_blink.png]]
 
 - Activity: "Finch parade" - turn a Finch in a parade float using
@@ -260,7 +276,7 @@
   3) evaluation = match goal to result
 
 * Finch sounds
-#+attr_latex: :width 400px
+#+attr_latex: :width 600px
 [[../img/soundFinch.png]]
 
 - There is only one Finch-specific sound command:
@@ -285,14 +301,14 @@
   [[https://tinyurl.com/BrotherJack][tinyurl.com/BrotherJack]].
 
 - Solution ([[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Frere_Jacques][cloud file]]):
-  #+attr_latex: :width 400px
+  #+attr_latex: :width 600px
   [[../img/frereJacquesDisco.png]]
 
 - Challenge: make the Finch play the song and dance to it. Here is a
   fancy example, the "Finch chorus line" - https://youtu.be/qouVW_oVDPs
 
 * Sensors: distance, lights, lines (numeric)
-#+attr_latex: :width 400px
+#+attr_latex: :width 600px
 [[../img/finch_sensors.png]]
 - Finch sensors include: light, line, distance, buttons A/B,
   accelerometer, compass, temperature, orientation, and sound.
@@ -328,7 +344,7 @@
   [[../img/finch_dimmer_RGB.png]]
 
 * Sensors: buttons, orientation (Boolean)
-#+attr_latex: :width 400px
+#+attr_latex: :width 600px
 [[../img/buttons.jpg]]
 
 - Practice: write a script that shows a button "A" whenever the left
@@ -348,7 +364,7 @@
 
 * TODO Compass, acceleration, sound, temperature (numeric)
 * Finch with Python - what changes?
-#+attr_latex: :width 400px
+#+attr_latex: :width 600px
 [[../img/fpy_snap.png]]
 
 - Different setup: [[https://brython.birdbraintechnologies.com/][use this web app to connect]].
@@ -357,7 +373,7 @@
 - Good for using the Finch as a data gathering device (data science).
   
 * SOMEDAY Play with the Finch robot remotely
-#+attr_latex: :width 400px
+#+attr_latex: :width 600px
 [[../img/remoteFinch.png]]
 
 - I will set up a server for remote Finch manipulation ([[https://www.youtube.com/playlist?list=PLPF7p1VM8NT8tcvIG18ALU5skugQ2W7C0][see here]]).

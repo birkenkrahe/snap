@@ -78,7 +78,7 @@
 * Practice 2: Alarm Clock with four hands
 
 - Look for ~Display > Images: make your own~ in the reference manual.
-
+  
 - Create a clock that moves a hand clock-wise changing position once
   per second, and that makes a 'Ba-ding' sound when the hand changes.
 
