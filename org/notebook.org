@@ -388,6 +388,7 @@ The [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Bird][b
 
 - Come to the convocation talk on Thursday for some extra bonus
   points: register with the QR code at the entrance.
+  file:~/Downloads/FredPriorv3.pdf
 
 - Jakobe and I finished the poster "Mechanical Depression". Sigmund
   Freud would be proud of you (apropos [[https://en.wikipedia.org/wiki/Freudian_slip][parapraxis]]).

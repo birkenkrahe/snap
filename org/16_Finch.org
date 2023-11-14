@@ -18,11 +18,11 @@
 
 - *What is Computational thinking?*
   #+begin_quote
-  1) Abstraction
-  2) Evaluation
-  3) Algorithms
-  4) Decomposition
-  5) Pattern recognition
+  1) Abstraction - taking away detail to see the big picture
+  2) Evaluation - measuring impact or performance
+  3) Algorithms - set of fixed, formal instructions
+  4) Decomposition - taking big problems apart to be able to solve them
+  5) Pattern recognition - recognize complex facts among a lot data
   #+end_quote
 
 - *What is a robot?*
