@@ -141,9 +141,6 @@ magnetism, sound) - see [[https://microbit.org/get-started/user-guide/overview/]
 
 * Controlling wheels
 #+attr_latex: :width 600px
-#+caption: Muriel Long with bicycle decorated for street procession.
-[[../img/wheels.jpg]]
-
 - For a counter-clockwise spinning motion, make the left wheel go
   backward and the right wheel go forward:
   [[../img/finch_spin_left.png]]
@@ -158,13 +155,6 @@ magnetism, sound) - see [[https://microbit.org/get-started/user-guide/overview/]
 - To make the Finch move around in a circle, make the wheels go at
   different speeds while moving forward:
   [[../img/finch_circle.png]]
-
-* Finch movement activities (example)
-
-- Activity idea: finch jousting - known the ball off a cup using
-  e.g. a fork on a straw:
-  #+attr_latex: :width 600px
-  [[../img/finch_jousting.png]]
 
 * Drawing shapes with the pen mount
 
@@ -201,8 +191,6 @@ magnetism, sound) - see [[https://microbit.org/get-started/user-guide/overview/]
    #+end_quote
 
 * Finch LEDs 
-#+attr_latex: :width 200px
-[[../img/finch_rgb.png]]
 
 - Red, blue and green are the primary colors of (white) light.
 
@@ -281,8 +269,6 @@ magnetism, sound) - see [[https://microbit.org/get-started/user-guide/overview/]
   3) evaluation = match goal to result
 
 * Finch sounds
-#+attr_latex: :width 600px
-[[../img/soundFinch.png]]
 
 - There is only one Finch-specific sound command:
   #+attr_latex: :width 250px
@@ -313,7 +299,7 @@ magnetism, sound) - see [[https://microbit.org/get-started/user-guide/overview/]
   fancy example, the "Finch chorus line" - https://youtu.be/qouVW_oVDPs
 
 * Sensors: distance, lights, lines (numeric)
-#+attr_latex: :width 600px
+#+attr_latex: :width 400px
 [[../img/finch_sensors.png]]
 - Finch sensors include: light, line, distance, buttons A/B,
   accelerometer, compass, temperature, orientation, and sound.
@@ -349,8 +335,6 @@ magnetism, sound) - see [[https://microbit.org/get-started/user-guide/overview/]
   [[../img/finch_dimmer_RGB.png]]
 
 * Sensors: buttons, orientation (Boolean)
-#+attr_latex: :width 600px
-[[../img/buttons.jpg]]
 
 - Practice: write a script that shows a button "A" whenever the left
   A-button of the Finch is pressed, and a button "B" whenever the
