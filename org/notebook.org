@@ -402,6 +402,9 @@ The [[https://snap.berkeley.edu/project?username=birkenkrahe&projectname=Bird][b
 * Week 14: Programming the Finch 2.0: Lights and sensors
 * Week 15: Programming the Finch 2.0: parade project
 * H.A.T.S. presentation (Nov 30)
+
+
+
 * Week 16: Summary and finish
 * Grade graph code
 ** Grades graph
